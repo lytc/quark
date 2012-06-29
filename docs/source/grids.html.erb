@@ -1,0 +1,90 @@
+<% content_for :head do %>
+  <title>UI5- grids</title>
+  <style>
+    #grid-test {
+      
+    }
+    
+    #grid-test > .row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    #grid-test > .row > * {
+      border: 1px solid #333333;
+      height: 40px;
+      line-height: 40px;
+    }
+  </style>
+<% end %>
+
+<div class="page-header">
+  <h1>Grids</h1>
+</div>
+
+<div id="grid-test" class="grid" col=12>
+  <div class="row">
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+    <div x-span=1>1: 60</div>
+  </div>
+  <div class="row">
+    <div x-span=2>2: 140</div>
+    <div x-span=2>2: 140</div>
+    <div x-span=2>2: 140</div>
+    <div x-span=2>2: 140</div>
+    <div x-span=2>2: 140</div>
+    <div x-span=2>2: 140</div>
+  </div>
+  <div class="row">
+    <div x-span=3>3: 220</div>
+    <div x-span=3>3: 220</div>
+    <div x-span=3>3: 220</div>
+    <div x-span=3>3: 220</div>
+  </div>
+  <div class="row">
+    <div x-span=4>4: 300</div>
+    <div x-span=4>4: 300</div>
+    <div x-span=4>4: 300</div>
+  </div>
+  <div class="row">
+    <div x-span=5>5: 380</div>
+    <div x-span=7>7: 540</div>
+  </div>
+  <div class="row">
+    <div x-span=6>6: 460</div>
+    <div x-span=6>6: 460</div>
+  </div>
+  <div class="row">
+    <div x-span=7>7: 540</div>
+    <div x-span=5>5: 380</div>
+  </div>
+  <div class="row">
+    <div x-span=8>8: 620</div>
+    <div x-span=4>4: 300</div>
+  </div>
+  <div class="row">
+    <div x-span=9>9: 700</div>
+    <div x-span=3>3: 220</div>
+  </div>
+  <div class="row">
+    <div x-span=10>10: 780</div>
+    <div x-span=2>2: 140</div>
+  </div>
+  <div class="row">
+    <div x-span=11>11: 860</div>
+    <div x-span=1>1: 60</div>
+  </div>
+  <div class="row">
+    <div x-span=12>12: 960</div>
+  </div>
+</div>

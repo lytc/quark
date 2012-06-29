@@ -1,0 +1,245 @@
+<% content_for :head do %>
+  <title>UI5- buttons</title>
+<% end %>
+
+<div class="page-header">
+  <h1>Buttons</h1>
+</div>
+
+<h3>Button tags</h3>
+<table class="table" x-bordered="bordered" width="300">
+  <thead>
+    <tr>
+      <th><code>&lt;a&gt;</code></th>
+      <th><code>&lt;input&gt;</code></th>
+      <th><code>&lt;span&gt;</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="btn" href="#">Button</a></td>
+      <td><input class="btn" type="button" value="Button"></td>
+      <td><span class="btn">Button</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+
+<div class="grid">
+  <div class="row">
+    <div x-span=3>
+      <h3>Button color</h3>
+      <table class="table" x-bordered="col" width="100%">
+        <thead>
+          <tr>
+            <th>Button</th>
+            <th><code>x-color=""</code></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="btn">Default</button></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="blue">Blue</button></td>
+            <td><code>blue</code></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="green">Green</button></td>
+            <td><code>green</code></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="orange">Orange</button></td>
+            <td><code>orange</code></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="red">Red</button></td>
+            <td><code>red</code></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="grey">Grey</button></td>
+            <td><code>grey</code></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="black">Black</button></td>
+            <td><code>black</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div x-span=3>
+      <h3>Button size</h3>
+      <table class="table" x-bordered="col" width="100%">
+        <thead>
+          <tr>
+            <th>Button</th>
+            <th><code>x-size=""</code></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="btn">Default</button></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-size="mini">Mini</button></td>
+            <td><code>mini</code></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-size="small">Small</button></td>
+            <td><code>small</code></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-size="medium">Medium</button></td>
+            <td><code>medium</code></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-size="large">Large</button></td>
+            <td><code>large</code></td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    <div x-span=6>
+      <h3>Button status</h3>
+      <table class="table" x-bordered="col" width="100%">
+        <thead>
+          <tr>
+            <th>Button</th>
+            <th><code>disabled="disabled"</code></th>
+            <th><code>x-pressed="pressed"</code></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="btn">Default</button></td>
+            <td><button class="btn" disabled="disabled">Default</button></td>
+            <td><button class="btn" x-pressed="pressed">Default</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="blue">Blue</button></td>
+            <td><button class="btn" x-color="blue" disabled="disabled">Blue</button></td>
+            <td><button class="btn" x-color="blue" x-pressed="pressed">Blue</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="green">Green</button></td>
+            <td><button class="btn" x-color="green" disabled="disabled">Green</button></td>
+            <td><button class="btn" x-color="green" x-pressed="pressed">Green</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="orange">Orange</button></td>
+            <td><button class="btn" x-color="orange" disabled="disabled">Orange</button></td>
+            <td><button class="btn" x-color="orange" x-pressed="pressed">Orange</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="red">Red</button></td>
+            <td><button class="btn" x-color="red" disabled="disabled">Red</button></td>
+            <td><button class="btn" x-color="red" x-pressed="pressed">Red</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="grey">Grey</button></td>
+            <td><button class="btn" x-color="grey" disabled="disabled">Grey</button></td>
+            <td><button class="btn" x-color="grey" x-pressed="pressed">Grey</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" x-color="black">Black</button></td>
+            <td><button class="btn" x-color="black" disabled="disabled">Black</button></td>
+            <td><button class="btn" x-color="black" x-pressed="pressed">Black</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="grid">
+  <div class="row">
+    <div x-span=5>
+      <h3>Button Groups</h3>
+      <table class="table" x-bordered="col" width="100%">
+        <thead>
+          <th>Button Groups</th>
+          <th><code>x-size=""</code></th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="btn-group"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-size="mini"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><code>mini</code></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-size="small"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><code>small</code></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-size="medium"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><code>medium</code></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-size="large"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><code>large</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div x-span=7>
+      <h3>Button groups status</h3>
+      <table class="table" x-bordered="col" width="100%">
+        <thead>
+          <tr>
+            <th>Button Groups</th>
+            <th><code>disabled="disabled"</code></th>
+            <th><code>x-pressed="pressed"</code></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="btn-group"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" disabled="disabled"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-pressed="pressed"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-color="blue"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="blue" disabled="disabled"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="blue" x-pressed="pressed"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-color="green"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="green" disabled="disabled"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="green" x-pressed="pressed"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-color="orange"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="orange" disabled="disabled"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="orange" x-pressed="pressed"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-color="red"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="red" disabled="disabled"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="red" x-pressed="pressed"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-color="grey"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="grey" disabled="disabled"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="grey" x-pressed="pressed"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+          </tr>
+          <tr>
+            <td><div class="btn-group" x-color="black"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="black" disabled="disabled"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+            <td><div class="btn-group" x-color="black" x-pressed="pressed"><button class="btn">Left</button><button class="btn">Middle</button><button class="btn">Right</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

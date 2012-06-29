@@ -1,0 +1,252 @@
+<% content_for :head do %>
+  <title>UI5- tables</title>
+<% end %>
+
+<div class="page-header">
+  <h1>Tables</h1>
+</div>
+
+<div class="grid">
+  <div class="row">
+    <div x-span="5">
+      <h3>Table</h3>
+      <div id="table1">
+        <table class="table" width="100%">
+          <thead>
+            <th>Head</th>
+            <th>Head</th>
+            <th>Head</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div x-span="7">
+      <h3>Markup</h3>
+      <pre class="prettyprint linenums lang-html" from="#table1"></pre>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<h3>Table bordered</h3>
+<code>x-bordered="table"</code>
+<div class="grid">
+  <div class="row">
+    <div x-span="5">
+      <h3>Table</h3>
+      <div id="table2">
+        <table class="table" x-bordered="table" width="100%">
+          <thead>
+            <th>Head</th>
+            <th>Head</th>
+            <th>Head</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div x-span="7">
+      <h3>Markup</h3>
+      <pre class="prettyprint linenums lang-html" from="#table2"></pre>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+
+<h3>Table column bordered</h3>
+<code>x-bordered="col"</code>
+<div class="grid">
+  <div class="row">
+    <div x-span="5">
+      <h3>Table</h3>
+      <div id="table3">
+        <table class="table" x-bordered="col" width="100%">
+          <thead>
+            <th>Head</th>
+            <th>Head</th>
+            <th>Head</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div x-span="7">
+      <h3>Markup</h3>
+      <pre class="prettyprint linenums lang-html" from="#table3"></pre>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<h3>Table row bordered</h3>
+<code>x-bordered="row"</code>
+<div class="grid">
+  <div class="row">
+    <div x-span="5">
+      <h3>Table</h3>
+      <div id="table4">
+        <table class="table" x-bordered="row" width="100%">
+          <thead>
+            <th>Head</th>
+            <th>Head</th>
+            <th>Head</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div x-span="7">
+      <h3>Markup</h3>
+      <pre class="prettyprint linenums lang-html" from="#table4"></pre>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<h3>Table striped rows</h3>
+<code>x-striped="striped"</code>
+<div class="grid">
+  <div class="row">
+    <div x-span="5">
+      <h3>Table</h3>
+      <div id="table5">
+        <table class="table" x-striped="striped" width="100%">
+          <thead>
+            <th>Head</th>
+            <th>Head</th>
+            <th>Head</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div x-span="7">
+      <h3>Markup</h3>
+      <pre class="prettyprint linenums lang-html" from="#table5"></pre>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<h3>Combine them all</h3>
+<code>x-bordered="all" x-striped="striped"</code>
+<div class="grid">
+  <div class="row">
+    <div x-span="4">
+      <h3>Table</h3>
+      <div id="table6">
+        <table class="table" 
+          x-bordered="all" x-striped="striped" width="100%">
+          <thead>
+            <th>Head</th>
+            <th>Head</th>
+            <th>Head</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div x-span="8">
+      <h3>Markup</h3>
+      <pre class="prettyprint linenums lang-html" from="#table6"></pre>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <%= stylesheet_link_tag "ui5.css?" + Time.now.to_i.to_s %>
+    <%= stylesheet_link_tag "site.css" %>
+    
+    <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' %>
+    
+    <%= stylesheet_link_tag "google-code-prettify/prettify.css" %>
+    <%= javascript_include_tag 'google-code-prettify/prettify' %>
+    
+    <%= yield_content :head %>
+    
+    <script>
+      $(function() {
+        $('pre[from]').each(function() {
+          var that = $(this)
+              ,from = that.attr('from')
+              ,html = $(from).html();
+
+          that.html($('<div>').text(html).html());
+        });
+      });
+    </script>
+  </head>
+  
+  <body onload="prettyPrint()">
+    <div class="container fixed-top expanded bg-black" style="z-index: 9999;">
+      <div class="container-960 center">
+        <ul class="nav">
+          <li><a href="/index.html">Overview</a></li>
+          <li><a href="/typography.html">Typography</a></li>
+          <li><a href="/buttons.html">Buttons</a></li>
+          <li><a href="/notifications.html">Notifications</a></li>
+          <li><a href="/progresses.html">Progresses</a></li>
+          <li><a href="/loadings.html">Loadings</a></li>
+          <li><a href="/forms.html">Forms</a></li>
+          <li><a href="/tables.html">Tables</a></li>
+          <li><a href="/grids.html">Grids</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="container-960 center">
+      <%= yield %>
+    </div>
+  </body>
+</html>

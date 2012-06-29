@@ -1,0 +1,11 @@
+.grid {
+	width: 960px;
+	
+	> .row {
+		@include clearfix();
+		> * {
+			display: block;
+			float: left;
+		}
+	}
+}

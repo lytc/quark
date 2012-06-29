@@ -1,0 +1,42 @@
+.table {
+	> thead > tr > th, > tbody > tr > td {
+		padding: $base-padding;
+		line-height: $base-line-height;
+		text-align: left;
+		border-style: $base-border-style;
+		border-color: $base-border-color;
+		border-width: 0;
+	}
+	
+	> tbody > tr:last-child > td {
+		border-bottom: 0;
+	};
+	
+	&[x-bordered~=table], &[x-bordered=all] {
+		border-collapse: separate;
+		border: $base-border-width $base-border-style $base-border-color;
+		border-radius: $base-border-radius;
+	}
+	
+	&[x-bordered~=col], &[x-bordered=all] {
+		> thead > tr > th, tbody > tr > td {
+			border-right-width: $base-border-width;
+			
+			&:last-child {
+				border-right: 0;
+			};
+		}
+	}
+	
+	&[x-bordered~=row], &[x-bordered=all] {
+		> thead > tr > th, tbody > tr > td {
+			border-bottom-width: 1px;
+		}
+	}
+	
+	&[x-striped] {
+		> tbody > tr:nth-child(2n - 1) {
+			background-color: rgba(#cccccc, .2);
+		};
+	}
+}

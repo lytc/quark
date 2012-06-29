@@ -1,0 +1,51 @@
+.loading {
+	width: 28px;
+	height: 28px;
+	position: relative;
+	
+	> * {
+		width: 12%;
+		height: 26%;
+    position: absolute;
+    background: #000000;
+    top: 37%;
+    left: 44.5%;
+    border-radius: 50px;
+    box-shadow: 0 0 3px rgba(#000, 0.2);
+    @include animation("loading-spinner-fade 1s linear infinite");
+	}
+	
+	@for $i from 1 through 12 {
+		> *:nth-child(#{$i}) {
+			@include transform("rotate(#{$i * 30}deg) translate(0, -142%)");
+			@include animation-delay(0.08333333333333333 * $i);
+			opacity: 0;
+		};
+	}
+	
+	@each $size-hash in $base-sizes-list {
+		$name: nth($size-hash, 1);
+		$size: nth($size-hash, 2);
+		
+		&[x-size=#{$name}] {
+			width: $size;
+			height: $size;
+		}
+	}
+	
+	@each $color-hash in $base-colors-list {
+		$name: nth($color-hash, 1);
+		$color: nth($color-hash, 2);
+		
+		&[x-color=#{$name}] {
+			> * {
+				background-color: $color;
+			}
+		}
+	}
+}
+
+@include keyframes(loading-spinner-fade) {
+	from {opacity: .25;}
+	to {opacity: 1;}
+}

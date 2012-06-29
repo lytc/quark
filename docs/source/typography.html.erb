@@ -1,0 +1,231 @@
+<% content_for :head do %>
+  <title>UI5- buttons</title>
+<% end %>
+
+<div class="page-header">
+  <h1>Typography</h1>
+</div>
+
+<div class="grid">
+  <div class="row">
+    <div x-span=4>
+      <section>
+        <h2>Headings</h2>
+        <h1>h1. Heading 1</h1>
+        <h2>h2. Heading 1</h2>
+        <h3>h3. Heading 1</h3>
+        <h4>h4. Heading 1</h4>
+        <h5>h5. Heading 1</h5>
+        <h6>h6. Heading 1</h6>
+      </section>
+    </div>
+    <div x-span=4>
+      <section>
+        <h2>Paragraphs</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis suscipit turpis, eget viverra tellus varius porta. Nulla ullamcorper turpis non mi rhoncus ut lobortis libero posuere. Duis commodo neque tristique enim mattis non dictum enim consectetur. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis suscipit turpis, eget viverra tellus varius porta. Nulla ullamcorper turpis non mi rhoncus ut lobortis libero posuere. Duis commodo neque tristique enim mattis non dictum enim consectetur. </p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>Lists</h2>
+  <div class="grid">
+    <div class="row">
+      <div x-span=4>
+        <section>
+          <h3>Unordered</h3>
+          <code>&lt;ul&gt;</code>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ol>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+        </section>
+      </div>
+      <div x-span=4>
+        <section>
+          <h3>Unstyled</h3>
+          <code>&lt;ul x-unstyled="unstyled"&gt;</code>
+          <ul x-unstyled="unstyled">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ol>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+        </section>
+      </div>
+      <div x-span=4>
+        <section>
+          <h3>Ordered</h3>
+          <code>&lt;ol&gt;</code>
+          <ol>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ol>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ol>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Colors and Fonts</h2>
+  <section>
+    <h3>Fonts</h3>
+      <p>Define in variable.scss</p>
+      <code>$base-font-family: Helvetica, Arial, Verdana, sans-serif;</code>
+      <br>
+      <br>
+      <code>$base-font-size: 13px;</code>
+  </section>
+  <section>
+    <h3>Colors</h3>
+    <div class="grid">
+      <div class="row">
+        <div x-span=6>
+          <h4>Text colors</h4>
+          <table class="table" width="100%">
+            <thead>
+              <tr>
+                <th>Text</th>
+                <th><code>class="color-*"</code> or <code>x-color="*"</code></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="color-blue">Lorem ipsum dolor sit amet</span></td>
+                <td><code>blue</code></td>
+              </tr>
+              <tr>
+                <td><span class="color-green">Lorem ipsum dolor sit amet</span></td>
+                <td><code>green</code></td>
+              </tr>
+              <tr>
+                <td><span class="color-orange">Lorem ipsum dolor sit amet</span></td>
+                <td><code>orange</code></td>
+              </tr>
+              <tr>
+                <td><span x-color="red">Lorem ipsum dolor sit amet</span></td>
+                <td><code>red</code></td>
+              </tr>
+              <tr>
+                <td><span x-color="grey">Lorem ipsum dolor sit amet</span></td>
+                <td><code>grey</code></td>
+              </tr>
+              <tr>
+                <td><span x-color="black">Lorem ipsum dolor sit amet</span></td>
+                <td><code>black</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div x-span=6>
+          <h4>Background Colors</h4>
+          <table class="table" width="100%">
+            <thead>
+              <tr>
+                <th>Background</th>
+                <th><code>class="bg-*"</code> or <code>x-bg="*"</code></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="bg-blue">Lorem ipsum dolor sit amet</span></td>
+                <td><code>blue</code></td>
+              </tr>
+              <tr>
+                <td><span class="bg-green">Lorem ipsum dolor sit amet</span></td>
+                <td><code>green</code></td>
+              </tr>
+              <tr>
+                <td><span class="bg-orange">Lorem ipsum dolor sit amet</span></td>
+                <td><code>orange</code></td>
+              </tr>
+              <tr>
+                <td><span x-bg="red">Lorem ipsum dolor sit amet</span></td>
+                <td><code>bg-red</code></td>
+              </tr>
+              <tr>
+                <td><span x-bg="grey">Lorem ipsum dolor sit amet</span></td>
+                <td><code>bg-grey</code></td>
+              </tr>
+              <tr>
+                <td><span x-bg="black">Lorem ipsum dolor sit amet</span></td>
+                <td><code>bg-black</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
