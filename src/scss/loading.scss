@@ -27,7 +27,7 @@
 		$name: nth($size-hash, 1);
 		$size: nth($size-hash, 2);
 		
-		&[x-size=#{$name}] {
+		&[size=#{$name}] {
 			width: $size;
 			height: $size;
 		}
@@ -37,7 +37,7 @@
 		$name: nth($color-hash, 1);
 		$color: nth($color-hash, 2);
 		
-		&[x-color=#{$name}] {
+		&[color=#{$name}] {
 			> * {
 				background-color: $color;
 			}

@@ -6,98 +6,106 @@
   <h1>Progress Bars</h1>
 </div>
 
+<code>&lt;div class="progress-bar" color="*"&gt;</code>
+
+<br>
+<br>
+
+<section>
+  <div class="grid">
+    <div class="row">
+      <div span=4>
+        <div id="progress1">
+          <div class="progress-bar" color="blue" striped="animate">
+            <div class="bar" style="width: 60%"></div>
+          </div>
+        </div>
+      </div>
+      <div span=8>
+        <pre class="prettyprint lang-html" from="#progress1"></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <h2>Colors</h2>
-  <table class="table" x-bordered="col" width="100%">
+  <table class="table" bordered="col" width="100%">
     <thead>
       <tr>
         <th width="300">Progress</th>
-        <th>Markup</th>
+        <th><code>color="*"</code></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>
-          <div id="progress1">
             <div class="progress-bar">
               <div class="bar" style="width: 20%"></div>
             </div>
-          </div>
         </td>
         <td>
-            <pre class="prettyprint lang-html" from="#progress1"></pre>
+            
         </td>
       </tr>
       <tr>
         <td>
-          <div id="progress2">
-            <div class="progress-bar" x-color="blue">
+            <div class="progress-bar" color="blue">
               <div class="bar" style="width: 30%"></div>
             </div>
-          </div>
         </td>
         <td>
-            <pre class="prettyprint lang-html" from="#progress2"></pre>
+            <code>blue</code>
         </td>
       </tr>
       <tr>
         <td>
-          <div id="progress3">
-            <div class="progress-bar" x-color="green">
+            <div class="progress-bar" color="green">
               <div class="bar" style="width: 40%"></div>
             </div>
-          </div>
         </td>
         <td>
-            <pre class="prettyprint lang-html" from="#progress3"></pre>
+          <code>green</code>
         </td>
       </tr>
       <tr>
         <td>
-          <div id="progress4">
-            <div class="progress-bar" x-color="orange">
+            <div class="progress-bar" color="orange">
               <div class="bar" style="width: 50%"></div>
             </div>
-          </div>
         </td>
         <td>
-            <pre class="prettyprint lang-html" from="#progress4"></pre>
+          <code>orange</code>
         </td>
       </tr>
       <tr>
         <td>
-          <div id="progress5">
-            <div class="progress-bar" x-color="red">
+            <div class="progress-bar" color="red">
               <div class="bar" style="width: 60%"></div>
             </div>
-          </div>
         </td>
         <td>
-            <pre class="prettyprint lang-html" from="#progress5"></pre>
+          <code>red</code>
         </td>
       </tr>
       <tr>
         <td>
-          <div id="progress6">
-            <div class="progress-bar" x-color="grey">
+            <div class="progress-bar" color="grey">
               <div class="bar" style="width: 70%"></div>
             </div>
-          </div>
         </td>
         <td>
-            <pre class="prettyprint lang-html" from="#progress6"></pre>
+          <code>grey</code>
         </td>
       </tr>
       <tr>
         <td>
-          <div id="progress7">
-            <div class="progress-bar" x-color="black">
+            <div class="progress-bar" color="black">
               <div class="bar" style="width: 80%"></div>
             </div>
-          </div>
         </td>
         <td>
-            <pre class="prettyprint lang-html" from="#progress7"></pre>
+          <code>black</code>
         </td>
       </tr>
     </tbody>
@@ -109,197 +117,36 @@
 
 <section>
   <h2>Striped</h2>
-  <table class="table" x-bordered="col" width="100%">
+  <table class="table" bordered="col" width="100%">
     <thead>
       <tr>
         <th width="300">Progress</th>
-        <th>Markup</th>
+        <th><code>striped="*"</code></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>
-          <div id="progress8">
-            <div class="progress-bar" x-striped="striped">
-              <div class="bar" style="width: 20%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress8"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
           <div id="progress9">
-            <div class="progress-bar" x-color="blue" x-striped="striped">
-              <div class="bar" style="width: 30%"></div>
+            <div class="progress-bar" color="blue" striped="striped">
+              <div class="bar" style="width: 50%"></div>
             </div>
           </div>
         </td>
         <td>
-            <pre class="prettyprint lang-html" from="#progress9"></pre>
+          <code>striped</code>
         </td>
       </tr>
       <tr>
         <td>
           <div id="progress10">
-            <div class="progress-bar" x-color="green" x-striped="striped">
-              <div class="bar" style="width: 40%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress10"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress11">
-            <div class="progress-bar" x-color="orange" x-striped="striped">
-              <div class="bar" style="width: 50%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress11"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress12">
-            <div class="progress-bar" x-color="red" x-striped="striped">
+            <div class="progress-bar" color="green" striped="animate">
               <div class="bar" style="width: 60%"></div>
             </div>
           </div>
         </td>
         <td>
-            <pre class="prettyprint lang-html" from="#progress12"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress13">
-            <div class="progress-bar" x-color="grey" x-striped="striped">
-              <div class="bar" style="width: 70%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress13"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress14">
-            <div class="progress-bar" x-color="black" x-striped="striped">
-              <div class="bar" style="width: 80%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress14"></pre>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-<br>
-<br>
-
-<section>
-  <h2>Striped Animate</h2>
-  <table class="table" x-bordered="col" width="100%">
-    <thead>
-      <tr>
-        <th width="300">Progress</th>
-        <th>Markup</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <div id="progress15">
-            <div class="progress-bar" x-striped="animate">
-              <div class="bar" style="width: 20%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress15"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress16">
-            <div class="progress-bar" x-color="blue" x-striped="animate">
-              <div class="bar" style="width: 30%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress16"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress17">
-            <div class="progress-bar" x-color="green" x-striped="animate">
-              <div class="bar" style="width: 40%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress17"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress18">
-            <div class="progress-bar" x-color="orange" x-striped="animate">
-              <div class="bar" style="width: 50%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress18"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress19">
-            <div class="progress-bar" x-color="red" x-striped="animate">
-              <div class="bar" style="width: 60%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress19"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress20">
-            <div class="progress-bar" x-color="grey" x-striped="animate">
-              <div class="bar" style="width: 70%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress20"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress21">
-            <div class="progress-bar" x-color="black" x-striped="animate">
-              <div class="bar" style="width: 80%"></div>
-            </div>
-          </div>
-        </td>
-        <td>
-            <pre class="prettyprint lang-html" from="#progress21"></pre>
+          <code>animate</code>
         </td>
       </tr>
     </tbody>
@@ -311,76 +158,37 @@
 
 <section>
   <h2>With Text</h2>
-  <table class="table" width="100%" x-bordered="col">
-    <thead>
-      <tr>
-        <th width="300">Progress</th>
-        <th>Markup</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <div id="progress22">
-            <div class="progress-bar" x-color="blue" x-striped="animate" style="width: 250px">
-              <span class="text">30%</span>
-              <div class="bar" style="width: 30%">
-                <span class="text" style="width: 250px">30%</span>
-              </div>
+  <div class="grid">
+    <div class="row">
+      <div span=4>
+        <div id="progress22">
+          <div class="progress-bar" color="blue" striped="animate" style="width: 250px">
+            <span class="text">30%</span>
+            <div class="bar" style="width: 30%">
+              <span class="text" style="width: 250px">30%</span>
             </div>
           </div>
-        </td>
-        <td>
-          <pre class="prettyprint lang-html" from="#progress22"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress23">
-            <div class="progress-bar" x-color="blue" x-striped="animate" style="width: 250px">
-              <span class="text">50%</span>
-              <div class="bar" style="width: 50%">
-                <span class="text" style="width: 250px">50%</span>
-              </div>
-            </div>
+        </div>
+        <br>
+        <div class="progress-bar" color="blue" striped="animate" style="width: 250px">
+          <span class="text">50%</span>
+          <div class="bar" style="width: 50%">
+            <span class="text" style="width: 250px">50%</span>
           </div>
-        </td>
-        <td>
-          <pre class="prettyprint lang-html" from="#progress23"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress24">
-            <div class="progress-bar" x-color="blue" x-striped="animate" style="width: 250px">
-              <span class="text">70%</span>
-              <div class="bar" style="width: 70%">
-                <span class="text" style="width: 250px">70%</span>
-              </div>
-            </div>
+        </div>
+        <br>
+        <div class="progress-bar" color="blue" striped="animate" style="width: 250px">
+          <span class="text">70%</span>
+          <div class="bar" style="width: 70%">
+            <span class="text" style="width: 250px">70%</span>
           </div>
-        </td>
-        <td>
-          <pre class="prettyprint lang-html" from="#progress24"></pre>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="progress25">
-            <div class="progress-bar" x-color="blue" x-striped="animate" style="width: 250px">
-              <span class="text">100%</span>
-              <div class="bar" style="width: 100%">
-                <span class="text" style="width: 250px">100%</span>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <pre class="prettyprint lang-html" from="#progress25"></pre>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        </div>
+      </div>
+      <div span=7>
+        <pre class="prettyprint lang-html" from="#progress22"></pre>
+      </div>
+    </div>
+  </div> 
 </section>
 
 <br>
@@ -388,58 +196,50 @@
 
 <section>
   <h2>Size</h2>
-  <table class="table" width="100%" x-bordered="col">
+  <table class="table" width="100%" bordered="col">
     <thead>
       <th width="300">Progress</th>
-      <th>Markup</th>
+      <th><code>size="*"</code></th>
     </thead>
     <tbody>
       <tr>
         <td>
-          <div id="progress26">
-            <div class="progress-bar" x-color="blue" x-size="mini">
+            <div class="progress-bar" color="blue" striped="striped" size="mini">
               <div class="bar" style="width: 60%"></div>
             </div>
-          </div>
         </td>
         <td>
-          <pre class="prettyprint lang-html" from="#progress26"></pre>
+          <code>mini</code>
         </td>
       </tr>
       <tr>
         <td>
-          <div id="progress27">
-            <div class="progress-bar" x-color="blue" x-size="small">
+            <div class="progress-bar" color="blue" striped="striped" size="small">
               <div class="bar" style="width: 60%"></div>
             </div>
-          </div>
         </td>
         <td>
-          <pre class="prettyprint lang-html" from="#progress27"></pre>
+          <code>small</code>
         </td>
       </tr>
       <tr>
         <td>
-          <div id="progress28">
-            <div class="progress-bar" x-color="blue" x-size="medium">
+            <div class="progress-bar" color="blue" striped="striped" size="medium">
               <div class="bar" style="width: 60%"></div>
             </div>
-          </div>
         </td>
         <td>
-          <pre class="prettyprint lang-html" from="#progress28"></pre>
+          <code>medium</code>
         </td>
       </tr>
       <tr>
         <td>
-          <div id="progress29">
-            <div class="progress-bar" x-color="blue" x-size="large">
+            <div class="progress-bar" color="blue" striped="striped" size="large">
               <div class="bar" style="width: 60%"></div>
             </div>
-          </div>
         </td>
         <td>
-          <pre class="prettyprint lang-html" from="#progress29"></pre>
+          <code>large</code>
         </td>
       </tr>
     </tbody>

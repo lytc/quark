@@ -420,58 +420,58 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.color-blue, [x-color=blue] {
+.color-blue, [color=blue] {
   color: #149bdf; }
 
-.bg-blue, [x-bg=blue] {
+.bg-blue, [bg=blue] {
   background-color: #149bdf; }
 
-.border-color-blue, [x-border-color=blue] {
+.border-color-blue, [border-color=blue] {
   border-color: #149bdf; }
 
-.color-green, [x-color=green] {
+.color-green, [color=green] {
   color: #51a351; }
 
-.bg-green, [x-bg=green] {
+.bg-green, [bg=green] {
   background-color: #51a351; }
 
-.border-color-green, [x-border-color=green] {
+.border-color-green, [border-color=green] {
   border-color: #51a351; }
 
-.color-orange, [x-color=orange] {
+.color-orange, [color=orange] {
   color: #f89406; }
 
-.bg-orange, [x-bg=orange] {
+.bg-orange, [bg=orange] {
   background-color: #f89406; }
 
-.border-color-orange, [x-border-color=orange] {
+.border-color-orange, [border-color=orange] {
   border-color: #f89406; }
 
-.color-red, [x-color=red] {
+.color-red, [color=red] {
   color: #bd362f; }
 
-.bg-red, [x-bg=red] {
+.bg-red, [bg=red] {
   background-color: #bd362f; }
 
-.border-color-red, [x-border-color=red] {
+.border-color-red, [border-color=red] {
   border-color: #bd362f; }
 
-.color-grey, [x-color=grey] {
+.color-grey, [color=grey] {
   color: gray; }
 
-.bg-grey, [x-bg=grey] {
+.bg-grey, [bg=grey] {
   background-color: gray; }
 
-.border-color-grey, [x-border-color=grey] {
+.border-color-grey, [border-color=grey] {
   border-color: gray; }
 
-.color-black, [x-color=black] {
+.color-black, [color=black] {
   color: #333333; }
 
-.bg-black, [x-bg=black] {
+.bg-black, [bg=black] {
   background-color: #333333; }
 
-.border-color-black, [x-border-color=black] {
+.border-color-black, [border-color=black] {
   border-color: #333333; }
 
 body {
@@ -498,13 +498,13 @@ label, input, button, select, textarea {
   .clearfix:after {
     clear: both; }
 
-.border, .border-with-radius, .notify, .notify[x-color=blue], .notify[x-color=green], .notify[x-color=orange], .notify[x-color=red], .notify[x-color=grey], .notify[x-color=black], code, pre {
+.border, .border-with-radius, .notify, .notify[color=blue], .notify[color=green], .notify[color=orange], .notify[color=red], .notify[color=grey], .notify[color=black], code, pre {
   border: 1px solid #cccccc; }
 
-.border-radius, .border-with-radius, .notify, .notify[x-color=blue], .notify[x-color=green], .notify[x-color=orange], .notify[x-color=red], .notify[x-color=grey], .notify[x-color=black] {
+.border-radius, .border-with-radius, .notify, .notify[color=blue], .notify[color=green], .notify[color=orange], .notify[color=red], .notify[color=grey], .notify[color=black] {
   border-radius: 4px; }
 
-ul[x-unstyled] {
+ul[unstyled] {
   padding-left: 0;
   list-style: none; }
 
@@ -581,17 +581,17 @@ pre code {
   border-width: 0; }
 .table > tbody > tr:last-child > td {
   border-bottom: 0; }
-.table[x-bordered~=table], .table[x-bordered=all] {
+.table[bordered~=table], .table[bordered=all] {
   border-collapse: separate;
   border: 1px solid #cccccc;
   border-radius: 4px; }
-.table[x-bordered~=col] > thead > tr > th, .table[x-bordered~=col] tbody > tr > td, .table[x-bordered=all] > thead > tr > th, .table[x-bordered=all] tbody > tr > td {
+.table[bordered~=col] > thead > tr > th, .table[bordered~=col] tbody > tr > td, .table[bordered=all] > thead > tr > th, .table[bordered=all] tbody > tr > td {
   border-right-width: 1px; }
-  .table[x-bordered~=col] > thead > tr > th:last-child, .table[x-bordered~=col] tbody > tr > td:last-child, .table[x-bordered=all] > thead > tr > th:last-child, .table[x-bordered=all] tbody > tr > td:last-child {
+  .table[bordered~=col] > thead > tr > th:last-child, .table[bordered~=col] tbody > tr > td:last-child, .table[bordered=all] > thead > tr > th:last-child, .table[bordered=all] tbody > tr > td:last-child {
     border-right: 0; }
-.table[x-bordered~=row] > thead > tr > th, .table[x-bordered~=row] tbody > tr > td, .table[x-bordered=all] > thead > tr > th, .table[x-bordered=all] tbody > tr > td {
+.table[bordered~=row] > thead > tr > th, .table[bordered~=row] tbody > tr > td, .table[bordered=all] > thead > tr > th, .table[bordered=all] tbody > tr > td {
   border-bottom-width: 1px; }
-.table[x-striped] > tbody > tr:nth-child(2n - 1) {
+.table[striped] > tbody > tr:nth-child(2n-1) {
   background-color: rgba(204, 204, 204, 0.2); }
 
 .grid {
@@ -610,35 +610,36 @@ pre code {
 .grid[col="12"] > .row > *, .grid:not([col]) > .row > * {
   margin-left: 10px;
   margin-right: 10px; }
-.grid[col="12"] > .row > *[x-span="1"], .grid:not([col]) > .row > *[x-span="1"] {
+.grid[col="12"] > .row > *[span="1"], .grid:not([col]) > .row > *[span="1"] {
   width: 60px; }
-.grid[col="12"] > .row > *[x-span="2"], .grid:not([col]) > .row > *[x-span="2"] {
+.grid[col="12"] > .row > *[span="2"], .grid:not([col]) > .row > *[span="2"] {
   width: 140px; }
-.grid[col="12"] > .row > *[x-span="3"], .grid:not([col]) > .row > *[x-span="3"] {
+.grid[col="12"] > .row > *[span="3"], .grid:not([col]) > .row > *[span="3"] {
   width: 220px; }
-.grid[col="12"] > .row > *[x-span="4"], .grid:not([col]) > .row > *[x-span="4"] {
+.grid[col="12"] > .row > *[span="4"], .grid:not([col]) > .row > *[span="4"] {
   width: 300px; }
-.grid[col="12"] > .row > *[x-span="5"], .grid:not([col]) > .row > *[x-span="5"] {
+.grid[col="12"] > .row > *[span="5"], .grid:not([col]) > .row > *[span="5"] {
   width: 380px; }
-.grid[col="12"] > .row > *[x-span="6"], .grid:not([col]) > .row > *[x-span="6"] {
+.grid[col="12"] > .row > *[span="6"], .grid:not([col]) > .row > *[span="6"] {
   width: 460px; }
-.grid[col="12"] > .row > *[x-span="7"], .grid:not([col]) > .row > *[x-span="7"] {
+.grid[col="12"] > .row > *[span="7"], .grid:not([col]) > .row > *[span="7"] {
   width: 540px; }
-.grid[col="12"] > .row > *[x-span="8"], .grid:not([col]) > .row > *[x-span="8"] {
+.grid[col="12"] > .row > *[span="8"], .grid:not([col]) > .row > *[span="8"] {
   width: 620px; }
-.grid[col="12"] > .row > *[x-span="9"], .grid:not([col]) > .row > *[x-span="9"] {
+.grid[col="12"] > .row > *[span="9"], .grid:not([col]) > .row > *[span="9"] {
   width: 700px; }
-.grid[col="12"] > .row > *[x-span="10"], .grid:not([col]) > .row > *[x-span="10"] {
+.grid[col="12"] > .row > *[span="10"], .grid:not([col]) > .row > *[span="10"] {
   width: 780px; }
-.grid[col="12"] > .row > *[x-span="11"], .grid:not([col]) > .row > *[x-span="11"] {
+.grid[col="12"] > .row > *[span="11"], .grid:not([col]) > .row > *[span="11"] {
   width: 860px; }
-.grid[col="12"] > .row > *[x-span="12"], .grid:not([col]) > .row > *[x-span="12"] {
+.grid[col="12"] > .row > *[span="12"], .grid:not([col]) > .row > *[span="12"] {
   width: 940px; }
 
 .btn {
   font-size: 13px;
   color: #222222;
   height: 28px;
+  line-height: 28px;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   border-radius: 4px;
@@ -667,106 +668,109 @@ pre code {
 a.btn {
   text-decoration: none; }
 
-.btn-group[x-size="mini"] > .btn,
-.btn[x-size="mini"] {
+.btn-group[size="mini"] > .btn,
+.btn[size="mini"] {
   height: 20px;
+  line-height: 20px;
   font-size: 11px;
   padding: 0 7px; }
 
-.btn-group[x-size="medium"] > .btn,
-.btn[x-size="medium"] {
+.btn-group[size="medium"] > .btn,
+.btn[size="medium"] {
   height: 40px;
+  line-height: 40px;
   font-size: 17.667px;
   padding: 0 14px; }
 
-.btn-group[x-size="large"] > .btn,
-.btn[x-size="large"] {
+.btn-group[size="large"] > .btn,
+.btn[size="large"] {
   height: 52px;
+  line-height: 52px;
   font-size: 21.667px;
   padding: 0 18px; }
 
-.btn-group[x-color] > .btn, .btn[x-color] {
+.btn-group[color] > .btn, .btn[color] {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
-.btn-group[x-color="blue"] > .btn, .btn[x-color="blue"] {
+.btn-group[color="blue"] > .btn, .btn[color="blue"] {
   background-color: #149bdf;
   background-image: linear-gradient(top, #68c3f1, #149bdf);
   background-image: -webkit-linear-gradient(top, #68c3f1, #149bdf);
   background-image: -moz-linear-gradient(top, #68c3f1, #149bdf);
   background-image: -o-linear-gradient(top, #68c3f1, #149bdf);
   background-image: -ms-linear-gradient(top, #68c3f1, #149bdf); }
-  .btn-group[x-color="blue"] > .btn:hover, .btn[x-color="blue"]:hover {
+  .btn-group[color="blue"] > .btn:hover, .btn[color="blue"]:hover {
     background-image: linear-gradient(top, #149bdf, #68c3f1);
     background-image: -webkit-linear-gradient(top, #149bdf, #68c3f1);
     background-image: -moz-linear-gradient(top, #149bdf, #68c3f1);
     background-image: -o-linear-gradient(top, #149bdf, #68c3f1);
     background-image: -ms-linear-gradient(top, #149bdf, #68c3f1); }
 
-.btn-group[x-color="green"] > .btn, .btn[x-color="green"] {
+.btn-group[color="green"] > .btn, .btn[color="green"] {
   background-color: #51a351;
   background-image: linear-gradient(top, #91c991, #51a351);
   background-image: -webkit-linear-gradient(top, #91c991, #51a351);
   background-image: -moz-linear-gradient(top, #91c991, #51a351);
   background-image: -o-linear-gradient(top, #91c991, #51a351);
   background-image: -ms-linear-gradient(top, #91c991, #51a351); }
-  .btn-group[x-color="green"] > .btn:hover, .btn[x-color="green"]:hover {
+  .btn-group[color="green"] > .btn:hover, .btn[color="green"]:hover {
     background-image: linear-gradient(top, #51a351, #91c991);
     background-image: -webkit-linear-gradient(top, #51a351, #91c991);
     background-image: -moz-linear-gradient(top, #51a351, #91c991);
     background-image: -o-linear-gradient(top, #51a351, #91c991);
     background-image: -ms-linear-gradient(top, #51a351, #91c991); }
 
-.btn-group[x-color="orange"] > .btn, .btn[x-color="orange"] {
+.btn-group[color="orange"] > .btn, .btn[color="orange"] {
   background-color: #f89406;
   background-image: linear-gradient(top, #fbbf69, #f89406);
   background-image: -webkit-linear-gradient(top, #fbbf69, #f89406);
   background-image: -moz-linear-gradient(top, #fbbf69, #f89406);
   background-image: -o-linear-gradient(top, #fbbf69, #f89406);
   background-image: -ms-linear-gradient(top, #fbbf69, #f89406); }
-  .btn-group[x-color="orange"] > .btn:hover, .btn[x-color="orange"]:hover {
+  .btn-group[color="orange"] > .btn:hover, .btn[color="orange"]:hover {
     background-image: linear-gradient(top, #f89406, #fbbf69);
     background-image: -webkit-linear-gradient(top, #f89406, #fbbf69);
     background-image: -moz-linear-gradient(top, #f89406, #fbbf69);
     background-image: -o-linear-gradient(top, #f89406, #fbbf69);
     background-image: -ms-linear-gradient(top, #f89406, #fbbf69); }
 
-.btn-group[x-color="red"] > .btn, .btn[x-color="red"] {
+.btn-group[color="red"] > .btn, .btn[color="red"] {
   background-color: #bd362f;
   background-image: linear-gradient(top, #dd7a75, #bd362f);
   background-image: -webkit-linear-gradient(top, #dd7a75, #bd362f);
   background-image: -moz-linear-gradient(top, #dd7a75, #bd362f);
   background-image: -o-linear-gradient(top, #dd7a75, #bd362f);
   background-image: -ms-linear-gradient(top, #dd7a75, #bd362f); }
-  .btn-group[x-color="red"] > .btn:hover, .btn[x-color="red"]:hover {
+  .btn-group[color="red"] > .btn:hover, .btn[color="red"]:hover {
     background-image: linear-gradient(top, #bd362f, #dd7a75);
     background-image: -webkit-linear-gradient(top, #bd362f, #dd7a75);
     background-image: -moz-linear-gradient(top, #bd362f, #dd7a75);
     background-image: -o-linear-gradient(top, #bd362f, #dd7a75);
     background-image: -ms-linear-gradient(top, #bd362f, #dd7a75); }
 
-.btn-group[x-color="grey"] > .btn, .btn[x-color="grey"] {
+.btn-group[color="grey"] > .btn, .btn[color="grey"] {
   background-color: gray;
   background-image: linear-gradient(top, #b3b3b3, gray);
   background-image: -webkit-linear-gradient(top, #b3b3b3, gray);
   background-image: -moz-linear-gradient(top, #b3b3b3, gray);
   background-image: -o-linear-gradient(top, #b3b3b3, gray);
   background-image: -ms-linear-gradient(top, #b3b3b3, gray); }
-  .btn-group[x-color="grey"] > .btn:hover, .btn[x-color="grey"]:hover {
+  .btn-group[color="grey"] > .btn:hover, .btn[color="grey"]:hover {
     background-image: linear-gradient(top, gray, #b3b3b3);
     background-image: -webkit-linear-gradient(top, gray, #b3b3b3);
     background-image: -moz-linear-gradient(top, gray, #b3b3b3);
     background-image: -o-linear-gradient(top, gray, #b3b3b3);
     background-image: -ms-linear-gradient(top, gray, #b3b3b3); }
 
-.btn-group[x-color="black"] > .btn, .btn[x-color="black"] {
+.btn-group[color="black"] > .btn, .btn[color="black"] {
   background-color: #333333;
   background-image: linear-gradient(top, #666666, #333333);
   background-image: -webkit-linear-gradient(top, #666666, #333333);
   background-image: -moz-linear-gradient(top, #666666, #333333);
   background-image: -o-linear-gradient(top, #666666, #333333);
   background-image: -ms-linear-gradient(top, #666666, #333333); }
-  .btn-group[x-color="black"] > .btn:hover, .btn[x-color="black"]:hover {
+  .btn-group[color="black"] > .btn:hover, .btn[color="black"]:hover {
     background-image: linear-gradient(top, #333333, #666666);
     background-image: -webkit-linear-gradient(top, #333333, #666666);
     background-image: -moz-linear-gradient(top, #333333, #666666);
@@ -781,16 +785,16 @@ a.btn {
   opacity: .5;
   cursor: default; }
 
-.btn-group[x-pressed] > .btn,
-.btn-group[x-pressed] > .btn:hover,
+.btn-group[pressed] > .btn,
+.btn-group[pressed] > .btn:hover,
 .btn:active,
-.btn[x-pressed],
-.btn[x-pressed]:hover {
+.btn[pressed],
+.btn[pressed]:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
   background-image: none;
   outline: 0; }
 
-.btn-group[x-pressed] > .btn {
+.btn-group[pressed] > .btn {
   border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2); }
 
 .btn-group > .btn {
@@ -817,22 +821,22 @@ a.btn {
 
 .notify {
   padding: 8px; }
-  .notify[x-color=blue] {
+  .notify[color=blue] {
     border-color: rgba(20, 155, 223, 0.2);
     background-color: rgba(20, 155, 223, 0.15); }
-  .notify[x-color=green] {
+  .notify[color=green] {
     border-color: rgba(81, 163, 81, 0.2);
     background-color: rgba(81, 163, 81, 0.15); }
-  .notify[x-color=orange] {
+  .notify[color=orange] {
     border-color: rgba(248, 148, 6, 0.2);
     background-color: rgba(248, 148, 6, 0.15); }
-  .notify[x-color=red] {
+  .notify[color=red] {
     border-color: rgba(189, 54, 47, 0.2);
     background-color: rgba(189, 54, 47, 0.15); }
-  .notify[x-color=grey] {
+  .notify[color=grey] {
     border-color: rgba(128, 128, 128, 0.2);
     background-color: rgba(128, 128, 128, 0.15); }
-  .notify[x-color=black] {
+  .notify[color=black] {
     border-color: rgba(51, 51, 51, 0.2);
     background-color: rgba(51, 51, 51, 0.15); }
   .notify > .close {
@@ -887,7 +891,7 @@ a.btn {
       text-align: center;
       display: inline-block;
       vertical-align: middle; }
-  .progress-bar[x-striped] > .bar {
+  .progress-bar[striped] > .bar {
     background-color: #E6E6E6;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -895,112 +899,112 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 40px 40px; }
-  .progress-bar[x-striped="animate"] > .bar {
+  .progress-bar[striped="animate"] > .bar {
     animation: progress-bar-striped-animate 2s linear infinite;
     -moz-animation: progress-bar-striped-animate 2s linear infinite;
     -webkit-animation: progress-bar-striped-animate 2s linear infinite;
     -o-animation: progress-bar-striped-animate 2s linear infinite;
     -ms-animation: progress-bar-striped-animate 2s linear infinite; }
-  .progress-bar[x-color=blue] > .bar {
+  .progress-bar[color=blue] > .bar {
     background-color: #149bdf;
     background-image: linear-gradient(top, #68c3f1, #149bdf);
     background-image: -webkit-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -moz-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -o-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -ms-linear-gradient(top, #68c3f1, #149bdf); }
-  .progress-bar[x-striped][x-color=blue] > .bar {
+  .progress-bar[striped][color=blue] > .bar {
     background-color: #149bdf;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px; }
-  .progress-bar[x-color=green] > .bar {
+    background-size: 60px 60px; }
+  .progress-bar[color=green] > .bar {
     background-color: #51a351;
     background-image: linear-gradient(top, #91c991, #51a351);
     background-image: -webkit-linear-gradient(top, #91c991, #51a351);
     background-image: -moz-linear-gradient(top, #91c991, #51a351);
     background-image: -o-linear-gradient(top, #91c991, #51a351);
     background-image: -ms-linear-gradient(top, #91c991, #51a351); }
-  .progress-bar[x-striped][x-color=green] > .bar {
+  .progress-bar[striped][color=green] > .bar {
     background-color: #51a351;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px; }
-  .progress-bar[x-color=orange] > .bar {
+    background-size: 60px 60px; }
+  .progress-bar[color=orange] > .bar {
     background-color: #f89406;
     background-image: linear-gradient(top, #fbbf69, #f89406);
     background-image: -webkit-linear-gradient(top, #fbbf69, #f89406);
     background-image: -moz-linear-gradient(top, #fbbf69, #f89406);
     background-image: -o-linear-gradient(top, #fbbf69, #f89406);
     background-image: -ms-linear-gradient(top, #fbbf69, #f89406); }
-  .progress-bar[x-striped][x-color=orange] > .bar {
+  .progress-bar[striped][color=orange] > .bar {
     background-color: #f89406;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px; }
-  .progress-bar[x-color=red] > .bar {
+    background-size: 60px 60px; }
+  .progress-bar[color=red] > .bar {
     background-color: #bd362f;
     background-image: linear-gradient(top, #dd7a75, #bd362f);
     background-image: -webkit-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -moz-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -o-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -ms-linear-gradient(top, #dd7a75, #bd362f); }
-  .progress-bar[x-striped][x-color=red] > .bar {
+  .progress-bar[striped][color=red] > .bar {
     background-color: #bd362f;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px; }
-  .progress-bar[x-color=grey] > .bar {
+    background-size: 60px 60px; }
+  .progress-bar[color=grey] > .bar {
     background-color: gray;
     background-image: linear-gradient(top, #b3b3b3, gray);
     background-image: -webkit-linear-gradient(top, #b3b3b3, gray);
     background-image: -moz-linear-gradient(top, #b3b3b3, gray);
     background-image: -o-linear-gradient(top, #b3b3b3, gray);
     background-image: -ms-linear-gradient(top, #b3b3b3, gray); }
-  .progress-bar[x-striped][x-color=grey] > .bar {
+  .progress-bar[striped][color=grey] > .bar {
     background-color: gray;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px; }
-  .progress-bar[x-color=black] > .bar {
+    background-size: 60px 60px; }
+  .progress-bar[color=black] > .bar {
     background-color: #333333;
     background-image: linear-gradient(top, #666666, #333333);
     background-image: -webkit-linear-gradient(top, #666666, #333333);
     background-image: -moz-linear-gradient(top, #666666, #333333);
     background-image: -o-linear-gradient(top, #666666, #333333);
     background-image: -ms-linear-gradient(top, #666666, #333333); }
-  .progress-bar[x-striped][x-color=black] > .bar {
+  .progress-bar[striped][color=black] > .bar {
     background-color: #333333;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px; }
-  .progress-bar[x-size=mini] {
+    background-size: 60px 60px; }
+  .progress-bar[size=mini] {
     height: 20px;
     font-size: 11px; }
-  .progress-bar[x-size=small] {
+  .progress-bar[size=small] {
     height: 28px;
     font-size: 13.667px; }
-  .progress-bar[x-size=medium] {
+  .progress-bar[size=medium] {
     height: 40px;
     font-size: 17.667px; }
-  .progress-bar[x-size=large] {
+  .progress-bar[size=large] {
     height: 52px;
     font-size: 21.667px; }
 
@@ -1009,35 +1013,35 @@ a.btn {
     background-position: 0 0; }
 
   to {
-    background-position: 40px 0; } }
+    background-position: 60px 0; } }
 
 @-webkit-keyframes progress-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 40px 0; } }
+    background-position: 60px 0; } }
 
 @-moz-keyframes progress-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 40px 0; } }
+    background-position: 60px 0; } }
 
 @-o-keyframes progress-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 40px 0; } }
+    background-position: 60px 0; } }
 
 @-ms-keyframes progress-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 40px 0; } }
+    background-position: 60px 0; } }
 
 .loading {
   width: 28px;
@@ -1189,29 +1193,29 @@ a.btn {
     -o-animation-delay: 1s;
     -ms-animation-delay: 1s;
     opacity: 0; }
-  .loading[x-size=mini] {
+  .loading[size=mini] {
     width: 20px;
     height: 20px; }
-  .loading[x-size=small] {
+  .loading[size=small] {
     width: 28px;
     height: 28px; }
-  .loading[x-size=medium] {
+  .loading[size=medium] {
     width: 40px;
     height: 40px; }
-  .loading[x-size=large] {
+  .loading[size=large] {
     width: 52px;
     height: 52px; }
-  .loading[x-color=blue] > * {
+  .loading[color=blue] > * {
     background-color: #149bdf; }
-  .loading[x-color=green] > * {
+  .loading[color=green] > * {
     background-color: #51a351; }
-  .loading[x-color=orange] > * {
+  .loading[color=orange] > * {
     background-color: #f89406; }
-  .loading[x-color=red] > * {
+  .loading[color=red] > * {
     background-color: #bd362f; }
-  .loading[x-color=grey] > * {
+  .loading[color=grey] > * {
     background-color: gray; }
-  .loading[x-color=black] > * {
+  .loading[color=black] > * {
     background-color: #333333; }
 
 @keyframes loading-spinner-fade {

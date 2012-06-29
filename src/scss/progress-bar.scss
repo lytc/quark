@@ -35,13 +35,13 @@
 		}
 	}
 	
-	&[x-striped] > .bar {
+	&[striped] > .bar {
 		background-color: #E6E6E6;
 		@include linear-gradient("-45deg, #{rgba(#fff, 0.15)} 25%, transparent 25%, transparent 50%, #{rgba(#fff, 0.15)} 50%, #{rgba(#fff, 0.15)} 75%, transparent 75%, transparent");
 		background-size: 40px 40px;
 	}
 	
-	&[x-striped="animate"] > .bar {
+	&[striped="animate"] > .bar {
 		@include animation(progress-bar-striped-animate 2s linear infinite);
 	}
 	
@@ -49,14 +49,14 @@
 		$name: nth($color-hash, 1);
 		$color: nth($color-hash, 2);
 		
-		&[x-color=#{$name}] > .bar {
+		&[color=#{$name}] > .bar {
 			@include base-bg-gradient($color);
 		}
 		
-		&[x-striped][x-color=#{$name}] > .bar {
+		&[striped][color=#{$name}] > .bar {
 			background-color: $color;
 			@include linear-gradient("-45deg, #{rgba(#fff, 0.15)} 25%, transparent 25%, transparent 50%, #{rgba(#fff, 0.15)} 50%, #{rgba(#fff, 0.15)} 75%, transparent 75%, transparent");
-			background-size: 40px 40px;
+			background-size: 60px 60px;
 		}
 	}
 	
@@ -64,7 +64,7 @@
 		$name: nth($size-hash, 1);
 		$size: nth($size-hash, 2);
 		
-		&[x-size=#{$name}] {
+		&[size=#{$name}] {
 			height: $size;
 			font-size: $base-font-size + ($size - 20) / 3 - 2;
 		}
@@ -76,6 +76,6 @@
     background-position: 0 0;
   }
   to {
-    background-position: 40px 0;
+    background-position: 60px 0;
   }
 }

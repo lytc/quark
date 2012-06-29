@@ -6,7 +6,7 @@
 		}
 		
 		@for $i from 1 through 12 {
-			> *[x-span="#{$i}"] {
+			> *[span="#{$i}"] {
 				width: $i * 80px - 20;
 			}
 		}

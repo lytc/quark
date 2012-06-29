@@ -2,15 +2,15 @@
 	$name: nth($color-hash, 1);
 	$color: nth($color-hash, 2);
 	
-	.color-#{$name}, [x-color=#{$name}] {
+	.color-#{$name}, [color=#{$name}] {
 		color: $color;
 	}
 	
-	.bg-#{$name}, [x-bg=#{$name}] {
+	.bg-#{$name}, [bg=#{$name}] {
 		background-color: $color;
 	}
 	
-	.border-color-#{$name}, [x-border-color=#{$name}] {
+	.border-color-#{$name}, [border-color=#{$name}] {
 		border-color: $color;
 	}
 }

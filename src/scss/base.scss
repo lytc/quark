@@ -30,7 +30,7 @@ label, input, button, select, textarea {
 	@extend .border-radius;
 }
 
-ul[x-unstyled] {
+ul[unstyled] {
 	padding-left: 0;
 	list-style: none;
 }
