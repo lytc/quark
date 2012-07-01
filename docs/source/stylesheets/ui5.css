@@ -498,10 +498,10 @@ label, input, button, select, textarea {
   .clearfix:after {
     clear: both; }
 
-.border, .border-with-radius, .notify, .notify[color=blue], .notify[color=green], .notify[color=orange], .notify[color=red], .notify[color=grey], .notify[color=black], code, pre {
+.border, .border-with-radius, .notify, .notify[color=blue], .notify[color=green], .notify[color=orange], .notify[color=red], .notify[color=grey], .notify[color=black], code, pre, .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea {
   border: 1px solid #cccccc; }
 
-.border-radius, .border-with-radius, .notify, .notify[color=blue], .notify[color=green], .notify[color=orange], .notify[color=red], .notify[color=grey], .notify[color=black] {
+.border-radius, .border-with-radius, .notify, .notify[color=blue], .notify[color=green], .notify[color=orange], .notify[color=red], .notify[color=grey], .notify[color=black], .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea {
   border-radius: 4px; }
 
 ul[unstyled] {
@@ -596,43 +596,65 @@ pre code {
 
 .grid {
   width: 960px; }
-  .grid > .row {
-    *zoom: 1; }
-    .grid > .row:before, .grid > .row:after {
-      display: table;
-      content: ""; }
-    .grid > .row:after {
-      clear: both; }
-    .grid > .row > * {
-      display: block;
-      float: left; }
 
-.grid[col="12"] > .row > *, .grid:not([col]) > .row > * {
+body .row, .grid .row {
+  *zoom: 1; }
+  body .row:before, body .row:after, .grid .row:before, .grid .row:after {
+    display: table;
+    content: ""; }
+  body .row:after, .grid .row:after {
+    clear: both; }
+  body .row > *, .grid .row > * {
+    display: block;
+    float: left; }
+
+body:not([col]) *[span="1"], body:not([col]) .form input[span="1"], .form body:not([col]) input[span="1"], body[col="12"] *[span="1"], body[col="12"] .form input[span="1"], .form body[col="12"] input[span="1"], .grid:not([col]) *[span="1"], .grid:not([col]) .form input[span="1"], .form .grid:not([col]) input[span="1"], .grid[col="12"] *[span="1"], .grid[col="12"] .form input[span="1"], .form .grid[col="12"] input[span="1"] {
   margin-left: 10px;
-  margin-right: 10px; }
-.grid[col="12"] > .row > *[span="1"], .grid:not([col]) > .row > *[span="1"] {
+  margin-right: 10px;
   width: 60px; }
-.grid[col="12"] > .row > *[span="2"], .grid:not([col]) > .row > *[span="2"] {
+body:not([col]) *[span="2"], body:not([col]) .form .field label, .form .field body:not([col]) label, body:not([col]) .form .field *.info:before, .form .field body:not([col]) *.info:before, body:not([col]) .form:not([label-align]) > *.buttons:before, body:not([col]) .form:not([label-align]) > fieldset > *.buttons:before, body:not([col]) .form input[span="2"], .form body:not([col]) input[span="2"], body[col="12"] *[span="2"], body[col="12"] .form .field label, .form .field body[col="12"] label, body[col="12"] .form .field *.info:before, .form .field body[col="12"] *.info:before, body[col="12"] .form:not([label-align]) > *.buttons:before, body[col="12"] .form:not([label-align]) > fieldset > *.buttons:before, body[col="12"] .form input[span="2"], .form body[col="12"] input[span="2"], .grid:not([col]) *[span="2"], .grid:not([col]) .form .field label, .form .field .grid:not([col]) label, .grid:not([col]) .form .field *.info:before, .form .field .grid:not([col]) *.info:before, .grid:not([col]) .form:not([label-align]) > *.buttons:before, .grid:not([col]) .form:not([label-align]) > fieldset > *.buttons:before, .grid:not([col]) .form input[span="2"], .form .grid:not([col]) input[span="2"], .grid[col="12"] *[span="2"], .grid[col="12"] .form .field label, .form .field .grid[col="12"] label, .grid[col="12"] .form .field *.info:before, .form .field .grid[col="12"] *.info:before, .grid[col="12"] .form:not([label-align]) > *.buttons:before, .grid[col="12"] .form:not([label-align]) > fieldset > *.buttons:before, .grid[col="12"] .form input[span="2"], .form .grid[col="12"] input[span="2"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 140px; }
-.grid[col="12"] > .row > *[span="3"], .grid:not([col]) > .row > *[span="3"] {
+body:not([col]) *[span="3"], body:not([col]) .form input[span="3"], .form body:not([col]) input[span="3"], body[col="12"] *[span="3"], body[col="12"] .form input[span="3"], .form body[col="12"] input[span="3"], .grid:not([col]) *[span="3"], .grid:not([col]) .form input[span="3"], .form .grid:not([col]) input[span="3"], .grid[col="12"] *[span="3"], .grid[col="12"] .form input[span="3"], .form .grid[col="12"] input[span="3"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 220px; }
-.grid[col="12"] > .row > *[span="4"], .grid:not([col]) > .row > *[span="4"] {
+body:not([col]) *[span="4"], body:not([col]) .form input[span="4"], .form body:not([col]) input[span="4"], body[col="12"] *[span="4"], body[col="12"] .form input[span="4"], .form body[col="12"] input[span="4"], .grid:not([col]) *[span="4"], .grid:not([col]) .form input[span="4"], .form .grid:not([col]) input[span="4"], .grid[col="12"] *[span="4"], .grid[col="12"] .form input[span="4"], .form .grid[col="12"] input[span="4"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 300px; }
-.grid[col="12"] > .row > *[span="5"], .grid:not([col]) > .row > *[span="5"] {
+body:not([col]) *[span="5"], body:not([col]) .form input[span="5"], .form body:not([col]) input[span="5"], body[col="12"] *[span="5"], body[col="12"] .form input[span="5"], .form body[col="12"] input[span="5"], .grid:not([col]) *[span="5"], .grid:not([col]) .form input[span="5"], .form .grid:not([col]) input[span="5"], .grid[col="12"] *[span="5"], .grid[col="12"] .form input[span="5"], .form .grid[col="12"] input[span="5"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 380px; }
-.grid[col="12"] > .row > *[span="6"], .grid:not([col]) > .row > *[span="6"] {
+body:not([col]) *[span="6"], body:not([col]) .form input[span="6"], .form body:not([col]) input[span="6"], body[col="12"] *[span="6"], body[col="12"] .form input[span="6"], .form body[col="12"] input[span="6"], .grid:not([col]) *[span="6"], .grid:not([col]) .form input[span="6"], .form .grid:not([col]) input[span="6"], .grid[col="12"] *[span="6"], .grid[col="12"] .form input[span="6"], .form .grid[col="12"] input[span="6"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 460px; }
-.grid[col="12"] > .row > *[span="7"], .grid:not([col]) > .row > *[span="7"] {
+body:not([col]) *[span="7"], body:not([col]) .form input[span="7"], .form body:not([col]) input[span="7"], body[col="12"] *[span="7"], body[col="12"] .form input[span="7"], .form body[col="12"] input[span="7"], .grid:not([col]) *[span="7"], .grid:not([col]) .form input[span="7"], .form .grid:not([col]) input[span="7"], .grid[col="12"] *[span="7"], .grid[col="12"] .form input[span="7"], .form .grid[col="12"] input[span="7"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 540px; }
-.grid[col="12"] > .row > *[span="8"], .grid:not([col]) > .row > *[span="8"] {
+body:not([col]) *[span="8"], body:not([col]) .form input[span="8"], .form body:not([col]) input[span="8"], body[col="12"] *[span="8"], body[col="12"] .form input[span="8"], .form body[col="12"] input[span="8"], .grid:not([col]) *[span="8"], .grid:not([col]) .form input[span="8"], .form .grid:not([col]) input[span="8"], .grid[col="12"] *[span="8"], .grid[col="12"] .form input[span="8"], .form .grid[col="12"] input[span="8"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 620px; }
-.grid[col="12"] > .row > *[span="9"], .grid:not([col]) > .row > *[span="9"] {
+body:not([col]) *[span="9"], body:not([col]) .form input[span="9"], .form body:not([col]) input[span="9"], body[col="12"] *[span="9"], body[col="12"] .form input[span="9"], .form body[col="12"] input[span="9"], .grid:not([col]) *[span="9"], .grid:not([col]) .form input[span="9"], .form .grid:not([col]) input[span="9"], .grid[col="12"] *[span="9"], .grid[col="12"] .form input[span="9"], .form .grid[col="12"] input[span="9"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 700px; }
-.grid[col="12"] > .row > *[span="10"], .grid:not([col]) > .row > *[span="10"] {
+body:not([col]) *[span="10"], body:not([col]) .form input[span="10"], .form body:not([col]) input[span="10"], body[col="12"] *[span="10"], body[col="12"] .form input[span="10"], .form body[col="12"] input[span="10"], .grid:not([col]) *[span="10"], .grid:not([col]) .form input[span="10"], .form .grid:not([col]) input[span="10"], .grid[col="12"] *[span="10"], .grid[col="12"] .form input[span="10"], .form .grid[col="12"] input[span="10"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 780px; }
-.grid[col="12"] > .row > *[span="11"], .grid:not([col]) > .row > *[span="11"] {
+body:not([col]) *[span="11"], body:not([col]) .form input[span="11"], .form body:not([col]) input[span="11"], body[col="12"] *[span="11"], body[col="12"] .form input[span="11"], .form body[col="12"] input[span="11"], .grid:not([col]) *[span="11"], .grid:not([col]) .form input[span="11"], .form .grid:not([col]) input[span="11"], .grid[col="12"] *[span="11"], .grid[col="12"] .form input[span="11"], .form .grid[col="12"] input[span="11"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 860px; }
-.grid[col="12"] > .row > *[span="12"], .grid:not([col]) > .row > *[span="12"] {
+body:not([col]) *[span="12"], body:not([col]) .form input[span="12"], .form body:not([col]) input[span="12"], body[col="12"] *[span="12"], body[col="12"] .form input[span="12"], .form body[col="12"] input[span="12"], .grid:not([col]) *[span="12"], .grid:not([col]) .form input[span="12"], .form .grid:not([col]) input[span="12"], .grid[col="12"] *[span="12"], .grid[col="12"] .form input[span="12"], .form .grid[col="12"] input[span="12"] {
+  margin-left: 10px;
+  margin-right: 10px;
   width: 940px; }
 
 .btn {
@@ -862,7 +884,7 @@ a.btn {
   background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
   background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
   background-repeat: repeat-x;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   font-size: 13px;
   overflow: hidden;
@@ -905,14 +927,14 @@ a.btn {
     -webkit-animation: progress-bar-striped-animate 2s linear infinite;
     -o-animation: progress-bar-striped-animate 2s linear infinite;
     -ms-animation: progress-bar-striped-animate 2s linear infinite; }
-  .progress-bar[color=blue] > .bar {
+  .progress-bar[color=blue] > .bar, .slider[color=blue] > .bar {
     background-color: #149bdf;
     background-image: linear-gradient(top, #68c3f1, #149bdf);
     background-image: -webkit-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -moz-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -o-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -ms-linear-gradient(top, #68c3f1, #149bdf); }
-  .progress-bar[striped][color=blue] > .bar {
+  .progress-bar[striped][color=blue] > .bar, [striped].slider[color=blue] > .bar {
     background-color: #149bdf;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -920,14 +942,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=green] > .bar {
+  .progress-bar[color=green] > .bar, .slider[color=green] > .bar {
     background-color: #51a351;
     background-image: linear-gradient(top, #91c991, #51a351);
     background-image: -webkit-linear-gradient(top, #91c991, #51a351);
     background-image: -moz-linear-gradient(top, #91c991, #51a351);
     background-image: -o-linear-gradient(top, #91c991, #51a351);
     background-image: -ms-linear-gradient(top, #91c991, #51a351); }
-  .progress-bar[striped][color=green] > .bar {
+  .progress-bar[striped][color=green] > .bar, [striped].slider[color=green] > .bar {
     background-color: #51a351;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -935,14 +957,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=orange] > .bar {
+  .progress-bar[color=orange] > .bar, .slider[color=orange] > .bar {
     background-color: #f89406;
     background-image: linear-gradient(top, #fbbf69, #f89406);
     background-image: -webkit-linear-gradient(top, #fbbf69, #f89406);
     background-image: -moz-linear-gradient(top, #fbbf69, #f89406);
     background-image: -o-linear-gradient(top, #fbbf69, #f89406);
     background-image: -ms-linear-gradient(top, #fbbf69, #f89406); }
-  .progress-bar[striped][color=orange] > .bar {
+  .progress-bar[striped][color=orange] > .bar, [striped].slider[color=orange] > .bar {
     background-color: #f89406;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -950,14 +972,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=red] > .bar {
+  .progress-bar[color=red] > .bar, .slider[color=red] > .bar {
     background-color: #bd362f;
     background-image: linear-gradient(top, #dd7a75, #bd362f);
     background-image: -webkit-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -moz-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -o-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -ms-linear-gradient(top, #dd7a75, #bd362f); }
-  .progress-bar[striped][color=red] > .bar {
+  .progress-bar[striped][color=red] > .bar, [striped].slider[color=red] > .bar {
     background-color: #bd362f;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -965,14 +987,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=grey] > .bar {
+  .progress-bar[color=grey] > .bar, .slider[color=grey] > .bar {
     background-color: gray;
     background-image: linear-gradient(top, #b3b3b3, gray);
     background-image: -webkit-linear-gradient(top, #b3b3b3, gray);
     background-image: -moz-linear-gradient(top, #b3b3b3, gray);
     background-image: -o-linear-gradient(top, #b3b3b3, gray);
     background-image: -ms-linear-gradient(top, #b3b3b3, gray); }
-  .progress-bar[striped][color=grey] > .bar {
+  .progress-bar[striped][color=grey] > .bar, [striped].slider[color=grey] > .bar {
     background-color: gray;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -980,14 +1002,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=black] > .bar {
+  .progress-bar[color=black] > .bar, .slider[color=black] > .bar {
     background-color: #333333;
     background-image: linear-gradient(top, #666666, #333333);
     background-image: -webkit-linear-gradient(top, #666666, #333333);
     background-image: -moz-linear-gradient(top, #666666, #333333);
     background-image: -o-linear-gradient(top, #666666, #333333);
     background-image: -ms-linear-gradient(top, #666666, #333333); }
-  .progress-bar[striped][color=black] > .bar {
+  .progress-bar[striped][color=black] > .bar, [striped].slider[color=black] > .bar {
     background-color: #333333;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -1252,3 +1274,239 @@ a.btn {
 
   to {
     opacity: 1; } }
+
+.form fieldset {
+  margin: 18px 0; }
+  .form fieldset > legend {
+    font-weight: bold;
+    padding: 0 4px; }
+.form .field {
+  margin: 18px 0; }
+  .form .field label {
+    display: inline-block;
+    text-align: right;
+    line-height: 18px; }
+    .form .field label.box-label {
+      width: auto !important; }
+  .form .field input, .form .field select, .form .field textarea {
+    margin-left: 10px; }
+  .form .field input:not([type="file"]), .form .field select, .form .field textarea {
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    -o-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    -ms-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(20, 155, 223, 0.1); }
+    .form .field input:not([type="file"]):focus, .form .field select:focus, .form .field textarea:focus {
+      border-color: rgba(20, 155, 223, 0.8);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(20, 155, 223, 0.6);
+      outline: 0 none; }
+  .form .field input, .form .field select, .form .field textarea {
+    display: inline-block;
+    height: 28px;
+    padding: 0 4px;
+    line-height: 18px; }
+  .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea {
+    width: 220px;
+    margin: 0 10px; }
+  .form .field input[type="file"] {
+    line-height: 30px;
+    border: none; }
+  .form .field input[type="radio"], .form .field input[type="checkbox"] {
+    width: auto !important;
+    height: auto !important; }
+  .form .field textarea {
+    width: 300px;
+    margin: 0 10px;
+    height: 80px;
+    padding: 4px; }
+  .form .field .info {
+    margin-top: 4px;
+    margin-left: 10px;
+    padding-left: 4px; }
+    .form .field .info:before {
+      content: "";
+      display: inline-block;
+      margin-right: 10px; }
+.form:not([label-align]) > .buttons:before, .form:not([label-align]) > fieldset > .buttons:before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px; }
+.form > .buttons > .btn:first-child, .form > fieldset > .buttons > .btn:first-child {
+  margin-left: 10px; }
+.form[label-align="top"] > .field label:not([class~="box-label"]), .form[label-align="top"] fieldset > .field label:not([class~="box-label"]) {
+  display: block;
+  text-align: left; }
+
+.rule {
+  border: 0;
+  border-style: solid;
+  border-top-width: 1px;
+  border-color: #eeeeee;
+  border-radius: 0;
+  background: none; }
+  .rule[border-style="dotted"] {
+    border-style: dotted; }
+  .rule[border-style="dashed"] {
+    border-style: dashed; }
+  .rule[border-style="double"] {
+    border-style: double; }
+  .rule[border-style="groove"] {
+    border-style: groove; }
+  .rule[border-style="ridge"] {
+    border-style: ridge; }
+  .rule[color="blue"] {
+    border-color: #149bdf; }
+  .rule[color="green"] {
+    border-color: #51a351; }
+  .rule[color="orange"] {
+    border-color: #f89406; }
+  .rule[color="red"] {
+    border-color: #bd362f; }
+  .rule[color="grey"] {
+    border-color: gray; }
+  .rule[color="black"] {
+    border-color: #333333; }
+  .rule[size="1"] {
+    border-top-width: 1px; }
+  .rule[size="2"] {
+    border-top-width: 2px; }
+  .rule[size="3"] {
+    border-top-width: 3px; }
+  .rule[size="4"] {
+    border-top-width: 4px; }
+  .rule[size="5"] {
+    border-top-width: 5px; }
+  .rule[size="6"] {
+    border-top-width: 6px; }
+  .rule[size="7"] {
+    border-top-width: 7px; }
+  .rule[size="8"] {
+    border-top-width: 8px; }
+  .rule[size="9"] {
+    border-top-width: 9px; }
+  .rule[size="10"] {
+    border-top-width: 10px; }
+
+.slider {
+  position: relative;
+  width: 220px;
+  margin: 7px 10px;
+  height: 14px;
+  background-color: #f7f7f7;
+  background-image: linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-repeat: repeat-x;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px; }
+  .slider > .bar {
+    height: 100%;
+    background-repeat: repeat-x;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    background-color: #e6e6e6;
+    background-image: linear-gradient(top, white, #e6e6e6);
+    background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+    background-image: -moz-linear-gradient(top, white, #e6e6e6);
+    background-image: -o-linear-gradient(top, white, #e6e6e6);
+    background-image: -ms-linear-gradient(top, white, #e6e6e6);
+    border-radius: 4px;
+    position: absolute; }
+    .slider > .bar > .thumb {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      top: -5px;
+      right: -14px;
+      cursor: move;
+      border: 1px solid #ccc;
+      border-radius: 100px;
+      background-color: #f5f5f5;
+      background-image: linear-gradient(top, #fff, #e6e6e6);
+      background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+      background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+      background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+      background-image: -ms-linear-gradient(top, #fff, #e6e6e6); }
+  .slider[striped] > .bar {
+    background-color: #E6E6E6;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 40px 40px; }
+  .slider[striped="animate"] > .bar {
+    animation: slider-bar-striped-animate 2s linear infinite;
+    -moz-animation: slider-bar-striped-animate 2s linear infinite;
+    -webkit-animation: slider-bar-striped-animate 2s linear infinite;
+    -o-animation: slider-bar-striped-animate 2s linear infinite;
+    -ms-animation: slider-bar-striped-animate 2s linear infinite; }
+  .slider[size="mini"] {
+    height: 10px;
+    margin: 5px 10px; }
+    .slider[size="mini"] > .bar > .thumb {
+      top: -5px;
+      right: -10px;
+      width: 20px;
+      height: 20px; }
+  .slider[size="small"] {
+    height: 14px;
+    margin: 7px 10px; }
+    .slider[size="small"] > .bar > .thumb {
+      top: -7px;
+      right: -14px;
+      width: 28px;
+      height: 28px; }
+  .slider[size="medium"] {
+    height: 20px;
+    margin: 10px 10px; }
+    .slider[size="medium"] > .bar > .thumb {
+      top: -10px;
+      right: -20px;
+      width: 40px;
+      height: 40px; }
+  .slider[size="large"] {
+    height: 26px;
+    margin: 13px 10px; }
+    .slider[size="large"] > .bar > .thumb {
+      top: -13px;
+      right: -26px;
+      width: 52px;
+      height: 52px; }
+
+@keyframes slider-bar-striped-animate {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 60px 0; } }
+
+@-webkit-keyframes slider-bar-striped-animate {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 60px 0; } }
+
+@-moz-keyframes slider-bar-striped-animate {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 60px 0; } }
+
+@-o-keyframes slider-bar-striped-animate {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 60px 0; } }
+
+@-ms-keyframes slider-bar-striped-animate {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 60px 0; } }

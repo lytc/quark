@@ -1,0 +1,121 @@
+.form {
+	// fieldset
+	fieldset {
+		margin: 18px 0;
+		@extend .border, .border-radius;
+		
+		
+		> legend {
+			font-weight: bold;
+			padding: 0 $base-padding / 2;
+		}
+	}
+	
+	// field
+	.field {
+		margin: 18px 0;
+		label {
+			display: inline-block;
+			text-align: right;
+			@extend [span="2"];
+			line-height: 18px;
+			
+			&.box-label {
+				width: auto !important;
+			}
+		}
+		
+		input, select, textarea {
+			margin-left: 10px;	
+		}
+		
+		input:not([type="file"]), select, textarea {
+			@include transition("border 0.2s linear 0s, box-shadow 0.2s linear 0s");
+			box-shadow: 0 1px 1px rgba(#000, 0.075) inset, 0 0 4px rgba($base-color-blue, 0.1);
+			&:focus {
+        border-color: rgba($base-color-blue, 0.8);
+        box-shadow: 0 1px 1px rgba(#000, 0.075) inset, 0 0 4px rgba($base-color-blue, 0.6);
+        outline: 0 none;
+      }
+		}
+		
+		input, select, textarea {
+			display: inline-block;
+			height: 28px;
+			padding: 0 $base-padding / 2;
+			line-height: 18px;
+		}
+		
+		input:not([type="radio"]), input:not([type="checkbox"]), select, textarea {
+			//@extend [span="3"];
+			width: 220px;
+			margin: 0 10px;
+			@extend .border, .border-radius;
+		}
+		
+		input[type="file"] {
+			line-height: 30px;
+			border: none;
+		}
+		
+		input[type="radio"], input[type="checkbox"] {
+			width: auto !important;
+			height: auto !important;
+		}
+		
+		textarea {
+			//@extend [span="4"];
+			width: 300px;
+			margin: 0 10px;
+			height: 80px;
+			padding: $base-padding / 2;
+		}
+		
+		// .info
+		.info {
+			&:before {
+				content: "";
+				display: inline-block;
+				@extend [span="2"];
+				margin-right: 10px;
+			};
+			
+			margin-top: 4px;
+			margin-left: 10px;
+			padding-left: $base-padding / 2;
+		}
+	}
+	
+	&:not([label-align]) > .buttons, &:not([label-align]) > fieldset > .buttons {
+		&:before {
+			content: "";
+			display: inline-block;
+			@extend [span="2"];
+			margin-right: 10px;
+		};	
+	}
+	
+	> .buttons, > fieldset > .buttons {
+		> .btn:first-child {
+			margin-left: 10px;
+		};
+	}
+	
+	// label-align="top"
+	&[label-align="top"] {
+		> .field, fieldset > .field {
+			label:not([class~="box-label"]) {
+				display: block;
+				text-align: left;
+			}
+		}
+	}
+	
+	// field grid
+	// extend from grid
+	@for $i from 1 through 12 {
+		input[span="#{$i}"] {
+			@extend [span="#{$i}"];
+		}
+	}
+}

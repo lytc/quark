@@ -1,7 +1,9 @@
 .grid {
 	width: 960px;
-	
-	> .row {
+}
+
+body, .grid {
+	.row {
 		@include clearfix();
 		> * {
 			display: block;

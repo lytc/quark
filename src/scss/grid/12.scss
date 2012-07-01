@@ -1,14 +1,17 @@
-.grid[col="12"], .grid:not([col]) {
-	> .row {
-		> * {
+//body[col="12"], grid:not(col), .grid[col="12"] {
+//	.row {
+//		
+//	}
+//	
+//	
+//}
+
+body:not([col]), body[col="12"], .grid:not([col]), .grid[col="12"] {
+	@for $i from 1 through 12 {
+		*[span="#{$i}"] {
 			margin-left: 10px;
 			margin-right: 10px;
-		}
-		
-		@for $i from 1 through 12 {
-			> *[span="#{$i}"] {
-				width: $i * 80px - 20;
-			}
+			width: $i * 80px - 20;
 		}
 	}
 }

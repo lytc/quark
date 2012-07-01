@@ -5,3 +5,209 @@
 <div class="page-header">
   <h1>Forms</h1>
 </div>
+
+<div class="row">
+  <div span="7">
+    <h2>Basic Form</h2>
+    <code>&lt;form class="form" label-align="top"&gt;</code>
+
+    <br>
+    <br>
+    
+    <form class="form">
+      <div class="field">
+        <label>Field label</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>Field label</label>
+        <input type="file">
+      </div>
+      <div class="field">
+        <label>Label</label>
+        <input type="checkbox"> <label class="box-label">Box label</label>
+      </div>
+      <div class="field">
+        <label>Field label</label>
+        <input type="radio"> <label class="box-label">Box label</label>
+      </div>
+      <div class="field">
+        <label>Field label</label>
+        <select>
+          <option>item</option>
+          <option>item</option>
+          <option>item</option>
+          <option>item</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Field label</label>
+        <select>
+          <optgroup label="Optgroup">
+            <option>item</option>
+            <option>item</option>
+            <option>item</option>
+            <option>item</option>
+          </optgroup>
+          <optgroup label="Optgroup">
+            <option>item</option>
+            <option>item</option>
+            <option>item</option>
+            <option>item</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="field">
+        <label>Field label</label>
+        <textarea></textarea>
+      </div>
+      <div class="buttons">
+        <input type="submit" class="btn" color="blue" value="Submit">
+        <input type="reset" class="btn" value="Reset">
+        <input type="button" class="btn" value="Cancel">
+      </div>
+    </form>
+  </div>
+  <div span="5">
+    <h2>From with custom label align</h2>
+    <code>&lt;form class="form" label-align="top"&gt;</code>
+
+    <br>
+    <br>
+
+    <form class="form" label-align="top">
+      <div class="field">
+        <label>Field label</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <input type="checkbox"> <label class="box-label">Box label</label>
+      </div>
+      <div class="field">
+        <input type="radio"> <label class="box-label">Box label</label>
+      </div>
+      <div class="field">
+        <label>Field label</label>
+        <select>
+          <option>item</option>
+          <option>item</option>
+          <option>item</option>
+          <option>item</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Field label</label>
+        <textarea></textarea>
+      </div>
+      <div class="buttons">
+        <input type="submit" class="btn" color="blue" value="Submit">
+        <input type="reset" class="btn" value="Reset">
+        <input type="button" class="btn" value="Cancel">
+      </div>
+    </form>
+  </div>
+</div>
+
+<br>
+<br>
+
+<h2>Form with fieldset</h2>
+<form class="form" style="width: 600px">
+  <fieldset>
+    <legend>Login infomations</legend>
+    <div class="field">
+      <label>Username</label>
+      <input type="text">
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input type="password">
+    </div>
+    <div class="field">
+      <label>Retype Password</label>
+      <input type="password">
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Personal infomations</legend>
+    <div class="field">
+      <label>First Name</label>
+      <input type="text">
+    </div>
+    <div class="field">
+      <label>Last Name</label>
+      <input type="text">
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="text">
+    </div>
+    <div class="field">
+      <label>Phone</label>
+      <input type="text">
+    </div>
+    <div class="field">
+      <label>Address</label>
+      <input type="text">
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" class="btn" color="blue" value="Save">
+    <input type="reset" class="btn" value="Reset">
+    <input type="button" class="btn" value="Cancel">
+  </div>
+</form>
+
+<br>
+<br>
+
+<h2>Field with text info</h2>
+<form class="form">
+  <div class="field">
+    <label>Field Label</label>
+    <input type="text">
+    <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis suscipit turpis</div>
+  </div>
+  <div class="field">
+    <label>Field Label</label>
+    <select>
+      <option>item</option>
+      <option>item</option>
+    </select>
+    <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis suscipit turpis</div>
+  </div>
+</form>
+
+<br>
+<br>
+
+<h2>Field with grid sizes</h2>
+<code>&lt;input type="text" span="5"&gt;</code>
+<br>
+<br>
+<form class="form">
+  <div class="field">
+    <label>span=1</label>
+    <input type="text" span="1">
+  </div>
+  <div class="field">
+    <label>span=2</label>
+    <input type="text" span="2">
+  </div>
+  <div class="field">
+    <label>span=3 (default)</label>
+    <input type="text" span="3">
+  </div>
+  <div class="field">
+    <label>span=4</label>
+    <input type="text" span="4">
+  </div>
+  <div class="field">
+    <label>span=5</label>
+    <input type="text" span="5">
+  </div>
+  <div class="field">
+    <label>span=6</label>
+    <input type="text" span="6">
+  </div>
+</form>
