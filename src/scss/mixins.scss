@@ -10,6 +10,14 @@
   }
 }
 
+@mixin calc($property, $expr) {
+	#{$property}: calc(#{$expr});
+	#{$property}: -webkit-calc(#{$expr});
+	#{$property}: -moz-calc(#{$expr});
+	#{$property}: -o-calc(#{$expr});
+	#{$property}: -ms-calc(#{$expr});
+}
+
 @mixin box-sizing($value: border-box) {
 	box-sizing: $value;
 	-webkit-box-sizing: $value;
@@ -48,7 +56,7 @@
 }
 
 @mixin animation-delay($value) {
-	animation-delay: #{$value}s;
+	animation-delay: #{$value};
 	-webkit-animation-delay: #{$value}s;
 	-moz-animation-delay: #{$value}s;
 	-o-animation-delay: #{$value}s;

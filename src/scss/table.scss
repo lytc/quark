@@ -34,6 +34,21 @@
 		}
 	}
 	
+	&[bordered~=header-row], &[bordered~=header] {
+		> thead > tr > th {
+			border-bottom-width: 1px;
+		}
+	}
+	
+	&[bordered~=header-col], &[bordered~=header] {
+		> thead > tr > th {
+			border-right-width: 1px;
+			&:last-child {
+				border-right: 0;
+			};
+		}
+	}
+	
 	&[striped] {
 		> tbody > tr:nth-child(2n-1) {
 			background-color: rgba(#cccccc, .2);

@@ -30,6 +30,14 @@ label, input, button, select, textarea {
 	@extend .border-radius;
 }
 
+.no-border, *[no-border] {
+	border: none;
+}
+
+.box-shadow, *[box-shadow] {
+	box-shadow: 0 4px 8px rgba(black, .2);
+}
+
 ul[unstyled] {
 	padding-left: 0;
 	list-style: none;
@@ -63,7 +71,7 @@ pre {
   white-space: pre-wrap;
   background-color: #f5f5f5;
 	@extend .border;
-	@exten .border-radius;
+	@extend .border-radius;
 }
 
 pre code {
