@@ -1,0 +1,117 @@
+.btn {
+	font-size: $base-font-size;
+	color: $base-text-color;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid;
+	border-color: rgba(black, .1) rgba(black, .1) rgba(black, .25);
+	border-radius: $base-border-radius;
+	cursor: pointer;
+	text-shadow: 0 1px 1px rgba(white, .75);
+	box-shadow: 0 1px 0 rgba(white, 0.2) inset, 0 1px 2px rgba(black, 0.05);
+	@include base-bg-gradient(#E6E6E6);
+	background-repeat: repeat-x;
+	display:inline-block;
+	overflow: hidden;
+	padding: 0 10px;
+	text-align: center;
+	vertical-align: middle;
+	
+	&:hover, &:active, &[disabled] {
+		
+	}
+	
+	&:hover {
+		@include linear-gradient("top, #E6E6E6, #{lighten(#E6E6E6, 20%)}");
+	}
+}
+
+a.btn {
+	text-decoration: none;
+}
+
+$-btn-mini-hash: mini, 20px;
+// $-btn-small-hash: small, 28px; is default
+$-btn-medium-hash: medium, 40px;
+$-btn-large-hash: large, 52px;
+$-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
+
+@each $btn-hash in $-btn-sizes-list {
+	$name: nth($btn-hash, 1);
+	$size: nth($btn-hash, 2);
+	
+	.btn-group[size="#{$name}"] > .btn,
+	.btn[size="#{$name}"] {
+		height: $size;
+		line-height: $size;
+		font-size: $base-font-size + ($size - 20) / 3 - 2;
+		padding: 0 ceil($size / 3);
+	}
+}
+
+
+.btn-group[color] > .btn, .btn[color] {
+	color: white;
+	text-shadow: 0 -1px 0 rgba(black, .25);
+}
+
+@mixin btn-color($name, $color) {
+	.btn-group[color="#{$name}"] > .btn, .btn[color="#{$name}"] {
+		@include base-bg-gradient($color);
+		&:hover {
+			@include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");
+		}
+	}
+}
+
+@each $color-hash in $base-colors-list {
+	$name: nth($color-hash, 1);
+	$color: nth($color-hash, 2);
+	
+	.btn-group[color="#{$name}"] > .btn, .btn[color="#{$name}"] {
+		@include base-bg-gradient($color);
+		&:hover {
+			@include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");
+		}
+	}
+}
+
+.btn-group[disabled] > .btn, 
+.btn-group[disabled] > .btn:hover, 
+.btn[disabled], 
+.btn[disabled]:hover {
+	background-image: none;
+	opacity: .5;
+	cursor: default;
+}
+
+.btn-group[pressed] > .btn,
+.btn-group[pressed] > .btn:hover,
+.btn:active, 
+.btn[pressed],
+.btn[pressed]:hover {
+	box-shadow: 0 2px 4px rgba(black, .3) inset, 0 1px 2px rgba(black, .1);
+	background-image: none;
+	outline: 0;
+}
+
+.btn-group[pressed] > .btn {
+	border-color: rgba(black, .2) rgba(black, .2) rgba(black, .2);
+}
+
+.btn-group {
+    @extend .clearfix;
+	> .btn {
+		border-left-width: 0;
+		border-radius: 0;
+        float: left;
+	}
+	> .btn:first-child {
+		border-left-width: 1px;
+		border-radius: $base-border-radius 0 0 $base-border-radius;
+	}
+	
+	> .btn:last-child {
+		border-radius: 0 $base-border-radius $base-border-radius 0;
+	}
+}

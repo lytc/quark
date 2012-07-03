@@ -1,46 +1,46 @@
 body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
 }
 
 label, input, button, select, textarea {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  font-weight: normal;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: normal;
 }
 
 * {
-  @include box-sizing;
+	@include box-sizing();
 }
 
 .clearfix {
-  @include clearfix;
+  @include clearfix();
 }
 
 .border {
-  border: $base-border;
+	border: $base-border;
 }
 
 .border-radius {
-  border-radius: $base-border-radius;
+	border-radius: $base-border-radius;
 }
 
 .border-with-radius {
-  @extend .border;
-  @extend .border-radius;
+	@extend .border;
+	@extend .border-radius;
 }
 
 .no-border, *[no-border] {
-  border: none;
+	border: none;
 }
 
 .box-shadow, *[box-shadow] {
-  box-shadow: 0 4px 8px rgba(black, 0.2);
+	box-shadow: 0 4px 8px rgba(black, .2);
 }
 
 ul[unstyled] {
-  padding-left: 0;
-  list-style: none;
+	padding-left: 0;
+	list-style: none;
 }
 
 code,
@@ -49,7 +49,7 @@ pre {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: $base-font-size;
   color: #333333;
-  border-radius: $base-border-radius;
+	border-radius: $base-border-radius;
 }
 
 code {
@@ -70,8 +70,8 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   background-color: #f5f5f5;
-  @extend .border;
-  @extend .border-radius;
+	@extend .border;
+	@extend .border-radius;
 }
 
 pre code {
@@ -82,35 +82,35 @@ pre code {
 }
 
 .page-header {
-  display: block;
-  margin: 18px 0;
-  border-bottom: 1px solid #eeeeee;
+	display: block;
+	margin: 18px 0;
+	border-bottom: 1px solid #eeeeee;
 }
 
 .container {
-  @include clearfix;
+	@include clearfix();
 }
 
 .fixed-top {
-  position: fixed;
-  top: 0;
+	position: fixed;
+	top: 0;
 }
 
 .fixed-bottom {
-  position: fixed;
-  bottom: 0;
+	position: fixed;
+	bottom: 0;
 }
 
 .expanded {
-  left: 0;
-  right: 0;
+	left: 0;
+	right: 0;
 }
 
 .center {
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .container-960 {
-  width: 960px;
+	width: 960px;
 }

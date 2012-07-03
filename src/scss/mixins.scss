@@ -1,5 +1,5 @@
 @mixin clearfix {
-	*zoom: 1;
+  *zoom: 1;
   &:before,
   &:after {
     display: table;
@@ -11,40 +11,40 @@
 }
 
 @mixin calc($property, $expr) {
-	#{$property}: calc(#{$expr});
-	#{$property}: -webkit-calc(#{$expr});
-	#{$property}: -moz-calc(#{$expr});
-	#{$property}: -o-calc(#{$expr});
-	#{$property}: -ms-calc(#{$expr});
+  #{$property}: calc(#{$expr});
+  #{$property}: -webkit-calc(#{$expr});
+  #{$property}: -moz-calc(#{$expr});
+  #{$property}: -o-calc(#{$expr});
+  #{$property}: -ms-calc(#{$expr});
 }
 
 @mixin box-sizing($value: border-box) {
-	box-sizing: $value;
-	-webkit-box-sizing: $value;
-	-moz-box-sizing: $value;
-	-o-box-sizing: $value;
-	-ms-box-sizing: $value;
+  box-sizing: $value;
+  -webkit-box-sizing: $value;
+  -moz-box-sizing: $value;
+  -o-box-sizing: $value;
+  -ms-box-sizing: $value;
 }
 
 @mixin linear-gradient($value) {
-	background-image: linear-gradient(#{$value});
-	background-image: -webkit-linear-gradient(#{$value});
-	background-image: -moz-linear-gradient(#{$value});
-	background-image: -o-linear-gradient(#{$value});
-	background-image: -ms-linear-gradient(#{$value});
+  background-image: linear-gradient(#{$value});
+  background-image: -webkit-linear-gradient(#{$value});
+  background-image: -moz-linear-gradient(#{$value});
+  background-image: -o-linear-gradient(#{$value});
+  background-image: -ms-linear-gradient(#{$value});
 }
 
-@mixin base-bg-gradient($color: #E6E6E6, $from: top) {
-	background-color: $color;
-	@include linear-gradient("#{$from}, #{lighten($color, 20%)}, #{$color}");
+@mixin base-bg-gradient($color: #e6e6e6, $from: top) {
+  background-color: $color;
+  @include linear-gradient("#{$from}, #{lighten($color, 20%)}, #{$color}");
 }
 
 @mixin transition($value) {
-	transition: #{$value};
-	-webkit-transition: #{$value};
-	-moz-transition: #{$value};
-	-o-transition: #{$value};
-	-ms-transition: #{$value};
+  transition: #{$value};
+  -webkit-transition: #{$value};
+  -moz-transition: #{$value};
+  -o-transition: #{$value};
+  -ms-transition: #{$value};
 }
 
 @mixin animation($value) {
@@ -52,15 +52,15 @@
   -moz-animation: #{$value};
   -webkit-animation: #{$value};
   -o-animation: #{$value};
-	-ms-animation: #{$value};
+  -ms-animation: #{$value};
 }
 
 @mixin animation-delay($value) {
-	animation-delay: #{$value}s;
-	-webkit-animation-delay: #{$value}s;
-	-moz-animation-delay: #{$value}s;
-	-o-animation-delay: #{$value}s;
-	-ms-animation-delay: #{$value}s;
+  animation-delay: #{$value}s;
+  -webkit-animation-delay: #{$value}s;
+  -moz-animation-delay: #{$value}s;
+  -o-animation-delay: #{$value}s;
+  -ms-animation-delay: #{$value}s;
 }
 
 @mixin transform($value) {
@@ -71,9 +71,23 @@
 }
 
 @mixin keyframes($name) {
-	@keyframes #{$name} { @content; }
-	@-webkit-keyframes #{$name} { @content; }
-	@-moz-keyframes #{$name} { @content; }
-	@-o-keyframes #{$name} { @content; }
-	@-ms-keyframes #{$name} { @content; }
+  @keyframes #{$name} {
+    @content;
+  }
+
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @-o-keyframes #{$name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$name} {
+    @content;
+  }
 }
