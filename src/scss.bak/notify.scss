@@ -1,0 +1,30 @@
+.notify {
+	@extend .border-with-radius;
+	padding: $base-padding;
+	
+	@each $color-hash in $base-colors-list {
+		$name: nth($color-hash, 1);
+		$color: nth($color-hash, 2);
+		&[color=#{$name}] {
+			@extend .border-with-radius;
+			border-color: rgba($color, .2);
+			background-color: rgba($color, .15);
+		}
+	}
+	
+	> .close {
+		margin: 0;
+		margin-top: -5px;
+		padding: 0;
+		background: none;
+		border: 0;
+		float: right;
+		font-weight: bold;
+		font-size: 20px;
+		opacity: .5;
+		
+		&:hover {
+			opacity: .8;
+		}
+	}
+}

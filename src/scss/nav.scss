@@ -1,85 +1,76 @@
 .nav {
-	@extend .menu;
-	margin: 0;
-	//border: 0;
-	box-shadow: none;
-	display: block;
-	> li {
-		display: inline-block;
-		
-		> a {
-			padding: 7px 10px;
-			//color: darken(white, 15%) !important;
-			
-			&:hover {
-				//color: white;
-			};
-		}
-		
-		> ul {
-			top: 100%;
-			right: auto;
-			&:before {
-				top: -6px;
-				left: 12px;
-				@include transform(rotate(45deg));
-			};
-			
-			+ a {
-				padding-right: 20px;
-				&:after {
-					content: "";
-					position: absolute;
-					top: 14px;
-					right: 8px;
-					padding: 7px 0;
-					border-top: 4px solid rgba(black, .5);
-					border-left: 4px solid transparent;
-					border-right: 4px solid transparent;
-					border-bottom: none;
-				}	
-				
-				&:hover {
-					&:after {
-						border-top-color: white;
-					};
-				};
-			}
-		}
-		
-		&:hover {
-			> ul {
-				+ a {
-					&:after {	
-						display: block !important;
-					};
-				}
-			}
-		};
-	}
-	
-	&[bg] {
-		> li {
-			> a {
-				color: white;
-			}
-			
-			> ul {
-				+ a {
-					&:after {
-						border-top-color: white;
-					};
-				}
-			}
-		}
-	}
-	
-	@each $color-hash in $base-colors-list {
-		$name: nth($color-hash, 1);
-		$color: nth($color-hash, 2);
-		
-		&[bg=#{$name}] {
-			background-color: $color;
-		}
-	}
+  @extend .menu;
+  margin: 0;
+  //border: 0;
+  box-shadow: none;
+  display: block;
+  > li {
+    display: inline-block;
+    > a {
+      padding: 7px 10px;
+      //color: darken(white, 15%) !important;
+      &:hover {
+        //color: white;
+     
+      }
+    }
+    > ul {
+      top: 100%;
+      right: auto;
+      &:before {
+        top: -6px;
+        left: 12px;
+        @include transform(rotate(45deg));
+      }
+      + a {
+        padding-right: 20px;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 14px;
+          right: 8px;
+          padding: 7px 0;
+          border-top: 4px solid rgba(black, 0.5);
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-bottom: none;
+        }
+        &:hover {
+          &:after {
+            border-top-color: white;
+          }
+        }
+      }
+    }
+    &:hover {
+      > ul {
+        + a {
+          &:after {
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+  &[bg] {
+    > li {
+      > a {
+        color: white;
+      }
+      > ul {
+        + a {
+          &:after {
+            border-top-color: white;
+          }
+        }
+      }
+    }
+  }
+  @each $color-hash in $base-colors-list {
+    $name: nth($color-hash, 1);
+    $color: nth($color-hash, 2);
+    &[bg=#{$name}] {
+      background-color: $color;
+    }
+  }
 }

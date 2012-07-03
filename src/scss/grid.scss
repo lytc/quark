@@ -1,13 +1,13 @@
 .grid {
-	width: 960px;
+  width: 960px;
 }
 
 body, .grid {
-	.row {
-		@include clearfix();
-		> * {
-			display: block;
-			float: left;
-		}
-	}
+  .row {
+    @include clearfix;
+    > * {
+      display: block;
+      float: left;
+    }
+  }
 }

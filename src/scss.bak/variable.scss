@@ -20,11 +20,11 @@ $base-padding: 8px;
 $base-margin: 10px;
 
 // color
-$base-color-blue: #149bdf;
-$base-color-green: #51a351;
-$base-color-orange: #f89406;
-$base-color-red: #bd362f;
-$base-color-grey: gray;
+$base-color-blue: #149BDF;
+$base-color-green: #51A351;
+$base-color-orange: #F89406;
+$base-color-red: #BD362F;
+$base-color-grey: #808080;
 $base-color-black: #333333;
 
 $-color-blue-hash: blue, $base-color-blue;
@@ -48,3 +48,4 @@ $-size-medium-hash: medium, $base-size-medium;
 $-size-large-hash: large, $base-size-large;
 
 $base-sizes-list: $-size-mini-hash, $-size-small-hash, $-size-medium-hash, $-size-large-hash;
+

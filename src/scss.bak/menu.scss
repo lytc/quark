@@ -1,0 +1,102 @@
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 4px;
+	@extend .border;
+	@extend .border-radius;
+	display: inline-block;
+	background: white;
+	@extend .box-shadow;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 4px;
+		@extend .border;
+		@extend .border-radius;
+		display: inline-block;
+		background: white;
+		@extend .box-shadow;
+		z-index: 9999;
+	}
+	
+	li {
+		position: relative;
+		cursor: pointer;
+		a {
+			text-decoration: none;
+			line-height: 18px;
+			display: block;
+			padding: 4px 28px;
+			white-space: nowrap;
+			color: $base-color-black;
+			@extend .border-radius;
+			&:hover {
+				background-color: $base-color-blue;
+				color: white;
+			}
+		}
+		
+		> ul {
+			position: absolute;
+			@include calc(right, "-100% - 8px");
+			top: -5px;
+			display: none;
+			
+			&:before {
+				content: "";
+				position: absolute;
+				border-width: 1px 0 0 1px;
+				border-style: solid;
+				border-color: $base-border-color;
+				width: 10px;
+				height: 10px;
+				top: 11px;
+				left: -6px;
+				background: white;
+				@include transform(rotate(-45deg));
+			}
+			
+			+ a {
+				&:after {
+					content: "";
+					position: absolute;
+					top: 9px;
+					right: 8px;
+					border-left: 4px solid rgba(black, .5);
+					border-top: 4px solid transparent;
+					border-bottom: 4px solid transparent;
+				}
+			}
+		}
+		
+		&:hover {
+			> ul {
+				display: block;
+				+ a {
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	
+	&[item-bg] {
+		
+	}
+	
+	@each $color-hash in $base-colors-list {
+		$name: nth($color-hash, 1);
+		$color: nth($color-hash, 2);
+		
+		&[item-bg=#{$name}] {
+			li {
+				a {				
+					&:hover {
+						background-color: $color;
+					}
+				}
+			}
+		}
+	}
+}
