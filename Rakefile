@@ -23,6 +23,8 @@ task :build do
      Dir.chdir('docs') do
        system "middleman build"
      end
+     # copy to ui5-gh-pages
+     system "cp -r docs/build/ ../ui5-gh-pages/"
 end
 
 task :default => :build
