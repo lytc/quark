@@ -20,7 +20,7 @@
 			@include transform("rotate(#{$i * 30}deg) translate(0, -142%)");
 			@include animation-delay(0.08333333333333333 * $i);
 			opacity: 0;
-		};
+		}
 	}
 	
 	@each $size-hash in $base-sizes-list {

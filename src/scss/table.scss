@@ -10,7 +10,7 @@
 	
 	> tbody > tr:last-child > td {
 		border-bottom: 0;
-	};
+	}
 	
 	&[bordered~=table], &[bordered=all] {
 		border-collapse: separate;
@@ -24,7 +24,7 @@
 			
 			&:last-child {
 				border-right: 0;
-			};
+			}
 		}
 	}
 	
@@ -45,13 +45,13 @@
 			border-right-width: 1px;
 			&:last-child {
 				border-right: 0;
-			};
+			}
 		}
 	}
 	
 	&[striped] {
 		> tbody > tr:nth-child(2n-1) {
 			background-color: rgba(#cccccc, .2);
-		};
+		}
 	}
 }

@@ -33,7 +33,7 @@
 			&:hover {
 				background-color: $base-color-blue;
 				color: white;
-			};
+			}
 		}
 		
 		> ul {
@@ -54,7 +54,7 @@
 				left: -6px;
 				background: white;
 				@include transform(rotate(-45deg));
-			};
+			}
 			
 			+ a {
 				&:after {
@@ -75,10 +75,10 @@
 				+ a {
 					&:after {
 						display: none;
-					};
+					}
 				}
 			}
-		};
+		}
 	}
 	
 	&[item-bg] {

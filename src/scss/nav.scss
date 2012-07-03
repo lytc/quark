@@ -13,7 +13,7 @@
 			
 			&:hover {
 				//color: white;
-			};
+			}
 		}
 		
 		> ul {
@@ -23,7 +23,7 @@
 				top: -6px;
 				left: 12px;
 				@include transform(rotate(45deg));
-			};
+			}
 			
 			+ a {
 				padding-right: 20px;
@@ -42,8 +42,8 @@
 				&:hover {
 					&:after {
 						border-top-color: white;
-					};
-				};
+					}
+				}
 			}
 		}
 		
@@ -52,10 +52,10 @@
 				+ a {
 					&:after {	
 						display: block !important;
-					};
+					}
 				}
 			}
-		};
+		}
 	}
 	
 	&[bg] {
@@ -68,7 +68,7 @@
 				+ a {
 					&:after {
 						border-top-color: white;
-					};
+					}
 				}
 			}
 		}

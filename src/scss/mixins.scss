@@ -56,7 +56,7 @@
 }
 
 @mixin animation-delay($value) {
-	animation-delay: #{$value};
+	animation-delay: #{$value}s;
 	-webkit-animation-delay: #{$value}s;
 	-moz-animation-delay: #{$value}s;
 	-o-animation-delay: #{$value}s;
@@ -71,9 +71,9 @@
 }
 
 @mixin keyframes($name) {
-	@keyframes #{$name} { @content; };
-	@-webkit-keyframes #{$name} { @content; };
-	@-moz-keyframes #{$name} { @content; };
-	@-o-keyframes #{$name} { @content; };
-	@-ms-keyframes #{$name} { @content; };
+	@keyframes #{$name} { @content; }
+	@-webkit-keyframes #{$name} { @content; }
+	@-moz-keyframes #{$name} { @content; }
+	@-o-keyframes #{$name} { @content; }
+	@-ms-keyframes #{$name} { @content; }
 }

@@ -19,11 +19,11 @@
 	
 	&:hover, &:active, &[disabled] {
 		
-	};
+	}
 	
 	&:hover {
 		@include linear-gradient("top, #E6E6E6, #{lighten(#E6E6E6, 20%)}");
-	};
+	}
 }
 
 a.btn {
@@ -60,7 +60,7 @@ $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
 		@include base-bg-gradient($color);
 		&:hover {
 			@include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");
-		};
+		}
 	}
 }
 
@@ -72,7 +72,7 @@ $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
 		@include base-bg-gradient($color);
 		&:hover {
 			@include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");
-		};
+		}
 	}
 }
 
@@ -93,23 +93,25 @@ $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
 	box-shadow: 0 2px 4px rgba(black, .3) inset, 0 1px 2px rgba(black, .1);
 	background-image: none;
 	outline: 0;
-};
+}
 
 .btn-group[pressed] > .btn {
 	border-color: rgba(black, .2) rgba(black, .2) rgba(black, .2);
 }
 
 .btn-group {
+    @extend .clearfix;
 	> .btn {
 		border-left-width: 0;
 		border-radius: 0;
+        float: left;
 	}
 	> .btn:first-child {
 		border-left-width: 1px;
 		border-radius: $base-border-radius 0 0 $base-border-radius;
-	};
+	}
 	
 	> .btn:last-child {
 		border-radius: 0 $base-border-radius $base-border-radius 0;
-	};
+	}
 }
