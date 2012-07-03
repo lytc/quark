@@ -13,7 +13,23 @@
     <link href="/stylesheets/google-code-prettify/prettify.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="/javascripts/google-code-prettify/prettify.js" type="text/javascript"></script>
     
-      <title>UI5- overview</title>
+      <title>UI5- grids</title>
+  <style>
+    #grid-test {
+      
+    }
+    
+    #grid-test > .row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    #grid-test > .row > * {
+      border: 1px solid #333333;
+      height: 40px;
+      line-height: 40px;
+    }
+  </style>
 
     
     <script>
@@ -63,19 +79,76 @@
     <div class="container-960 center">
       
 <div class="page-header">
-  <h1>UI5</h1>
+  <h1>Grids</h1>
 </div>
 
-<h2>User interface components build on HTML5 & CSS3</h2>
-
-<br>
-<br>
-
-<div class="btn-group" size="large">
-  <a class="btn" color="red" href="https://github.com/lytc/ui5/zipball/master">Download <strong>ZIP File</strong></a>
-  <a class="btn" color="orange" href="https://github.com/lytc/ui5/tarball/master">Download <strong>TAR Ball</strong></a>
-  <a class="btn" color="blue" href="https://github.com/lytc/ui5">View On <strong>GitHub</strong></a>
+<div id="grid-test" class="grid" col=12>
+  <div class="row">
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+    <div span=1>1: 60</div>
+  </div>
+  <div class="row">
+    <div span=2>2: 140</div>
+    <div span=2>2: 140</div>
+    <div span=2>2: 140</div>
+    <div span=2>2: 140</div>
+    <div span=2>2: 140</div>
+    <div span=2>2: 140</div>
+  </div>
+  <div class="row">
+    <div span=3>3: 220</div>
+    <div span=3>3: 220</div>
+    <div span=3>3: 220</div>
+    <div span=3>3: 220</div>
+  </div>
+  <div class="row">
+    <div span=4>4: 300</div>
+    <div span=4>4: 300</div>
+    <div span=4>4: 300</div>
+  </div>
+  <div class="row">
+    <div span=5>5: 380</div>
+    <div span=7>7: 540</div>
+  </div>
+  <div class="row">
+    <div span=6>6: 460</div>
+    <div span=6>6: 460</div>
+  </div>
+  <div class="row">
+    <div span=7>7: 540</div>
+    <div span=5>5: 380</div>
+  </div>
+  <div class="row">
+    <div span=8>8: 620</div>
+    <div span=4>4: 300</div>
+  </div>
+  <div class="row">
+    <div span=9>9: 700</div>
+    <div span=3>3: 220</div>
+  </div>
+  <div class="row">
+    <div span=10>10: 780</div>
+    <div span=2>2: 140</div>
+  </div>
+  <div class="row">
+    <div span=11>11: 860</div>
+    <div span=1>1: 60</div>
+  </div>
+  <div class="row">
+    <div span=12>12: 960</div>
+  </div>
 </div>
+
     </div>
 	<br>
 	<br>

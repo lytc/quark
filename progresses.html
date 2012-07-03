@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <link href="/stylesheets/ui5.min.css?1341338427" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    
+    <link href="/stylesheets/google-code-prettify/prettify.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/google-code-prettify/prettify.js" type="text/javascript"></script>
+    
+      <title>UI5- progress</title>
+
+    
+    <script>
+      $(function() {
+        $('pre[from]').each(function() {
+          var that = $(this)
+              ,from = that.attr('from')
+              ,html = $(from).html();
+
+          that.html($('<div>').text(html).html());
+        });
+      });
+    </script>
+  </head>
+  
+  <body onload="prettyPrint()">
+    <div class="container fixed-top expanded" bg="black" box-shadow="box-shadow" style="z-index: 9999;">
+      <div class="container-960 center">
+        <ul class="nav" bg="black" no-border>
+          <li><a href="/index.html">Overview</a></li>
+          <li><a href="/typography.html">Typography</a></li>
+		  <li>
+			  <ul>
+		          <li><a href="/buttons.html">Buttons</a></li>
+		          <li><a href="/notifications.html">Notifications</a></li>
+		          <li><a href="/progresses.html">Progresses</a></li>
+		          <li><a href="/loadings.html">Loadings</a></li>
+		          <li><a href="/forms.html">Forms</a></li>
+		          <li><a href="/tables.html">Tables</a></li>
+		          <li><a href="/grids.html">Grids</a></li>
+		          <li><a href="/sliders.html">Sliders</a></li>
+		          <li><a href="/menus.html">Menus</a></li>
+				  <li><a href="/navigations.html">Navigations</a></li>
+		          <li><a href="/mixed.html">Mixed</a></li>
+			  </ul>
+			  <a href="#">Components</a>
+		  </li>
+        </ul>
+      </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="container-960 center">
+      
+<div class="page-header">
+  <h1>Progress Bars</h1>
+</div>
+
+<code>&lt;div class="progress-bar" color="*" striped="*"&gt;</code>
+
+<br>
+<br>
+
+<section>
+  <div class="grid">
+    <div class="row">
+      <div span=4>
+        <div id="progress1">
+          <div class="progress-bar" color="blue" striped="animate">
+            <div class="bar" style="width: 60%"></div>
+          </div>
+        </div>
+      </div>
+      <div span=8>
+        <pre class="prettyprint lang-html" from="#progress1"></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Colors</h2>
+  <table class="table" bordered="col header-row" width="100%">
+    <thead>
+      <tr>
+        <th width="300">Progress</th>
+        <th><code>color="*"</code></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <div class="progress-bar">
+              <div class="bar" style="width: 20%"></div>
+            </div>
+        </td>
+        <td>
+            
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div class="progress-bar" color="blue">
+              <div class="bar" style="width: 30%"></div>
+            </div>
+        </td>
+        <td>
+            <code>blue</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div class="progress-bar" color="green">
+              <div class="bar" style="width: 40%"></div>
+            </div>
+        </td>
+        <td>
+          <code>green</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div class="progress-bar" color="orange">
+              <div class="bar" style="width: 50%"></div>
+            </div>
+        </td>
+        <td>
+          <code>orange</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div class="progress-bar" color="red">
+              <div class="bar" style="width: 60%"></div>
+            </div>
+        </td>
+        <td>
+          <code>red</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div class="progress-bar" color="grey">
+              <div class="bar" style="width: 70%"></div>
+            </div>
+        </td>
+        <td>
+          <code>grey</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div class="progress-bar" color="black">
+              <div class="bar" style="width: 80%"></div>
+            </div>
+        </td>
+        <td>
+          <code>black</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<br>
+<br>
+
+<section>
+  <h2>Striped</h2>
+  <table class="table" bordered="col header-row" width="100%">
+    <thead>
+      <tr>
+        <th width="300">Progress</th>
+        <th><code>striped="*"</code></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div id="progress9">
+            <div class="progress-bar" color="blue" striped="striped">
+              <div class="bar" style="width: 50%"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <code>striped</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="progress10">
+            <div class="progress-bar" color="green" striped="animate">
+              <div class="bar" style="width: 60%"></div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <code>animate</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<br>
+<br>
+
+<section>
+  <h2>With Text</h2>
+  <div class="grid">
+    <div class="row">
+      <div span=4>
+        <div id="progress22">
+          <div class="progress-bar" color="blue" striped="animate" style="width: 250px">
+            <span class="text">30%</span>
+            <div class="bar" style="width: 30%">
+              <span class="text" style="width: 250px">30%</span>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="progress-bar" color="blue" striped="animate" style="width: 250px">
+          <span class="text">50%</span>
+          <div class="bar" style="width: 50%">
+            <span class="text" style="width: 250px">50%</span>
+          </div>
+        </div>
+        <br>
+        <div class="progress-bar" color="blue" striped="animate" style="width: 250px">
+          <span class="text">70%</span>
+          <div class="bar" style="width: 70%">
+            <span class="text" style="width: 250px">70%</span>
+          </div>
+        </div>
+      </div>
+      <div span=7>
+        <pre class="prettyprint lang-html" from="#progress22"></pre>
+      </div>
+    </div>
+  </div> 
+</section>
+
+<br>
+<br>
+
+<section>
+  <h2>Size</h2>
+  <table class="table" width="100%" bordered="col header-row">
+    <thead>
+      <th width="300">Progress</th>
+      <th><code>size="*"</code></th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <div class="progress-bar" color="blue" striped="striped" size="mini">
+              <div class="bar" style="width: 60%"></div>
+            </div>
+        </td>
+        <td>
+          <code>mini</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div class="progress-bar" color="blue" striped="striped" size="small">
+              <div class="bar" style="width: 60%"></div>
+            </div>
+        </td>
+        <td>
+          <code>small</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div class="progress-bar" color="blue" striped="striped" size="medium">
+              <div class="bar" style="width: 60%"></div>
+            </div>
+        </td>
+        <td>
+          <code>medium</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div class="progress-bar" color="blue" striped="striped" size="large">
+              <div class="bar" style="width: 60%"></div>
+            </div>
+        </td>
+        <td>
+          <code>large</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+    </div>
+	<br>
+	<br>
+	<hr class="rule">
+	<div class="container-960">
+		<br>
+		<br>
+		Build by UI5
+	</div>
+  </body>
+</html>
