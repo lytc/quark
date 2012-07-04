@@ -20,12 +20,10 @@
   <script>
     $(function () {
       $('pre[from]').each(function () {
-        var that = $(this)
-                , from = that.attr('from')
-                , html = $(from).html();
-
-        that.html($('<div>').text(html).html());
+        var that = $(this);
+        that.html($(that.attr('from')).html());
       });
+
       SyntaxHighlighter.all();
     });
   </script>
@@ -64,33 +62,27 @@
 
 <div class="container-960 center">
   
-<div class="page-header">
-  <h1>Sliders</h1>
-</div>
-
-<code>&lt;div class="slider" color="*" striped="*"&gt;</code>
+<h1>Sliders</h1>
+<hr class="rule">
 
 <br>
-<br>
 
-<section>
-  <div class="grid">
-    <div class="row">
-      <div span=4>
-        <div id="slider1">
-          <div class="slider" color="blue" striped="striped">
-            <div class="bar" style="width: 110px">
-              <div class="thumb"></div>
-            </div>
+<div class="grid">
+  <div class="row">
+    <div span=4>
+      <div id="slider1">
+        <div class="slider" color="blue" striped="striped">
+          <div class="bar" style="width: 110px">
+            <div class="thumb"></div>
           </div>
         </div>
       </div>
-      <div span=8>
-        <pre class="brush: html" from="#slider1"></pre>
-      </div>
+    </div>
+    <div span=8>
+      <pre class="brush: html" from="#slider1"></pre>
     </div>
   </div>
-</section>
+</div>
 
 <h2>Slide colors</h2>
 <table class="table" bordered="col header-row">

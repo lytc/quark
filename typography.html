@@ -20,12 +20,10 @@
   <script>
     $(function () {
       $('pre[from]').each(function () {
-        var that = $(this)
-                , from = that.attr('from')
-                , html = $(from).html();
-
-        that.html($('<div>').text(html).html());
+        var that = $(this);
+        that.html($(that.attr('from')).html());
       });
+
       SyntaxHighlighter.all();
     });
   </script>
@@ -64,9 +62,10 @@
 
 <div class="container-960 center">
   
-<div class="page-header">
-  <h1>Typography</h1>
-</div>
+<h1>Typography</h1>
+<hr class="rule">
+
+<br>
 
 <div class="grid">
   <div class="row">
