@@ -868,7 +868,7 @@ a.btn {
     .notify > .close:hover {
       opacity: .8; }
 
-.progress-bar {
+.progress {
   height: 28px;
   line-height: 28px;
   background-color: #f7f7f7;
@@ -883,13 +883,13 @@ a.btn {
   font-size: 13px;
   overflow: hidden;
   position: relative; }
-  .progress-bar > .text {
+  .progress > .text {
     width: 100%;
     position: absolute;
     text-align: center;
     display: inline-block;
     vertical-align: middle; }
-  .progress-bar > .bar {
+  .progress > .bar {
     height: 100%;
     background-repeat: repeat-x;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -902,12 +902,12 @@ a.btn {
     border-radius: 4px;
     position: absolute;
     overflow: hidden; }
-    .progress-bar > .bar > .text {
+    .progress > .bar > .text {
       color: white;
       text-align: center;
       display: inline-block;
       vertical-align: middle; }
-  .progress-bar[striped] > .bar {
+  .progress[striped] > .bar {
     background-color: #E6E6E6;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -915,20 +915,20 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 40px 40px; }
-  .progress-bar[striped="animate"] > .bar {
+  .progress[striped="animate"] > .bar {
     animation: progress-bar-striped-animate 2s linear infinite;
     -moz-animation: progress-bar-striped-animate 2s linear infinite;
     -webkit-animation: progress-bar-striped-animate 2s linear infinite;
     -o-animation: progress-bar-striped-animate 2s linear infinite;
     -ms-animation: progress-bar-striped-animate 2s linear infinite; }
-  .progress-bar[color=blue] > .bar, .slider[color=blue] > .bar {
+  .progress[color=blue] > .bar {
     background-color: #149bdf;
     background-image: linear-gradient(top, #68c3f1, #149bdf);
     background-image: -webkit-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -moz-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -o-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -ms-linear-gradient(top, #68c3f1, #149bdf); }
-  .progress-bar[striped][color=blue] > .bar, [striped].slider[color=blue] > .bar {
+  .progress[striped][color=blue] > .bar {
     background-color: #149bdf;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -936,14 +936,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=green] > .bar, .slider[color=green] > .bar {
+  .progress[color=green] > .bar {
     background-color: #51a351;
     background-image: linear-gradient(top, #91c991, #51a351);
     background-image: -webkit-linear-gradient(top, #91c991, #51a351);
     background-image: -moz-linear-gradient(top, #91c991, #51a351);
     background-image: -o-linear-gradient(top, #91c991, #51a351);
     background-image: -ms-linear-gradient(top, #91c991, #51a351); }
-  .progress-bar[striped][color=green] > .bar, [striped].slider[color=green] > .bar {
+  .progress[striped][color=green] > .bar {
     background-color: #51a351;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -951,14 +951,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=orange] > .bar, .slider[color=orange] > .bar {
+  .progress[color=orange] > .bar {
     background-color: #f89406;
     background-image: linear-gradient(top, #fbbf69, #f89406);
     background-image: -webkit-linear-gradient(top, #fbbf69, #f89406);
     background-image: -moz-linear-gradient(top, #fbbf69, #f89406);
     background-image: -o-linear-gradient(top, #fbbf69, #f89406);
     background-image: -ms-linear-gradient(top, #fbbf69, #f89406); }
-  .progress-bar[striped][color=orange] > .bar, [striped].slider[color=orange] > .bar {
+  .progress[striped][color=orange] > .bar {
     background-color: #f89406;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -966,14 +966,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=red] > .bar, .slider[color=red] > .bar {
+  .progress[color=red] > .bar {
     background-color: #bd362f;
     background-image: linear-gradient(top, #dd7a75, #bd362f);
     background-image: -webkit-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -moz-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -o-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -ms-linear-gradient(top, #dd7a75, #bd362f); }
-  .progress-bar[striped][color=red] > .bar, [striped].slider[color=red] > .bar {
+  .progress[striped][color=red] > .bar {
     background-color: #bd362f;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -981,14 +981,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=grey] > .bar, .slider[color=grey] > .bar {
+  .progress[color=grey] > .bar {
     background-color: gray;
     background-image: linear-gradient(top, #b3b3b3, gray);
     background-image: -webkit-linear-gradient(top, #b3b3b3, gray);
     background-image: -moz-linear-gradient(top, #b3b3b3, gray);
     background-image: -o-linear-gradient(top, #b3b3b3, gray);
     background-image: -ms-linear-gradient(top, #b3b3b3, gray); }
-  .progress-bar[striped][color=grey] > .bar, [striped].slider[color=grey] > .bar {
+  .progress[striped][color=grey] > .bar {
     background-color: gray;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -996,14 +996,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[color=black] > .bar, .slider[color=black] > .bar {
+  .progress[color=black] > .bar {
     background-color: #333333;
     background-image: linear-gradient(top, #666666, #333333);
     background-image: -webkit-linear-gradient(top, #666666, #333333);
     background-image: -moz-linear-gradient(top, #666666, #333333);
     background-image: -o-linear-gradient(top, #666666, #333333);
     background-image: -ms-linear-gradient(top, #666666, #333333); }
-  .progress-bar[striped][color=black] > .bar, [striped].slider[color=black] > .bar {
+  .progress[striped][color=black] > .bar {
     background-color: #333333;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -1011,16 +1011,16 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress-bar[size=mini] {
+  .progress[size=mini] {
     height: 20px;
     font-size: 11px; }
-  .progress-bar[size=small] {
+  .progress[size=small] {
     height: 28px;
     font-size: 13.667px; }
-  .progress-bar[size=medium] {
+  .progress[size=medium] {
     height: 40px;
     font-size: 17.667px; }
-  .progress-bar[size=large] {
+  .progress[size=large] {
     height: 52px;
     font-size: 21.667px; }
 
