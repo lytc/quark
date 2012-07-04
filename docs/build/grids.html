@@ -36,12 +36,10 @@
   <script>
     $(function () {
       $('pre[from]').each(function () {
-        var that = $(this)
-                , from = that.attr('from')
-                , html = $(from).html();
-
-        that.html($('<div>').text(html).html());
+        var that = $(this);
+        that.html($(that.attr('from')).html());
       });
+
       SyntaxHighlighter.all();
     });
   </script>
@@ -80,9 +78,10 @@
 
 <div class="container-960 center">
   
-<div class="page-header">
-  <h1>Grids</h1>
-</div>
+<h1>Grids</h1>
+<hr class="rule">
+
+<br>
 
 <div id="grid-test" class="grid" col=12>
   <div class="row">

@@ -20,12 +20,10 @@
   <script>
     $(function () {
       $('pre[from]').each(function () {
-        var that = $(this)
-                , from = that.attr('from')
-                , html = $(from).html();
-
-        that.html($('<div>').text(html).html());
+        var that = $(this);
+        that.html($(that.attr('from')).html());
       });
+
       SyntaxHighlighter.all();
     });
   </script>
@@ -64,24 +62,14 @@
 
 <div class="container-960 center">
   
-<div class="page-header">
-  <h1>Menus</h1>
-</div>
-<code>&lt;ul class="menu"&gt;</code>
+<h1>Menus</h1>
+<hr class="rule">
 
 <br>
-<br>
 
-<table class="table">
-  <thead>
-  <tr>
-    <th>Menu</th>
-    <th>Markup</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td valign="top">
+<div class="grid">
+  <div class="row">
+    <div span="4">
       <div id="menu1">
         <ul class="menu">
           <li><a href="#">Lorem ipsum dolor</a></li>
@@ -103,13 +91,14 @@
           <li><a href="#">Lorem ipsum dolor</a></li>
         </ul>
       </div>
-    </td>
-    <td>
+    </div>
+    <div span="8">
       <pre class="brush: html" from="#menu1"></pre>
-    </td>
-  </tr>
-  </tbody>
-</table>
+    </div>
+  </div>
+</div>
+
+<br>
 
 <h2>Item hover background colors</h2>
 <table class="table" bordered="col header-row">
