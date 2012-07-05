@@ -30,6 +30,15 @@ task :docs do
   # copy to ui5-gh-pages
   system "echo - copy docs to gh-pages"
   system "cp -r docs/build/ ../ui5-gh-pages/"
+  
+  # push gh-pages
+  system "echo - push gh-pages"
+  Dir.chdir('../ui5-gh-pages') do
+    system "git add -A"
+    system "git commit -m 'update'"
+    system "git push origin gh-pages"
+  end
+  
   system "echo - done!"
     
 end
