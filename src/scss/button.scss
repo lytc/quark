@@ -58,10 +58,12 @@ $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
   }
 }
 
-.btn-group[disabled] > .btn,
-.btn-group[disabled] > .btn:hover,
-.btn[disabled],
-.btn[disabled]:hover {
+.btn-group.disabled > .btn,
+.btn-group.disabled > .btn:hover,
+button.btn[disabled],
+button.btn[disabled]:hover,
+.btn.disabled,
+.btn.disabled:hover{
   background-image: none;
   opacity: .5;
   cursor: default;
