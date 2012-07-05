@@ -28,29 +28,33 @@
       @include linear-gradient("top, #fff, #e6e6e6");
     }
   }
-  &[striped] > .bar {
-    background-color: #E6E6E6;
-    @include linear-gradient("-45deg, #{rgba(white, 0.15)} 25%, transparent 25%, transparent 50%, #{rgba(white, 0.15)} 50%, #{rgba(white, 0.15)} 75%, transparent 75%, transparent");
-    background-size: 40px 40px;
+  &.striped, &.striped-animate {
+    > .bar {
+	  background-color: #E6E6E6;
+	  @include linear-gradient("-45deg, #{rgba(white, 0.15)} 25%, transparent 25%, transparent 50%, #{rgba(white, 0.15)} 50%, #{rgba(white, 0.15)} 75%, transparent 75%, transparent");
+	  background-size: 40px 40px;
+	}
   }
-  &[striped="animate"] > .bar {
+  &.striped-animate > .bar {
     @include animation(slider-bar-striped-animate 2s linear infinite);
   }
   @each $color-hash in $base-colors-list {
     $name: nth($color-hash, 1);
     $color: nth($color-hash, 2);
-    &[color=#{$name}] {
-      @extend .progress-bar[color=#{$name}];
+    &.#{$name} {
+      @extend .progress.#{$name};
     }
-    &[striped][color=#{$name}] {
-      @extend .progress-bar[color=#{$name}];
-    }
+    &.striped, &.striped-animate {
+	  &.#{$name} {
+        @extend .progress.#{$name};
+	  }
+	}
   }
   @each $size-hash in $base-sizes-list {
     $name: nth($size-hash, 1);
     $size: nth($size-hash, 2);
     $half: $size / 2;
-    &[size="#{$name}"] {
+    &.#{$name} {
       height: $size - $half;
       margin: ($size - $half) / 2 10px;
       > .bar {

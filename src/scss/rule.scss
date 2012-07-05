@@ -6,19 +6,19 @@
   border-radius: 0;
   background: none;
   @each $style in dotted, dashed, double, groove, ridge {
-    &[border-style="#{$style}"] {
+    &.#{$style} {
       border-style: $style;
     }
   }
   @each $color-hash in $base-colors-list {
     $name: nth($color-hash, 1);
     $color: nth($color-hash, 2);
-    &[color="#{$name}"] {
+    &.#{$name} {
       border-color: $color;
     }
   }
   @for $i from 1 through 10 {
-    &[size="#{$i}"] {
+    &.size-#{$i} {
       border-top-width: #{$i}px;
     }
   }

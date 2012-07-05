@@ -14,7 +14,6 @@
     position: absolute;
     text-align: center;
     display: inline-block;
-    vertical-align: middle;
   }
   > .bar {
     height: 100%;
@@ -28,26 +27,25 @@
       color: white;
       text-align: center;
       display: inline-block;
-      vertical-align: middle;
     }
   }
-  &[striped] > .bar {
+  &.striped > .bar {
     background-color: #E6E6E6;
     @include linear-gradient("-45deg, #{rgba(white, 0.15)} 25%, transparent 25%, transparent 50%, #{rgba(white, 0.15)} 50%, #{rgba(white, 0.15)} 75%, transparent 75%, transparent");
     background-size: 40px 40px;
   }
-  &[striped="animate"] > .bar {
+  &.striped-animate > .bar {
     @include animation(progress-bar-striped-animate 2s linear infinite);
   }
   @each $color-hash in $base-colors-list {
     $name: nth($color-hash, 1);
     $color: nth($color-hash, 2);
-    &[color=#{$name}] {
+    &.#{$name} {
       > .bar {
         @include base-bg-gradient($color);
       }
     }
-    &[striped][color=#{$name}] > .bar {
+    &.striped.#{$name} > .bar, &.striped-animate.#{$name} > .bar {
       background-color: $color;
       @include linear-gradient("-45deg, #{rgba(white, 0.15)} 25%, transparent 25%, transparent 50%, #{rgba(white, 0.15)} 50%, #{rgba(white, 0.15)} 75%, transparent 75%, transparent");
       background-size: 60px 60px;
@@ -56,8 +54,9 @@
   @each $size-hash in $base-sizes-list {
     $name: nth($size-hash, 1);
     $size: nth($size-hash, 2);
-    &[size=#{$name}] {
+    &.#{$name} {
       height: $size;
+	  line-height: $size;
       font-size: $base-font-size + ($size - 20) / 3 - 2;
     }
   }

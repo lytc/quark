@@ -23,7 +23,7 @@
   @each $size-hash in $base-sizes-list {
     $name: nth($size-hash, 1);
     $size: nth($size-hash, 2);
-    &[size=#{$name}] {
+    &.#{$name} {
       width: $size;
       height: $size;
     }
@@ -31,7 +31,7 @@
   @each $color-hash in $base-colors-list {
     $name: nth($color-hash, 1);
     $color: nth($color-hash, 2);
-    &[color=#{$name}] {
+    &.#{$name} {
       > * {
         background-color: $color;
       }

@@ -72,7 +72,7 @@
       padding-left: $base-padding / 2;
     }
   }
-  &:not([label-align]) > .buttons, &:not([label-align]) > fieldset > .buttons {
+  &:not(.label-top) > .buttons, &:not(.label-top) > fieldset > .buttons {
     &:before {
       content: "";
       display: inline-block;
@@ -86,9 +86,9 @@
     }
   }
   // label-align="top"
-  &[label-align="top"] {
+  &.label-top {
     > .field, fieldset > .field {
-      label:not([class~="box-label"]) {
+      label:not(.box-label) {
         display: block;
         text-align: left;
       }

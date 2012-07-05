@@ -10,12 +10,12 @@
   > tbody > tr:last-child > td {
     border-bottom: 0;
   }
-  &[bordered~=table], &[bordered=all] {
+  &.border, &.border-all {
     border-collapse: separate;
     border: $base-border-width $base-border-style $base-border-color;
     border-radius: $base-border-radius;
   }
-  &[bordered~=col], &[bordered=all] {
+  &.border-col, &.border-all {
     > thead > tr > th, tbody > tr > td {
       border-right-width: $base-border-width;
       &:last-child {
@@ -23,17 +23,17 @@
       }
     }
   }
-  &[bordered~=row], &[bordered=all] {
+  &.border-row, &.border-all {
     > thead > tr > th, tbody > tr > td {
       border-bottom-width: 1px;
     }
   }
-  &[bordered~=header-row], &[bordered~=header] {
+  &.border-header-row, &.border-header {
     > thead > tr > th {
       border-bottom-width: 1px;
     }
   }
-  &[bordered~=header-col], &[bordered~=header] {
+  &.border-header-col, &.border-header {
     > thead > tr > th {
       border-right-width: 1px;
       &:last-child {
@@ -41,7 +41,7 @@
       }
     }
   }
-  &[striped] {
+  &.striped {
     > tbody > tr:nth-child(2n-1) {
       background-color: rgba(#cccccc, 0.2);
     }

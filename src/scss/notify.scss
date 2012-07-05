@@ -4,10 +4,11 @@
   @each $color-hash in $base-colors-list {
     $name: nth($color-hash, 1);
     $color: nth($color-hash, 2);
-    &[color=#{$name}] {
+    &.#{$name} {
       @extend .border-with-radius;
       border-color: rgba($color, 0.2);
       background-color: rgba($color, 0.15);
+	  color: $color;
     }
   }
   > .close {

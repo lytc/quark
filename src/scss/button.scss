@@ -36,8 +36,8 @@ $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
 @each $btn-hash in $-btn-sizes-list {
   $name: nth($btn-hash, 1);
   $size: nth($btn-hash, 2);
-  .btn-group[size="#{$name}"] > .btn,
-  .btn[size="#{$name}"] {
+  .btn-group.#{$name} > .btn,
+  .btn.#{$name} {
     height: $size;
     line-height: $size;
     font-size: $base-font-size + ($size - 20) / 3 - 2;
@@ -45,24 +45,12 @@ $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
   }
 }
 
-.btn-group[color] > .btn, .btn[color] {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(black, 0.25);
-}
-
-@mixin btn-color($name, $color) {
-  .btn-group[color="#{$name}"] > .btn, .btn[color="#{$name}"] {
-    @include base-bg-gradient($color);
-    &:hover {
-      @include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");
-    }
-  }
-}
-
 @each $color-hash in $base-colors-list {
   $name: nth($color-hash, 1);
   $color: nth($color-hash, 2);
-  .btn-group[color="#{$name}"] > .btn, .btn[color="#{$name}"] {
+  .btn-group.#{$name} > .btn, .btn.#{$name} {
+  	color: white;
+  	text-shadow: 0 -1px 0 rgba(black, 0.25);
     @include base-bg-gradient($color);
     &:hover {
       @include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");

@@ -498,10 +498,10 @@ label, input, button, select, textarea {
   .clearfix:after, .btn-group:after {
     clear: both; }
 
-.border, .border-with-radius, .notify, .notify[color=blue], .notify[color=green], .notify[color=orange], .notify[color=red], .notify[color=grey], .notify[color=black], code, pre, .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .menu, .nav, .menu ul, .nav ul {
+.border, .border-with-radius, .notify, .notify.blue, .notify.green, .notify.orange, .notify.red, .notify.grey, .notify.black, code, pre, .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .menu, .nav, .menu ul, .nav ul {
   border: 1px solid #cccccc; }
 
-.border-radius, .border-with-radius, .notify, .notify[color=blue], .notify[color=green], .notify[color=orange], .notify[color=red], .notify[color=grey], .notify[color=black], pre, .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .menu, .nav, .menu ul, .nav ul, .menu li a, .nav li a {
+.border-radius, .border-with-radius, .notify, .notify.blue, .notify.green, .notify.orange, .notify.red, .notify.grey, .notify.black, pre, .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .menu, .nav, .menu ul, .nav ul, .menu li a, .nav li a {
   border-radius: 4px; }
 
 .no-border, *[no-border] {
@@ -581,23 +581,23 @@ pre code {
   border-width: 0; }
 .table > tbody > tr:last-child > td {
   border-bottom: 0; }
-.table[bordered~=table], .table[bordered=all] {
+.table.border, .table.border-with-radius, .table.notify, .table.notify.blue, .table.notify.green, .table.notify.orange, .table.notify.red, .table.notify.grey, .table.notify.black, code.table, pre.table, .form fieldset.table, .form .field input.table:not([type="radio"]), .form .field input.table:not([type="checkbox"]), .form .field select.table, .form .field textarea.table, .table.menu, .table.nav, .menu ul.table, .nav ul.table, .table.border-all {
   border-collapse: separate;
   border: 1px solid #cccccc;
   border-radius: 4px; }
-.table[bordered~=col] > thead > tr > th, .table[bordered~=col] tbody > tr > td, .table[bordered=all] > thead > tr > th, .table[bordered=all] tbody > tr > td {
+.table.border-col > thead > tr > th, .table.border-col tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
   border-right-width: 1px; }
-  .table[bordered~=col] > thead > tr > th:last-child, .table[bordered~=col] tbody > tr > td:last-child, .table[bordered=all] > thead > tr > th:last-child, .table[bordered=all] tbody > tr > td:last-child {
+  .table.border-col > thead > tr > th:last-child, .table.border-col tbody > tr > td:last-child, .table.border-all > thead > tr > th:last-child, .table.border-all tbody > tr > td:last-child {
     border-right: 0; }
-.table[bordered~=row] > thead > tr > th, .table[bordered~=row] tbody > tr > td, .table[bordered=all] > thead > tr > th, .table[bordered=all] tbody > tr > td {
+.table.border-row > thead > tr > th, .table.border-row tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
   border-bottom-width: 1px; }
-.table[bordered~=header-row] > thead > tr > th, .table[bordered~=header] > thead > tr > th {
+.table.border-header-row > thead > tr > th, .table.border-header > thead > tr > th {
   border-bottom-width: 1px; }
-.table[bordered~=header-col] > thead > tr > th, .table[bordered~=header] > thead > tr > th {
+.table.border-header-col > thead > tr > th, .table.border-header > thead > tr > th {
   border-right-width: 1px; }
-  .table[bordered~=header-col] > thead > tr > th:last-child, .table[bordered~=header] > thead > tr > th:last-child {
+  .table.border-header-col > thead > tr > th:last-child, .table.border-header > thead > tr > th:last-child {
     border-right: 0; }
-.table[striped] > tbody > tr:nth-child(2n-1) {
+.table.striped > tbody > tr:nth-child(2n-1) {
   background-color: rgba(204, 204, 204, 0.2); }
 
 .grid {
@@ -618,7 +618,7 @@ body:not([col]) *[span="1"], body:not([col]) .form input[span="1"], .form body:n
   margin-left: 10px;
   margin-right: 10px;
   width: 60px; }
-body:not([col]) *[span="2"], body:not([col]) .form .field label, .form .field body:not([col]) label, body:not([col]) .form .field *.info:before, .form .field body:not([col]) *.info:before, body:not([col]) .form:not([label-align]) > *.buttons:before, body:not([col]) .form:not([label-align]) > fieldset > *.buttons:before, body:not([col]) .form input[span="2"], .form body:not([col]) input[span="2"], body[col="12"] *[span="2"], body[col="12"] .form .field label, .form .field body[col="12"] label, body[col="12"] .form .field *.info:before, .form .field body[col="12"] *.info:before, body[col="12"] .form:not([label-align]) > *.buttons:before, body[col="12"] .form:not([label-align]) > fieldset > *.buttons:before, body[col="12"] .form input[span="2"], .form body[col="12"] input[span="2"], .grid:not([col]) *[span="2"], .grid:not([col]) .form .field label, .form .field .grid:not([col]) label, .grid:not([col]) .form .field *.info:before, .form .field .grid:not([col]) *.info:before, .grid:not([col]) .form:not([label-align]) > *.buttons:before, .grid:not([col]) .form:not([label-align]) > fieldset > *.buttons:before, .grid:not([col]) .form input[span="2"], .form .grid:not([col]) input[span="2"], .grid[col="12"] *[span="2"], .grid[col="12"] .form .field label, .form .field .grid[col="12"] label, .grid[col="12"] .form .field *.info:before, .form .field .grid[col="12"] *.info:before, .grid[col="12"] .form:not([label-align]) > *.buttons:before, .grid[col="12"] .form:not([label-align]) > fieldset > *.buttons:before, .grid[col="12"] .form input[span="2"], .form .grid[col="12"] input[span="2"] {
+body:not([col]) *[span="2"], body:not([col]) .form .field label, .form .field body:not([col]) label, body:not([col]) .form .field *.info:before, .form .field body:not([col]) *.info:before, body:not([col]) .form:not(.label-top) > *.buttons:before, body:not([col]) .form:not(.label-top) > fieldset > *.buttons:before, body:not([col]) .form input[span="2"], .form body:not([col]) input[span="2"], body[col="12"] *[span="2"], body[col="12"] .form .field label, .form .field body[col="12"] label, body[col="12"] .form .field *.info:before, .form .field body[col="12"] *.info:before, body[col="12"] .form:not(.label-top) > *.buttons:before, body[col="12"] .form:not(.label-top) > fieldset > *.buttons:before, body[col="12"] .form input[span="2"], .form body[col="12"] input[span="2"], .grid:not([col]) *[span="2"], .grid:not([col]) .form .field label, .form .field .grid:not([col]) label, .grid:not([col]) .form .field *.info:before, .form .field .grid:not([col]) *.info:before, .grid:not([col]) .form:not(.label-top) > *.buttons:before, .grid:not([col]) .form:not(.label-top) > fieldset > *.buttons:before, .grid:not([col]) .form input[span="2"], .form .grid:not([col]) input[span="2"], .grid[col="12"] *[span="2"], .grid[col="12"] .form .field label, .form .field .grid[col="12"] label, .grid[col="12"] .form .field *.info:before, .form .field .grid[col="12"] *.info:before, .grid[col="12"] .form:not(.label-top) > *.buttons:before, .grid[col="12"] .form:not(.label-top) > fieldset > *.buttons:before, .grid[col="12"] .form input[span="2"], .form .grid[col="12"] input[span="2"] {
   margin-left: 10px;
   margin-right: 10px;
   width: 140px; }
@@ -696,109 +696,117 @@ body:not([col]) *[span="12"], body:not([col]) .form input[span="12"], .form body
 a.btn {
   text-decoration: none; }
 
-.btn-group[size="mini"] > .btn,
-.btn[size="mini"] {
+.btn-group.mini > .btn,
+.btn.mini {
   height: 20px;
   line-height: 20px;
   font-size: 11px;
   padding: 0 7px; }
 
-.btn-group[size="medium"] > .btn,
-.btn[size="medium"] {
+.btn-group.medium > .btn,
+.btn.medium {
   height: 40px;
   line-height: 40px;
   font-size: 17.667px;
   padding: 0 14px; }
 
-.btn-group[size="large"] > .btn,
-.btn[size="large"] {
+.btn-group.large > .btn,
+.btn.large {
   height: 52px;
   line-height: 52px;
   font-size: 21.667px;
   padding: 0 18px; }
 
-.btn-group[color] > .btn, .btn[color] {
+.btn-group.blue > .btn, .btn.blue {
   color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
-
-.btn-group[color="blue"] > .btn, .btn[color="blue"] {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #149bdf;
   background-image: linear-gradient(top, #68c3f1, #149bdf);
   background-image: -webkit-linear-gradient(top, #68c3f1, #149bdf);
   background-image: -moz-linear-gradient(top, #68c3f1, #149bdf);
   background-image: -o-linear-gradient(top, #68c3f1, #149bdf);
   background-image: -ms-linear-gradient(top, #68c3f1, #149bdf); }
-  .btn-group[color="blue"] > .btn:hover, .btn[color="blue"]:hover {
+  .btn-group.blue > .btn:hover, .btn.blue:hover {
     background-image: linear-gradient(top, #149bdf, #68c3f1);
     background-image: -webkit-linear-gradient(top, #149bdf, #68c3f1);
     background-image: -moz-linear-gradient(top, #149bdf, #68c3f1);
     background-image: -o-linear-gradient(top, #149bdf, #68c3f1);
     background-image: -ms-linear-gradient(top, #149bdf, #68c3f1); }
 
-.btn-group[color="green"] > .btn, .btn[color="green"] {
+.btn-group.green > .btn, .btn.green {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #51a351;
   background-image: linear-gradient(top, #91c991, #51a351);
   background-image: -webkit-linear-gradient(top, #91c991, #51a351);
   background-image: -moz-linear-gradient(top, #91c991, #51a351);
   background-image: -o-linear-gradient(top, #91c991, #51a351);
   background-image: -ms-linear-gradient(top, #91c991, #51a351); }
-  .btn-group[color="green"] > .btn:hover, .btn[color="green"]:hover {
+  .btn-group.green > .btn:hover, .btn.green:hover {
     background-image: linear-gradient(top, #51a351, #91c991);
     background-image: -webkit-linear-gradient(top, #51a351, #91c991);
     background-image: -moz-linear-gradient(top, #51a351, #91c991);
     background-image: -o-linear-gradient(top, #51a351, #91c991);
     background-image: -ms-linear-gradient(top, #51a351, #91c991); }
 
-.btn-group[color="orange"] > .btn, .btn[color="orange"] {
+.btn-group.orange > .btn, .btn.orange {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #f89406;
   background-image: linear-gradient(top, #fbbf69, #f89406);
   background-image: -webkit-linear-gradient(top, #fbbf69, #f89406);
   background-image: -moz-linear-gradient(top, #fbbf69, #f89406);
   background-image: -o-linear-gradient(top, #fbbf69, #f89406);
   background-image: -ms-linear-gradient(top, #fbbf69, #f89406); }
-  .btn-group[color="orange"] > .btn:hover, .btn[color="orange"]:hover {
+  .btn-group.orange > .btn:hover, .btn.orange:hover {
     background-image: linear-gradient(top, #f89406, #fbbf69);
     background-image: -webkit-linear-gradient(top, #f89406, #fbbf69);
     background-image: -moz-linear-gradient(top, #f89406, #fbbf69);
     background-image: -o-linear-gradient(top, #f89406, #fbbf69);
     background-image: -ms-linear-gradient(top, #f89406, #fbbf69); }
 
-.btn-group[color="red"] > .btn, .btn[color="red"] {
+.btn-group.red > .btn, .btn.red {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #bd362f;
   background-image: linear-gradient(top, #dd7a75, #bd362f);
   background-image: -webkit-linear-gradient(top, #dd7a75, #bd362f);
   background-image: -moz-linear-gradient(top, #dd7a75, #bd362f);
   background-image: -o-linear-gradient(top, #dd7a75, #bd362f);
   background-image: -ms-linear-gradient(top, #dd7a75, #bd362f); }
-  .btn-group[color="red"] > .btn:hover, .btn[color="red"]:hover {
+  .btn-group.red > .btn:hover, .btn.red:hover {
     background-image: linear-gradient(top, #bd362f, #dd7a75);
     background-image: -webkit-linear-gradient(top, #bd362f, #dd7a75);
     background-image: -moz-linear-gradient(top, #bd362f, #dd7a75);
     background-image: -o-linear-gradient(top, #bd362f, #dd7a75);
     background-image: -ms-linear-gradient(top, #bd362f, #dd7a75); }
 
-.btn-group[color="grey"] > .btn, .btn[color="grey"] {
+.btn-group.grey > .btn, .btn.grey {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: gray;
   background-image: linear-gradient(top, #b3b3b3, gray);
   background-image: -webkit-linear-gradient(top, #b3b3b3, gray);
   background-image: -moz-linear-gradient(top, #b3b3b3, gray);
   background-image: -o-linear-gradient(top, #b3b3b3, gray);
   background-image: -ms-linear-gradient(top, #b3b3b3, gray); }
-  .btn-group[color="grey"] > .btn:hover, .btn[color="grey"]:hover {
+  .btn-group.grey > .btn:hover, .btn.grey:hover {
     background-image: linear-gradient(top, gray, #b3b3b3);
     background-image: -webkit-linear-gradient(top, gray, #b3b3b3);
     background-image: -moz-linear-gradient(top, gray, #b3b3b3);
     background-image: -o-linear-gradient(top, gray, #b3b3b3);
     background-image: -ms-linear-gradient(top, gray, #b3b3b3); }
 
-.btn-group[color="black"] > .btn, .btn[color="black"] {
+.btn-group.black > .btn, .btn.black {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #333333;
   background-image: linear-gradient(top, #666666, #333333);
   background-image: -webkit-linear-gradient(top, #666666, #333333);
   background-image: -moz-linear-gradient(top, #666666, #333333);
   background-image: -o-linear-gradient(top, #666666, #333333);
   background-image: -ms-linear-gradient(top, #666666, #333333); }
-  .btn-group[color="black"] > .btn:hover, .btn[color="black"]:hover {
+  .btn-group.black > .btn:hover, .btn.black:hover {
     background-image: linear-gradient(top, #333333, #666666);
     background-image: -webkit-linear-gradient(top, #333333, #666666);
     background-image: -moz-linear-gradient(top, #333333, #666666);
@@ -837,24 +845,30 @@ a.btn {
 
 .notify {
   padding: 8px; }
-  .notify[color=blue] {
+  .notify.blue {
     border-color: rgba(20, 155, 223, 0.2);
-    background-color: rgba(20, 155, 223, 0.15); }
-  .notify[color=green] {
+    background-color: rgba(20, 155, 223, 0.15);
+    color: #149bdf; }
+  .notify.green {
     border-color: rgba(81, 163, 81, 0.2);
-    background-color: rgba(81, 163, 81, 0.15); }
-  .notify[color=orange] {
+    background-color: rgba(81, 163, 81, 0.15);
+    color: #51a351; }
+  .notify.orange {
     border-color: rgba(248, 148, 6, 0.2);
-    background-color: rgba(248, 148, 6, 0.15); }
-  .notify[color=red] {
+    background-color: rgba(248, 148, 6, 0.15);
+    color: #f89406; }
+  .notify.red {
     border-color: rgba(189, 54, 47, 0.2);
-    background-color: rgba(189, 54, 47, 0.15); }
-  .notify[color=grey] {
+    background-color: rgba(189, 54, 47, 0.15);
+    color: #bd362f; }
+  .notify.grey {
     border-color: rgba(128, 128, 128, 0.2);
-    background-color: rgba(128, 128, 128, 0.15); }
-  .notify[color=black] {
+    background-color: rgba(128, 128, 128, 0.15);
+    color: gray; }
+  .notify.black {
     border-color: rgba(51, 51, 51, 0.2);
-    background-color: rgba(51, 51, 51, 0.15); }
+    background-color: rgba(51, 51, 51, 0.15);
+    color: #333333; }
   .notify > .close {
     margin: 0;
     margin-top: -5px;
@@ -887,8 +901,7 @@ a.btn {
     width: 100%;
     position: absolute;
     text-align: center;
-    display: inline-block;
-    vertical-align: middle; }
+    display: inline-block; }
   .progress > .bar {
     height: 100%;
     background-repeat: repeat-x;
@@ -905,9 +918,8 @@ a.btn {
     .progress > .bar > .text {
       color: white;
       text-align: center;
-      display: inline-block;
-      vertical-align: middle; }
-  .progress[striped] > .bar {
+      display: inline-block; }
+  .progress.striped > .bar {
     background-color: #E6E6E6;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -915,20 +927,20 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 40px 40px; }
-  .progress[striped="animate"] > .bar {
+  .progress.striped-animate > .bar {
     animation: progress-bar-striped-animate 2s linear infinite;
     -moz-animation: progress-bar-striped-animate 2s linear infinite;
     -webkit-animation: progress-bar-striped-animate 2s linear infinite;
     -o-animation: progress-bar-striped-animate 2s linear infinite;
     -ms-animation: progress-bar-striped-animate 2s linear infinite; }
-  .progress[color=blue] > .bar {
+  .progress.blue > .bar, .slider.blue > .bar {
     background-color: #149bdf;
     background-image: linear-gradient(top, #68c3f1, #149bdf);
     background-image: -webkit-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -moz-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -o-linear-gradient(top, #68c3f1, #149bdf);
     background-image: -ms-linear-gradient(top, #68c3f1, #149bdf); }
-  .progress[striped][color=blue] > .bar {
+  .progress.striped.blue > .bar, .striped.slider.blue > .bar, .progress.striped-animate.blue > .bar, .striped-animate.slider.blue > .bar {
     background-color: #149bdf;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -936,14 +948,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress[color=green] > .bar {
+  .progress.green > .bar, .slider.green > .bar {
     background-color: #51a351;
     background-image: linear-gradient(top, #91c991, #51a351);
     background-image: -webkit-linear-gradient(top, #91c991, #51a351);
     background-image: -moz-linear-gradient(top, #91c991, #51a351);
     background-image: -o-linear-gradient(top, #91c991, #51a351);
     background-image: -ms-linear-gradient(top, #91c991, #51a351); }
-  .progress[striped][color=green] > .bar {
+  .progress.striped.green > .bar, .striped.slider.green > .bar, .progress.striped-animate.green > .bar, .striped-animate.slider.green > .bar {
     background-color: #51a351;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -951,14 +963,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress[color=orange] > .bar {
+  .progress.orange > .bar, .slider.orange > .bar {
     background-color: #f89406;
     background-image: linear-gradient(top, #fbbf69, #f89406);
     background-image: -webkit-linear-gradient(top, #fbbf69, #f89406);
     background-image: -moz-linear-gradient(top, #fbbf69, #f89406);
     background-image: -o-linear-gradient(top, #fbbf69, #f89406);
     background-image: -ms-linear-gradient(top, #fbbf69, #f89406); }
-  .progress[striped][color=orange] > .bar {
+  .progress.striped.orange > .bar, .striped.slider.orange > .bar, .progress.striped-animate.orange > .bar, .striped-animate.slider.orange > .bar {
     background-color: #f89406;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -966,14 +978,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress[color=red] > .bar {
+  .progress.red > .bar, .slider.red > .bar {
     background-color: #bd362f;
     background-image: linear-gradient(top, #dd7a75, #bd362f);
     background-image: -webkit-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -moz-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -o-linear-gradient(top, #dd7a75, #bd362f);
     background-image: -ms-linear-gradient(top, #dd7a75, #bd362f); }
-  .progress[striped][color=red] > .bar {
+  .progress.striped.red > .bar, .striped.slider.red > .bar, .progress.striped-animate.red > .bar, .striped-animate.slider.red > .bar {
     background-color: #bd362f;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -981,14 +993,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress[color=grey] > .bar {
+  .progress.grey > .bar, .slider.grey > .bar {
     background-color: gray;
     background-image: linear-gradient(top, #b3b3b3, gray);
     background-image: -webkit-linear-gradient(top, #b3b3b3, gray);
     background-image: -moz-linear-gradient(top, #b3b3b3, gray);
     background-image: -o-linear-gradient(top, #b3b3b3, gray);
     background-image: -ms-linear-gradient(top, #b3b3b3, gray); }
-  .progress[striped][color=grey] > .bar {
+  .progress.striped.grey > .bar, .striped.slider.grey > .bar, .progress.striped-animate.grey > .bar, .striped-animate.slider.grey > .bar {
     background-color: gray;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -996,14 +1008,14 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress[color=black] > .bar {
+  .progress.black > .bar, .slider.black > .bar {
     background-color: #333333;
     background-image: linear-gradient(top, #666666, #333333);
     background-image: -webkit-linear-gradient(top, #666666, #333333);
     background-image: -moz-linear-gradient(top, #666666, #333333);
     background-image: -o-linear-gradient(top, #666666, #333333);
     background-image: -ms-linear-gradient(top, #666666, #333333); }
-  .progress[striped][color=black] > .bar {
+  .progress.striped.black > .bar, .striped.slider.black > .bar, .progress.striped-animate.black > .bar, .striped-animate.slider.black > .bar {
     background-color: #333333;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -1011,17 +1023,21 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 60px 60px; }
-  .progress[size=mini] {
+  .progress.mini {
     height: 20px;
+    line-height: 20px;
     font-size: 11px; }
-  .progress[size=small] {
+  .progress.small {
     height: 28px;
+    line-height: 28px;
     font-size: 13.667px; }
-  .progress[size=medium] {
+  .progress.medium {
     height: 40px;
+    line-height: 40px;
     font-size: 17.667px; }
-  .progress[size=large] {
+  .progress.large {
     height: 52px;
+    line-height: 52px;
     font-size: 21.667px; }
 
 @keyframes progress-bar-striped-animate {
@@ -1209,29 +1225,29 @@ a.btn {
     -o-animation-delay: 0.996s;
     -ms-animation-delay: 0.996s;
     opacity: 0; }
-  .loading[size=mini] {
+  .loading.mini {
     width: 20px;
     height: 20px; }
-  .loading[size=small] {
+  .loading.small {
     width: 28px;
     height: 28px; }
-  .loading[size=medium] {
+  .loading.medium {
     width: 40px;
     height: 40px; }
-  .loading[size=large] {
+  .loading.large {
     width: 52px;
     height: 52px; }
-  .loading[color=blue] > * {
+  .loading.blue > * {
     background-color: #149bdf; }
-  .loading[color=green] > * {
+  .loading.green > * {
     background-color: #51a351; }
-  .loading[color=orange] > * {
+  .loading.orange > * {
     background-color: #f89406; }
-  .loading[color=red] > * {
+  .loading.red > * {
     background-color: #bd362f; }
-  .loading[color=grey] > * {
+  .loading.grey > * {
     background-color: gray; }
-  .loading[color=black] > * {
+  .loading.black > * {
     background-color: #333333; }
 
 @keyframes loading-spinner-fade {
@@ -1322,13 +1338,13 @@ a.btn {
       content: "";
       display: inline-block;
       margin-right: 10px; }
-.form:not([label-align]) > .buttons:before, .form:not([label-align]) > fieldset > .buttons:before {
+.form:not(.label-top) > .buttons:before, .form:not(.label-top) > fieldset > .buttons:before {
   content: "";
   display: inline-block;
   margin-right: 10px; }
 .form > .buttons > .btn:first-child, .form > fieldset > .buttons > .btn:first-child {
   margin-left: 10px; }
-.form[label-align="top"] > .field label:not([class~="box-label"]), .form[label-align="top"] fieldset > .field label:not([class~="box-label"]) {
+.form.label-top > .field label:not(.box-label), .form.label-top fieldset > .field label:not(.box-label) {
   display: block;
   text-align: left; }
 
@@ -1339,47 +1355,47 @@ a.btn {
   border-color: #eeeeee;
   border-radius: 0;
   background: none; }
-  .rule[border-style="dotted"] {
+  .rule.dotted {
     border-style: dotted; }
-  .rule[border-style="dashed"] {
+  .rule.dashed {
     border-style: dashed; }
-  .rule[border-style="double"] {
+  .rule.double {
     border-style: double; }
-  .rule[border-style="groove"] {
+  .rule.groove {
     border-style: groove; }
-  .rule[border-style="ridge"] {
+  .rule.ridge {
     border-style: ridge; }
-  .rule[color="blue"] {
+  .rule.blue {
     border-color: #149bdf; }
-  .rule[color="green"] {
+  .rule.green {
     border-color: #51a351; }
-  .rule[color="orange"] {
+  .rule.orange {
     border-color: #f89406; }
-  .rule[color="red"] {
+  .rule.red {
     border-color: #bd362f; }
-  .rule[color="grey"] {
+  .rule.grey {
     border-color: gray; }
-  .rule[color="black"] {
+  .rule.black {
     border-color: #333333; }
-  .rule[size="1"] {
+  .rule.size-1 {
     border-top-width: 1px; }
-  .rule[size="2"] {
+  .rule.size-2 {
     border-top-width: 2px; }
-  .rule[size="3"] {
+  .rule.size-3 {
     border-top-width: 3px; }
-  .rule[size="4"] {
+  .rule.size-4 {
     border-top-width: 4px; }
-  .rule[size="5"] {
+  .rule.size-5 {
     border-top-width: 5px; }
-  .rule[size="6"] {
+  .rule.size-6 {
     border-top-width: 6px; }
-  .rule[size="7"] {
+  .rule.size-7 {
     border-top-width: 7px; }
-  .rule[size="8"] {
+  .rule.size-8 {
     border-top-width: 8px; }
-  .rule[size="9"] {
+  .rule.size-9 {
     border-top-width: 9px; }
-  .rule[size="10"] {
+  .rule.size-10 {
     border-top-width: 10px; }
 
 .slider {
@@ -1423,7 +1439,7 @@ a.btn {
       background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
       background-image: -o-linear-gradient(top, #fff, #e6e6e6);
       background-image: -ms-linear-gradient(top, #fff, #e6e6e6); }
-  .slider[striped] > .bar {
+  .slider.striped > .bar, .slider.striped-animate > .bar {
     background-color: #E6E6E6;
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -1431,40 +1447,40 @@ a.btn {
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 40px 40px; }
-  .slider[striped="animate"] > .bar {
+  .slider.striped-animate > .bar {
     animation: slider-bar-striped-animate 2s linear infinite;
     -moz-animation: slider-bar-striped-animate 2s linear infinite;
     -webkit-animation: slider-bar-striped-animate 2s linear infinite;
     -o-animation: slider-bar-striped-animate 2s linear infinite;
     -ms-animation: slider-bar-striped-animate 2s linear infinite; }
-  .slider[size="mini"] {
+  .slider.mini {
     height: 10px;
     margin: 5px 10px; }
-    .slider[size="mini"] > .bar > .thumb {
+    .slider.mini > .bar > .thumb {
       top: -5px;
       right: -10px;
       width: 20px;
       height: 20px; }
-  .slider[size="small"] {
+  .slider.small {
     height: 14px;
     margin: 7px 10px; }
-    .slider[size="small"] > .bar > .thumb {
+    .slider.small > .bar > .thumb {
       top: -7px;
       right: -14px;
       width: 28px;
       height: 28px; }
-  .slider[size="medium"] {
+  .slider.medium {
     height: 20px;
     margin: 10px 10px; }
-    .slider[size="medium"] > .bar > .thumb {
+    .slider.medium > .bar > .thumb {
       top: -10px;
       right: -20px;
       width: 40px;
       height: 40px; }
-  .slider[size="large"] {
+  .slider.large {
     height: 26px;
     margin: 13px 10px; }
-    .slider[size="large"] > .bar > .thumb {
+    .slider.large > .bar > .thumb {
       top: -13px;
       right: -26px;
       width: 52px;
@@ -1567,17 +1583,17 @@ a.btn {
       display: block; }
       .menu li:hover > ul + a:after, .nav li:hover > ul + a:after {
         display: none; }
-  .menu[item-bg=blue] li a:hover, [item-bg=blue].nav li a:hover {
+  .menu.item-bg-blue li a:hover, .item-bg-blue.nav li a:hover {
     background-color: #149bdf; }
-  .menu[item-bg=green] li a:hover, [item-bg=green].nav li a:hover {
+  .menu.item-bg-green li a:hover, .item-bg-green.nav li a:hover {
     background-color: #51a351; }
-  .menu[item-bg=orange] li a:hover, [item-bg=orange].nav li a:hover {
+  .menu.item-bg-orange li a:hover, .item-bg-orange.nav li a:hover {
     background-color: #f89406; }
-  .menu[item-bg=red] li a:hover, [item-bg=red].nav li a:hover {
+  .menu.item-bg-red li a:hover, .item-bg-red.nav li a:hover {
     background-color: #bd362f; }
-  .menu[item-bg=grey] li a:hover, [item-bg=grey].nav li a:hover {
+  .menu.item-bg-grey li a:hover, .item-bg-grey.nav li a:hover {
     background-color: gray; }
-  .menu[item-bg=black] li a:hover, [item-bg=black].nav li a:hover {
+  .menu.item-bg-black li a:hover, .item-bg-black.nav li a:hover {
     background-color: #333333; }
 
 .nav {
@@ -1614,19 +1630,39 @@ a.btn {
           border-top-color: white; }
     .nav > li:hover > ul + a:after {
       display: block !important; }
-  .nav[bg] > li > a {
-    color: white; }
-  .nav[bg] > li > ul + a:after {
-    border-top-color: white; }
-  .nav[bg=blue] {
+  .nav.blue {
     background-color: #149bdf; }
-  .nav[bg=green] {
+    .nav.blue > li > a {
+      color: white; }
+    .nav.blue > li > ul + a:after {
+      border-top-color: white; }
+  .nav.green {
     background-color: #51a351; }
-  .nav[bg=orange] {
+    .nav.green > li > a {
+      color: white; }
+    .nav.green > li > ul + a:after {
+      border-top-color: white; }
+  .nav.orange {
     background-color: #f89406; }
-  .nav[bg=red] {
+    .nav.orange > li > a {
+      color: white; }
+    .nav.orange > li > ul + a:after {
+      border-top-color: white; }
+  .nav.red {
     background-color: #bd362f; }
-  .nav[bg=grey] {
+    .nav.red > li > a {
+      color: white; }
+    .nav.red > li > ul + a:after {
+      border-top-color: white; }
+  .nav.grey {
     background-color: gray; }
-  .nav[bg=black] {
+    .nav.grey > li > a {
+      color: white; }
+    .nav.grey > li > ul + a:after {
+      border-top-color: white; }
+  .nav.black {
     background-color: #333333; }
+    .nav.black > li > a {
+      color: white; }
+    .nav.black > li > ul + a:after {
+      border-top-color: white; }
