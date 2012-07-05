@@ -18,13 +18,20 @@ task :build do
   
   system "echo - copy css to docs"
   system "cp build/css/ui5.min.css docs/source/stylesheets/ui5.min.css"
-  
+  system "echo - done!"
+end
+
+task :docs do
   system "echo - build docs"
-     Dir.chdir('docs') do
-       system "middleman build"
-     end
-     # copy to ui5-gh-pages
-     system "cp -r docs/build/ ../ui5-gh-pages/"
+  Dir.chdir('docs') do
+    system "middleman build"
+  end
+  
+  # copy to ui5-gh-pages
+  system "echo - copy docs to gh-pages"
+  system "cp -r docs/build/ ../ui5-gh-pages/"
+  system "echo - done!"
+    
 end
 
 task :default => :build
