@@ -85,6 +85,8 @@ button.btn[disabled]:hover,
 
 .btn-group {
   @extend .clearfix;
+  display: inline-block;
+
   > .btn {
     border-left-width: 0;
     border-radius: 0;
