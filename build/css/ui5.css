@@ -572,6 +572,12 @@ pre code {
 .container-960 {
   width: 960px; }
 
+.to-left {
+  float: left; }
+
+.to-right {
+  float: right; }
+
 .table {
   width: 100%; }
   .table > thead > tr > th, .table > tbody > tr > td {
