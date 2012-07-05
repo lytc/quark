@@ -826,10 +826,12 @@ a.btn {
     background-image: -o-linear-gradient(top, #333333, #666666);
     background-image: -ms-linear-gradient(top, #333333, #666666); }
 
-.btn-group[disabled] > .btn,
-.btn-group[disabled] > .btn:hover,
-.btn[disabled],
-.btn[disabled]:hover {
+.btn-group.disabled > .btn,
+.btn-group.disabled > .btn:hover,
+button.btn[disabled],
+button.btn[disabled]:hover,
+.btn.disabled,
+.btn.disabled:hover {
   background-image: none;
   opacity: .5;
   cursor: default; }
