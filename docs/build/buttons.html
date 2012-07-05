@@ -21,7 +21,7 @@
     $(function () {
       $('pre[from]').each(function () {
         var that = $(this);
-        that.html($(that.attr('from')).html());
+        that.html($(that.attr('data-from')).html());
       });
 
       SyntaxHighlighter.all();
@@ -91,7 +91,7 @@
       </div>
     </div>
     <div class="span-6">
-      <pre class="brush: html" from="#btn1">
+      <pre class="brush: html" data-from="#btn1">
       </pre>
     </div>
   </div>
@@ -331,7 +331,7 @@
       </div>
     </div>
     <div class="span-6">
-      <pre class="brush: html" from="#btngroup1"></pre>
+      <pre class="brush: html" data-from="#btngroup1"></pre>
     </div>
   </div>
 </div>
