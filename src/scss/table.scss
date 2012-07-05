@@ -1,4 +1,6 @@
 .table {
+  width: 100%;
+
   > thead > tr > th, > tbody > tr > td {
     padding: $base-padding;
     line-height: $base-line-height;
