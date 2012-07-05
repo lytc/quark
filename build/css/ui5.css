@@ -572,33 +572,35 @@ pre code {
 .container-960 {
   width: 960px; }
 
-.table > thead > tr > th, .table > tbody > tr > td {
-  padding: 8px;
-  line-height: 18px;
-  text-align: left;
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 0; }
-.table > tbody > tr:last-child > td {
-  border-bottom: 0; }
-.table.border, .table.border-with-radius, .table.notify, .table.notify.blue, .table.notify.green, .table.notify.orange, .table.notify.red, .table.notify.grey, .table.notify.black, code.table, pre.table, .form fieldset.table, .form .field input.table:not([type="radio"]), .form .field input.table:not([type="checkbox"]), .form .field select.table, .form .field textarea.table, .table.menu, .table.nav, .menu ul.table, .nav ul.table, .table.border-all {
-  border-collapse: separate;
-  border: 1px solid #cccccc;
-  border-radius: 4px; }
-.table.border-col > thead > tr > th, .table.border-col tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
-  border-right-width: 1px; }
-  .table.border-col > thead > tr > th:last-child, .table.border-col tbody > tr > td:last-child, .table.border-all > thead > tr > th:last-child, .table.border-all tbody > tr > td:last-child {
-    border-right: 0; }
-.table.border-row > thead > tr > th, .table.border-row tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
-  border-bottom-width: 1px; }
-.table.border-header-row > thead > tr > th, .table.border-header > thead > tr > th {
-  border-bottom-width: 1px; }
-.table.border-header-col > thead > tr > th, .table.border-header > thead > tr > th {
-  border-right-width: 1px; }
-  .table.border-header-col > thead > tr > th:last-child, .table.border-header > thead > tr > th:last-child {
-    border-right: 0; }
-.table.striped > tbody > tr:nth-child(2n-1) {
-  background-color: rgba(204, 204, 204, 0.2); }
+.table {
+  width: 100%; }
+  .table > thead > tr > th, .table > tbody > tr > td {
+    padding: 8px;
+    line-height: 18px;
+    text-align: left;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 0; }
+  .table > tbody > tr:last-child > td {
+    border-bottom: 0; }
+  .table.border, .table.border-with-radius, .table.notify, .table.notify.blue, .table.notify.green, .table.notify.orange, .table.notify.red, .table.notify.grey, .table.notify.black, code.table, pre.table, .form fieldset.table, .form .field input.table:not([type="radio"]), .form .field input.table:not([type="checkbox"]), .form .field select.table, .form .field textarea.table, .table.menu, .table.nav, .menu ul.table, .nav ul.table, .table.border-all {
+    border-collapse: separate;
+    border: 1px solid #cccccc;
+    border-radius: 4px; }
+  .table.border-col > thead > tr > th, .table.border-col tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
+    border-right-width: 1px; }
+    .table.border-col > thead > tr > th:last-child, .table.border-col tbody > tr > td:last-child, .table.border-all > thead > tr > th:last-child, .table.border-all tbody > tr > td:last-child {
+      border-right: 0; }
+  .table.border-row > thead > tr > th, .table.border-row tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
+    border-bottom-width: 1px; }
+  .table.border-header-row > thead > tr > th, .table.border-header > thead > tr > th {
+    border-bottom-width: 1px; }
+  .table.border-header-col > thead > tr > th, .table.border-header > thead > tr > th {
+    border-right-width: 1px; }
+    .table.border-header-col > thead > tr > th:last-child, .table.border-header > thead > tr > th:last-child {
+      border-right: 0; }
+  .table.striped > tbody > tr:nth-child(2n-1) {
+    background-color: rgba(204, 204, 204, 0.2); }
 
 .grid {
   width: 960px; }
