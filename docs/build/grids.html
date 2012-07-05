@@ -37,7 +37,7 @@
 
   <script>
     $(function () {
-      $('pre[from]').each(function () {
+      $('pre[data-from]').each(function () {
         var that = $(this);
         that.html($(that.attr('data-from')).html());
       });
@@ -172,8 +172,13 @@
 <hr class="rule">
 <div class="container-960 center">
   <br>
+  <div class="to-left"><p>Build by UI5</p></div>
+  <div class="to-right">
+    <a href="http://www.w3.org/html/logo/">
+      <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+    </a>
+  </div>
   <br>
-  Build by UI5
 </div>
 </body>
 </html>

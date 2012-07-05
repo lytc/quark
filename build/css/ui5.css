@@ -490,6 +490,13 @@ label, input, button, select, textarea {
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box; }
 
+a {
+  text-decoration: none;
+  color: #149bdf; }
+  a:hover {
+    text-decoration: underline;
+    color: #f89406; }
+
 .clearfix, .btn-group {
   *zoom: 1; }
   .clearfix:before, .btn-group:before, .clearfix:after, .btn-group:after {
@@ -569,6 +576,9 @@ pre code {
   margin-left: auto;
   margin-right: auto; }
 
+.text-center {
+  text-align: center; }
+
 .container-960 {
   width: 960px; }
 
@@ -577,6 +587,13 @@ pre code {
 
 .to-right {
   float: right; }
+
+h1.small {
+  font-size: 3em; }
+h1.medium {
+  font-size: 4em; }
+h1.large {
+  font-size: 5em; }
 
 .table {
   width: 100%; }
@@ -854,15 +871,17 @@ button.btn[disabled]:hover,
 .btn-group.pressed > .btn {
   border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2); }
 
-.btn-group > .btn {
-  border-left-width: 0;
-  border-radius: 0;
-  float: left; }
-.btn-group > .btn:first-child {
-  border-left-width: 1px;
-  border-radius: 4px 0 0 4px; }
-.btn-group > .btn:last-child {
-  border-radius: 0 4px 4px 0; }
+.btn-group {
+  display: inline-block; }
+  .btn-group > .btn {
+    border-left-width: 0;
+    border-radius: 0;
+    float: left; }
+  .btn-group > .btn:first-child {
+    border-left-width: 1px;
+    border-radius: 4px 0 0 4px; }
+  .btn-group > .btn:last-child {
+    border-radius: 0 4px 4px 0; }
 
 .notify {
   padding: 8px; }
