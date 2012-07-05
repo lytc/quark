@@ -67,17 +67,17 @@ $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
   cursor: default;
 }
 
-.btn-group[pressed] > .btn,
-.btn-group[pressed] > .btn:hover,
+.btn-group.pressed > .btn,
+.btn-group.pressed > .btn:hover,
 .btn:active,
-.btn[pressed],
-.btn[pressed]:hover {
+.btn.pressed,
+.btn.pressed:hover {
   box-shadow: 0 2px 4px rgba(black, 0.3) inset, 0 1px 2px rgba(black, 0.1);
   background-image: none;
   outline: 0;
 }
 
-.btn-group[pressed] > .btn {
+.btn-group.pressed > .btn {
   border-color: rgba(black, 0.2) rgba(black, 0.2) rgba(black, 0.2);
 }
 

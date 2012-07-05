@@ -420,58 +420,58 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.color-blue, [color=blue] {
+.color-blue {
   color: #149bdf; }
 
-.bg-blue, [bg=blue] {
+.bg-blue {
   background-color: #149bdf; }
 
-.border-color-blue, [border-color=blue] {
+.border-color-blue {
   border-color: #149bdf; }
 
-.color-green, [color=green] {
+.color-green {
   color: #51a351; }
 
-.bg-green, [bg=green] {
+.bg-green {
   background-color: #51a351; }
 
-.border-color-green, [border-color=green] {
+.border-color-green {
   border-color: #51a351; }
 
-.color-orange, [color=orange] {
+.color-orange {
   color: #f89406; }
 
-.bg-orange, [bg=orange] {
+.bg-orange {
   background-color: #f89406; }
 
-.border-color-orange, [border-color=orange] {
+.border-color-orange {
   border-color: #f89406; }
 
-.color-red, [color=red] {
+.color-red {
   color: #bd362f; }
 
-.bg-red, [bg=red] {
+.bg-red {
   background-color: #bd362f; }
 
-.border-color-red, [border-color=red] {
+.border-color-red {
   border-color: #bd362f; }
 
-.color-grey, [color=grey] {
+.color-grey {
   color: gray; }
 
-.bg-grey, [bg=grey] {
+.bg-grey {
   background-color: gray; }
 
-.border-color-grey, [border-color=grey] {
+.border-color-grey {
   border-color: gray; }
 
-.color-black, [color=black] {
+.color-black {
   color: #333333; }
 
-.bg-black, [bg=black] {
+.bg-black {
   background-color: #333333; }
 
-.border-color-black, [border-color=black] {
+.border-color-black {
   border-color: #333333; }
 
 body {
@@ -504,13 +504,13 @@ label, input, button, select, textarea {
 .border-radius, .border-with-radius, .notify, .notify.blue, .notify.green, .notify.orange, .notify.red, .notify.grey, .notify.black, pre, .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .menu, .nav, .menu ul, .nav ul, .menu li a, .nav li a {
   border-radius: 4px; }
 
-.no-border, *[no-border] {
+.no-border {
   border: none; }
 
-.box-shadow, .menu, .nav, .menu ul, .nav ul, *[box-shadow] {
+.box-shadow, .menu, .nav, .menu ul, .nav ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
-ul[unstyled] {
+ul.unstyled {
   padding-left: 0;
   list-style: none; }
 
@@ -614,51 +614,62 @@ body .row, .grid .row {
     display: block;
     float: left; }
 
-body:not([col]) *[span="1"], body:not([col]) .form input[span="1"], .form body:not([col]) input[span="1"], body[col="12"] *[span="1"], body[col="12"] .form input[span="1"], .form body[col="12"] input[span="1"], .grid:not([col]) *[span="1"], .grid:not([col]) .form input[span="1"], .form .grid:not([col]) input[span="1"], .grid[col="12"] *[span="1"], .grid[col="12"] .form input[span="1"], .form .grid[col="12"] input[span="1"] {
+.span-1 {
   margin-left: 10px;
   margin-right: 10px;
   width: 60px; }
-body:not([col]) *[span="2"], body:not([col]) .form .field label, .form .field body:not([col]) label, body:not([col]) .form .field *.info:before, .form .field body:not([col]) *.info:before, body:not([col]) .form:not(.label-top) > *.buttons:before, body:not([col]) .form:not(.label-top) > fieldset > *.buttons:before, body:not([col]) .form input[span="2"], .form body:not([col]) input[span="2"], body[col="12"] *[span="2"], body[col="12"] .form .field label, .form .field body[col="12"] label, body[col="12"] .form .field *.info:before, .form .field body[col="12"] *.info:before, body[col="12"] .form:not(.label-top) > *.buttons:before, body[col="12"] .form:not(.label-top) > fieldset > *.buttons:before, body[col="12"] .form input[span="2"], .form body[col="12"] input[span="2"], .grid:not([col]) *[span="2"], .grid:not([col]) .form .field label, .form .field .grid:not([col]) label, .grid:not([col]) .form .field *.info:before, .form .field .grid:not([col]) *.info:before, .grid:not([col]) .form:not(.label-top) > *.buttons:before, .grid:not([col]) .form:not(.label-top) > fieldset > *.buttons:before, .grid:not([col]) .form input[span="2"], .form .grid:not([col]) input[span="2"], .grid[col="12"] *[span="2"], .grid[col="12"] .form .field label, .form .field .grid[col="12"] label, .grid[col="12"] .form .field *.info:before, .form .field .grid[col="12"] *.info:before, .grid[col="12"] .form:not(.label-top) > *.buttons:before, .grid[col="12"] .form:not(.label-top) > fieldset > *.buttons:before, .grid[col="12"] .form input[span="2"], .form .grid[col="12"] input[span="2"] {
+
+.span-2 {
   margin-left: 10px;
   margin-right: 10px;
   width: 140px; }
-body:not([col]) *[span="3"], body:not([col]) .form input[span="3"], .form body:not([col]) input[span="3"], body[col="12"] *[span="3"], body[col="12"] .form input[span="3"], .form body[col="12"] input[span="3"], .grid:not([col]) *[span="3"], .grid:not([col]) .form input[span="3"], .form .grid:not([col]) input[span="3"], .grid[col="12"] *[span="3"], .grid[col="12"] .form input[span="3"], .form .grid[col="12"] input[span="3"] {
+
+.span-3 {
   margin-left: 10px;
   margin-right: 10px;
   width: 220px; }
-body:not([col]) *[span="4"], body:not([col]) .form input[span="4"], .form body:not([col]) input[span="4"], body[col="12"] *[span="4"], body[col="12"] .form input[span="4"], .form body[col="12"] input[span="4"], .grid:not([col]) *[span="4"], .grid:not([col]) .form input[span="4"], .form .grid:not([col]) input[span="4"], .grid[col="12"] *[span="4"], .grid[col="12"] .form input[span="4"], .form .grid[col="12"] input[span="4"] {
+
+.span-4 {
   margin-left: 10px;
   margin-right: 10px;
   width: 300px; }
-body:not([col]) *[span="5"], body:not([col]) .form input[span="5"], .form body:not([col]) input[span="5"], body[col="12"] *[span="5"], body[col="12"] .form input[span="5"], .form body[col="12"] input[span="5"], .grid:not([col]) *[span="5"], .grid:not([col]) .form input[span="5"], .form .grid:not([col]) input[span="5"], .grid[col="12"] *[span="5"], .grid[col="12"] .form input[span="5"], .form .grid[col="12"] input[span="5"] {
+
+.span-5 {
   margin-left: 10px;
   margin-right: 10px;
   width: 380px; }
-body:not([col]) *[span="6"], body:not([col]) .form input[span="6"], .form body:not([col]) input[span="6"], body[col="12"] *[span="6"], body[col="12"] .form input[span="6"], .form body[col="12"] input[span="6"], .grid:not([col]) *[span="6"], .grid:not([col]) .form input[span="6"], .form .grid:not([col]) input[span="6"], .grid[col="12"] *[span="6"], .grid[col="12"] .form input[span="6"], .form .grid[col="12"] input[span="6"] {
+
+.span-6 {
   margin-left: 10px;
   margin-right: 10px;
   width: 460px; }
-body:not([col]) *[span="7"], body:not([col]) .form input[span="7"], .form body:not([col]) input[span="7"], body[col="12"] *[span="7"], body[col="12"] .form input[span="7"], .form body[col="12"] input[span="7"], .grid:not([col]) *[span="7"], .grid:not([col]) .form input[span="7"], .form .grid:not([col]) input[span="7"], .grid[col="12"] *[span="7"], .grid[col="12"] .form input[span="7"], .form .grid[col="12"] input[span="7"] {
+
+.span-7 {
   margin-left: 10px;
   margin-right: 10px;
   width: 540px; }
-body:not([col]) *[span="8"], body:not([col]) .form input[span="8"], .form body:not([col]) input[span="8"], body[col="12"] *[span="8"], body[col="12"] .form input[span="8"], .form body[col="12"] input[span="8"], .grid:not([col]) *[span="8"], .grid:not([col]) .form input[span="8"], .form .grid:not([col]) input[span="8"], .grid[col="12"] *[span="8"], .grid[col="12"] .form input[span="8"], .form .grid[col="12"] input[span="8"] {
+
+.span-8 {
   margin-left: 10px;
   margin-right: 10px;
   width: 620px; }
-body:not([col]) *[span="9"], body:not([col]) .form input[span="9"], .form body:not([col]) input[span="9"], body[col="12"] *[span="9"], body[col="12"] .form input[span="9"], .form body[col="12"] input[span="9"], .grid:not([col]) *[span="9"], .grid:not([col]) .form input[span="9"], .form .grid:not([col]) input[span="9"], .grid[col="12"] *[span="9"], .grid[col="12"] .form input[span="9"], .form .grid[col="12"] input[span="9"] {
+
+.span-9 {
   margin-left: 10px;
   margin-right: 10px;
   width: 700px; }
-body:not([col]) *[span="10"], body:not([col]) .form input[span="10"], .form body:not([col]) input[span="10"], body[col="12"] *[span="10"], body[col="12"] .form input[span="10"], .form body[col="12"] input[span="10"], .grid:not([col]) *[span="10"], .grid:not([col]) .form input[span="10"], .form .grid:not([col]) input[span="10"], .grid[col="12"] *[span="10"], .grid[col="12"] .form input[span="10"], .form .grid[col="12"] input[span="10"] {
+
+.span-10 {
   margin-left: 10px;
   margin-right: 10px;
   width: 780px; }
-body:not([col]) *[span="11"], body:not([col]) .form input[span="11"], .form body:not([col]) input[span="11"], body[col="12"] *[span="11"], body[col="12"] .form input[span="11"], .form body[col="12"] input[span="11"], .grid:not([col]) *[span="11"], .grid:not([col]) .form input[span="11"], .form .grid:not([col]) input[span="11"], .grid[col="12"] *[span="11"], .grid[col="12"] .form input[span="11"], .form .grid[col="12"] input[span="11"] {
+
+.span-11 {
   margin-left: 10px;
   margin-right: 10px;
   width: 860px; }
-body:not([col]) *[span="12"], body:not([col]) .form input[span="12"], .form body:not([col]) input[span="12"], body[col="12"] *[span="12"], body[col="12"] .form input[span="12"], .form body[col="12"] input[span="12"], .grid:not([col]) *[span="12"], .grid:not([col]) .form input[span="12"], .form .grid:not([col]) input[span="12"], .grid[col="12"] *[span="12"], .grid[col="12"] .form input[span="12"], .form .grid[col="12"] input[span="12"] {
+
+.span-12 {
   margin-left: 10px;
   margin-right: 10px;
   width: 940px; }
@@ -821,16 +832,16 @@ a.btn {
   opacity: .5;
   cursor: default; }
 
-.btn-group[pressed] > .btn,
-.btn-group[pressed] > .btn:hover,
+.btn-group.pressed > .btn,
+.btn-group.pressed > .btn:hover,
 .btn:active,
-.btn[pressed],
-.btn[pressed]:hover {
+.btn.pressed,
+.btn.pressed:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
   background-image: none;
   outline: 0; }
 
-.btn-group[pressed] > .btn {
+.btn-group.pressed > .btn {
   border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2); }
 
 .btn-group > .btn {

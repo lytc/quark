@@ -1,13 +1,13 @@
 @each $color-hash in $base-colors-list {
   $name: nth($color-hash, 1);
   $color: nth($color-hash, 2);
-  .color-#{$name}, [color=#{$name}] {
+  .color-#{$name} {
     color: $color;
   }
-  .bg-#{$name}, [bg=#{$name}] {
+  .bg-#{$name} {
     background-color: $color;
   }
-  .border-color-#{$name}, [border-color=#{$name}] {
+  .border-color-#{$name} {
     border-color: $color;
   }
 }

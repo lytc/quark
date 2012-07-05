@@ -30,15 +30,15 @@ label, input, button, select, textarea {
   @extend .border-radius;
 }
 
-.no-border, *[no-border] {
+.no-border {
   border: none;
 }
 
-.box-shadow, *[box-shadow] {
+.box-shadow {
   box-shadow: 0 4px 8px rgba(black, 0.2);
 }
 
-ul[unstyled] {
+ul.unstyled {
   padding-left: 0;
   list-style: none;
 }
