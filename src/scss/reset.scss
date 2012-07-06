@@ -45,6 +45,10 @@ textarea {
   font-size: $base-font-size;
 }
 
+body {
+  margin: 0;
+}
+
 /*
  * Addresses outline displayed oddly in Chrome
  * Improves readability when focused and also mouse hovered in all browsers

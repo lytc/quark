@@ -1,13 +1,60 @@
-.grid {
-  width: 96rem;
+[class*=span] {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-body, .grid {
-  .row {
-    @include clearfix;
-    > * {
-      display: block;
-      float: left;
+.row {
+  width: 100%;
+  @extend .clearfix;
+
+  > [class*=span] {
+    display: inline-block;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container, .row {
+    width: 1140px;
+  }
+
+  @for $i from 1 through 12 {
+    .span-#{$i} {
+      width: $i * 1140 / 12 - 20px;
     }
+
+    .offset-#{$i} {
+      margin-left:  $i * 1140 / 12 + 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1190px) {
+  .container, .row {
+    width: 720px;
+
+    @for $i from 1 through 12 {
+      .span-#{$i} {
+        width: $i * 720 / 12 - 20px;
+      }
+
+      .offset-#{$i} {
+        margin-left: $i * 720 / 12 + 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container, .row {
+    width: 100%;
+
+    @for $i from 1 through 12 {
+    .span-#{$i} {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
   }
 }

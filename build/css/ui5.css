@@ -38,6 +38,9 @@ select,
 textarea {
   font-size: 1.3rem; }
 
+body {
+  margin: 0; }
+
 /*
  * Addresses outline displayed oddly in Chrome
  * Improves readability when focused and also mouse hovered in all browsers
@@ -269,6 +272,193 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+[class*=span] {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.row {
+  width: 100%; }
+  .row > [class*=span] {
+    display: inline-block;
+    float: left; }
+
+@media only screen and (min-width: 1200px) {
+  .container, .row {
+    width: 1140px; }
+
+  .span-1, .form input.span-1 {
+    width: 75px; }
+
+  .offset-1 {
+    margin-left: 105px; }
+
+  .span-2, .form .field label, .form .field .info:before, .form:not(.label-top) > .buttons:before, .form:not(.label-top) > fieldset > .buttons:before, .form input.span-2 {
+    width: 170px; }
+
+  .offset-2 {
+    margin-left: 200px; }
+
+  .span-3, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .form input.span-3 {
+    width: 265px; }
+
+  .offset-3 {
+    margin-left: 295px; }
+
+  .span-4, .form input.span-4 {
+    width: 360px; }
+
+  .offset-4 {
+    margin-left: 390px; }
+
+  .span-5, .form input.span-5 {
+    width: 455px; }
+
+  .offset-5 {
+    margin-left: 485px; }
+
+  .span-6, .form input.span-6 {
+    width: 550px; }
+
+  .offset-6 {
+    margin-left: 580px; }
+
+  .span-7, .form input.span-7 {
+    width: 645px; }
+
+  .offset-7 {
+    margin-left: 675px; }
+
+  .span-8, .form input.span-8 {
+    width: 740px; }
+
+  .offset-8 {
+    margin-left: 770px; }
+
+  .span-9, .form input.span-9 {
+    width: 835px; }
+
+  .offset-9 {
+    margin-left: 865px; }
+
+  .span-10, .form input.span-10 {
+    width: 930px; }
+
+  .offset-10 {
+    margin-left: 960px; }
+
+  .span-11, .form input.span-11 {
+    width: 1025px; }
+
+  .offset-11 {
+    margin-left: 1055px; }
+
+  .span-12, .form input.span-12 {
+    width: 1120px; }
+
+  .offset-12 {
+    margin-left: 1150px; } }
+@media only screen and (min-width: 768px) and (max-width: 1190px) {
+  .container, .row {
+    width: 720px; }
+    .container .span-1, .container .form input.span-1, .form .container input.span-1, .row .span-1, .row .form input.span-1, .form .row input.span-1 {
+      width: 40px; }
+    .container .offset-1, .row .offset-1 {
+      margin-left: 70px; }
+    .container .span-2, .container .form .field label, .form .field .container label, .container .form .field .info:before, .form .field .container .info:before, .container .form:not(.label-top) > .buttons:before, .container .form:not(.label-top) > fieldset > .buttons:before, .container .form input.span-2, .form .container input.span-2, .row .span-2, .row .form .field label, .form .field .row label, .row .form .field .info:before, .form .field .row .info:before, .row .form:not(.label-top) > .buttons:before, .row .form:not(.label-top) > fieldset > .buttons:before, .row .form input.span-2, .form .row input.span-2 {
+      width: 100px; }
+    .container .offset-2, .row .offset-2 {
+      margin-left: 130px; }
+    .container .span-3, .container .form .field input:not([type="radio"]), .form .field .container input:not([type="radio"]), .container .form .field input:not([type="checkbox"]), .form .field .container input:not([type="checkbox"]), .container .form .field select, .form .field .container select, .container .form .field textarea, .form .field .container textarea, .container .form input.span-3, .form .container input.span-3, .row .span-3, .row .form .field input:not([type="radio"]), .form .field .row input:not([type="radio"]), .row .form .field input:not([type="checkbox"]), .form .field .row input:not([type="checkbox"]), .row .form .field select, .form .field .row select, .row .form .field textarea, .form .field .row textarea, .row .form input.span-3, .form .row input.span-3 {
+      width: 160px; }
+    .container .offset-3, .row .offset-3 {
+      margin-left: 190px; }
+    .container .span-4, .container .form input.span-4, .form .container input.span-4, .row .span-4, .row .form input.span-4, .form .row input.span-4 {
+      width: 220px; }
+    .container .offset-4, .row .offset-4 {
+      margin-left: 250px; }
+    .container .span-5, .container .form input.span-5, .form .container input.span-5, .row .span-5, .row .form input.span-5, .form .row input.span-5 {
+      width: 280px; }
+    .container .offset-5, .row .offset-5 {
+      margin-left: 310px; }
+    .container .span-6, .container .form input.span-6, .form .container input.span-6, .row .span-6, .row .form input.span-6, .form .row input.span-6 {
+      width: 340px; }
+    .container .offset-6, .row .offset-6 {
+      margin-left: 370px; }
+    .container .span-7, .container .form input.span-7, .form .container input.span-7, .row .span-7, .row .form input.span-7, .form .row input.span-7 {
+      width: 400px; }
+    .container .offset-7, .row .offset-7 {
+      margin-left: 430px; }
+    .container .span-8, .container .form input.span-8, .form .container input.span-8, .row .span-8, .row .form input.span-8, .form .row input.span-8 {
+      width: 460px; }
+    .container .offset-8, .row .offset-8 {
+      margin-left: 490px; }
+    .container .span-9, .container .form input.span-9, .form .container input.span-9, .row .span-9, .row .form input.span-9, .form .row input.span-9 {
+      width: 520px; }
+    .container .offset-9, .row .offset-9 {
+      margin-left: 550px; }
+    .container .span-10, .container .form input.span-10, .form .container input.span-10, .row .span-10, .row .form input.span-10, .form .row input.span-10 {
+      width: 580px; }
+    .container .offset-10, .row .offset-10 {
+      margin-left: 610px; }
+    .container .span-11, .container .form input.span-11, .form .container input.span-11, .row .span-11, .row .form input.span-11, .form .row input.span-11 {
+      width: 640px; }
+    .container .offset-11, .row .offset-11 {
+      margin-left: 670px; }
+    .container .span-12, .container .form input.span-12, .form .container input.span-12, .row .span-12, .row .form input.span-12, .form .row input.span-12 {
+      width: 700px; }
+    .container .offset-12, .row .offset-12 {
+      margin-left: 730px; } }
+@media only screen and (max-width: 767px) {
+  .container, .row {
+    width: 100%; }
+    .container .span-1, .container .form input.span-1, .form .container input.span-1, .row .span-1, .row .form input.span-1, .form .row input.span-1 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-2, .container .form .field label, .form .field .container label, .container .form .field .info:before, .form .field .container .info:before, .container .form:not(.label-top) > .buttons:before, .container .form:not(.label-top) > fieldset > .buttons:before, .container .form input.span-2, .form .container input.span-2, .row .span-2, .row .form .field label, .form .field .row label, .row .form .field .info:before, .form .field .row .info:before, .row .form:not(.label-top) > .buttons:before, .row .form:not(.label-top) > fieldset > .buttons:before, .row .form input.span-2, .form .row input.span-2 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-3, .container .form .field input:not([type="radio"]), .form .field .container input:not([type="radio"]), .container .form .field input:not([type="checkbox"]), .form .field .container input:not([type="checkbox"]), .container .form .field select, .form .field .container select, .container .form .field textarea, .form .field .container textarea, .container .form input.span-3, .form .container input.span-3, .row .span-3, .row .form .field input:not([type="radio"]), .form .field .row input:not([type="radio"]), .row .form .field input:not([type="checkbox"]), .form .field .row input:not([type="checkbox"]), .row .form .field select, .form .field .row select, .row .form .field textarea, .form .field .row textarea, .row .form input.span-3, .form .row input.span-3 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-4, .container .form input.span-4, .form .container input.span-4, .row .span-4, .row .form input.span-4, .form .row input.span-4 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-5, .container .form input.span-5, .form .container input.span-5, .row .span-5, .row .form input.span-5, .form .row input.span-5 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-6, .container .form input.span-6, .form .container input.span-6, .row .span-6, .row .form input.span-6, .form .row input.span-6 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-7, .container .form input.span-7, .form .container input.span-7, .row .span-7, .row .form input.span-7, .form .row input.span-7 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-8, .container .form input.span-8, .form .container input.span-8, .row .span-8, .row .form input.span-8, .form .row input.span-8 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-9, .container .form input.span-9, .form .container input.span-9, .row .span-9, .row .form input.span-9, .form .row input.span-9 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-10, .container .form input.span-10, .form .container input.span-10, .row .span-10, .row .form input.span-10, .form .row input.span-10 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-11, .container .form input.span-11, .form .container input.span-11, .row .span-11, .row .form input.span-11, .form .row input.span-11 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+    .container .span-12, .container .form input.span-12, .form .container input.span-12, .row .span-12, .row .form input.span-12, .form .row input.span-12 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; } }
 .color-blue {
   color: #149bdf; }
 
@@ -346,12 +536,12 @@ a {
     text-decoration: underline;
     color: #f89406; }
 
-.clearfix, .btn-group {
+.clearfix, .row, .btn-group {
   *zoom: 1; }
-  .clearfix:before, .btn-group:before, .clearfix:after, .btn-group:after {
+  .clearfix:before, .row:before, .btn-group:before, .clearfix:after, .row:after, .btn-group:after {
     display: table;
     content: ""; }
-  .clearfix:after, .btn-group:after {
+  .clearfix:after, .row:after, .btn-group:after {
     clear: both; }
 
 .border, .border-with-radius, .notify, .notify.blue, .notify.green, .notify.orange, .notify.red, .notify.grey, .notify.black, code, pre, .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .menu, .nav, .menu ul, .nav ul {
@@ -402,12 +592,7 @@ pre code {
   border: 0; }
 
 .container {
-  *zoom: 1; }
-  .container:before, .container:after {
-    display: table;
-    content: ""; }
-  .container:after {
-    clear: both; }
+  margin: auto; }
 
 .fixed-top {
   position: fixed;
@@ -427,9 +612,6 @@ pre code {
 
 .text-center {
   text-align: center; }
-
-.container-960 {
-  width: 96rem; }
 
 .to-left {
   float: left; }
@@ -473,80 +655,6 @@ h1.large {
       border-right: 0; }
   .table.striped > tbody > tr:nth-child(2n-1) {
     background-color: rgba(204, 204, 204, 0.2); }
-
-.grid {
-  width: 96rem; }
-
-body .row, .grid .row {
-  *zoom: 1; }
-  body .row:before, body .row:after, .grid .row:before, .grid .row:after {
-    display: table;
-    content: ""; }
-  body .row:after, .grid .row:after {
-    clear: both; }
-  body .row > *, .grid .row > * {
-    display: block;
-    float: left; }
-
-.span-1, .form input.span-1 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 6rem; }
-
-.span-2, .form .field label, .form .field .info:before, .form:not(.label-top) > .buttons:before, .form:not(.label-top) > fieldset > .buttons:before, .form input.span-2 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 14rem; }
-
-.span-3, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .form input.span-3 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 22rem; }
-
-.span-4, .form input.span-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 30rem; }
-
-.span-5, .form input.span-5 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 38rem; }
-
-.span-6, .form input.span-6 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 46rem; }
-
-.span-7, .form input.span-7 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 54rem; }
-
-.span-8, .form input.span-8 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 62rem; }
-
-.span-9, .form input.span-9 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 70rem; }
-
-.span-10, .form input.span-10 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 78rem; }
-
-.span-11, .form input.span-11 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 86rem; }
-
-.span-12, .form input.span-12 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 94rem; }
 
 .btn {
   font-size: 1.3rem;

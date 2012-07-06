@@ -91,7 +91,7 @@ pre code {
 }
 
 .container {
-  @include clearfix;
+  margin: auto;
 }
 
 .fixed-top {
@@ -116,8 +116,4 @@ pre code {
 
 .text-center {
   text-align: center;
-}
-
-.container-960 {
-  width: 96rem;
 }

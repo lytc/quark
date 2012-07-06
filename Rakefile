@@ -17,6 +17,7 @@ task :build do
   css_min_file.close()
   
   system "echo - copy css to docs"
+  system "cp build/css/ui5.css docs/source/stylesheets/ui5.css"
   system "cp build/css/ui5.min.css docs/source/stylesheets/ui5.min.css"
   system "echo - done!"
 end
