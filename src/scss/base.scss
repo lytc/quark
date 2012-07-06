@@ -44,7 +44,7 @@ a {
 }
 
 .box-shadow {
-  box-shadow: 0 4px 8px rgba(black, 0.2);
+  box-shadow: 0 .4rem .8rem rgba(black, 0.2);
 }
 
 ul.unstyled {
@@ -54,7 +54,7 @@ ul.unstyled {
 
 code,
 pre {
-  padding: 0 3px 2px;
+  padding: 0 .3rem .2rem;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: $base-font-size;
   color: #333333;
@@ -62,7 +62,7 @@ pre {
 }
 
 code {
-  padding: 2px 4px;
+  padding: .2rem .4rem;
   color: $base-color-red;
   background-color: #f7f7f9;
   @extend .border;
@@ -119,5 +119,5 @@ pre code {
 }
 
 .container-960 {
-  width: 960px;
+  width: 96rem;
 }

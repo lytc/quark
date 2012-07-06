@@ -1,23 +1,19 @@
-// font
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size: 13px;
-
 // text
 $base-text-color: #222222;
-$base-line-height: 18px;
+$base-line-height: 1.8rem;
 
 // border
-$base-border-width: 1px;
+$base-border-width: .1rem;
 $base-border-style: solid;
 $base-border-color: #cccccc;
 $base-border: $base-border-width $base-border-style $base-border-color;
-$base-border-radius: 4px;
+$base-border-radius: .4rem;
 
 // padding
-$base-padding: 8px;
+$base-padding: .8rem;
 
 // margin
-$base-margin: 10px;
+$base-margin: 1rem;
 
 // color
 $base-color-blue: #149bdf;
@@ -37,10 +33,10 @@ $-color-black-hash: black, $base-color-black;
 $base-colors-list: $-color-blue-hash, $-color-green-hash, $-color-orange-hash, $-color-red-hash, $-color-grey-hash, $-color-black-hash;
 
 // size
-$base-size-mini: 20px;
-$base-size-small: 28px;
-$base-size-medium: 40px;
-$base-size-large: 52px;
+$base-size-mini: 2rem;
+$base-size-small: 2.8rem;
+$base-size-medium: 4rem;
+$base-size-large: 5.2rem;
 
 $-size-mini-hash: mini, $base-size-mini;
 $-size-small-hash: small, $base-size-small;

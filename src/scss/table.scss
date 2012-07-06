@@ -27,17 +27,17 @@
   }
   &.border-row, &.border-all {
     > thead > tr > th, tbody > tr > td {
-      border-bottom-width: 1px;
+      border-bottom-width: .1rem;
     }
   }
   &.border-header-row, &.border-header {
     > thead > tr > th {
-      border-bottom-width: 1px;
+      border-bottom-width: .1rem;
     }
   }
   &.border-header-col, &.border-header {
     > thead > tr > th {
-      border-right-width: 1px;
+      border-right-width: .1rem;
       &:last-child {
         border-right: 0;
       }

@@ -1,33 +1,3 @@
-/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
-/* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/*
- * Corrects block display not defined in IE6/7/8/9 & FF3
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block; }
-
-/*
- * Corrects inline-block display not defined in IE6/7/8/9 & FF3
- */
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1; }
-
 /*
  * Prevents modern browsers from displaying 'audio' without controls
  * Remove excess height in iOS5 devices
@@ -37,98 +7,70 @@ audio:not([controls]) {
   height: 0; }
 
 /*
- * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
- * Known issue: no IE6 support
- */
-[hidden] {
-  display: none; }
-
-/* =============================================================================
-   Base
-   ========================================================================== */
-/*
  * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
  *    http://clagnut.com/blog/348/#c790
  * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 html {
-  font-size: 100%;
+  font-size: 62.5%;
   /* 1 */
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 62.5%;
   /* 2 */
-  -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 62.5%;
   /* 2 */ }
 
 /*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 html,
+body,
 button,
 input,
 select,
 textarea {
-  font-family: sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/*
- * Addresses margins handled incorrectly in IE6/7
- */
-body {
-  margin: 0; }
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 1.3rem; }
 
-/* =============================================================================
-   Links
-   ========================================================================== */
 /*
  * Addresses outline displayed oddly in Chrome
- */
-a:focus {
-  outline: thin dotted; }
-
-/*
  * Improves readability when focused and also mouse hovered in all browsers
  * people.opera.com/patrickl/experiments/keyboard/test
  */
 a:hover,
-a:active {
+a:active,
+a:focus {
   outline: 0; }
 
-/* =============================================================================
-   Typography
-   ========================================================================== */
-/*
- * Addresses font sizes and margins set differently in IE6/7
- * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
- */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 2.4rem;
+  margin: 1.2rem 0; }
 
 h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0; }
+  font-size: 1.8rem;
+  margin: .9em 0; }
 
 h3 {
-  font-size: 1.17em;
-  margin: 1em 0; }
+  font-size: 1.4rem;
+  margin: .7rem 0; }
 
 h4 {
-  font-size: 1em;
-  margin: 1.33em 0; }
+  font-size: 1.2rem;
+  margin: 0.6em 0; }
 
 h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0; }
+  font-size: 1rem;
+  margin: .5rem 0; }
 
 h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0; }
-
-/*
- * Addresses styling not present in IE7/8/9, S5, Chrome
- */
-abbr[title] {
-  border-bottom: 1px dotted; }
+  font-size: .8rem;
+  margin: .4rem 0; }
 
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
@@ -138,7 +80,7 @@ strong {
   font-weight: bold; }
 
 blockquote {
-  margin: 1em 40px; }
+  margin: .1em 4rem; }
 
 /*
  * Addresses styling not present in S5, Chrome
@@ -152,13 +94,6 @@ dfn {
 mark {
   background: #ff0;
   color: #000; }
-
-/*
- * Addresses margins set differently in IE6/7
- */
-p,
-pre {
-  margin: 1em 0; }
 
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome
@@ -209,55 +144,10 @@ sup {
   vertical-align: baseline; }
 
 sup {
-  top: -0.5em; }
+  top: -0.5rem; }
 
 sub {
-  bottom: -0.25em; }
-
-/* =============================================================================
-   Lists
-   ========================================================================== */
-/*
- * Addresses margins set differently in IE6/7
- */
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0; }
-
-dd {
-  margin: 0 0 0 40px; }
-
-/*
- * Addresses paddings set differently in IE6/7
- */
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px; }
-
-/*
- * Corrects list images handled incorrectly in IE7
- */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none; }
-
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
-/*
- * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
- * 2. Improves image quality when scaled in IE7
- *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
- */
-img {
-  border: 0;
-  /* 1 */
-  -ms-interpolation-mode: bicubic;
-  /* 2 */ }
+  bottom: -0.25rem; }
 
 /*
  * Corrects overflow displayed oddly in IE9
@@ -265,45 +155,24 @@ img {
 svg:not(:root) {
   overflow: hidden; }
 
-/* =============================================================================
-   Figures
-   ========================================================================== */
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
 figure {
   margin: 0; }
 
-/* =============================================================================
-   Forms
-   ========================================================================== */
-/*
- * Corrects margin displayed oddly in IE6/7
- */
-form {
-  margin: 0; }
-
 /*
  * Define consistent border, margin, and padding
  */
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
+  border: .1rem solid #c0c0c0;
+  margin: 0 .2rem;
   padding: 0.35em 0.625em 0.75em; }
 
-/*
- * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3
- * 3. Corrects alignment displayed oddly in IE6/7
- */
 legend {
   border: 0;
-  /* 1 */
   padding: 0;
-  white-space: normal;
-  /* 2 */
-  *margin-left: -7px;
-  /* 3 */ }
+  white-space: normal; }
 
 /*
  * 1. Corrects font size not being inherited in all browsers
@@ -318,10 +187,7 @@ textarea {
   /* 1 */
   margin: 0;
   /* 2 */
-  vertical-align: baseline;
-  /* 3 */
-  *vertical-align: middle;
-  /* 3 */ }
+  vertical-align: baseline; }
 
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
@@ -354,23 +220,6 @@ input[type="submit"] {
 button[disabled],
 input[disabled] {
   cursor: default; }
-
-/*
- * 1. Addresses box sizing set to content-box in IE8/9
- * 2. Removes excess padding in IE8/9
- * 3. Removes excess padding in IE7
-      Known issue: excess padding remains in IE6
- */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-  *height: 13px;
-  /* 3 */
-  *width: 13px;
-  /* 3 */ }
 
 /*
  * 1. Addresses appearance set to searchfield in S5, Chrome
@@ -476,11 +325,11 @@ table {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px; }
+  font-size: 1.3rem; }
 
 label, input, button, select, textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: normal; }
 
 * {
@@ -506,16 +355,16 @@ a {
     clear: both; }
 
 .border, .border-with-radius, .notify, .notify.blue, .notify.green, .notify.orange, .notify.red, .notify.grey, .notify.black, code, pre, .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .menu, .nav, .menu ul, .nav ul {
-  border: 1px solid #cccccc; }
+  border: 0.1rem solid #cccccc; }
 
 .border-radius, .border-with-radius, .notify, .notify.blue, .notify.green, .notify.orange, .notify.red, .notify.grey, .notify.black, pre, .form fieldset, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .menu, .nav, .menu ul, .nav ul, .menu li a, .nav li a {
-  border-radius: 4px; }
+  border-radius: 0.4rem; }
 
 .no-border {
   border: none; }
 
 .box-shadow, .menu, .nav, .menu ul, .nav ul {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2); }
 
 ul.unstyled {
   padding-left: 0;
@@ -523,23 +372,23 @@ ul.unstyled {
 
 code,
 pre {
-  padding: 0 3px 2px;
+  padding: 0 .3rem .2rem;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #333333;
-  border-radius: 4px; }
+  border-radius: 0.4rem; }
 
 code {
-  padding: 2px 4px;
+  padding: .2rem .4rem;
   color: #bd362f;
   background-color: #f7f7f9; }
 
 pre {
   display: block;
-  padding: 8px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 18px;
+  padding: 0.8rem;
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
@@ -580,7 +429,7 @@ pre code {
   text-align: center; }
 
 .container-960 {
-  width: 960px; }
+  width: 96rem; }
 
 .to-left {
   float: left; }
@@ -598,8 +447,8 @@ h1.large {
 .table {
   width: 100%; }
   .table > thead > tr > th, .table > tbody > tr > td {
-    padding: 8px;
-    line-height: 18px;
+    padding: 0.8rem;
+    line-height: 1.8rem;
     text-align: left;
     border-style: solid;
     border-color: #cccccc;
@@ -608,25 +457,25 @@ h1.large {
     border-bottom: 0; }
   .table.border, .table.border-with-radius, .table.notify, .table.notify.blue, .table.notify.green, .table.notify.orange, .table.notify.red, .table.notify.grey, .table.notify.black, code.table, pre.table, .form fieldset.table, .form .field input.table:not([type="radio"]), .form .field input.table:not([type="checkbox"]), .form .field select.table, .form .field textarea.table, .table.menu, .table.nav, .menu ul.table, .nav ul.table, .table.border-all {
     border-collapse: separate;
-    border: 1px solid #cccccc;
-    border-radius: 4px; }
+    border: 0.1rem solid #cccccc;
+    border-radius: 0.4rem; }
   .table.border-col > thead > tr > th, .table.border-col tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
-    border-right-width: 1px; }
+    border-right-width: 0.1rem; }
     .table.border-col > thead > tr > th:last-child, .table.border-col tbody > tr > td:last-child, .table.border-all > thead > tr > th:last-child, .table.border-all tbody > tr > td:last-child {
       border-right: 0; }
   .table.border-row > thead > tr > th, .table.border-row tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
-    border-bottom-width: 1px; }
+    border-bottom-width: .1rem; }
   .table.border-header-row > thead > tr > th, .table.border-header > thead > tr > th {
-    border-bottom-width: 1px; }
+    border-bottom-width: .1rem; }
   .table.border-header-col > thead > tr > th, .table.border-header > thead > tr > th {
-    border-right-width: 1px; }
+    border-right-width: .1rem; }
     .table.border-header-col > thead > tr > th:last-child, .table.border-header > thead > tr > th:last-child {
       border-right: 0; }
   .table.striped > tbody > tr:nth-child(2n-1) {
     background-color: rgba(204, 204, 204, 0.2); }
 
 .grid {
-  width: 960px; }
+  width: 96rem; }
 
 body .row, .grid .row {
   *zoom: 1; }
@@ -639,77 +488,77 @@ body .row, .grid .row {
     display: block;
     float: left; }
 
-.span-1 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 60px; }
+.span-1, .form input.span-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 6rem; }
 
-.span-2 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 140px; }
+.span-2, .form .field label, .form .field .info:before, .form:not(.label-top) > .buttons:before, .form:not(.label-top) > fieldset > .buttons:before, .form input.span-2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 14rem; }
 
-.span-3 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 220px; }
+.span-3, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .form input.span-3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 22rem; }
 
-.span-4 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 300px; }
+.span-4, .form input.span-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 30rem; }
 
-.span-5 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 380px; }
+.span-5, .form input.span-5 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 38rem; }
 
-.span-6 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 460px; }
+.span-6, .form input.span-6 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 46rem; }
 
-.span-7 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 540px; }
+.span-7, .form input.span-7 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 54rem; }
 
-.span-8 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 620px; }
+.span-8, .form input.span-8 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 62rem; }
 
-.span-9 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 700px; }
+.span-9, .form input.span-9 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 70rem; }
 
-.span-10 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 780px; }
+.span-10, .form input.span-10 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 78rem; }
 
-.span-11 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 860px; }
+.span-11, .form input.span-11 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 86rem; }
 
-.span-12 {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 940px; }
+.span-12, .form input.span-12 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 94rem; }
 
 .btn {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #222222;
-  height: 28px;
-  line-height: 28px;
-  border: 1px solid;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  border: .1rem solid;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  border-radius: 0.4rem;
   cursor: pointer;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 0.1rem 0.1rem rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0.1rem 0 rgba(255, 255, 255, 0.2) inset, 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
   background-color: #e6e6e6;
   background-image: linear-gradient(top, white, #e6e6e6);
   background-image: -webkit-linear-gradient(top, white, #e6e6e6);
@@ -719,7 +568,7 @@ body .row, .grid .row {
   background-repeat: repeat-x;
   display: inline-block;
   overflow: hidden;
-  padding: 0 10px;
+  padding: 0 1rem;
   text-align: center;
   vertical-align: middle; }
   .btn:hover {
@@ -734,28 +583,28 @@ a.btn {
 
 .btn-group.mini > .btn,
 .btn.mini {
-  height: 20px;
-  line-height: 20px;
-  font-size: 11px;
-  padding: 0 7px; }
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  padding: 0 1rem; }
 
 .btn-group.medium > .btn,
 .btn.medium {
-  height: 40px;
-  line-height: 40px;
-  font-size: 17.667px;
-  padding: 0 14px; }
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.767rem;
+  padding: 0 2rem; }
 
 .btn-group.large > .btn,
 .btn.large {
-  height: 52px;
-  line-height: 52px;
-  font-size: 21.667px;
-  padding: 0 18px; }
+  height: 5.2rem;
+  line-height: 5.2rem;
+  font-size: 2.167rem;
+  padding: 0 2rem; }
 
 .btn-group.blue > .btn, .btn.blue {
   color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
   background-color: #149bdf;
   background-image: linear-gradient(top, #68c3f1, #149bdf);
   background-image: -webkit-linear-gradient(top, #68c3f1, #149bdf);
@@ -771,7 +620,7 @@ a.btn {
 
 .btn-group.green > .btn, .btn.green {
   color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
   background-color: #51a351;
   background-image: linear-gradient(top, #91c991, #51a351);
   background-image: -webkit-linear-gradient(top, #91c991, #51a351);
@@ -787,7 +636,7 @@ a.btn {
 
 .btn-group.orange > .btn, .btn.orange {
   color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
   background-color: #f89406;
   background-image: linear-gradient(top, #fbbf69, #f89406);
   background-image: -webkit-linear-gradient(top, #fbbf69, #f89406);
@@ -803,7 +652,7 @@ a.btn {
 
 .btn-group.red > .btn, .btn.red {
   color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
   background-color: #bd362f;
   background-image: linear-gradient(top, #dd7a75, #bd362f);
   background-image: -webkit-linear-gradient(top, #dd7a75, #bd362f);
@@ -819,7 +668,7 @@ a.btn {
 
 .btn-group.grey > .btn, .btn.grey {
   color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
   background-color: gray;
   background-image: linear-gradient(top, #b3b3b3, gray);
   background-image: -webkit-linear-gradient(top, #b3b3b3, gray);
@@ -835,7 +684,7 @@ a.btn {
 
 .btn-group.black > .btn, .btn.black {
   color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.25);
   background-color: #333333;
   background-image: linear-gradient(top, #666666, #333333);
   background-image: -webkit-linear-gradient(top, #666666, #333333);
@@ -864,7 +713,7 @@ button.btn[disabled]:hover,
 .btn:active,
 .btn.pressed,
 .btn.pressed:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3) inset, 0 1rem 2rem rgba(0, 0, 0, 0.1);
   background-image: none;
   outline: 0; }
 
@@ -878,13 +727,13 @@ button.btn[disabled]:hover,
     border-radius: 0;
     float: left; }
   .btn-group > .btn:first-child {
-    border-left-width: 1px;
-    border-radius: 4px 0 0 4px; }
+    border-left-width: .1rem;
+    border-radius: 0.4rem 0 0 0.4rem; }
   .btn-group > .btn:last-child {
-    border-radius: 0 4px 4px 0; }
+    border-radius: 0 0.4rem 0.4rem 0; }
 
 .notify {
-  padding: 8px; }
+  padding: 0.8rem; }
   .notify.blue {
     border-color: rgba(20, 155, 223, 0.2);
     background-color: rgba(20, 155, 223, 0.15);
@@ -911,20 +760,20 @@ button.btn[disabled]:hover,
     color: #333333; }
   .notify > .close {
     margin: 0;
-    margin-top: -5px;
+    margin-top: -0.5rem;
     padding: 0;
     background: none;
     border: 0;
     float: right;
     font-weight: bold;
-    font-size: 20px;
+    font-size: .2rem;
     opacity: .5; }
     .notify > .close:hover {
       opacity: .8; }
 
 .progress {
-  height: 28px;
-  line-height: 28px;
+  height: 2.8rem;
+  line-height: 2.8rem;
   background-color: #f7f7f7;
   background-image: linear-gradient(top, #f5f5f5, #f9f9f9);
   background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
@@ -932,9 +781,9 @@ button.btn[disabled]:hover,
   background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
   background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
   background-repeat: repeat-x;
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  font-size: 13px;
+  box-shadow: inset 0 0 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  font-size: 1.3rem;
   overflow: hidden;
   position: relative; }
   .progress > .text {
@@ -945,14 +794,14 @@ button.btn[disabled]:hover,
   .progress > .bar {
     height: 100%;
     background-repeat: repeat-x;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -0.1rem 0 rgba(0, 0, 0, 0.15);
     background-color: #e6e6e6;
     background-image: linear-gradient(top, white, #e6e6e6);
     background-image: -webkit-linear-gradient(top, white, #e6e6e6);
     background-image: -moz-linear-gradient(top, white, #e6e6e6);
     background-image: -o-linear-gradient(top, white, #e6e6e6);
     background-image: -ms-linear-gradient(top, white, #e6e6e6);
-    border-radius: 4px;
+    border-radius: 0.4rem;
     position: absolute;
     overflow: hidden; }
     .progress > .bar > .text {
@@ -966,7 +815,7 @@ button.btn[disabled]:hover,
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px; }
+    background-size: 4rem 4rem; }
   .progress.striped-animate > .bar {
     animation: progress-bar-striped-animate 2s linear infinite;
     -moz-animation: progress-bar-striped-animate 2s linear infinite;
@@ -987,7 +836,7 @@ button.btn[disabled]:hover,
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 60px 60px; }
+    background-size: 6rem 6rem; }
   .progress.green > .bar, .slider.green > .bar {
     background-color: #51a351;
     background-image: linear-gradient(top, #91c991, #51a351);
@@ -1002,7 +851,7 @@ button.btn[disabled]:hover,
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 60px 60px; }
+    background-size: 6rem 6rem; }
   .progress.orange > .bar, .slider.orange > .bar {
     background-color: #f89406;
     background-image: linear-gradient(top, #fbbf69, #f89406);
@@ -1017,7 +866,7 @@ button.btn[disabled]:hover,
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 60px 60px; }
+    background-size: 6rem 6rem; }
   .progress.red > .bar, .slider.red > .bar {
     background-color: #bd362f;
     background-image: linear-gradient(top, #dd7a75, #bd362f);
@@ -1032,7 +881,7 @@ button.btn[disabled]:hover,
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 60px 60px; }
+    background-size: 6rem 6rem; }
   .progress.grey > .bar, .slider.grey > .bar {
     background-color: gray;
     background-image: linear-gradient(top, #b3b3b3, gray);
@@ -1047,7 +896,7 @@ button.btn[disabled]:hover,
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 60px 60px; }
+    background-size: 6rem 6rem; }
   .progress.black > .bar, .slider.black > .bar {
     background-color: #333333;
     background-image: linear-gradient(top, #666666, #333333);
@@ -1062,62 +911,62 @@ button.btn[disabled]:hover,
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 60px 60px; }
+    background-size: 6rem 6rem; }
   .progress.mini {
-    height: 20px;
-    line-height: 20px;
-    font-size: 11px; }
+    height: 2rem;
+    line-height: 2rem;
+    font-size: -6.7rem; }
   .progress.small {
-    height: 28px;
-    line-height: 28px;
-    font-size: 13.667px; }
+    height: 2.8rem;
+    line-height: 2.8rem;
+    font-size: -6.433rem; }
   .progress.medium {
-    height: 40px;
-    line-height: 40px;
-    font-size: 17.667px; }
+    height: 4rem;
+    line-height: 4rem;
+    font-size: -6.033rem; }
   .progress.large {
-    height: 52px;
-    line-height: 52px;
-    font-size: 21.667px; }
+    height: 5.2rem;
+    line-height: 5.2rem;
+    font-size: -5.633rem; }
 
 @keyframes progress-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 @-webkit-keyframes progress-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 @-moz-keyframes progress-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 @-o-keyframes progress-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 @-ms-keyframes progress-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 .loading {
-  width: 28px;
-  height: 28px;
+  width: 2.8rem;
+  height: 2.8rem;
   position: relative; }
   .loading > * {
     width: 12%;
@@ -1126,8 +975,8 @@ button.btn[disabled]:hover,
     background: #000000;
     top: 37%;
     left: 44.5%;
-    border-radius: 50px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5rem;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
     animation: loading-spinner-fade 1s linear infinite;
     -moz-animation: loading-spinner-fade 1s linear infinite;
     -webkit-animation: loading-spinner-fade 1s linear infinite;
@@ -1266,17 +1115,17 @@ button.btn[disabled]:hover,
     -ms-animation-delay: 0.996s;
     opacity: 0; }
   .loading.mini {
-    width: 20px;
-    height: 20px; }
+    width: 2rem;
+    height: 2rem; }
   .loading.small {
-    width: 28px;
-    height: 28px; }
+    width: 2.8rem;
+    height: 2.8rem; }
   .loading.medium {
-    width: 40px;
-    height: 40px; }
+    width: 4rem;
+    height: 4rem; }
   .loading.large {
-    width: 52px;
-    height: 52px; }
+    width: 5.2rem;
+    height: 5.2rem; }
   .loading.blue > * {
     background-color: #149bdf; }
   .loading.green > * {
@@ -1326,64 +1175,63 @@ button.btn[disabled]:hover,
     opacity: 1; } }
 
 .form fieldset {
-  margin: 18px 0; }
+  margin: 1.8rem 0; }
   .form fieldset > legend {
     font-weight: bold;
-    padding: 0 4px; }
+    padding: 0 0.4rem; }
 .form .field {
-  margin: 18px 0; }
+  margin: 1.8rem 0; }
   .form .field label {
     display: inline-block;
     text-align: right;
-    line-height: 18px; }
+    line-height: 1.8rem; }
     .form .field label.box-label {
       width: auto !important; }
   .form .field input, .form .field select, .form .field textarea {
-    margin-left: 10px; }
+    margin-left: 1rem; }
   .form .field input:not([type="file"]), .form .field select, .form .field textarea {
     transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
     -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
     -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
     -o-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
     -ms-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(20, 155, 223, 0.1); }
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.075) inset, 0 0 0.4rem rgba(20, 155, 223, 0.1); }
     .form .field input:not([type="file"]):focus, .form .field select:focus, .form .field textarea:focus {
       border-color: rgba(20, 155, 223, 0.8);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(20, 155, 223, 0.6);
+      box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.075) inset, 0 0 0.4rem rgba(20, 155, 223, 0.6);
       outline: 0 none; }
   .form .field input, .form .field select, .form .field textarea {
     display: inline-block;
-    height: 28px;
-    padding: 0 4px;
-    line-height: 18px; }
+    height: 2.8rem;
+    padding: 0 0.4rem;
+    line-height: 1.8rem; }
   .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea {
-    width: 220px;
-    margin: 0 10px; }
+    margin: 0 1rem; }
   .form .field input[type="file"] {
-    line-height: 30px;
+    line-height: 3rem;
     border: none; }
   .form .field input[type="radio"], .form .field input[type="checkbox"] {
     width: auto !important;
     height: auto !important; }
   .form .field textarea {
-    width: 300px;
-    margin: 0 10px;
-    height: 80px;
-    padding: 4px; }
+    width: 30rem;
+    margin: 0 1rem;
+    height: 8rem;
+    padding: 0.4rem; }
   .form .field .info {
-    margin-top: 4px;
-    margin-left: 10px;
-    padding-left: 4px; }
+    margin-top: .4rem;
+    margin-left: 1rem;
+    padding-left: 0.4rem; }
     .form .field .info:before {
       content: "";
       display: inline-block;
-      margin-right: 10px; }
+      margin-right: 1rem; }
 .form:not(.label-top) > .buttons:before, .form:not(.label-top) > fieldset > .buttons:before {
   content: "";
   display: inline-block;
-  margin-right: 10px; }
+  margin-right: 1rem; }
 .form > .buttons > .btn:first-child, .form > fieldset > .buttons > .btn:first-child {
-  margin-left: 10px; }
+  margin-left: 1rem; }
 .form.label-top > .field label:not(.box-label), .form.label-top fieldset > .field label:not(.box-label) {
   display: block;
   text-align: left; }
@@ -1391,7 +1239,7 @@ button.btn[disabled]:hover,
 .rule {
   border: 0;
   border-style: solid;
-  border-top-width: 1px;
+  border-top-width: .1rem;
   border-color: #eeeeee;
   border-radius: 0;
   background: none; }
@@ -1418,31 +1266,31 @@ button.btn[disabled]:hover,
   .rule.black {
     border-color: #333333; }
   .rule.size-1 {
-    border-top-width: 1px; }
+    border-top-width: 0.1rem; }
   .rule.size-2 {
-    border-top-width: 2px; }
+    border-top-width: 0.2rem; }
   .rule.size-3 {
-    border-top-width: 3px; }
+    border-top-width: 0.3rem; }
   .rule.size-4 {
-    border-top-width: 4px; }
+    border-top-width: 0.4rem; }
   .rule.size-5 {
-    border-top-width: 5px; }
+    border-top-width: 0.5rem; }
   .rule.size-6 {
-    border-top-width: 6px; }
+    border-top-width: 0.6rem; }
   .rule.size-7 {
-    border-top-width: 7px; }
+    border-top-width: 0.7rem; }
   .rule.size-8 {
-    border-top-width: 8px; }
+    border-top-width: 0.8rem; }
   .rule.size-9 {
-    border-top-width: 9px; }
+    border-top-width: 0.9rem; }
   .rule.size-10 {
-    border-top-width: 10px; }
+    border-top-width: 1rem; }
 
 .slider {
   position: relative;
-  width: 220px;
-  margin: 7px 10px;
-  height: 14px;
+  width: 22rem;
+  margin: .7rem 1rem;
+  height: 1.4rem;
   background-color: #f7f7f7;
   background-image: linear-gradient(top, #f5f5f5, #f9f9f9);
   background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
@@ -1450,29 +1298,29 @@ button.btn[disabled]:hover,
   background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
   background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
   background-repeat: repeat-x;
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
-  border-radius: 4px; }
+  box-shadow: inset 0 0 0.2rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.4rem; }
   .slider > .bar {
     height: 100%;
     background-repeat: repeat-x;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -0.1rem 0 rgba(0, 0, 0, 0.15);
     background-color: #e6e6e6;
     background-image: linear-gradient(top, white, #e6e6e6);
     background-image: -webkit-linear-gradient(top, white, #e6e6e6);
     background-image: -moz-linear-gradient(top, white, #e6e6e6);
     background-image: -o-linear-gradient(top, white, #e6e6e6);
     background-image: -ms-linear-gradient(top, white, #e6e6e6);
-    border-radius: 4px;
+    border-radius: 0.4rem;
     position: absolute; }
     .slider > .bar > .thumb {
       position: absolute;
-      width: 28px;
-      height: 28px;
-      top: -5px;
-      right: -14px;
+      width: 2.8rem;
+      height: 2.8rem;
+      top: -0.5rem;
+      right: -1.4rem;
       cursor: move;
-      border: 1px solid #ccc;
-      border-radius: 100px;
+      border: .1rem solid #ccc;
+      border-radius: 10rem;
       background-color: #f5f5f5;
       background-image: linear-gradient(top, #fff, #e6e6e6);
       background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
@@ -1486,7 +1334,7 @@ button.btn[disabled]:hover,
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px; }
+    background-size: 40rem 40rem; }
   .slider.striped-animate > .bar {
     animation: slider-bar-striped-animate 2s linear infinite;
     -moz-animation: slider-bar-striped-animate 2s linear infinite;
@@ -1494,83 +1342,83 @@ button.btn[disabled]:hover,
     -o-animation: slider-bar-striped-animate 2s linear infinite;
     -ms-animation: slider-bar-striped-animate 2s linear infinite; }
   .slider.mini {
-    height: 10px;
-    margin: 5px 10px; }
+    height: 1rem;
+    margin: 0.5rem 1rem; }
     .slider.mini > .bar > .thumb {
-      top: -5px;
-      right: -10px;
-      width: 20px;
-      height: 20px; }
+      top: -0.5rem;
+      right: -1rem;
+      width: 2rem;
+      height: 2rem; }
   .slider.small {
-    height: 14px;
-    margin: 7px 10px; }
+    height: 1.4rem;
+    margin: 0.7rem 1rem; }
     .slider.small > .bar > .thumb {
-      top: -7px;
-      right: -14px;
-      width: 28px;
-      height: 28px; }
+      top: -0.7rem;
+      right: -1.4rem;
+      width: 2.8rem;
+      height: 2.8rem; }
   .slider.medium {
-    height: 20px;
-    margin: 10px 10px; }
+    height: 2rem;
+    margin: 1rem 1rem; }
     .slider.medium > .bar > .thumb {
-      top: -10px;
-      right: -20px;
-      width: 40px;
-      height: 40px; }
+      top: -1rem;
+      right: -2rem;
+      width: 4rem;
+      height: 4rem; }
   .slider.large {
-    height: 26px;
-    margin: 13px 10px; }
+    height: 2.6rem;
+    margin: 1.3rem 1rem; }
     .slider.large > .bar > .thumb {
-      top: -13px;
-      right: -26px;
-      width: 52px;
-      height: 52px; }
+      top: -1.3rem;
+      right: -2.6rem;
+      width: 5.2rem;
+      height: 5.2rem; }
 
 @keyframes slider-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 @-webkit-keyframes slider-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 @-moz-keyframes slider-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 @-o-keyframes slider-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 @-ms-keyframes slider-bar-striped-animate {
   from {
     background-position: 0 0; }
 
   to {
-    background-position: 60px 0; } }
+    background-position: 6rem 0; } }
 
 .menu, .nav {
   list-style: none;
   margin: 0;
-  padding: 4px;
+  padding: .4rem;
   display: inline-block;
   background: white; }
   .menu ul, .nav ul {
     list-style: none;
     margin: 0;
-    padding: 4px;
+    padding: .4rem;
     display: inline-block;
     background: white;
     z-index: 9999; }
@@ -1579,9 +1427,9 @@ button.btn[disabled]:hover,
     cursor: pointer; }
     .menu li a, .nav li a {
       text-decoration: none;
-      line-height: 18px;
+      line-height: 1.8rem;
       display: block;
-      padding: 4px 28px;
+      padding: .4rem 2.8rem;
       white-space: nowrap;
       color: #333333; }
       .menu li a:hover, .nav li a:hover {
@@ -1589,23 +1437,23 @@ button.btn[disabled]:hover,
         color: white; }
     .menu li > ul, .nav li > ul {
       position: absolute;
-      right: calc(-100% - 8px);
-      right: -webkit-calc(-100% - 8px);
-      right: -moz-calc(-100% - 8px);
-      right: -o-calc(-100% - 8px);
-      right: -ms-calc(-100% - 8px);
-      top: -5px;
+      right: calc(-100% - 8rem);
+      right: -webkit-calc(-100% - 8rem);
+      right: -moz-calc(-100% - 8rem);
+      right: -o-calc(-100% - 8rem);
+      right: -ms-calc(-100% - 8rem);
+      top: -0.5rem;
       display: none; }
       .menu li > ul:before, .nav li > ul:before {
         content: "";
         position: absolute;
-        border-width: 1px 0 0 1px;
+        border-width: .1rem 0 0 .1rem;
         border-style: solid;
         border-color: #cccccc;
-        width: 10px;
-        height: 10px;
-        top: 11px;
-        left: -6px;
+        width: 1rem;
+        height: 1rem;
+        top: 1.1rem;
+        left: -0.6rem;
         background: white;
         transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
@@ -1614,11 +1462,11 @@ button.btn[disabled]:hover,
       .menu li > ul + a:after, .nav li > ul + a:after {
         content: "";
         position: absolute;
-        top: 9px;
-        right: 8px;
-        border-left: 4px solid rgba(0, 0, 0, 0.5);
-        border-top: 4px solid transparent;
-        border-bottom: 4px solid transparent; }
+        top: .9rem;
+        right: .8rem;
+        border-left: 0.4rem solid rgba(0, 0, 0, 0.5);
+        border-top: .4rem solid transparent;
+        border-bottom: .4rem solid transparent; }
     .menu li:hover > ul, .nav li:hover > ul {
       display: block; }
       .menu li:hover > ul + a:after, .nav li:hover > ul + a:after {
@@ -1643,28 +1491,28 @@ button.btn[disabled]:hover,
   .nav > li {
     display: inline-block; }
     .nav > li > a {
-      padding: 7px 10px; }
+      padding: .7rem 1rem; }
     .nav > li > ul {
       top: 100%;
       right: auto; }
       .nav > li > ul:before {
-        top: -6px;
-        left: 12px;
+        top: -0.6rem;
+        left: 1.2rem;
         transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -o-transform: rotate(45deg); }
       .nav > li > ul + a {
-        padding-right: 20px; }
+        padding-right: 2rem; }
         .nav > li > ul + a:after {
           content: "";
           position: absolute;
-          top: 14px;
-          right: 8px;
-          padding: 7px 0;
-          border-top: 4px solid rgba(0, 0, 0, 0.5);
-          border-left: 4px solid transparent;
-          border-right: 4px solid transparent;
+          top: 1.4rem;
+          right: .8rem;
+          padding: .7rem 0;
+          border-top: 0.4rem solid rgba(0, 0, 0, 0.5);
+          border-left: .4rem solid transparent;
+          border-right: .4rem solid transparent;
           border-bottom: none; }
         .nav > li > ul + a:hover:after {
           border-top-color: white; }

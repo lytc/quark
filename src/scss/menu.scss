@@ -1,7 +1,7 @@
 .menu {
   list-style: none;
   margin: 0;
-  padding: 4px;
+  padding: .4rem;
   @extend .border;
   @extend .border-radius;
   display: inline-block;
@@ -10,7 +10,7 @@
   ul {
     list-style: none;
     margin: 0;
-    padding: 4px;
+    padding: .4rem;
     @extend .border;
     @extend .border-radius;
     display: inline-block;
@@ -23,9 +23,9 @@
     cursor: pointer;
     a {
       text-decoration: none;
-      line-height: 18px;
+      line-height: 1.8rem;
       display: block;
-      padding: 4px 28px;
+      padding: .4rem 2.8rem;
       white-space: nowrap;
       color: $base-color-black;
       @extend .border-radius;
@@ -36,19 +36,19 @@
     }
     > ul {
       position: absolute;
-      @include calc(right, "-100% - 8px");
-      top: -5px;
+      @include calc(right, "-100% - 8rem");
+      top: -.5rem;
       display: none;
       &:before {
         content: "";
         position: absolute;
-        border-width: 1px 0 0 1px;
+        border-width: .1rem 0 0 .1rem;
         border-style: solid;
         border-color: $base-border-color;
-        width: 10px;
-        height: 10px;
-        top: 11px;
-        left: -6px;
+        width: 1rem;
+        height: 1rem;
+        top: 1.1rem;
+        left: -.6rem;
         background: white;
         @include transform(rotate(-45deg));
       }
@@ -56,11 +56,11 @@
         &:after {
           content: "";
           position: absolute;
-          top: 9px;
-          right: 8px;
-          border-left: 4px solid rgba(black, 0.5);
-          border-top: 4px solid transparent;
-          border-bottom: 4px solid transparent;
+          top: .9rem;
+          right: .8rem;
+          border-left: .4rem solid rgba(black, 0.5);
+          border-top: .4rem solid transparent;
+          border-bottom: .4rem solid transparent;
         }
       }
     }

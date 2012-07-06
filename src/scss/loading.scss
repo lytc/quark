@@ -1,6 +1,6 @@
 .loading {
-  width: 28px;
-  height: 28px;
+  width: 2.8rem;
+  height: 2.8rem;
   position: relative;
   > * {
     width: 12%;
@@ -9,8 +9,8 @@
     background: #000000;
     top: 37%;
     left: 44.5%;
-    border-radius: 50px;
-    box-shadow: 0 0 3px rgba(black, 0.2);
+    border-radius: 5rem;
+    box-shadow: 0 0 .3rem rgba(black, 0.2);
     @include animation("loading-spinner-fade 1s linear infinite");
   }
   @for $i from 1 through 12 {

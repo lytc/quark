@@ -7,7 +7,7 @@
   > li {
     display: inline-block;
     > a {
-      padding: 7px 10px;
+      padding: .7rem 1rem;
       //color: darken(white, 15%) !important;
       &:hover {
         //color: white;
@@ -18,21 +18,21 @@
       top: 100%;
       right: auto;
       &:before {
-        top: -6px;
-        left: 12px;
+        top: -.6rem;
+        left: 1.2rem;
         @include transform(rotate(45deg));
       }
       + a {
-        padding-right: 20px;
+        padding-right: 2rem;
         &:after {
           content: "";
           position: absolute;
-          top: 14px;
-          right: 8px;
-          padding: 7px 0;
-          border-top: 4px solid rgba(black, 0.5);
-          border-left: 4px solid transparent;
-          border-right: 4px solid transparent;
+          top: 1.4rem;
+          right: .8rem;
+          padding: .7rem 0;
+          border-top: .4rem solid rgba(black, 0.5);
+          border-left: .4rem solid transparent;
+          border-right: .4rem solid transparent;
           border-bottom: none;
         }
         &:hover {

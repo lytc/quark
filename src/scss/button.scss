@@ -1,19 +1,19 @@
 .btn {
   font-size: $base-font-size;
   color: $base-text-color;
-  height: 28px;
-  line-height: 28px;
-  border: 1px solid;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  border: .1rem solid;
   border-color: rgba(black, 0.1) rgba(black, 0.1) rgba(black, 0.25);
   border-radius: $base-border-radius;
   cursor: pointer;
-  text-shadow: 0 1px 1px rgba(white, 0.75);
-  box-shadow: 0 1px 0 rgba(white, 0.2) inset, 0 1px 2px rgba(black, 0.05);
+  text-shadow: 0 .1rem .1rem rgba(white, 0.75);
+  box-shadow: 0 .1rem 0 rgba(white, 0.2) inset, 0 .1rem .2rem rgba(black, 0.05);
   @include base-bg-gradient(#e6e6e6);
   background-repeat: repeat-x;
   display: inline-block;
   overflow: hidden;
-  padding: 0 10px;
+  padding: 0 1rem;
   text-align: center;
   vertical-align: middle;
   &:hover, &:active, &[disabled] {}
@@ -26,11 +26,11 @@ a.btn {
   text-decoration: none;
 }
 
-$-btn-mini-hash: mini, 20px;
+$-btn-mini-hash: mini, 2rem;
 
-// $-btn-small-hash: small, 28px; is default
-$-btn-medium-hash: medium, 40px;
-$-btn-large-hash: large, 52px;
+// $-btn-small-hash: small, 28rem; is default
+$-btn-medium-hash: medium, 4rem;
+$-btn-large-hash: large, 5.2rem;
 $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
 
 @each $btn-hash in $-btn-sizes-list {
@@ -40,7 +40,7 @@ $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
   .btn.#{$name} {
     height: $size;
     line-height: $size;
-    font-size: $base-font-size + ($size - 20) / 3 - 2;
+    font-size: $base-font-size + ($size - 2) / 3 - .2;
     padding: 0 ceil($size / 3);
   }
 }
@@ -50,7 +50,7 @@ $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
   $color: nth($color-hash, 2);
   .btn-group.#{$name} > .btn, .btn.#{$name} {
   	color: white;
-  	text-shadow: 0 -1px 0 rgba(black, 0.25);
+  	text-shadow: 0 -.1rem 0 rgba(black, 0.25);
     @include base-bg-gradient($color);
     &:hover {
       @include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");
@@ -74,7 +74,7 @@ button.btn[disabled]:hover,
 .btn:active,
 .btn.pressed,
 .btn.pressed:hover {
-  box-shadow: 0 2px 4px rgba(black, 0.3) inset, 0 1px 2px rgba(black, 0.1);
+  box-shadow: 0 .2rem .4rem rgba(black, 0.3) inset, 0 1rem 2rem rgba(black, 0.1);
   background-image: none;
   outline: 0;
 }
@@ -93,7 +93,7 @@ button.btn[disabled]:hover,
     float: left;
   }
   > .btn:first-child {
-    border-left-width: 1px;
+    border-left-width: .1rem;
     border-radius: $base-border-radius 0 0 $base-border-radius;
   }
   > .btn:last-child {

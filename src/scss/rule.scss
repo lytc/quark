@@ -1,7 +1,7 @@
 .rule {
   border: 0;
   border-style: solid;
-  border-top-width: 1px;
+  border-top-width: .1rem;
   border-color: #eeeeee;
   border-radius: 0;
   background: none;
@@ -19,7 +19,7 @@
   }
   @for $i from 1 through 10 {
     &.size-#{$i} {
-      border-top-width: #{$i}px;
+      border-top-width: #{$i / 10}rem;
     }
   }
 }
