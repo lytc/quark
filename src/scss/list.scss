@@ -1,0 +1,11 @@
+ul {
+  &.circle {
+    margin-left: 1em;
+    list-style: circle outside;
+  }
+
+  &.square {
+    margin-left: 1em;
+    list-style: square outside;
+  }
+}

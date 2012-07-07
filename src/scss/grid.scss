@@ -10,28 +10,51 @@
   > [class*=span] {
     display: inline-block;
     float: left;
+
+    &:first-child:not([class*=offset]) {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1220px) {
   .container, .row {
-    width: 1140px;
+    width: 1180px;
   }
 
   @for $i from 1 through 12 {
     .span-#{$i} {
-      width: $i * 1140 / 12 - 20px;
+      width: $i * 1200 / 12 - 20px;
     }
 
     .offset-#{$i} {
-      margin-left:  $i * 1140 / 12 + 10px;
+      margin-left:  $i * 1200px / 12;
     }
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1190px) {
+@media only screen and (min-width: 980px) and (max-width: 1219px) {
   .container, .row {
-    width: 720px;
+    width: 940px;
+
+    @for $i from 1 through 12 {
+      .span-#{$i} {
+        width: $i * 960 / 12 - 20px;
+      }
+
+      .offset-#{$i} {
+        margin-left: $i * 960px / 12;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+  .container, .row {
+    width: 700px;
 
     @for $i from 1 through 12 {
       .span-#{$i} {
@@ -39,22 +62,51 @@
       }
 
       .offset-#{$i} {
-        margin-left: $i * 720 / 12 + 10px;
+        margin-left: $i * 720px / 12;
       }
     }
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 739px) {
+  .container {
+    margin: 0 10px;
+  }
+
   .container, .row {
-    width: 100%;
+    width: auto;
 
     @for $i from 1 through 12 {
-    .span-#{$i} {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
+      .span-#{$i} {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
   }
+
+  .btn-group.fluid {
+    width: 100%;
+    > .btn {
+      border-width: 0 1px 1px 1px;
+      border-radius: 0;
+      float: none;
+      display: block;
+      width: 100%;
+
+      &:first-child {
+        border-top-width: .1rem;
+        border-radius: $base-border-radius $base-border-radius 0 0;
+      }
+
+      &:last-child {
+
+        border-radius: 0 0 $base-border-radius $base-border-radius;
+      }
+    }
+  }
+
+  .form .field > label {
+    text-align: left !important;
   }
 }

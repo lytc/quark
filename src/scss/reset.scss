@@ -47,6 +47,7 @@ textarea {
 
 body {
   margin: 0;
+  line-height: 140%;
 }
 
 /*
@@ -334,4 +335,16 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  > ul, > ol {
+    margin-left: 1em;
+  }
+}
+
+ul {
+  list-style: none;
 }

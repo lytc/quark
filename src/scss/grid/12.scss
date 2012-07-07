@@ -1,7 +1,0 @@
-@for $i from 1 through 12 {
-  .span-#{$i} {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: $i * 8rem - 2;
-  }
-}

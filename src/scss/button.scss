@@ -33,7 +33,7 @@ $-btn-medium-hash: medium, 4rem;
 $-btn-large-hash: large, 5.2rem;
 $-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
 
-@each $btn-hash in $-btn-sizes-list {
+@each $btn-hash in $base-sizes-list {
   $name: nth($btn-hash, 1);
   $size: nth($btn-hash, 2);
   .btn-group.#{$name} > .btn,
@@ -74,7 +74,7 @@ button.btn[disabled]:hover,
 .btn:active,
 .btn.pressed,
 .btn.pressed:hover {
-  box-shadow: 0 .2rem .4rem rgba(black, 0.3) inset, 0 1rem 2rem rgba(black, 0.1);
+  box-shadow: 0 .2rem .4rem rgba(black, 0.3) inset, 0 .1rem .2rem rgba(black, 0.1);
   background-image: none;
   outline: 0;
 }
