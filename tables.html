@@ -81,31 +81,71 @@
 <h1>Tables</h1>
 <hr class="rule">
 
-<br>
+<h2>Table markup</h2>
+<pre class="brush: html; gutter: false;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>...</th>
+          <th>...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+      </tbody>
+    </table>
+</pre>
 
+<div class="row">
+    <h2>Default style</h2>
+    <div class="span-4">
+        <p>The default table style just reset something about <code>width="100%"</code>, <code>padding</code> and have no borders.</p>
+    </div>
+    <div class="span-8">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Ly</td>
+              <td>Tran</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
 <div class="grid">
   <div class="row">
     <div class="span-5">
       <h3>Table</h3>
 
       <div id="table1">
-        <table class="table" >
+        <table class="table">
           <thead>
-          <th>Head</th>
-          <th>Head</th>
-          <th>Head</th>
+            <th>Head</th>
+            <th>Head</th>
+            <th>Head</th>
           </thead>
           <tbody>
-          <tr>
-            <td>td</td>
-            <td>td</td>
-            <td>td</td>
-          </tr>
-          <tr>
-            <td>td</td>
-            <td>td</td>
-            <td>td</td>
-          </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>td</td>
+              <td>td</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -369,10 +409,9 @@
   </tbody>
 </table>
 </div>
-<br>
-<br>
-<hr class="rule">
-<div class="container-960 center">
+
+<hr class="separator">
+<div class="container center">
   <br>
   <div class="to-left color-grey">
     <p>
