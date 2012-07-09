@@ -3,154 +3,140 @@
 <% end %>
 
 <h1>Menus</h1>
-<hr class="rule">
 
-<br>
+<hr class="separator">
 
-<div class="grid">
-  <div class="row">
+<div class="row">
     <div class="span-4">
-      <div id="menu1">
-        <ul class="menu">
-          <li><a href="#">Lorem ipsum dolor</a></li>
-          <li>
-            <ul>
-              <li><a href="#">Lorem ipsum dolor</a></li>
-              <li><a href="#">Lorem ipsum dolor</a></li>
-              <li>
-                <hr class="rule">
-              </li>
-              <li><a href="#">Lorem ipsum dolor</a></li>
+        <p></p>
+        <div id="menu1">
+            <ul class="menu">
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li>
+                            <hr class="rule">
+                        </li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                    </ul>
+                    <a href="#">Lorem ipsum dolor</a>
+                </li>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li>
+                    <hr class="rule">
+                </li>
+                <li><a href="#">Lorem ipsum dolor</a></li>
             </ul>
-            <a href="#">Lorem ipsum dolor</a>
-          </li>
-          <li><a href="#">Lorem ipsum dolor</a></li>
-          <li>
-            <hr class="rule">
-          </li>
-          <li><a href="#">Lorem ipsum dolor</a></li>
-        </ul>
-      </div>
+        </div>
     </div>
     <div class="span-8">
-      <pre class="brush: html" data-from="#menu1"></pre>
+        <pre class="brush: html; gutter: false;" data-from="#menu1"></pre>
     </div>
-  </div>
 </div>
 
-<br>
+<hr class="separator">
 
-<h2>Item hover background colors</h2>
-<table class="table border-col border-header-row">
-  <thead>
-  <tr>
-    <th>Menu</th>
-    <th><code>item-bg="*"</code></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <ul class="menu item-bg-blue">
-        <li><a href="#">Lorem ipsum dolor</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum dolor</a>
-        </li>
-        <li><a href="#">Lorem ipsum dolor</a></li>
-      </ul>
-    </td>
-    <td><code>blue</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="menu item-bg-green">
-        <li><a href="#">Lorem ipsum dolor</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum dolor</a>
-        </li>
-        <li><a href="#">Lorem ipsum dolor</a></li>
-      </ul>
-    </td>
-    <td><code>green</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="menu item-bg-orange">
-        <li><a href="#">Lorem ipsum dolor</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum dolor</a>
-        </li>
-        <li><a href="#">Lorem ipsum dolor</a></li>
-      </ul>
-    </td>
-    <td><code>orange</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="menu item-bg-red">
-        <li><a href="#">Lorem ipsum dolor</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum dolor</a>
-        </li>
-        <li><a href="#">Lorem ipsum dolor</a></li>
-      </ul>
-    </td>
-    <td><code>red</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="menu item-bg-grey">
-        <li><a href="#">Lorem ipsum dolor</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum dolor</a>
-        </li>
-        <li><a href="#">Lorem ipsum dolor</a></li>
-      </ul>
-    </td>
-    <td><code>grey</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="menu item-bg-black">
-        <li><a href="#">Lorem ipsum dolor</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum dolor</a>
-        </li>
-        <li><a href="#">Lorem ipsum dolor</a></li>
-      </ul>
-    </td>
-    <td><code>black</code></td>
-  </tr>
+<p>For customize background colors when hover on the menu item, add class <code>blue</code>, <code>green</code>,
+    <code>orange</code>, <code>red</code>, <code>grey</code> or <code>black</code> beside the <code>menu</code> class. <code>blue</code> is defaults.</p>
 
-  </tbody>
-</table>
+<ul class="menu green">
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <ul>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li>
+                <hr class="rule">
+            </li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+        </ul>
+        <a href="#">Lorem ipsum dolor</a>
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <hr class="rule">
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+</ul>
+
+<ul class="menu orange">
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <ul>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li>
+                <hr class="rule">
+            </li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+        </ul>
+        <a href="#">Lorem ipsum dolor</a>
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <hr class="rule">
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+</ul>
+
+<ul class="menu red">
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <ul>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li>
+                <hr class="rule">
+            </li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+        </ul>
+        <a href="#">Lorem ipsum dolor</a>
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <hr class="rule">
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+</ul>
+
+<ul class="menu grey">
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <ul>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li>
+                <hr class="rule">
+            </li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+        </ul>
+        <a href="#">Lorem ipsum dolor</a>
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <hr class="rule">
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+</ul>
+
+<ul class="menu black">
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <ul>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li>
+                <hr class="rule">
+            </li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+        </ul>
+        <a href="#">Lorem ipsum dolor</a>
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li>
+        <hr class="rule">
+    </li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+</ul>

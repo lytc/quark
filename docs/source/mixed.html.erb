@@ -3,181 +3,61 @@
 <% end %>
 
 <h1>Mixed</h1>
-<hr class="rule">
+<hr class="separator">
 
 <h2>Horizontal rules</h2>
-<code>&lt;hr class="rule"&gt;</code>
-<br>
-<hr class="rule">
 
-<h3>Rule colors</h3>
-<table class="table border-col border-header-row">
-  <thead>
-  <tr>
-    <th>Rule</th>
-    <th><code>color="*"</code></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <hr class="rule blue">
-    </td>
-    <td><code>blue</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule green">
-    </td>
-    <td><code>green</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule orange">
-    </td>
-    <td><code>orange</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule red">
-    </td>
-    <td><code>red</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule grey">
-    </td>
-    <td><code>grey</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule black">
-    </td>
-    <td><code>black</code></td>
-  </tr>
-  </tbody>
-</table>
+<div class="row">
+    <div class="span-6">
+        <p></p>
+        <hr class="rule">
+    </div>
+    <div class="span-6">
+        <pre class="brush: html">
+            <hr class="rule">
+        </pre>
+    </div>
+</div>
 
-<h3>Rules with sizes</h3>
-<hr class="rule">
+<hr class="separator">
 
-<table class="table border-col border-header-row">
-  <thead>
-  <tr>
-    <th>Rule</th>
-    <th><code>size="*"</code></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <hr class="rule blue size-1">
-    </td>
-    <td><code>1</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-2">
-    </td>
-    <td><code>2</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-3">
-    </td>
-    <td><code>3</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-4">
-    </td>
-    <td><code>4</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-5">
-    </td>
-    <td><code>5</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-6">
-    </td>
-    <td><code>6</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-7">
-    </td>
-    <td><code>7</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-8">
-    </td>
-    <td><code>8</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-9">
-    </td>
-    <td><code>9</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-10">
-    </td>
-    <td><code>10</code></td>
-  </tr>
-  </tbody>
-</table>
+<div class="row">
+    <div class="span-4">
+        <h2>Rule colors</h2>
+        <p>For customize colors, add class <code>blue</code>, <code>green</code>, <code>orange</code>, <code>red</code>,
+            <code>grey</code> or <code>black</code> beside the <code>rule</code> class.</p>
+        <hr class="rule blue">
+        <hr class="rule green">
+        <hr class="rule orange">
+        <hr class="rule red">
+        <hr class="rule grey">
+        <hr class="rule black">
+    </div>
+    <div class="span-4">
+        <h2>Rule sizes</h2>
+        <p>Add class <code>size-1</code> to <code>size-10</code> to change the rule sizes.</p>
+        <hr class="rule blue size-1">
+        <hr class="rule blue size-2">
+        <hr class="rule blue size-3">
+        <hr class="rule blue size-4">
+        <hr class="rule blue size-5">
+        <hr class="rule blue size-6">
+        <hr class="rule blue size-7">
+        <hr class="rule blue size-8">
+        <hr class="rule blue size-9">
+        <hr class="rule blue size-10">
+    </div>
+    <div class="span-4">
+        <h2>Border styles</h2>
+        <p>Rule provides some border styles. Add a class <code>dotted</code>, <code>dashed</code>,
+            <code>double</code>, <code>groove</code> or <code>ridge</code> to change the border styles.</p>
+        <p>The default style is <code>solid</code>.</p>
+        <hr class="rule blue size-1 dotted">
+        <hr class="rule blue size-1 dashed">
+        <hr class="rule blue size-3 double">
+        <hr class="rule blue size-4 groove">
+        <hr class="rule blue size-4 ridge">
+    </div>
+</div>
 
-<h3>Rules border styles</h3>
-<hr class="rule">
-
-<table class="table border-col border-header-row">
-  <thead>
-  <tr>
-    <th>Rule</th>
-    <th><code>border-style="*"</code></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <hr class="rule blue size-1">
-    </td>
-    <td><code>solid</code> default</td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-1 dotted">
-    </td>
-    <td><code>dotted</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-1 dashed">
-    </td>
-    <td><code>dashed</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-3 double">
-    </td>
-    <td><code>double</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-4 groove">
-    </td>
-    <td><code>groove</code></td>
-  </tr>
-  <tr>
-    <td>
-      <hr class="rule blue size-4 ridge">
-    </td>
-    <td><code>ridge</code></td>
-  </tr>
-  </tbody>
-</table>
+<p>Use class <code>separator</code> instead of <code>rule</code> if you want to add more margin top & bottom on the rule.</p>

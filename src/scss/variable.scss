@@ -1,3 +1,6 @@
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size: 1.3rem;
+
 // text
 $base-text-color: #222222;
 $base-line-height: 1.8rem;
@@ -34,13 +37,15 @@ $base-colors-list: $-color-blue-hash, $-color-green-hash, $-color-orange-hash, $
 
 // size
 $base-size-mini: 2rem;
-$base-size-small: 2.8rem;
+$base-size-small: 3rem;
 $base-size-medium: 4rem;
-$base-size-large: 5.2rem;
+$base-size-large: 5rem;
+$base-size-x-large: 6rem;
 
 $-size-mini-hash: mini, $base-size-mini;
 $-size-small-hash: small, $base-size-small;
 $-size-medium-hash: medium, $base-size-medium;
 $-size-large-hash: large, $base-size-large;
+$-size-x-large-hash: x-large, $base-size-x-large;
 
-$base-sizes-list: $-size-mini-hash, $-size-small-hash, $-size-medium-hash, $-size-large-hash;
+$base-sizes-list: $-size-mini-hash, $-size-small-hash, $-size-medium-hash, $-size-large-hash, $-size-x-large-hash;

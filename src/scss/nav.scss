@@ -52,24 +52,4 @@
       }
     }
   }
-  
-  @each $color-hash in $base-colors-list {
-    $name: nth($color-hash, 1);
-    $color: nth($color-hash, 2);
-    &.#{$name} {
-      background-color: $color;
-      > li {
-        > a {
-          color: white;
-        }
-        > ul {
-          + a {
-            &:after {
-              border-top-color: white;
-            }
-          }
-        }
-      }
-    }
-  }
 }

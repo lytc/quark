@@ -11,9 +11,10 @@
   // field
   .field {
     margin: 1.8rem 0;
-    label {
+    > label {
       display: inline-block;
       text-align: right;
+      padding-right: 1rem;
       @extend .span-2;
       line-height: 1.8rem;
       &.box-label {
@@ -21,7 +22,7 @@
       }
     }
     input, select, textarea {
-      margin-left: 1rem;
+      //margin-left: 1rem;
     }
     input:not([type="file"]), select, textarea {
       @include transition("border 0.2s linear 0s, box-shadow 0.2s linear 0s");
@@ -39,9 +40,6 @@
       line-height: 1.8rem;
     }
     input:not([type="radio"]), input:not([type="checkbox"]), select, textarea {
-      @extend .span-3;
-      //width: 22rem;
-      margin: 0 1rem;
       @extend .border, .border-radius;
     }
     input[type="file"] {
@@ -53,25 +51,29 @@
       height: auto !important;
     }
     textarea {
-      //@extend [span="4"];
-      width: 30rem;
-      margin: 0 1rem;
+      &:not([class*=span]) {
+        @extend .span-4;
+      }
       height: 8rem;
       padding: $base-padding / 2;
     }
     // .info
     .info {
-      &:before {
-        content: "";
-        display: inline-block;
-        @extend .span-2;
-        margin-right: 1rem;
-      }
+      @extend .offset-2;
       margin-top: .4rem;
-      margin-left: 1rem;
-      padding-left: $base-padding / 2;
     }
   }
+
+  &:not([class*=" field-span"]) {
+    .field {
+      input:not([type="radio"]), input:not([type="checkbox"]), select, textarea {
+        &:not([class*=span]) {
+          @extend .span-3;
+        }
+      }
+    }
+  }
+
   &:not(.label-top) > .buttons, &:not(.label-top) > fieldset > .buttons {
     &:before {
       content: "";
@@ -97,8 +99,16 @@
   // field grid
   // extend from grid
   @for $i from 1 through 12 {
-    input.span-#{$i} {
-      @extend .span-#{$i};
+    input:not([type="radio"]), input:not([type="checkbox"]), select, textarea {
+      &.span-#{$i} {
+        @extend .span-#{$i};
+      }
+    }
+
+    &.field-span-#{$i} {
+      input:not([type="radio"]), input:not([type="checkbox"]), select, textarea {
+        @extend .span-#{$i};
+      }
     }
   }
 }

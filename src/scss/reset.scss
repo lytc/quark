@@ -34,7 +34,8 @@ button,
 input,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
 }
 
 body,
@@ -334,4 +335,20 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  > ul, > ol {
+    margin-left: 1em;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  @include box-sizing;
 }
