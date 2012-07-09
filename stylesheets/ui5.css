@@ -29,7 +29,8 @@ button,
 input,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem; }
 
 body,
 button,
@@ -280,15 +281,6 @@ ul, ol {
 
 ul {
   list-style: none; }
-
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.3rem; }
-
-label, input, button, select, textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
-  font-weight: normal; }
 
 * {
   box-sizing: border-box;
@@ -1637,8 +1629,13 @@ button.btn[disabled]:hover,
   list-style: none;
   margin: 0;
   padding: .4rem;
-  display: inline-block;
-  background: white; }
+  display: inline-block; }
+  .menu[class*=" bg"] > li > a, [class*=" bg"].nav > li > a {
+    color: white; }
+  .menu[class*=" bg"] > li > ul + a:after, [class*=" bg"].nav > li > ul + a:after {
+    border-top-color: white; }
+  .menu:not([class*=" bg"]), .nav:not([class*=" bg"]) {
+    background: white; }
   .menu ul, .nav ul {
     list-style: none;
     margin: 0;
@@ -1695,17 +1692,17 @@ button.btn[disabled]:hover,
       display: block; }
       .menu li:hover > ul + a:after, .nav li:hover > ul + a:after {
         display: none; }
-  .menu.item-bg-blue li a:hover, .item-bg-blue.nav li a:hover {
+  .menu.blue li a:hover, .blue.nav li a:hover {
     background-color: #149bdf; }
-  .menu.item-bg-green li a:hover, .item-bg-green.nav li a:hover {
+  .menu.green li a:hover, .green.nav li a:hover {
     background-color: #51a351; }
-  .menu.item-bg-orange li a:hover, .item-bg-orange.nav li a:hover {
+  .menu.orange li a:hover, .orange.nav li a:hover {
     background-color: #f89406; }
-  .menu.item-bg-red li a:hover, .item-bg-red.nav li a:hover {
+  .menu.red li a:hover, .red.nav li a:hover {
     background-color: #bd362f; }
-  .menu.item-bg-grey li a:hover, .item-bg-grey.nav li a:hover {
+  .menu.grey li a:hover, .grey.nav li a:hover {
     background-color: gray; }
-  .menu.item-bg-black li a:hover, .item-bg-black.nav li a:hover {
+  .menu.black li a:hover, .black.nav li a:hover {
     background-color: #333333; }
 
 .nav {
@@ -1742,39 +1739,3 @@ button.btn[disabled]:hover,
           border-top-color: white; }
     .nav > li:hover > ul + a:after {
       display: block !important; }
-  .nav.blue {
-    background-color: #149bdf; }
-    .nav.blue > li > a {
-      color: white; }
-    .nav.blue > li > ul + a:after {
-      border-top-color: white; }
-  .nav.green {
-    background-color: #51a351; }
-    .nav.green > li > a {
-      color: white; }
-    .nav.green > li > ul + a:after {
-      border-top-color: white; }
-  .nav.orange {
-    background-color: #f89406; }
-    .nav.orange > li > a {
-      color: white; }
-    .nav.orange > li > ul + a:after {
-      border-top-color: white; }
-  .nav.red {
-    background-color: #bd362f; }
-    .nav.red > li > a {
-      color: white; }
-    .nav.red > li > ul + a:after {
-      border-top-color: white; }
-  .nav.grey {
-    background-color: gray; }
-    .nav.grey > li > a {
-      color: white; }
-    .nav.grey > li > ul + a:after {
-      border-top-color: white; }
-  .nav.black {
-    background-color: #333333; }
-    .nav.black > li > a {
-      color: white; }
-    .nav.black > li > ul + a:after {
-      border-top-color: white; }
