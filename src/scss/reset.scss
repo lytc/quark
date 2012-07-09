@@ -28,21 +28,12 @@ html {
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 
-html,
 body,
 button,
 input,
 select,
 textarea {
   font-family: $base-font-family;
-  font-size: $base-font-size;
-}
-
-body,
-button,
-input,
-select,
-textarea {
   font-size: $base-font-size;
 }
 
