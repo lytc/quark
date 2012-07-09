@@ -23,20 +23,12 @@ html {
 /*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
-html,
 body,
 button,
 input,
 select,
 textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.3rem; }
-
-body,
-button,
-input,
-select,
-textarea {
   font-size: 1.3rem; }
 
 body {
