@@ -79,198 +79,127 @@
 <div class="container center">
   
 <h1>Sliders</h1>
-<hr class="rule">
 
-<br>
+<hr class="separator">
 
-<div class="grid">
-  <div class="row">
+<div class="row">
     <div class="span-4">
-      <div id="slider1">
-        <div class="slider blue striped">
-          <div class="bar" style="width: 110px">
-            <div class="thumb"></div>
-          </div>
+        <p></p>
+        <div id="slider1">
+            <div class="slider blue striped">
+                <div class="bar" style="width: 50%">
+                    <div class="thumb"></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <div class="span-8">
-      <pre class="brush: html" data-from="#slider1"></pre>
+        <pre class="brush: html; gutter: false;" data-from="#slider1"></pre>
     </div>
-  </div>
 </div>
 
-<h2>Slide colors</h2>
-<table class="table border-col border-header-row">
-  <thead>
-  <tr>
-    <th>Slider</th>
-    <th><code>class="slider *"</code></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <div class="slider blue">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>blue</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="slider green">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>green</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="slider orange">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>orange</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="slider red">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>red</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="slider grey">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>grey</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="slider black">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>black</code>
-    </td>
-  </tr>
-  </tbody>
-</table>
+<hr class="separator">
 
-<h2>Slide striped</h2>
-<div class="grid">
-  <div class="row">
-    <div class="span-6">
-      <code>&lt;div class="slider striped"&gt;</code>
-      <br>
-      <br>
-
-      <div class="slider blue striped">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
+<div class="row">
+    <div class="span-4">
+        <h2>Slider colors</h2>
+        <p>For customize colors, add class <code>blue</code>, <code>green</code>, <code>orange</code>,
+            <code>grey</code> or <code>black</code> beside the <code>slider</code> class.</p>
+        <div class="slider blue">
+            <div class="bar" style="width: 30%">
+                <div class="thumb"></div>
+            </div>
         </div>
-      </div>
+        <br>
+        <div class="slider green">
+            <div class="bar" style="width: 40%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <br>
+        <div class="slider orange">
+            <div class="bar" style="width: 50%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <br>
+        <div class="slider red">
+            <div class="bar" style="width: 60%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <br>
+        <div class="slider grey">
+            <div class="bar" style="width: 70%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <br>
+        <div class="slider black">
+            <div class="bar" style="width: 80%">
+                <div class="thumb"></div>
+            </div>
+        </div>
     </div>
-    <div class="span-6">
-      <code>&lt;div class="slider striped-animate"&gt;</code>
-      <br>
-      <br>
-
-      <div class="slider blue striped-animate">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
+    <div class="span-4">
+        <h2>Slider striped</h2>
+        <p>If you want to have striped affect, add class <code>stripped</code> beside the <code>slider</code> class.</p>
+        <div class="slider blue striped">
+            <div class="bar" style="width: 50%">
+                <div class="thumb"></div>
+            </div>
         </div>
-      </div>
+        <br>
+        <div class="slider green striped">
+            <div class="bar" style="width: 70%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+
+        <h2>Slider striped animate</h2>
+        <p>If you want to have striped animate affect, add class <code>stripped-animate</code> beside the <code>slider</code> class.</p>
+
+        <div class="slider blue striped-animate">
+            <div class="bar" style="width: 50%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <br>
+        <div class="slider green striped-animate">
+            <div class="bar" style="width: 70%">
+                <div class="thumb"></div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="span-4">
+        <h2>Slider sizes</h2>
+        <p>For custom sizes, slider bar provides <code>mini</code>, <code>medium</code>, <code>large</code>, <code>x-large</code> sizes.</p>
+        <div class="slider blue mini">
+            <div class="bar" style="width: 50%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <br>
+        <div class="slider blue medium">
+            <div class="bar" style="width: 50%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <br>
+        <div class="slider blue large">
+            <div class="bar" style="width: 50%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <br>
+        <div class="slider blue x-large">
+            <div class="bar" style="width: 50%">
+                <div class="thumb"></div>
+            </div>
+        </div>
+        <br>
+    </div>
 </div>
-
-<h2>Slide size</h2>
-<table class="table border-col border-header-row">
-  <thead>
-  <tr>
-    <th>Slider</th>
-    <th><code>class="slider *"</code></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <div class="slider blue mini">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>mini</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="slider blue small">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>small</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="slider blue medium">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>medium</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="slider blue large">
-        <div class="bar" style="width: 110px">
-          <div class="thumb"></div>
-        </div>
-      </div>
-    </td>
-    <td>
-      <code>large</code>
-    </td>
-  </tr>
-  </tbody>
-</table>
 </div>
 
 <hr class="separator">

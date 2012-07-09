@@ -735,19 +735,18 @@ h1.large {
     border-collapse: separate;
     border: 0.1rem solid #cccccc;
     border-radius: 0.4rem; }
-  .table.border-col > thead > tr > th, .table.border-col tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
+  .table.border-cols > thead > tr > th, .table.border-cols tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
     border-right-width: 0.1rem; }
-    .table.border-col > thead > tr > th:last-child, .table.border-col tbody > tr > td:last-child, .table.border-all > thead > tr > th:last-child, .table.border-all tbody > tr > td:last-child {
+    .table.border-cols > thead > tr > th:last-child, .table.border-cols tbody > tr > td:last-child, .table.border-all > thead > tr > th:last-child, .table.border-all tbody > tr > td:last-child {
       border-right: 0; }
-  .table.border-row > thead > tr > th, .table.border-row tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
+  .table.border-rows > thead > tr > th, .table.border-rows tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
     border-bottom-width: .1rem; }
-  .table.border-header-row > thead > tr > th, .table.border-header > thead > tr > th {
+  .table.border-header-rows > thead > tr > th {
     border-bottom-width: .1rem; }
-  .table.border-header-col > thead > tr > th, .table.border-header > thead > tr > th {
-    border-right-width: .1rem; }
-    .table.border-header-col > thead > tr > th:last-child, .table.border-header > thead > tr > th:last-child {
-      border-right: 0; }
-  .table.striped > tbody > tr:nth-child(2n-1) {
+  .table.stripe-rows > tbody > tr:nth-child(2n-1), .table.striped > tbody > tr:nth-child(2n-1) {
+    background-color: rgba(204, 204, 204, 0.2); }
+  .table.stripe-cols > thead > tr > th:nth-child(2n),
+  .table.stripe-cols > tbody > tr > td:nth-child(2n), .table.striped > thead > tr > th:nth-child(2n), .table.striped > tbody > tr > td:nth-child(2n) {
     background-color: rgba(204, 204, 204, 0.2); }
 
 .btn {
@@ -1662,11 +1661,11 @@ button.btn[disabled]:hover,
         color: white; }
     .menu li > ul, .nav li > ul {
       position: absolute;
-      right: calc(-100% - 8rem);
-      right: -webkit-calc(-100% - 8rem);
-      right: -moz-calc(-100% - 8rem);
-      right: -o-calc(-100% - 8rem);
-      right: -ms-calc(-100% - 8rem);
+      right: calc(-100% - .8rem);
+      right: -webkit-calc(-100% - .8rem);
+      right: -moz-calc(-100% - .8rem);
+      right: -o-calc(-100% - .8rem);
+      right: -ms-calc(-100% - .8rem);
       top: -0.5rem;
       display: none; }
       .menu li > ul:before, .nav li > ul:before {
