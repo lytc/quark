@@ -3,354 +3,203 @@
 <% end %>
 
 <h1>Navigations</h1>
-<hr class="rule">
 
-<br>
+<hr class="separator">
 
-<div class="grid">
-  <div class="row">
-    <div class="span-6">
-      <div id="nav1">
-        <ul class="nav item-bg-orange" bg="blue">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li>
-            <ul>
-              <li><a href="#">Lorem ipsum dolor</a></li>
-              <li><a href="#">Lorem ipsum dolor</a></li>
-              <li>
-                <hr class="rule">
-              </li>
-              <li><a href="#">Lorem ipsum dolor</a></li>
-            </ul>
-            <a href="#">Lorem ipsum</a>
-          </li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li>
-            <hr class="rule">
-          </li>
-          <li><a href="#">Lorem ipsum</a></li>
+<div class="row">
+<div class="span-5">
+  <p></p>
+  <div id="nav1">
+    <ul class="nav">
+      <li><a href="#">Lorem ipsum</a></li>
+      <li>
+        <ul>
+          <li><a href="#">Lorem ipsum dolor</a></li>
+          <li><a href="#">Lorem ipsum dolor</a></li>
+          <li><hr class="rule"></li>
+          <li><a href="#">Lorem ipsum dolor</a></li>
         </ul>
-      </div>
-    </div>
-    <div class="span-6">
-      <pre class="brush: html" data-from="#nav1"></pre>
-    </div>
+        <a href="#">Lorem ipsum</a>
+      </li>
+      <li><a href="#">Lorem ipsum</a></li>
+    </ul>
   </div>
 </div>
+<div class="span-7">
+  <pre class="brush: html" data-from="#nav1"></pre>
+</div>
+</div>
 
-<br>
+<hr class="separator">
 
-<h2>Item hover background colors</h2>
-<table class="table">
-  <thead>
-  <tr>
-    <th>Navigation</th>
-    <th><code>item-bg="*"</code></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <ul class="nav item-bg-blue">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
+<p>Navigations bar is inheritance from menus bar. It meant you can set background colors when hover on navigation items simlar to menus bar.</p>
+<div class="row">
+    <div class="span-4">
+        <pre class="brush: html; gutter: false;">
+            &lt;ul class="nav green"&gt;
+              ...
+            &lt;/ul&gt;
+        </pre>
+    </div>
+    <div class="span-8">
+        <p></p>
+        <ul class="nav green">
+            <li><a href="#">Lorem ipsum</a></li>
             <li>
-              <hr class="rule">
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li>
+                        <hr class="rule">
+                    </li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                </ul>
+                <a href="#">Lorem ipsum</a>
             </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>blue</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav item-bg-green">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li>
-              <hr class="rule">
-            </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>green</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav item-bg-orange">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li>
-              <hr class="rule">
-            </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>orange</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav item-bg-red">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li>
-              <hr class="rule">
-            </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>red</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav item-bg-grey">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li>
-              <hr class="rule">
-            </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>grey</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav item-bg-black">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li>
-              <hr class="rule">
-            </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>black</code></td>
-  </tr>
-  </tbody>
-</table>
+            <li><a href="#">Lorem ipsum</a></li>
+        </ul>
+    </div>
+</div>
 
-<br>
-<br>
+<div class="row">
+    <div class="span-4">
+        <pre class="brush: html; gutter: false;">
+            &lt;ul class="nav orange"&gt;
+              ...
+            &lt;/ul&gt;
+        </pre>
+    </div>
+    <div class="span-8">
+        <p></p>
+        <ul class="nav orange">
+            <li><a href="#">Lorem ipsum</a></li>
+            <li>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li>
+                        <hr class="rule">
+                    </li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                </ul>
+                <a href="#">Lorem ipsum</a>
+            </li>
+            <li><a href="#">Lorem ipsum</a></li>
+        </ul>
+    </div>
+</div>
 
-<h2>background colors</h2>
-<table class="table">
-  <thead>
-  <tr>
-    <th>Navigation</th>
-    <th><code>bg="*"</code></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <ul class="nav blue">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
+<div class="row">
+    <div class="span-4">
+        <pre class="brush: html; gutter: false;">
+            &lt;ul class="nav red"&gt;
+              ...
+            &lt;/ul&gt;
+        </pre>
+    </div>
+    <div class="span-8">
+        <p></p>
+        <ul class="nav red">
+            <li><a href="#">Lorem ipsum</a></li>
             <li>
-              <hr class="rule">
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li>
+                        <hr class="rule">
+                    </li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                </ul>
+                <a href="#">Lorem ipsum</a>
             </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>blue</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav green">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span-4">
+        <pre class="brush: html; gutter: false;">
+            &lt;ul class="nav grey"&gt;
+              ...
+            &lt;/ul&gt;
+        </pre>
+    </div>
+    <div class="span-8">
+        <p></p>
+        <ul class="nav grey">
+            <li><a href="#">Lorem ipsum</a></li>
             <li>
-              <hr class="rule">
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li>
+                        <hr class="rule">
+                    </li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                </ul>
+                <a href="#">Lorem ipsum</a>
             </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>green</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav orange">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span-4">
+        <pre class="brush: html; gutter: false;">
+            &lt;ul class="nav black"&gt;
+              ...
+            &lt;/ul&gt;
+        </pre>
+    </div>
+    <div class="span-8">
+        <p></p>
+        <ul class="nav black">
+            <li><a href="#">Lorem ipsum</a></li>
             <li>
-              <hr class="rule">
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li>
+                        <hr class="rule">
+                    </li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                </ul>
+                <a href="#">Lorem ipsum</a>
             </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>orange</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav red">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr class="separator">
+<p>You can add <code>bg-*</code> class if you want to customize the background of navigation bar as well.</p>
+
+<div class="row">
+    <div class="span-4">
+        <pre class="brush: html; gutter: false;">
+            &lt;ul class="nav orange bg-blue"&gt;
+              ...
+            &lt;/ul&gt;
+        </pre>
+    </div>
+    <div class="span-8">
+        <p></p>
+        <ul class="nav orange bg-blue">
+            <li><a href="#">Lorem ipsum</a></li>
             <li>
-              <hr class="rule">
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li>
+                        <hr class="rule">
+                    </li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                </ul>
+                <a href="#">Lorem ipsum</a>
             </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>red</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav grey">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li>
-              <hr class="rule">
-            </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>grey</code></td>
-  </tr>
-  <tr>
-    <td>
-      <ul class="nav black">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li>
-              <hr class="rule">
-            </li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-          </ul>
-          <a href="#">Lorem ipsum</a>
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li>
-          <hr class="rule">
-        </li>
-        <li><a href="#">Lorem ipsum</a></li>
-      </ul>
-    </td>
-    <td><code>black</code></td>
-  </tr>
-  </tbody>
-</table>
+            <li><a href="#">Lorem ipsum</a></li>
+        </ul>
+    </div>
+</div>

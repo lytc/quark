@@ -1,18 +1,3 @@
-body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-}
-
-label, input, button, select, textarea {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  font-weight: normal;
-}
-
-* {
-  @include box-sizing;
-}
-
 a {
   text-decoration: none;
   color: $base-color-blue;

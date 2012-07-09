@@ -34,7 +34,8 @@ button,
 input,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
 }
 
 body,
@@ -47,7 +48,6 @@ textarea {
 
 body {
   margin: 0;
-  line-height: 140%;
 }
 
 /*
@@ -347,4 +347,8 @@ ul, ol {
 
 ul {
   list-style: none;
+}
+
+* {
+  @include box-sizing;
 }

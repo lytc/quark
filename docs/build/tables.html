@@ -81,298 +81,399 @@
 <h1>Tables</h1>
 <hr class="rule">
 
-<br>
-
-<div class="grid">
-  <div class="row">
+<h2>Table markup</h2>
+<div class="row">
     <div class="span-5">
-      <h3>Table</h3>
-
-      <div id="table1">
-        <table class="table" >
-          <thead>
-          <th>Head</th>
-          <th>Head</th>
-          <th>Head</th>
-          </thead>
-          <tbody>
-          <tr>
-            <td>td</td>
-            <td>td</td>
-            <td>td</td>
-          </tr>
-          <tr>
-            <td>td</td>
-            <td>td</td>
-            <td>td</td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
+        <pre class="brush: html; gutter: false;">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>...</th>
+                    <th>...</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                </tbody>
+            </table>
+        </pre>
     </div>
     <div class="span-7">
-      <h3>Markup</h3>
-      <pre class="brush: html" data-from="#table1"></pre>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>2kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>3kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Grape</td>
+                <td>urple</td>
+                <td>4kg</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>2kg</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>3kg</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-  </div>
 </div>
 
-<br>
-<br>
+<hr class="separator">
 
-<h3>Table bordered</h3>
-<code>class="table border"</code>
-<br>
-<br>
-
-<table class="table border" >
-  <thead>
-  <th>Head</th>
-  <th>Head</th>
-  <th>Head</th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  </tbody>
-</table>
-
-
-<br>
-<br>
-
-<h3>Table column bordered</h3>
-<code>class="table border-col"</code>
-
-<br>
-<br>
-
-<table class="table border-col" >
-  <thead>
-  <th>Head</th>
-  <th>Head</th>
-  <th>Head</th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  </tbody>
-</table>
-
-<br>
-<br>
-
-<h3>Table row bordered</h3>
-<code>class="table border-row"</code>
-
-<br>
-<br>
-
-<table class="table border-row" >
-  <thead>
-  <th>Head</th>
-  <th>Head</th>
-  <th>Head</th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  </tbody>
-</table>
-
-<br>
-<br>
-
-<h3>Table header row bordered</h3>
-<code>class="table border-header-row"</code>
-
-<br>
-<br>
-
-<table class="table border-header-row" >
-  <thead>
-  <th>Head</th>
-  <th>Head</th>
-  <th>Head</th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  </tbody>
-</table>
-
-<br>
-<br>
-
-<h3>Table header col bordered</h3>
-<code>class="table border-header-col"</code>
-
-<br>
-<br>
-
-<table class="table border-header-col" >
-  <thead>
-  <th>Head</th>
-  <th>Head</th>
-  <th>Head</th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  </tbody>
-</table>
-
-<br>
-<br>
-
-<h3>Table header bordered</h3>
-<code>class="table border-header"</code>
-
-<br>
-<br>
-
-<table class="table border-header" >
-  <thead>
-  <th>Head</th>
-  <th>Head</th>
-  <th>Head</th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  </tbody>
-</table>
-
-<br>
-<br>
-
-<h3>Table striped rows</h3>
-<code>class="table striped"</code>
-
-<br>
-<br>
-
-<table class="table striped" >
-  <thead>
-  <th>Head</th>
-  <th>Head</th>
-  <th>Head</th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  </tbody>
-</table>
-
-<br>
-<br>
-
-<h3>Combine them all</h3>
-<code>class="table border-all striped"</code>
-
-<br>
-<br>
-
-<table class="table border-all striped" >
-  <thead>
-  <th>Head</th>
-  <th>Head</th>
-  <th>Head</th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  <tr>
-    <td>td</td>
-    <td>td</td>
-    <td>td</td>
-  </tr>
-  </tbody>
-</table>
+<h2>Table bordered</h2>
+<div class="row">
+    <div class="span-5">
+        <p>For showing borders around the entire table, add <code>border</code> class beside the <code>table</code> class.</p>
+        <pre class="brush: html; gutter: false;">
+            &lt;table class="table border"&gt;
+                ...
+            &lt;/table&gt;
+        </pre>
+    </div>
+    <div class="span-7">
+        <table class="table border">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>2kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>3kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Grape</td>
+                <td>urple</td>
+                <td>4kg</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-<br>
-<br>
-<hr class="rule">
-<div class="container-960 center">
+
+<hr class="separator">
+
+<h2>Row bordered</h2>
+<div class="row">
+    <div class="span-5">
+        <p>For showing row borders, add <code>border-row</code> class beside the <code>table</code> class.</p>
+        <pre class="brush: html; gutter: false;">
+            &lt;table class="table border-row"&gt;
+                ...
+            &lt;/table&gt;
+        </pre>
+    </div>
+    <div class="span-7">
+        <table class="table border-rows">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>2kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>3kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Grape</td>
+                <td>urple</td>
+                <td>4kg</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<hr class="separator">
+
+<h2>Column bordered</h2>
+<div class="row">
+    <div class="span-5">
+        <p>For showing column borders, add <code>border-col</code> class beside the <code>table</code> class.</p>
+        <pre class="brush: html; gutter: false;">
+            &lt;table class="table border-col"&gt;
+                ...
+            &lt;/table&gt;
+        </pre>
+    </div>
+    <div class="span-7">
+        <table class="table border-cols">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>2kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>3kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Grape</td>
+                <td>urple</td>
+                <td>4kg</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<hr class="separator">
+
+<h2>Header row bordered</h2>
+<div class="row">
+    <div class="span-5">
+        <p>For just showing header row borders, add <code>border-header-row</code> class beside the <code>table</code> class.</p>
+        <pre class="brush: html; gutter: false;">
+            &lt;table class="table border-header-row"&gt;
+                ...
+            &lt;/table&gt;
+        </pre>
+    </div>
+    <div class="span-7">
+        <table class="table border-header-rows">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>2kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>3kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Grape</td>
+                <td>urple</td>
+                <td>4kg</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<hr class="separator">
+
+<h2>Striped rows</h2>
+<div class="row">
+    <div class="span-5">
+        <p>Add class <code>stripe-rows</code> for striped affect to alternate rows of the table.</p>
+        <pre class="brush: html; gutter: false;">
+            &lt;table class="table stripe-rows"&gt;
+                ...
+            &lt;/table&gt;
+        </pre>
+    </div>
+    <div class="span-7">
+        <table class="table stripe-rows">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>2kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>3kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Grape</td>
+                <td>urple</td>
+                <td>4kg</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<hr class="separator">
+
+<h2>Striped columns</h2>
+<div class="row">
+    <div class="span-5">
+        <p>Add class <code>stripe-cols</code> for striped affect to alternate columns of the table.</p>
+        <pre class="brush: html; gutter: false;">
+            &lt;table class="table stripe-cols"&gt;
+                ...
+            &lt;/table&gt;
+        </pre>
+    </div>
+    <div class="span-7">
+        <table class="table stripe-cols">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>2kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>3kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Grape</td>
+                <td>urple</td>
+                <td>4kg</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<hr class="separator">
+
+<h2>Combine them all</h2>
+<div class="row">
+    <div class="span-5">
+        <p>Add class <code>border-all</code> for showing border around the entire table, columns and rows of the table.</p>
+        <p>Add class <code>striped</code> for showing striped affect to alternate columns and rows of the table.</p>
+        <pre class="brush: html; gutter: false;">
+            &lt;table class="table border-all striped"&gt;
+                ...
+            &lt;/table&gt;
+        </pre>
+    </div>
+    <div class="span-7">
+        <table class="table border-all striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>2kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>3kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Grape</td>
+                <td>urple</td>
+                <td>4kg</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+
+<hr class="separator">
+<div class="container center">
   <br>
   <div class="to-left color-grey">
     <p>

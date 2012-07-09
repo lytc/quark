@@ -5,8 +5,27 @@
   @extend .border;
   @extend .border-radius;
   display: inline-block;
-  background: white;
   @extend .box-shadow;
+
+  &[class*=" bg"] {
+    > li {
+      > a {
+        color: white;
+      }
+
+      > ul {
+        + a {
+          &:after {
+          border-top-color: white;
+          }
+        }
+      }
+    }
+  }
+  &:not([class*=" bg"]) {
+    background: white;
+  }
+
   ul {
     list-style: none;
     margin: 0;
@@ -36,7 +55,7 @@
     }
     > ul {
       position: absolute;
-      @include calc(right, "-100% - 8rem");
+      @include calc(right, "-100% - .8rem");
       top: -.5rem;
       display: none;
       &:before {
@@ -79,7 +98,7 @@
   @each $color-hash in $base-colors-list {
     $name: nth($color-hash, 1);
     $color: nth($color-hash, 2);
-    &.item-bg-#{$name} {
+    &.#{$name} {
       li {
         a {
           &:hover {

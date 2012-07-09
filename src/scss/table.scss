@@ -17,7 +17,7 @@
     border: $base-border-width $base-border-style $base-border-color;
     border-radius: $base-border-radius;
   }
-  &.border-col, &.border-all {
+  &.border-cols, &.border-all {
     > thead > tr > th, tbody > tr > td {
       border-right-width: $base-border-width;
       &:last-child {
@@ -25,26 +25,26 @@
       }
     }
   }
-  &.border-row, &.border-all {
+  &.border-rows, &.border-all {
     > thead > tr > th, tbody > tr > td {
       border-bottom-width: .1rem;
     }
   }
-  &.border-header-row, &.border-header {
+  &.border-header-rows {
     > thead > tr > th {
       border-bottom-width: .1rem;
     }
   }
-  &.border-header-col, &.border-header {
-    > thead > tr > th {
-      border-right-width: .1rem;
-      &:last-child {
-        border-right: 0;
-      }
+
+  &.stripe-rows, &.striped {
+    > tbody > tr:nth-child(2n-1) {
+      background-color: rgba(#cccccc, 0.2);
     }
   }
-  &.striped {
-    > tbody > tr:nth-child(2n-1) {
+
+  &.stripe-cols, &.striped {
+    > thead > tr > th:nth-child(2n),
+    > tbody > tr > td:nth-child(2n) {
       background-color: rgba(#cccccc, 0.2);
     }
   }

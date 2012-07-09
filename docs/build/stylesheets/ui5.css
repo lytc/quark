@@ -332,12 +332,12 @@ code,
 pre {
   padding: 0 .3rem .2rem;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #333333;
   border-radius: 0.4rem; }
 
 code {
-  padding: .2rem .4rem;
+  padding: 0 .4rem;
   color: #bd362f;
   background-color: #f7f7f9; }
 
@@ -352,6 +352,9 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   background-color: #f5f5f5; }
+
+code {
+  white-space: nowrap; }
 
 pre code {
   padding: 0;
@@ -397,185 +400,259 @@ ul.square {
   .row > [class*=span] {
     display: inline-block;
     float: left; }
+    .row > [class*=span]:first-child:not([class*=offset]) {
+      margin-left: 0; }
+    .row > [class*=span]:last-child {
+      margin-right: 0; }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1220px) {
   .container, .row {
-    width: 1140px; }
+    width: 1180px; }
 
-  .span-1, .form input.span-1 {
-    width: 75px; }
+  .span-1, .form input.span-1:not([type="radio"]), .form input.span-1:not([type="checkbox"]), .form select.span-1, .form textarea.span-1, .form.field-span-1 input:not([type="radio"]), .form.field-span-1 input:not([type="checkbox"]), .form.field-span-1 select, .form.field-span-1 textarea {
+    width: 80px; }
 
   .offset-1 {
-    margin-left: 105px; }
+    margin-left: 100px; }
 
-  .span-2, .form .field label, .form .field .info:before, .form:not(.label-top) > .buttons:before, .form:not(.label-top) > fieldset > .buttons:before, .form input.span-2 {
-    width: 170px; }
+  .span-2, .form .field > label, .form:not(.label-top) > .buttons:before, .form:not(.label-top) > fieldset > .buttons:before, .form input.span-2:not([type="radio"]), .form input.span-2:not([type="checkbox"]), .form select.span-2, .form textarea.span-2, .form.field-span-2 input:not([type="radio"]), .form.field-span-2 input:not([type="checkbox"]), .form.field-span-2 select, .form.field-span-2 textarea {
+    width: 180px; }
 
-  .offset-2 {
+  .offset-2, .form .field .info {
     margin-left: 200px; }
 
-  .span-3, .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea, .form input.span-3 {
-    width: 265px; }
+  .span-3, .form:not([class*=" field-span"]) .field input:not([type="radio"]):not([class*=span]), .form:not([class*=" field-span"]) .field input:not([type="checkbox"]):not([class*=span]), .form:not([class*=" field-span"]) .field select:not([class*=span]), .form:not([class*=" field-span"]) .field textarea:not([class*=span]), .form input.span-3:not([type="radio"]), .form input.span-3:not([type="checkbox"]), .form select.span-3, .form textarea.span-3, .form.field-span-3 input:not([type="radio"]), .form.field-span-3 input:not([type="checkbox"]), .form.field-span-3 select, .form.field-span-3 textarea {
+    width: 280px; }
 
   .offset-3 {
-    margin-left: 295px; }
+    margin-left: 300px; }
 
-  .span-4, .form input.span-4 {
-    width: 360px; }
+  .span-4, .form .field textarea:not([class*=span]), .form input.span-4:not([type="radio"]), .form input.span-4:not([type="checkbox"]), .form select.span-4, .form textarea.span-4, .form.field-span-4 input:not([type="radio"]), .form.field-span-4 input:not([type="checkbox"]), .form.field-span-4 select, .form.field-span-4 textarea {
+    width: 380px; }
 
   .offset-4 {
-    margin-left: 390px; }
+    margin-left: 400px; }
 
-  .span-5, .form input.span-5 {
-    width: 455px; }
+  .span-5, .form input.span-5:not([type="radio"]), .form input.span-5:not([type="checkbox"]), .form select.span-5, .form textarea.span-5, .form.field-span-5 input:not([type="radio"]), .form.field-span-5 input:not([type="checkbox"]), .form.field-span-5 select, .form.field-span-5 textarea {
+    width: 480px; }
 
   .offset-5 {
-    margin-left: 485px; }
+    margin-left: 500px; }
 
-  .span-6, .form input.span-6 {
-    width: 550px; }
+  .span-6, .form input.span-6:not([type="radio"]), .form input.span-6:not([type="checkbox"]), .form select.span-6, .form textarea.span-6, .form.field-span-6 input:not([type="radio"]), .form.field-span-6 input:not([type="checkbox"]), .form.field-span-6 select, .form.field-span-6 textarea {
+    width: 580px; }
 
   .offset-6 {
-    margin-left: 580px; }
+    margin-left: 600px; }
 
-  .span-7, .form input.span-7 {
-    width: 645px; }
+  .span-7, .form input.span-7:not([type="radio"]), .form input.span-7:not([type="checkbox"]), .form select.span-7, .form textarea.span-7, .form.field-span-7 input:not([type="radio"]), .form.field-span-7 input:not([type="checkbox"]), .form.field-span-7 select, .form.field-span-7 textarea {
+    width: 680px; }
 
   .offset-7 {
-    margin-left: 675px; }
+    margin-left: 700px; }
 
-  .span-8, .form input.span-8 {
-    width: 740px; }
+  .span-8, .form input.span-8:not([type="radio"]), .form input.span-8:not([type="checkbox"]), .form select.span-8, .form textarea.span-8, .form.field-span-8 input:not([type="radio"]), .form.field-span-8 input:not([type="checkbox"]), .form.field-span-8 select, .form.field-span-8 textarea {
+    width: 780px; }
 
   .offset-8 {
-    margin-left: 770px; }
+    margin-left: 800px; }
 
-  .span-9, .form input.span-9 {
-    width: 835px; }
+  .span-9, .form input.span-9:not([type="radio"]), .form input.span-9:not([type="checkbox"]), .form select.span-9, .form textarea.span-9, .form.field-span-9 input:not([type="radio"]), .form.field-span-9 input:not([type="checkbox"]), .form.field-span-9 select, .form.field-span-9 textarea {
+    width: 880px; }
 
   .offset-9 {
-    margin-left: 865px; }
+    margin-left: 900px; }
 
-  .span-10, .form input.span-10 {
-    width: 930px; }
+  .span-10, .form input.span-10:not([type="radio"]), .form input.span-10:not([type="checkbox"]), .form select.span-10, .form textarea.span-10, .form.field-span-10 input:not([type="radio"]), .form.field-span-10 input:not([type="checkbox"]), .form.field-span-10 select, .form.field-span-10 textarea {
+    width: 980px; }
 
   .offset-10 {
-    margin-left: 960px; }
+    margin-left: 1000px; }
 
-  .span-11, .form input.span-11 {
-    width: 1025px; }
+  .span-11, .form input.span-11:not([type="radio"]), .form input.span-11:not([type="checkbox"]), .form select.span-11, .form textarea.span-11, .form.field-span-11 input:not([type="radio"]), .form.field-span-11 input:not([type="checkbox"]), .form.field-span-11 select, .form.field-span-11 textarea {
+    width: 1080px; }
 
   .offset-11 {
-    margin-left: 1055px; }
+    margin-left: 1100px; }
 
-  .span-12, .form input.span-12 {
-    width: 1120px; }
+  .span-12, .form input.span-12:not([type="radio"]), .form input.span-12:not([type="checkbox"]), .form select.span-12, .form textarea.span-12, .form.field-span-12 input:not([type="radio"]), .form.field-span-12 input:not([type="checkbox"]), .form.field-span-12 select, .form.field-span-12 textarea {
+    width: 1180px; }
 
   .offset-12 {
-    margin-left: 1150px; } }
-@media only screen and (min-width: 768px) and (max-width: 1190px) {
+    margin-left: 1200px; } }
+@media only screen and (min-width: 980px) and (max-width: 1219px) {
   .container, .row {
-    width: 720px; }
-    .container .span-1, .container .form input.span-1, .form .container input.span-1, .row .span-1, .row .form input.span-1, .form .row input.span-1 {
+    width: 940px; }
+    .container .span-1, .container .form input.span-1:not([type="radio"]), .form .container input.span-1:not([type="radio"]), .container .form input.span-1:not([type="checkbox"]), .form .container input.span-1:not([type="checkbox"]), .container .form select.span-1, .form .container select.span-1, .container .form textarea.span-1, .form .container textarea.span-1, .container .form.field-span-1 input:not([type="radio"]), .form.field-span-1 .container input:not([type="radio"]), .container .form.field-span-1 input:not([type="checkbox"]), .form.field-span-1 .container input:not([type="checkbox"]), .container .form.field-span-1 select, .form.field-span-1 .container select, .container .form.field-span-1 textarea, .form.field-span-1 .container textarea, .row .span-1, .row .form input.span-1:not([type="radio"]), .form .row input.span-1:not([type="radio"]), .row .form input.span-1:not([type="checkbox"]), .form .row input.span-1:not([type="checkbox"]), .row .form select.span-1, .form .row select.span-1, .row .form textarea.span-1, .form .row textarea.span-1, .row .form.field-span-1 input:not([type="radio"]), .form.field-span-1 .row input:not([type="radio"]), .row .form.field-span-1 input:not([type="checkbox"]), .form.field-span-1 .row input:not([type="checkbox"]), .row .form.field-span-1 select, .form.field-span-1 .row select, .row .form.field-span-1 textarea, .form.field-span-1 .row textarea {
+      width: 60px; }
+    .container .offset-1, .row .offset-1 {
+      margin-left: 80px; }
+    .container .span-2, .container .form .field > label, .form .container .field > label, .container .form:not(.label-top) > .buttons:before, .container .form:not(.label-top) > fieldset > .buttons:before, .container .form input.span-2:not([type="radio"]), .form .container input.span-2:not([type="radio"]), .container .form input.span-2:not([type="checkbox"]), .form .container input.span-2:not([type="checkbox"]), .container .form select.span-2, .form .container select.span-2, .container .form textarea.span-2, .form .container textarea.span-2, .container .form.field-span-2 input:not([type="radio"]), .form.field-span-2 .container input:not([type="radio"]), .container .form.field-span-2 input:not([type="checkbox"]), .form.field-span-2 .container input:not([type="checkbox"]), .container .form.field-span-2 select, .form.field-span-2 .container select, .container .form.field-span-2 textarea, .form.field-span-2 .container textarea, .row .span-2, .row .form .field > label, .form .row .field > label, .row .form:not(.label-top) > .buttons:before, .row .form:not(.label-top) > fieldset > .buttons:before, .row .form input.span-2:not([type="radio"]), .form .row input.span-2:not([type="radio"]), .row .form input.span-2:not([type="checkbox"]), .form .row input.span-2:not([type="checkbox"]), .row .form select.span-2, .form .row select.span-2, .row .form textarea.span-2, .form .row textarea.span-2, .row .form.field-span-2 input:not([type="radio"]), .form.field-span-2 .row input:not([type="radio"]), .row .form.field-span-2 input:not([type="checkbox"]), .form.field-span-2 .row input:not([type="checkbox"]), .row .form.field-span-2 select, .form.field-span-2 .row select, .row .form.field-span-2 textarea, .form.field-span-2 .row textarea {
+      width: 140px; }
+    .container .offset-2, .container .form .field .info, .form .field .container .info, .row .offset-2, .row .form .field .info, .form .field .row .info {
+      margin-left: 160px; }
+    .container .span-3, .container .form:not([class*=" field-span"]) .field input:not([type="radio"]):not([class*=span]), .form:not([class*=" field-span"]) .field .container input:not([type="radio"]):not([class*=span]), .container .form:not([class*=" field-span"]) .field input:not([type="checkbox"]):not([class*=span]), .form:not([class*=" field-span"]) .field .container input:not([type="checkbox"]):not([class*=span]), .container .form:not([class*=" field-span"]) .field select:not([class*=span]), .form:not([class*=" field-span"]) .field .container select:not([class*=span]), .container .form:not([class*=" field-span"]) .field textarea:not([class*=span]), .form:not([class*=" field-span"]) .field .container textarea:not([class*=span]), .container .form input.span-3:not([type="radio"]), .form .container input.span-3:not([type="radio"]), .container .form input.span-3:not([type="checkbox"]), .form .container input.span-3:not([type="checkbox"]), .container .form select.span-3, .form .container select.span-3, .container .form textarea.span-3, .form .container textarea.span-3, .container .form.field-span-3 input:not([type="radio"]), .form.field-span-3 .container input:not([type="radio"]), .container .form.field-span-3 input:not([type="checkbox"]), .form.field-span-3 .container input:not([type="checkbox"]), .container .form.field-span-3 select, .form.field-span-3 .container select, .container .form.field-span-3 textarea, .form.field-span-3 .container textarea, .row .span-3, .row .form:not([class*=" field-span"]) .field input:not([type="radio"]):not([class*=span]), .form:not([class*=" field-span"]) .field .row input:not([type="radio"]):not([class*=span]), .row .form:not([class*=" field-span"]) .field input:not([type="checkbox"]):not([class*=span]), .form:not([class*=" field-span"]) .field .row input:not([type="checkbox"]):not([class*=span]), .row .form:not([class*=" field-span"]) .field select:not([class*=span]), .form:not([class*=" field-span"]) .field .row select:not([class*=span]), .row .form:not([class*=" field-span"]) .field textarea:not([class*=span]), .form:not([class*=" field-span"]) .field .row textarea:not([class*=span]), .row .form input.span-3:not([type="radio"]), .form .row input.span-3:not([type="radio"]), .row .form input.span-3:not([type="checkbox"]), .form .row input.span-3:not([type="checkbox"]), .row .form select.span-3, .form .row select.span-3, .row .form textarea.span-3, .form .row textarea.span-3, .row .form.field-span-3 input:not([type="radio"]), .form.field-span-3 .row input:not([type="radio"]), .row .form.field-span-3 input:not([type="checkbox"]), .form.field-span-3 .row input:not([type="checkbox"]), .row .form.field-span-3 select, .form.field-span-3 .row select, .row .form.field-span-3 textarea, .form.field-span-3 .row textarea {
+      width: 220px; }
+    .container .offset-3, .row .offset-3 {
+      margin-left: 240px; }
+    .container .span-4, .container .form .field textarea:not([class*=span]), .form .field .container textarea:not([class*=span]), .container .form input.span-4:not([type="radio"]), .form .container input.span-4:not([type="radio"]), .container .form input.span-4:not([type="checkbox"]), .form .container input.span-4:not([type="checkbox"]), .container .form select.span-4, .form .container select.span-4, .container .form textarea.span-4, .form .container textarea.span-4, .container .form.field-span-4 input:not([type="radio"]), .form.field-span-4 .container input:not([type="radio"]), .container .form.field-span-4 input:not([type="checkbox"]), .form.field-span-4 .container input:not([type="checkbox"]), .container .form.field-span-4 select, .form.field-span-4 .container select, .container .form.field-span-4 textarea, .form.field-span-4 .container textarea, .row .span-4, .row .form .field textarea:not([class*=span]), .form .field .row textarea:not([class*=span]), .row .form input.span-4:not([type="radio"]), .form .row input.span-4:not([type="radio"]), .row .form input.span-4:not([type="checkbox"]), .form .row input.span-4:not([type="checkbox"]), .row .form select.span-4, .form .row select.span-4, .row .form textarea.span-4, .form .row textarea.span-4, .row .form.field-span-4 input:not([type="radio"]), .form.field-span-4 .row input:not([type="radio"]), .row .form.field-span-4 input:not([type="checkbox"]), .form.field-span-4 .row input:not([type="checkbox"]), .row .form.field-span-4 select, .form.field-span-4 .row select, .row .form.field-span-4 textarea, .form.field-span-4 .row textarea {
+      width: 300px; }
+    .container .offset-4, .row .offset-4 {
+      margin-left: 320px; }
+    .container .span-5, .container .form input.span-5:not([type="radio"]), .form .container input.span-5:not([type="radio"]), .container .form input.span-5:not([type="checkbox"]), .form .container input.span-5:not([type="checkbox"]), .container .form select.span-5, .form .container select.span-5, .container .form textarea.span-5, .form .container textarea.span-5, .container .form.field-span-5 input:not([type="radio"]), .form.field-span-5 .container input:not([type="radio"]), .container .form.field-span-5 input:not([type="checkbox"]), .form.field-span-5 .container input:not([type="checkbox"]), .container .form.field-span-5 select, .form.field-span-5 .container select, .container .form.field-span-5 textarea, .form.field-span-5 .container textarea, .row .span-5, .row .form input.span-5:not([type="radio"]), .form .row input.span-5:not([type="radio"]), .row .form input.span-5:not([type="checkbox"]), .form .row input.span-5:not([type="checkbox"]), .row .form select.span-5, .form .row select.span-5, .row .form textarea.span-5, .form .row textarea.span-5, .row .form.field-span-5 input:not([type="radio"]), .form.field-span-5 .row input:not([type="radio"]), .row .form.field-span-5 input:not([type="checkbox"]), .form.field-span-5 .row input:not([type="checkbox"]), .row .form.field-span-5 select, .form.field-span-5 .row select, .row .form.field-span-5 textarea, .form.field-span-5 .row textarea {
+      width: 380px; }
+    .container .offset-5, .row .offset-5 {
+      margin-left: 400px; }
+    .container .span-6, .container .form input.span-6:not([type="radio"]), .form .container input.span-6:not([type="radio"]), .container .form input.span-6:not([type="checkbox"]), .form .container input.span-6:not([type="checkbox"]), .container .form select.span-6, .form .container select.span-6, .container .form textarea.span-6, .form .container textarea.span-6, .container .form.field-span-6 input:not([type="radio"]), .form.field-span-6 .container input:not([type="radio"]), .container .form.field-span-6 input:not([type="checkbox"]), .form.field-span-6 .container input:not([type="checkbox"]), .container .form.field-span-6 select, .form.field-span-6 .container select, .container .form.field-span-6 textarea, .form.field-span-6 .container textarea, .row .span-6, .row .form input.span-6:not([type="radio"]), .form .row input.span-6:not([type="radio"]), .row .form input.span-6:not([type="checkbox"]), .form .row input.span-6:not([type="checkbox"]), .row .form select.span-6, .form .row select.span-6, .row .form textarea.span-6, .form .row textarea.span-6, .row .form.field-span-6 input:not([type="radio"]), .form.field-span-6 .row input:not([type="radio"]), .row .form.field-span-6 input:not([type="checkbox"]), .form.field-span-6 .row input:not([type="checkbox"]), .row .form.field-span-6 select, .form.field-span-6 .row select, .row .form.field-span-6 textarea, .form.field-span-6 .row textarea {
+      width: 460px; }
+    .container .offset-6, .row .offset-6 {
+      margin-left: 480px; }
+    .container .span-7, .container .form input.span-7:not([type="radio"]), .form .container input.span-7:not([type="radio"]), .container .form input.span-7:not([type="checkbox"]), .form .container input.span-7:not([type="checkbox"]), .container .form select.span-7, .form .container select.span-7, .container .form textarea.span-7, .form .container textarea.span-7, .container .form.field-span-7 input:not([type="radio"]), .form.field-span-7 .container input:not([type="radio"]), .container .form.field-span-7 input:not([type="checkbox"]), .form.field-span-7 .container input:not([type="checkbox"]), .container .form.field-span-7 select, .form.field-span-7 .container select, .container .form.field-span-7 textarea, .form.field-span-7 .container textarea, .row .span-7, .row .form input.span-7:not([type="radio"]), .form .row input.span-7:not([type="radio"]), .row .form input.span-7:not([type="checkbox"]), .form .row input.span-7:not([type="checkbox"]), .row .form select.span-7, .form .row select.span-7, .row .form textarea.span-7, .form .row textarea.span-7, .row .form.field-span-7 input:not([type="radio"]), .form.field-span-7 .row input:not([type="radio"]), .row .form.field-span-7 input:not([type="checkbox"]), .form.field-span-7 .row input:not([type="checkbox"]), .row .form.field-span-7 select, .form.field-span-7 .row select, .row .form.field-span-7 textarea, .form.field-span-7 .row textarea {
+      width: 540px; }
+    .container .offset-7, .row .offset-7 {
+      margin-left: 560px; }
+    .container .span-8, .container .form input.span-8:not([type="radio"]), .form .container input.span-8:not([type="radio"]), .container .form input.span-8:not([type="checkbox"]), .form .container input.span-8:not([type="checkbox"]), .container .form select.span-8, .form .container select.span-8, .container .form textarea.span-8, .form .container textarea.span-8, .container .form.field-span-8 input:not([type="radio"]), .form.field-span-8 .container input:not([type="radio"]), .container .form.field-span-8 input:not([type="checkbox"]), .form.field-span-8 .container input:not([type="checkbox"]), .container .form.field-span-8 select, .form.field-span-8 .container select, .container .form.field-span-8 textarea, .form.field-span-8 .container textarea, .row .span-8, .row .form input.span-8:not([type="radio"]), .form .row input.span-8:not([type="radio"]), .row .form input.span-8:not([type="checkbox"]), .form .row input.span-8:not([type="checkbox"]), .row .form select.span-8, .form .row select.span-8, .row .form textarea.span-8, .form .row textarea.span-8, .row .form.field-span-8 input:not([type="radio"]), .form.field-span-8 .row input:not([type="radio"]), .row .form.field-span-8 input:not([type="checkbox"]), .form.field-span-8 .row input:not([type="checkbox"]), .row .form.field-span-8 select, .form.field-span-8 .row select, .row .form.field-span-8 textarea, .form.field-span-8 .row textarea {
+      width: 620px; }
+    .container .offset-8, .row .offset-8 {
+      margin-left: 640px; }
+    .container .span-9, .container .form input.span-9:not([type="radio"]), .form .container input.span-9:not([type="radio"]), .container .form input.span-9:not([type="checkbox"]), .form .container input.span-9:not([type="checkbox"]), .container .form select.span-9, .form .container select.span-9, .container .form textarea.span-9, .form .container textarea.span-9, .container .form.field-span-9 input:not([type="radio"]), .form.field-span-9 .container input:not([type="radio"]), .container .form.field-span-9 input:not([type="checkbox"]), .form.field-span-9 .container input:not([type="checkbox"]), .container .form.field-span-9 select, .form.field-span-9 .container select, .container .form.field-span-9 textarea, .form.field-span-9 .container textarea, .row .span-9, .row .form input.span-9:not([type="radio"]), .form .row input.span-9:not([type="radio"]), .row .form input.span-9:not([type="checkbox"]), .form .row input.span-9:not([type="checkbox"]), .row .form select.span-9, .form .row select.span-9, .row .form textarea.span-9, .form .row textarea.span-9, .row .form.field-span-9 input:not([type="radio"]), .form.field-span-9 .row input:not([type="radio"]), .row .form.field-span-9 input:not([type="checkbox"]), .form.field-span-9 .row input:not([type="checkbox"]), .row .form.field-span-9 select, .form.field-span-9 .row select, .row .form.field-span-9 textarea, .form.field-span-9 .row textarea {
+      width: 700px; }
+    .container .offset-9, .row .offset-9 {
+      margin-left: 720px; }
+    .container .span-10, .container .form input.span-10:not([type="radio"]), .form .container input.span-10:not([type="radio"]), .container .form input.span-10:not([type="checkbox"]), .form .container input.span-10:not([type="checkbox"]), .container .form select.span-10, .form .container select.span-10, .container .form textarea.span-10, .form .container textarea.span-10, .container .form.field-span-10 input:not([type="radio"]), .form.field-span-10 .container input:not([type="radio"]), .container .form.field-span-10 input:not([type="checkbox"]), .form.field-span-10 .container input:not([type="checkbox"]), .container .form.field-span-10 select, .form.field-span-10 .container select, .container .form.field-span-10 textarea, .form.field-span-10 .container textarea, .row .span-10, .row .form input.span-10:not([type="radio"]), .form .row input.span-10:not([type="radio"]), .row .form input.span-10:not([type="checkbox"]), .form .row input.span-10:not([type="checkbox"]), .row .form select.span-10, .form .row select.span-10, .row .form textarea.span-10, .form .row textarea.span-10, .row .form.field-span-10 input:not([type="radio"]), .form.field-span-10 .row input:not([type="radio"]), .row .form.field-span-10 input:not([type="checkbox"]), .form.field-span-10 .row input:not([type="checkbox"]), .row .form.field-span-10 select, .form.field-span-10 .row select, .row .form.field-span-10 textarea, .form.field-span-10 .row textarea {
+      width: 780px; }
+    .container .offset-10, .row .offset-10 {
+      margin-left: 800px; }
+    .container .span-11, .container .form input.span-11:not([type="radio"]), .form .container input.span-11:not([type="radio"]), .container .form input.span-11:not([type="checkbox"]), .form .container input.span-11:not([type="checkbox"]), .container .form select.span-11, .form .container select.span-11, .container .form textarea.span-11, .form .container textarea.span-11, .container .form.field-span-11 input:not([type="radio"]), .form.field-span-11 .container input:not([type="radio"]), .container .form.field-span-11 input:not([type="checkbox"]), .form.field-span-11 .container input:not([type="checkbox"]), .container .form.field-span-11 select, .form.field-span-11 .container select, .container .form.field-span-11 textarea, .form.field-span-11 .container textarea, .row .span-11, .row .form input.span-11:not([type="radio"]), .form .row input.span-11:not([type="radio"]), .row .form input.span-11:not([type="checkbox"]), .form .row input.span-11:not([type="checkbox"]), .row .form select.span-11, .form .row select.span-11, .row .form textarea.span-11, .form .row textarea.span-11, .row .form.field-span-11 input:not([type="radio"]), .form.field-span-11 .row input:not([type="radio"]), .row .form.field-span-11 input:not([type="checkbox"]), .form.field-span-11 .row input:not([type="checkbox"]), .row .form.field-span-11 select, .form.field-span-11 .row select, .row .form.field-span-11 textarea, .form.field-span-11 .row textarea {
+      width: 860px; }
+    .container .offset-11, .row .offset-11 {
+      margin-left: 880px; }
+    .container .span-12, .container .form input.span-12:not([type="radio"]), .form .container input.span-12:not([type="radio"]), .container .form input.span-12:not([type="checkbox"]), .form .container input.span-12:not([type="checkbox"]), .container .form select.span-12, .form .container select.span-12, .container .form textarea.span-12, .form .container textarea.span-12, .container .form.field-span-12 input:not([type="radio"]), .form.field-span-12 .container input:not([type="radio"]), .container .form.field-span-12 input:not([type="checkbox"]), .form.field-span-12 .container input:not([type="checkbox"]), .container .form.field-span-12 select, .form.field-span-12 .container select, .container .form.field-span-12 textarea, .form.field-span-12 .container textarea, .row .span-12, .row .form input.span-12:not([type="radio"]), .form .row input.span-12:not([type="radio"]), .row .form input.span-12:not([type="checkbox"]), .form .row input.span-12:not([type="checkbox"]), .row .form select.span-12, .form .row select.span-12, .row .form textarea.span-12, .form .row textarea.span-12, .row .form.field-span-12 input:not([type="radio"]), .form.field-span-12 .row input:not([type="radio"]), .row .form.field-span-12 input:not([type="checkbox"]), .form.field-span-12 .row input:not([type="checkbox"]), .row .form.field-span-12 select, .form.field-span-12 .row select, .row .form.field-span-12 textarea, .form.field-span-12 .row textarea {
+      width: 940px; }
+    .container .offset-12, .row .offset-12 {
+      margin-left: 960px; } }
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+  .container, .row {
+    width: 700px; }
+    .container .span-1, .container .form input.span-1:not([type="radio"]), .form .container input.span-1:not([type="radio"]), .container .form input.span-1:not([type="checkbox"]), .form .container input.span-1:not([type="checkbox"]), .container .form select.span-1, .form .container select.span-1, .container .form textarea.span-1, .form .container textarea.span-1, .container .form.field-span-1 input:not([type="radio"]), .form.field-span-1 .container input:not([type="radio"]), .container .form.field-span-1 input:not([type="checkbox"]), .form.field-span-1 .container input:not([type="checkbox"]), .container .form.field-span-1 select, .form.field-span-1 .container select, .container .form.field-span-1 textarea, .form.field-span-1 .container textarea, .row .span-1, .row .form input.span-1:not([type="radio"]), .form .row input.span-1:not([type="radio"]), .row .form input.span-1:not([type="checkbox"]), .form .row input.span-1:not([type="checkbox"]), .row .form select.span-1, .form .row select.span-1, .row .form textarea.span-1, .form .row textarea.span-1, .row .form.field-span-1 input:not([type="radio"]), .form.field-span-1 .row input:not([type="radio"]), .row .form.field-span-1 input:not([type="checkbox"]), .form.field-span-1 .row input:not([type="checkbox"]), .row .form.field-span-1 select, .form.field-span-1 .row select, .row .form.field-span-1 textarea, .form.field-span-1 .row textarea {
       width: 40px; }
     .container .offset-1, .row .offset-1 {
-      margin-left: 70px; }
-    .container .span-2, .container .form .field label, .form .field .container label, .container .form .field .info:before, .form .field .container .info:before, .container .form:not(.label-top) > .buttons:before, .container .form:not(.label-top) > fieldset > .buttons:before, .container .form input.span-2, .form .container input.span-2, .row .span-2, .row .form .field label, .form .field .row label, .row .form .field .info:before, .form .field .row .info:before, .row .form:not(.label-top) > .buttons:before, .row .form:not(.label-top) > fieldset > .buttons:before, .row .form input.span-2, .form .row input.span-2 {
+      margin-left: 60px; }
+    .container .span-2, .container .form .field > label, .form .container .field > label, .container .form:not(.label-top) > .buttons:before, .container .form:not(.label-top) > fieldset > .buttons:before, .container .form input.span-2:not([type="radio"]), .form .container input.span-2:not([type="radio"]), .container .form input.span-2:not([type="checkbox"]), .form .container input.span-2:not([type="checkbox"]), .container .form select.span-2, .form .container select.span-2, .container .form textarea.span-2, .form .container textarea.span-2, .container .form.field-span-2 input:not([type="radio"]), .form.field-span-2 .container input:not([type="radio"]), .container .form.field-span-2 input:not([type="checkbox"]), .form.field-span-2 .container input:not([type="checkbox"]), .container .form.field-span-2 select, .form.field-span-2 .container select, .container .form.field-span-2 textarea, .form.field-span-2 .container textarea, .row .span-2, .row .form .field > label, .form .row .field > label, .row .form:not(.label-top) > .buttons:before, .row .form:not(.label-top) > fieldset > .buttons:before, .row .form input.span-2:not([type="radio"]), .form .row input.span-2:not([type="radio"]), .row .form input.span-2:not([type="checkbox"]), .form .row input.span-2:not([type="checkbox"]), .row .form select.span-2, .form .row select.span-2, .row .form textarea.span-2, .form .row textarea.span-2, .row .form.field-span-2 input:not([type="radio"]), .form.field-span-2 .row input:not([type="radio"]), .row .form.field-span-2 input:not([type="checkbox"]), .form.field-span-2 .row input:not([type="checkbox"]), .row .form.field-span-2 select, .form.field-span-2 .row select, .row .form.field-span-2 textarea, .form.field-span-2 .row textarea {
       width: 100px; }
-    .container .offset-2, .row .offset-2 {
-      margin-left: 130px; }
-    .container .span-3, .container .form .field input:not([type="radio"]), .form .field .container input:not([type="radio"]), .container .form .field input:not([type="checkbox"]), .form .field .container input:not([type="checkbox"]), .container .form .field select, .form .field .container select, .container .form .field textarea, .form .field .container textarea, .container .form input.span-3, .form .container input.span-3, .row .span-3, .row .form .field input:not([type="radio"]), .form .field .row input:not([type="radio"]), .row .form .field input:not([type="checkbox"]), .form .field .row input:not([type="checkbox"]), .row .form .field select, .form .field .row select, .row .form .field textarea, .form .field .row textarea, .row .form input.span-3, .form .row input.span-3 {
+    .container .offset-2, .container .form .field .info, .form .field .container .info, .row .offset-2, .row .form .field .info, .form .field .row .info {
+      margin-left: 120px; }
+    .container .span-3, .container .form:not([class*=" field-span"]) .field input:not([type="radio"]):not([class*=span]), .form:not([class*=" field-span"]) .field .container input:not([type="radio"]):not([class*=span]), .container .form:not([class*=" field-span"]) .field input:not([type="checkbox"]):not([class*=span]), .form:not([class*=" field-span"]) .field .container input:not([type="checkbox"]):not([class*=span]), .container .form:not([class*=" field-span"]) .field select:not([class*=span]), .form:not([class*=" field-span"]) .field .container select:not([class*=span]), .container .form:not([class*=" field-span"]) .field textarea:not([class*=span]), .form:not([class*=" field-span"]) .field .container textarea:not([class*=span]), .container .form input.span-3:not([type="radio"]), .form .container input.span-3:not([type="radio"]), .container .form input.span-3:not([type="checkbox"]), .form .container input.span-3:not([type="checkbox"]), .container .form select.span-3, .form .container select.span-3, .container .form textarea.span-3, .form .container textarea.span-3, .container .form.field-span-3 input:not([type="radio"]), .form.field-span-3 .container input:not([type="radio"]), .container .form.field-span-3 input:not([type="checkbox"]), .form.field-span-3 .container input:not([type="checkbox"]), .container .form.field-span-3 select, .form.field-span-3 .container select, .container .form.field-span-3 textarea, .form.field-span-3 .container textarea, .row .span-3, .row .form:not([class*=" field-span"]) .field input:not([type="radio"]):not([class*=span]), .form:not([class*=" field-span"]) .field .row input:not([type="radio"]):not([class*=span]), .row .form:not([class*=" field-span"]) .field input:not([type="checkbox"]):not([class*=span]), .form:not([class*=" field-span"]) .field .row input:not([type="checkbox"]):not([class*=span]), .row .form:not([class*=" field-span"]) .field select:not([class*=span]), .form:not([class*=" field-span"]) .field .row select:not([class*=span]), .row .form:not([class*=" field-span"]) .field textarea:not([class*=span]), .form:not([class*=" field-span"]) .field .row textarea:not([class*=span]), .row .form input.span-3:not([type="radio"]), .form .row input.span-3:not([type="radio"]), .row .form input.span-3:not([type="checkbox"]), .form .row input.span-3:not([type="checkbox"]), .row .form select.span-3, .form .row select.span-3, .row .form textarea.span-3, .form .row textarea.span-3, .row .form.field-span-3 input:not([type="radio"]), .form.field-span-3 .row input:not([type="radio"]), .row .form.field-span-3 input:not([type="checkbox"]), .form.field-span-3 .row input:not([type="checkbox"]), .row .form.field-span-3 select, .form.field-span-3 .row select, .row .form.field-span-3 textarea, .form.field-span-3 .row textarea {
       width: 160px; }
     .container .offset-3, .row .offset-3 {
-      margin-left: 190px; }
-    .container .span-4, .container .form input.span-4, .form .container input.span-4, .row .span-4, .row .form input.span-4, .form .row input.span-4 {
+      margin-left: 180px; }
+    .container .span-4, .container .form .field textarea:not([class*=span]), .form .field .container textarea:not([class*=span]), .container .form input.span-4:not([type="radio"]), .form .container input.span-4:not([type="radio"]), .container .form input.span-4:not([type="checkbox"]), .form .container input.span-4:not([type="checkbox"]), .container .form select.span-4, .form .container select.span-4, .container .form textarea.span-4, .form .container textarea.span-4, .container .form.field-span-4 input:not([type="radio"]), .form.field-span-4 .container input:not([type="radio"]), .container .form.field-span-4 input:not([type="checkbox"]), .form.field-span-4 .container input:not([type="checkbox"]), .container .form.field-span-4 select, .form.field-span-4 .container select, .container .form.field-span-4 textarea, .form.field-span-4 .container textarea, .row .span-4, .row .form .field textarea:not([class*=span]), .form .field .row textarea:not([class*=span]), .row .form input.span-4:not([type="radio"]), .form .row input.span-4:not([type="radio"]), .row .form input.span-4:not([type="checkbox"]), .form .row input.span-4:not([type="checkbox"]), .row .form select.span-4, .form .row select.span-4, .row .form textarea.span-4, .form .row textarea.span-4, .row .form.field-span-4 input:not([type="radio"]), .form.field-span-4 .row input:not([type="radio"]), .row .form.field-span-4 input:not([type="checkbox"]), .form.field-span-4 .row input:not([type="checkbox"]), .row .form.field-span-4 select, .form.field-span-4 .row select, .row .form.field-span-4 textarea, .form.field-span-4 .row textarea {
       width: 220px; }
     .container .offset-4, .row .offset-4 {
-      margin-left: 250px; }
-    .container .span-5, .container .form input.span-5, .form .container input.span-5, .row .span-5, .row .form input.span-5, .form .row input.span-5 {
+      margin-left: 240px; }
+    .container .span-5, .container .form input.span-5:not([type="radio"]), .form .container input.span-5:not([type="radio"]), .container .form input.span-5:not([type="checkbox"]), .form .container input.span-5:not([type="checkbox"]), .container .form select.span-5, .form .container select.span-5, .container .form textarea.span-5, .form .container textarea.span-5, .container .form.field-span-5 input:not([type="radio"]), .form.field-span-5 .container input:not([type="radio"]), .container .form.field-span-5 input:not([type="checkbox"]), .form.field-span-5 .container input:not([type="checkbox"]), .container .form.field-span-5 select, .form.field-span-5 .container select, .container .form.field-span-5 textarea, .form.field-span-5 .container textarea, .row .span-5, .row .form input.span-5:not([type="radio"]), .form .row input.span-5:not([type="radio"]), .row .form input.span-5:not([type="checkbox"]), .form .row input.span-5:not([type="checkbox"]), .row .form select.span-5, .form .row select.span-5, .row .form textarea.span-5, .form .row textarea.span-5, .row .form.field-span-5 input:not([type="radio"]), .form.field-span-5 .row input:not([type="radio"]), .row .form.field-span-5 input:not([type="checkbox"]), .form.field-span-5 .row input:not([type="checkbox"]), .row .form.field-span-5 select, .form.field-span-5 .row select, .row .form.field-span-5 textarea, .form.field-span-5 .row textarea {
       width: 280px; }
     .container .offset-5, .row .offset-5 {
-      margin-left: 310px; }
-    .container .span-6, .container .form input.span-6, .form .container input.span-6, .row .span-6, .row .form input.span-6, .form .row input.span-6 {
+      margin-left: 300px; }
+    .container .span-6, .container .form input.span-6:not([type="radio"]), .form .container input.span-6:not([type="radio"]), .container .form input.span-6:not([type="checkbox"]), .form .container input.span-6:not([type="checkbox"]), .container .form select.span-6, .form .container select.span-6, .container .form textarea.span-6, .form .container textarea.span-6, .container .form.field-span-6 input:not([type="radio"]), .form.field-span-6 .container input:not([type="radio"]), .container .form.field-span-6 input:not([type="checkbox"]), .form.field-span-6 .container input:not([type="checkbox"]), .container .form.field-span-6 select, .form.field-span-6 .container select, .container .form.field-span-6 textarea, .form.field-span-6 .container textarea, .row .span-6, .row .form input.span-6:not([type="radio"]), .form .row input.span-6:not([type="radio"]), .row .form input.span-6:not([type="checkbox"]), .form .row input.span-6:not([type="checkbox"]), .row .form select.span-6, .form .row select.span-6, .row .form textarea.span-6, .form .row textarea.span-6, .row .form.field-span-6 input:not([type="radio"]), .form.field-span-6 .row input:not([type="radio"]), .row .form.field-span-6 input:not([type="checkbox"]), .form.field-span-6 .row input:not([type="checkbox"]), .row .form.field-span-6 select, .form.field-span-6 .row select, .row .form.field-span-6 textarea, .form.field-span-6 .row textarea {
       width: 340px; }
     .container .offset-6, .row .offset-6 {
-      margin-left: 370px; }
-    .container .span-7, .container .form input.span-7, .form .container input.span-7, .row .span-7, .row .form input.span-7, .form .row input.span-7 {
+      margin-left: 360px; }
+    .container .span-7, .container .form input.span-7:not([type="radio"]), .form .container input.span-7:not([type="radio"]), .container .form input.span-7:not([type="checkbox"]), .form .container input.span-7:not([type="checkbox"]), .container .form select.span-7, .form .container select.span-7, .container .form textarea.span-7, .form .container textarea.span-7, .container .form.field-span-7 input:not([type="radio"]), .form.field-span-7 .container input:not([type="radio"]), .container .form.field-span-7 input:not([type="checkbox"]), .form.field-span-7 .container input:not([type="checkbox"]), .container .form.field-span-7 select, .form.field-span-7 .container select, .container .form.field-span-7 textarea, .form.field-span-7 .container textarea, .row .span-7, .row .form input.span-7:not([type="radio"]), .form .row input.span-7:not([type="radio"]), .row .form input.span-7:not([type="checkbox"]), .form .row input.span-7:not([type="checkbox"]), .row .form select.span-7, .form .row select.span-7, .row .form textarea.span-7, .form .row textarea.span-7, .row .form.field-span-7 input:not([type="radio"]), .form.field-span-7 .row input:not([type="radio"]), .row .form.field-span-7 input:not([type="checkbox"]), .form.field-span-7 .row input:not([type="checkbox"]), .row .form.field-span-7 select, .form.field-span-7 .row select, .row .form.field-span-7 textarea, .form.field-span-7 .row textarea {
       width: 400px; }
     .container .offset-7, .row .offset-7 {
-      margin-left: 430px; }
-    .container .span-8, .container .form input.span-8, .form .container input.span-8, .row .span-8, .row .form input.span-8, .form .row input.span-8 {
+      margin-left: 420px; }
+    .container .span-8, .container .form input.span-8:not([type="radio"]), .form .container input.span-8:not([type="radio"]), .container .form input.span-8:not([type="checkbox"]), .form .container input.span-8:not([type="checkbox"]), .container .form select.span-8, .form .container select.span-8, .container .form textarea.span-8, .form .container textarea.span-8, .container .form.field-span-8 input:not([type="radio"]), .form.field-span-8 .container input:not([type="radio"]), .container .form.field-span-8 input:not([type="checkbox"]), .form.field-span-8 .container input:not([type="checkbox"]), .container .form.field-span-8 select, .form.field-span-8 .container select, .container .form.field-span-8 textarea, .form.field-span-8 .container textarea, .row .span-8, .row .form input.span-8:not([type="radio"]), .form .row input.span-8:not([type="radio"]), .row .form input.span-8:not([type="checkbox"]), .form .row input.span-8:not([type="checkbox"]), .row .form select.span-8, .form .row select.span-8, .row .form textarea.span-8, .form .row textarea.span-8, .row .form.field-span-8 input:not([type="radio"]), .form.field-span-8 .row input:not([type="radio"]), .row .form.field-span-8 input:not([type="checkbox"]), .form.field-span-8 .row input:not([type="checkbox"]), .row .form.field-span-8 select, .form.field-span-8 .row select, .row .form.field-span-8 textarea, .form.field-span-8 .row textarea {
       width: 460px; }
     .container .offset-8, .row .offset-8 {
-      margin-left: 490px; }
-    .container .span-9, .container .form input.span-9, .form .container input.span-9, .row .span-9, .row .form input.span-9, .form .row input.span-9 {
+      margin-left: 480px; }
+    .container .span-9, .container .form input.span-9:not([type="radio"]), .form .container input.span-9:not([type="radio"]), .container .form input.span-9:not([type="checkbox"]), .form .container input.span-9:not([type="checkbox"]), .container .form select.span-9, .form .container select.span-9, .container .form textarea.span-9, .form .container textarea.span-9, .container .form.field-span-9 input:not([type="radio"]), .form.field-span-9 .container input:not([type="radio"]), .container .form.field-span-9 input:not([type="checkbox"]), .form.field-span-9 .container input:not([type="checkbox"]), .container .form.field-span-9 select, .form.field-span-9 .container select, .container .form.field-span-9 textarea, .form.field-span-9 .container textarea, .row .span-9, .row .form input.span-9:not([type="radio"]), .form .row input.span-9:not([type="radio"]), .row .form input.span-9:not([type="checkbox"]), .form .row input.span-9:not([type="checkbox"]), .row .form select.span-9, .form .row select.span-9, .row .form textarea.span-9, .form .row textarea.span-9, .row .form.field-span-9 input:not([type="radio"]), .form.field-span-9 .row input:not([type="radio"]), .row .form.field-span-9 input:not([type="checkbox"]), .form.field-span-9 .row input:not([type="checkbox"]), .row .form.field-span-9 select, .form.field-span-9 .row select, .row .form.field-span-9 textarea, .form.field-span-9 .row textarea {
       width: 520px; }
     .container .offset-9, .row .offset-9 {
-      margin-left: 550px; }
-    .container .span-10, .container .form input.span-10, .form .container input.span-10, .row .span-10, .row .form input.span-10, .form .row input.span-10 {
+      margin-left: 540px; }
+    .container .span-10, .container .form input.span-10:not([type="radio"]), .form .container input.span-10:not([type="radio"]), .container .form input.span-10:not([type="checkbox"]), .form .container input.span-10:not([type="checkbox"]), .container .form select.span-10, .form .container select.span-10, .container .form textarea.span-10, .form .container textarea.span-10, .container .form.field-span-10 input:not([type="radio"]), .form.field-span-10 .container input:not([type="radio"]), .container .form.field-span-10 input:not([type="checkbox"]), .form.field-span-10 .container input:not([type="checkbox"]), .container .form.field-span-10 select, .form.field-span-10 .container select, .container .form.field-span-10 textarea, .form.field-span-10 .container textarea, .row .span-10, .row .form input.span-10:not([type="radio"]), .form .row input.span-10:not([type="radio"]), .row .form input.span-10:not([type="checkbox"]), .form .row input.span-10:not([type="checkbox"]), .row .form select.span-10, .form .row select.span-10, .row .form textarea.span-10, .form .row textarea.span-10, .row .form.field-span-10 input:not([type="radio"]), .form.field-span-10 .row input:not([type="radio"]), .row .form.field-span-10 input:not([type="checkbox"]), .form.field-span-10 .row input:not([type="checkbox"]), .row .form.field-span-10 select, .form.field-span-10 .row select, .row .form.field-span-10 textarea, .form.field-span-10 .row textarea {
       width: 580px; }
     .container .offset-10, .row .offset-10 {
-      margin-left: 610px; }
-    .container .span-11, .container .form input.span-11, .form .container input.span-11, .row .span-11, .row .form input.span-11, .form .row input.span-11 {
+      margin-left: 600px; }
+    .container .span-11, .container .form input.span-11:not([type="radio"]), .form .container input.span-11:not([type="radio"]), .container .form input.span-11:not([type="checkbox"]), .form .container input.span-11:not([type="checkbox"]), .container .form select.span-11, .form .container select.span-11, .container .form textarea.span-11, .form .container textarea.span-11, .container .form.field-span-11 input:not([type="radio"]), .form.field-span-11 .container input:not([type="radio"]), .container .form.field-span-11 input:not([type="checkbox"]), .form.field-span-11 .container input:not([type="checkbox"]), .container .form.field-span-11 select, .form.field-span-11 .container select, .container .form.field-span-11 textarea, .form.field-span-11 .container textarea, .row .span-11, .row .form input.span-11:not([type="radio"]), .form .row input.span-11:not([type="radio"]), .row .form input.span-11:not([type="checkbox"]), .form .row input.span-11:not([type="checkbox"]), .row .form select.span-11, .form .row select.span-11, .row .form textarea.span-11, .form .row textarea.span-11, .row .form.field-span-11 input:not([type="radio"]), .form.field-span-11 .row input:not([type="radio"]), .row .form.field-span-11 input:not([type="checkbox"]), .form.field-span-11 .row input:not([type="checkbox"]), .row .form.field-span-11 select, .form.field-span-11 .row select, .row .form.field-span-11 textarea, .form.field-span-11 .row textarea {
       width: 640px; }
     .container .offset-11, .row .offset-11 {
-      margin-left: 670px; }
-    .container .span-12, .container .form input.span-12, .form .container input.span-12, .row .span-12, .row .form input.span-12, .form .row input.span-12 {
+      margin-left: 660px; }
+    .container .span-12, .container .form input.span-12:not([type="radio"]), .form .container input.span-12:not([type="radio"]), .container .form input.span-12:not([type="checkbox"]), .form .container input.span-12:not([type="checkbox"]), .container .form select.span-12, .form .container select.span-12, .container .form textarea.span-12, .form .container textarea.span-12, .container .form.field-span-12 input:not([type="radio"]), .form.field-span-12 .container input:not([type="radio"]), .container .form.field-span-12 input:not([type="checkbox"]), .form.field-span-12 .container input:not([type="checkbox"]), .container .form.field-span-12 select, .form.field-span-12 .container select, .container .form.field-span-12 textarea, .form.field-span-12 .container textarea, .row .span-12, .row .form input.span-12:not([type="radio"]), .form .row input.span-12:not([type="radio"]), .row .form input.span-12:not([type="checkbox"]), .form .row input.span-12:not([type="checkbox"]), .row .form select.span-12, .form .row select.span-12, .row .form textarea.span-12, .form .row textarea.span-12, .row .form.field-span-12 input:not([type="radio"]), .form.field-span-12 .row input:not([type="radio"]), .row .form.field-span-12 input:not([type="checkbox"]), .form.field-span-12 .row input:not([type="checkbox"]), .row .form.field-span-12 select, .form.field-span-12 .row select, .row .form.field-span-12 textarea, .form.field-span-12 .row textarea {
       width: 700px; }
     .container .offset-12, .row .offset-12 {
-      margin-left: 730px; } }
-@media only screen and (max-width: 767px) {
-  .container, .row {
-    width: auto;
+      margin-left: 720px; } }
+@media only screen and (max-width: 739px) {
+  .container {
     margin: 0 10px; }
-    .container .span-1, .container .form input.span-1, .form .container input.span-1, .row .span-1, .row .form input.span-1, .form .row input.span-1 {
+
+  .container, .row {
+    width: auto; }
+    .container .span-1, .container .form input.span-1:not([type="radio"]), .form .container input.span-1:not([type="radio"]), .container .form input.span-1:not([type="checkbox"]), .form .container input.span-1:not([type="checkbox"]), .container .form select.span-1, .form .container select.span-1, .container .form textarea.span-1, .form .container textarea.span-1, .container .form.field-span-1 input:not([type="radio"]), .form.field-span-1 .container input:not([type="radio"]), .container .form.field-span-1 input:not([type="checkbox"]), .form.field-span-1 .container input:not([type="checkbox"]), .container .form.field-span-1 select, .form.field-span-1 .container select, .container .form.field-span-1 textarea, .form.field-span-1 .container textarea, .row .span-1, .row .form input.span-1:not([type="radio"]), .form .row input.span-1:not([type="radio"]), .row .form input.span-1:not([type="checkbox"]), .form .row input.span-1:not([type="checkbox"]), .row .form select.span-1, .form .row select.span-1, .row .form textarea.span-1, .form .row textarea.span-1, .row .form.field-span-1 input:not([type="radio"]), .form.field-span-1 .row input:not([type="radio"]), .row .form.field-span-1 input:not([type="checkbox"]), .form.field-span-1 .row input:not([type="checkbox"]), .row .form.field-span-1 select, .form.field-span-1 .row select, .row .form.field-span-1 textarea, .form.field-span-1 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-2, .container .form .field label, .form .field .container label, .container .form .field .info:before, .form .field .container .info:before, .container .form:not(.label-top) > .buttons:before, .container .form:not(.label-top) > fieldset > .buttons:before, .container .form input.span-2, .form .container input.span-2, .row .span-2, .row .form .field label, .form .field .row label, .row .form .field .info:before, .form .field .row .info:before, .row .form:not(.label-top) > .buttons:before, .row .form:not(.label-top) > fieldset > .buttons:before, .row .form input.span-2, .form .row input.span-2 {
+    .container .span-2, .container .form .field > label, .form .container .field > label, .container .form:not(.label-top) > .buttons:before, .container .form:not(.label-top) > fieldset > .buttons:before, .container .form input.span-2:not([type="radio"]), .form .container input.span-2:not([type="radio"]), .container .form input.span-2:not([type="checkbox"]), .form .container input.span-2:not([type="checkbox"]), .container .form select.span-2, .form .container select.span-2, .container .form textarea.span-2, .form .container textarea.span-2, .container .form.field-span-2 input:not([type="radio"]), .form.field-span-2 .container input:not([type="radio"]), .container .form.field-span-2 input:not([type="checkbox"]), .form.field-span-2 .container input:not([type="checkbox"]), .container .form.field-span-2 select, .form.field-span-2 .container select, .container .form.field-span-2 textarea, .form.field-span-2 .container textarea, .row .span-2, .row .form .field > label, .form .row .field > label, .row .form:not(.label-top) > .buttons:before, .row .form:not(.label-top) > fieldset > .buttons:before, .row .form input.span-2:not([type="radio"]), .form .row input.span-2:not([type="radio"]), .row .form input.span-2:not([type="checkbox"]), .form .row input.span-2:not([type="checkbox"]), .row .form select.span-2, .form .row select.span-2, .row .form textarea.span-2, .form .row textarea.span-2, .row .form.field-span-2 input:not([type="radio"]), .form.field-span-2 .row input:not([type="radio"]), .row .form.field-span-2 input:not([type="checkbox"]), .form.field-span-2 .row input:not([type="checkbox"]), .row .form.field-span-2 select, .form.field-span-2 .row select, .row .form.field-span-2 textarea, .form.field-span-2 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-3, .container .form .field input:not([type="radio"]), .form .field .container input:not([type="radio"]), .container .form .field input:not([type="checkbox"]), .form .field .container input:not([type="checkbox"]), .container .form .field select, .form .field .container select, .container .form .field textarea, .form .field .container textarea, .container .form input.span-3, .form .container input.span-3, .row .span-3, .row .form .field input:not([type="radio"]), .form .field .row input:not([type="radio"]), .row .form .field input:not([type="checkbox"]), .form .field .row input:not([type="checkbox"]), .row .form .field select, .form .field .row select, .row .form .field textarea, .form .field .row textarea, .row .form input.span-3, .form .row input.span-3 {
+    .container .span-3, .container .form:not([class*=" field-span"]) .field input:not([type="radio"]):not([class*=span]), .form:not([class*=" field-span"]) .field .container input:not([type="radio"]):not([class*=span]), .container .form:not([class*=" field-span"]) .field input:not([type="checkbox"]):not([class*=span]), .form:not([class*=" field-span"]) .field .container input:not([type="checkbox"]):not([class*=span]), .container .form:not([class*=" field-span"]) .field select:not([class*=span]), .form:not([class*=" field-span"]) .field .container select:not([class*=span]), .container .form:not([class*=" field-span"]) .field textarea:not([class*=span]), .form:not([class*=" field-span"]) .field .container textarea:not([class*=span]), .container .form input.span-3:not([type="radio"]), .form .container input.span-3:not([type="radio"]), .container .form input.span-3:not([type="checkbox"]), .form .container input.span-3:not([type="checkbox"]), .container .form select.span-3, .form .container select.span-3, .container .form textarea.span-3, .form .container textarea.span-3, .container .form.field-span-3 input:not([type="radio"]), .form.field-span-3 .container input:not([type="radio"]), .container .form.field-span-3 input:not([type="checkbox"]), .form.field-span-3 .container input:not([type="checkbox"]), .container .form.field-span-3 select, .form.field-span-3 .container select, .container .form.field-span-3 textarea, .form.field-span-3 .container textarea, .row .span-3, .row .form:not([class*=" field-span"]) .field input:not([type="radio"]):not([class*=span]), .form:not([class*=" field-span"]) .field .row input:not([type="radio"]):not([class*=span]), .row .form:not([class*=" field-span"]) .field input:not([type="checkbox"]):not([class*=span]), .form:not([class*=" field-span"]) .field .row input:not([type="checkbox"]):not([class*=span]), .row .form:not([class*=" field-span"]) .field select:not([class*=span]), .form:not([class*=" field-span"]) .field .row select:not([class*=span]), .row .form:not([class*=" field-span"]) .field textarea:not([class*=span]), .form:not([class*=" field-span"]) .field .row textarea:not([class*=span]), .row .form input.span-3:not([type="radio"]), .form .row input.span-3:not([type="radio"]), .row .form input.span-3:not([type="checkbox"]), .form .row input.span-3:not([type="checkbox"]), .row .form select.span-3, .form .row select.span-3, .row .form textarea.span-3, .form .row textarea.span-3, .row .form.field-span-3 input:not([type="radio"]), .form.field-span-3 .row input:not([type="radio"]), .row .form.field-span-3 input:not([type="checkbox"]), .form.field-span-3 .row input:not([type="checkbox"]), .row .form.field-span-3 select, .form.field-span-3 .row select, .row .form.field-span-3 textarea, .form.field-span-3 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-4, .container .form input.span-4, .form .container input.span-4, .row .span-4, .row .form input.span-4, .form .row input.span-4 {
+    .container .span-4, .container .form .field textarea:not([class*=span]), .form .field .container textarea:not([class*=span]), .container .form input.span-4:not([type="radio"]), .form .container input.span-4:not([type="radio"]), .container .form input.span-4:not([type="checkbox"]), .form .container input.span-4:not([type="checkbox"]), .container .form select.span-4, .form .container select.span-4, .container .form textarea.span-4, .form .container textarea.span-4, .container .form.field-span-4 input:not([type="radio"]), .form.field-span-4 .container input:not([type="radio"]), .container .form.field-span-4 input:not([type="checkbox"]), .form.field-span-4 .container input:not([type="checkbox"]), .container .form.field-span-4 select, .form.field-span-4 .container select, .container .form.field-span-4 textarea, .form.field-span-4 .container textarea, .row .span-4, .row .form .field textarea:not([class*=span]), .form .field .row textarea:not([class*=span]), .row .form input.span-4:not([type="radio"]), .form .row input.span-4:not([type="radio"]), .row .form input.span-4:not([type="checkbox"]), .form .row input.span-4:not([type="checkbox"]), .row .form select.span-4, .form .row select.span-4, .row .form textarea.span-4, .form .row textarea.span-4, .row .form.field-span-4 input:not([type="radio"]), .form.field-span-4 .row input:not([type="radio"]), .row .form.field-span-4 input:not([type="checkbox"]), .form.field-span-4 .row input:not([type="checkbox"]), .row .form.field-span-4 select, .form.field-span-4 .row select, .row .form.field-span-4 textarea, .form.field-span-4 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-5, .container .form input.span-5, .form .container input.span-5, .row .span-5, .row .form input.span-5, .form .row input.span-5 {
+    .container .span-5, .container .form input.span-5:not([type="radio"]), .form .container input.span-5:not([type="radio"]), .container .form input.span-5:not([type="checkbox"]), .form .container input.span-5:not([type="checkbox"]), .container .form select.span-5, .form .container select.span-5, .container .form textarea.span-5, .form .container textarea.span-5, .container .form.field-span-5 input:not([type="radio"]), .form.field-span-5 .container input:not([type="radio"]), .container .form.field-span-5 input:not([type="checkbox"]), .form.field-span-5 .container input:not([type="checkbox"]), .container .form.field-span-5 select, .form.field-span-5 .container select, .container .form.field-span-5 textarea, .form.field-span-5 .container textarea, .row .span-5, .row .form input.span-5:not([type="radio"]), .form .row input.span-5:not([type="radio"]), .row .form input.span-5:not([type="checkbox"]), .form .row input.span-5:not([type="checkbox"]), .row .form select.span-5, .form .row select.span-5, .row .form textarea.span-5, .form .row textarea.span-5, .row .form.field-span-5 input:not([type="radio"]), .form.field-span-5 .row input:not([type="radio"]), .row .form.field-span-5 input:not([type="checkbox"]), .form.field-span-5 .row input:not([type="checkbox"]), .row .form.field-span-5 select, .form.field-span-5 .row select, .row .form.field-span-5 textarea, .form.field-span-5 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-6, .container .form input.span-6, .form .container input.span-6, .row .span-6, .row .form input.span-6, .form .row input.span-6 {
+    .container .span-6, .container .form input.span-6:not([type="radio"]), .form .container input.span-6:not([type="radio"]), .container .form input.span-6:not([type="checkbox"]), .form .container input.span-6:not([type="checkbox"]), .container .form select.span-6, .form .container select.span-6, .container .form textarea.span-6, .form .container textarea.span-6, .container .form.field-span-6 input:not([type="radio"]), .form.field-span-6 .container input:not([type="radio"]), .container .form.field-span-6 input:not([type="checkbox"]), .form.field-span-6 .container input:not([type="checkbox"]), .container .form.field-span-6 select, .form.field-span-6 .container select, .container .form.field-span-6 textarea, .form.field-span-6 .container textarea, .row .span-6, .row .form input.span-6:not([type="radio"]), .form .row input.span-6:not([type="radio"]), .row .form input.span-6:not([type="checkbox"]), .form .row input.span-6:not([type="checkbox"]), .row .form select.span-6, .form .row select.span-6, .row .form textarea.span-6, .form .row textarea.span-6, .row .form.field-span-6 input:not([type="radio"]), .form.field-span-6 .row input:not([type="radio"]), .row .form.field-span-6 input:not([type="checkbox"]), .form.field-span-6 .row input:not([type="checkbox"]), .row .form.field-span-6 select, .form.field-span-6 .row select, .row .form.field-span-6 textarea, .form.field-span-6 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-7, .container .form input.span-7, .form .container input.span-7, .row .span-7, .row .form input.span-7, .form .row input.span-7 {
+    .container .span-7, .container .form input.span-7:not([type="radio"]), .form .container input.span-7:not([type="radio"]), .container .form input.span-7:not([type="checkbox"]), .form .container input.span-7:not([type="checkbox"]), .container .form select.span-7, .form .container select.span-7, .container .form textarea.span-7, .form .container textarea.span-7, .container .form.field-span-7 input:not([type="radio"]), .form.field-span-7 .container input:not([type="radio"]), .container .form.field-span-7 input:not([type="checkbox"]), .form.field-span-7 .container input:not([type="checkbox"]), .container .form.field-span-7 select, .form.field-span-7 .container select, .container .form.field-span-7 textarea, .form.field-span-7 .container textarea, .row .span-7, .row .form input.span-7:not([type="radio"]), .form .row input.span-7:not([type="radio"]), .row .form input.span-7:not([type="checkbox"]), .form .row input.span-7:not([type="checkbox"]), .row .form select.span-7, .form .row select.span-7, .row .form textarea.span-7, .form .row textarea.span-7, .row .form.field-span-7 input:not([type="radio"]), .form.field-span-7 .row input:not([type="radio"]), .row .form.field-span-7 input:not([type="checkbox"]), .form.field-span-7 .row input:not([type="checkbox"]), .row .form.field-span-7 select, .form.field-span-7 .row select, .row .form.field-span-7 textarea, .form.field-span-7 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-8, .container .form input.span-8, .form .container input.span-8, .row .span-8, .row .form input.span-8, .form .row input.span-8 {
+    .container .span-8, .container .form input.span-8:not([type="radio"]), .form .container input.span-8:not([type="radio"]), .container .form input.span-8:not([type="checkbox"]), .form .container input.span-8:not([type="checkbox"]), .container .form select.span-8, .form .container select.span-8, .container .form textarea.span-8, .form .container textarea.span-8, .container .form.field-span-8 input:not([type="radio"]), .form.field-span-8 .container input:not([type="radio"]), .container .form.field-span-8 input:not([type="checkbox"]), .form.field-span-8 .container input:not([type="checkbox"]), .container .form.field-span-8 select, .form.field-span-8 .container select, .container .form.field-span-8 textarea, .form.field-span-8 .container textarea, .row .span-8, .row .form input.span-8:not([type="radio"]), .form .row input.span-8:not([type="radio"]), .row .form input.span-8:not([type="checkbox"]), .form .row input.span-8:not([type="checkbox"]), .row .form select.span-8, .form .row select.span-8, .row .form textarea.span-8, .form .row textarea.span-8, .row .form.field-span-8 input:not([type="radio"]), .form.field-span-8 .row input:not([type="radio"]), .row .form.field-span-8 input:not([type="checkbox"]), .form.field-span-8 .row input:not([type="checkbox"]), .row .form.field-span-8 select, .form.field-span-8 .row select, .row .form.field-span-8 textarea, .form.field-span-8 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-9, .container .form input.span-9, .form .container input.span-9, .row .span-9, .row .form input.span-9, .form .row input.span-9 {
+    .container .span-9, .container .form input.span-9:not([type="radio"]), .form .container input.span-9:not([type="radio"]), .container .form input.span-9:not([type="checkbox"]), .form .container input.span-9:not([type="checkbox"]), .container .form select.span-9, .form .container select.span-9, .container .form textarea.span-9, .form .container textarea.span-9, .container .form.field-span-9 input:not([type="radio"]), .form.field-span-9 .container input:not([type="radio"]), .container .form.field-span-9 input:not([type="checkbox"]), .form.field-span-9 .container input:not([type="checkbox"]), .container .form.field-span-9 select, .form.field-span-9 .container select, .container .form.field-span-9 textarea, .form.field-span-9 .container textarea, .row .span-9, .row .form input.span-9:not([type="radio"]), .form .row input.span-9:not([type="radio"]), .row .form input.span-9:not([type="checkbox"]), .form .row input.span-9:not([type="checkbox"]), .row .form select.span-9, .form .row select.span-9, .row .form textarea.span-9, .form .row textarea.span-9, .row .form.field-span-9 input:not([type="radio"]), .form.field-span-9 .row input:not([type="radio"]), .row .form.field-span-9 input:not([type="checkbox"]), .form.field-span-9 .row input:not([type="checkbox"]), .row .form.field-span-9 select, .form.field-span-9 .row select, .row .form.field-span-9 textarea, .form.field-span-9 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-10, .container .form input.span-10, .form .container input.span-10, .row .span-10, .row .form input.span-10, .form .row input.span-10 {
+    .container .span-10, .container .form input.span-10:not([type="radio"]), .form .container input.span-10:not([type="radio"]), .container .form input.span-10:not([type="checkbox"]), .form .container input.span-10:not([type="checkbox"]), .container .form select.span-10, .form .container select.span-10, .container .form textarea.span-10, .form .container textarea.span-10, .container .form.field-span-10 input:not([type="radio"]), .form.field-span-10 .container input:not([type="radio"]), .container .form.field-span-10 input:not([type="checkbox"]), .form.field-span-10 .container input:not([type="checkbox"]), .container .form.field-span-10 select, .form.field-span-10 .container select, .container .form.field-span-10 textarea, .form.field-span-10 .container textarea, .row .span-10, .row .form input.span-10:not([type="radio"]), .form .row input.span-10:not([type="radio"]), .row .form input.span-10:not([type="checkbox"]), .form .row input.span-10:not([type="checkbox"]), .row .form select.span-10, .form .row select.span-10, .row .form textarea.span-10, .form .row textarea.span-10, .row .form.field-span-10 input:not([type="radio"]), .form.field-span-10 .row input:not([type="radio"]), .row .form.field-span-10 input:not([type="checkbox"]), .form.field-span-10 .row input:not([type="checkbox"]), .row .form.field-span-10 select, .form.field-span-10 .row select, .row .form.field-span-10 textarea, .form.field-span-10 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-11, .container .form input.span-11, .form .container input.span-11, .row .span-11, .row .form input.span-11, .form .row input.span-11 {
+    .container .span-11, .container .form input.span-11:not([type="radio"]), .form .container input.span-11:not([type="radio"]), .container .form input.span-11:not([type="checkbox"]), .form .container input.span-11:not([type="checkbox"]), .container .form select.span-11, .form .container select.span-11, .container .form textarea.span-11, .form .container textarea.span-11, .container .form.field-span-11 input:not([type="radio"]), .form.field-span-11 .container input:not([type="radio"]), .container .form.field-span-11 input:not([type="checkbox"]), .form.field-span-11 .container input:not([type="checkbox"]), .container .form.field-span-11 select, .form.field-span-11 .container select, .container .form.field-span-11 textarea, .form.field-span-11 .container textarea, .row .span-11, .row .form input.span-11:not([type="radio"]), .form .row input.span-11:not([type="radio"]), .row .form input.span-11:not([type="checkbox"]), .form .row input.span-11:not([type="checkbox"]), .row .form select.span-11, .form .row select.span-11, .row .form textarea.span-11, .form .row textarea.span-11, .row .form.field-span-11 input:not([type="radio"]), .form.field-span-11 .row input:not([type="radio"]), .row .form.field-span-11 input:not([type="checkbox"]), .form.field-span-11 .row input:not([type="checkbox"]), .row .form.field-span-11 select, .form.field-span-11 .row select, .row .form.field-span-11 textarea, .form.field-span-11 .row textarea {
       width: 100%;
       margin-left: 0;
       margin-right: 0; }
-    .container .span-12, .container .form input.span-12, .form .container input.span-12, .row .span-12, .row .form input.span-12, .form .row input.span-12 {
+    .container .span-12, .container .form input.span-12:not([type="radio"]), .form .container input.span-12:not([type="radio"]), .container .form input.span-12:not([type="checkbox"]), .form .container input.span-12:not([type="checkbox"]), .container .form select.span-12, .form .container select.span-12, .container .form textarea.span-12, .form .container textarea.span-12, .container .form.field-span-12 input:not([type="radio"]), .form.field-span-12 .container input:not([type="radio"]), .container .form.field-span-12 input:not([type="checkbox"]), .form.field-span-12 .container input:not([type="checkbox"]), .container .form.field-span-12 select, .form.field-span-12 .container select, .container .form.field-span-12 textarea, .form.field-span-12 .container textarea, .row .span-12, .row .form input.span-12:not([type="radio"]), .form .row input.span-12:not([type="radio"]), .row .form input.span-12:not([type="checkbox"]), .form .row input.span-12:not([type="checkbox"]), .row .form select.span-12, .form .row select.span-12, .row .form textarea.span-12, .form .row textarea.span-12, .row .form.field-span-12 input:not([type="radio"]), .form.field-span-12 .row input:not([type="radio"]), .row .form.field-span-12 input:not([type="checkbox"]), .form.field-span-12 .row input:not([type="checkbox"]), .row .form.field-span-12 select, .form.field-span-12 .row select, .row .form.field-span-12 textarea, .form.field-span-12 .row textarea {
       width: 100%;
       margin-left: 0;
-      margin-right: 0; } }
+      margin-right: 0; }
+
+  .btn-group.fluid {
+    width: 100%; }
+    .btn-group.fluid > .btn {
+      border-width: 0 1px 1px 1px;
+      border-radius: 0;
+      float: none;
+      display: block;
+      width: 100%; }
+      .btn-group.fluid > .btn:first-child {
+        border-top-width: .1rem;
+        border-radius: 0.4rem 0.4rem 0 0; }
+      .btn-group.fluid > .btn:last-child {
+        border-radius: 0 0 0.4rem 0.4rem; }
+
+  .form .field > label {
+    text-align: left !important; } }
 .color-blue {
   color: #149bdf; }
 
@@ -658,19 +735,18 @@ h1.large {
     border-collapse: separate;
     border: 0.1rem solid #cccccc;
     border-radius: 0.4rem; }
-  .table.border-col > thead > tr > th, .table.border-col tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
+  .table.border-cols > thead > tr > th, .table.border-cols tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
     border-right-width: 0.1rem; }
-    .table.border-col > thead > tr > th:last-child, .table.border-col tbody > tr > td:last-child, .table.border-all > thead > tr > th:last-child, .table.border-all tbody > tr > td:last-child {
+    .table.border-cols > thead > tr > th:last-child, .table.border-cols tbody > tr > td:last-child, .table.border-all > thead > tr > th:last-child, .table.border-all tbody > tr > td:last-child {
       border-right: 0; }
-  .table.border-row > thead > tr > th, .table.border-row tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
+  .table.border-rows > thead > tr > th, .table.border-rows tbody > tr > td, .table.border-all > thead > tr > th, .table.border-all tbody > tr > td {
     border-bottom-width: .1rem; }
-  .table.border-header-row > thead > tr > th, .table.border-header > thead > tr > th {
+  .table.border-header-rows > thead > tr > th {
     border-bottom-width: .1rem; }
-  .table.border-header-col > thead > tr > th, .table.border-header > thead > tr > th {
-    border-right-width: .1rem; }
-    .table.border-header-col > thead > tr > th:last-child, .table.border-header > thead > tr > th:last-child {
-      border-right: 0; }
-  .table.striped > tbody > tr:nth-child(2n-1) {
+  .table.stripe-rows > tbody > tr:nth-child(2n-1), .table.striped > tbody > tr:nth-child(2n-1) {
+    background-color: rgba(204, 204, 204, 0.2); }
+  .table.stripe-cols > thead > tr > th:nth-child(2n),
+  .table.stripe-cols > tbody > tr > td:nth-child(2n), .table.striped > thead > tr > th:nth-child(2n), .table.striped > tbody > tr > td:nth-child(2n) {
     background-color: rgba(204, 204, 204, 0.2); }
 
 .btn {
@@ -713,6 +789,13 @@ a.btn {
   font-size: 1.1rem;
   padding: 0 1rem; }
 
+.btn-group.small > .btn,
+.btn.small {
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.433rem;
+  padding: 0 1rem; }
+
 .btn-group.medium > .btn,
 .btn.medium {
   height: 4rem;
@@ -722,9 +805,16 @@ a.btn {
 
 .btn-group.large > .btn,
 .btn.large {
-  height: 5.2rem;
-  line-height: 5.2rem;
-  font-size: 2.167rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2.1rem;
+  padding: 0 2rem; }
+
+.btn-group.x-large > .btn,
+.btn.x-large {
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 2.433rem;
   padding: 0 2rem; }
 
 .btn-group.blue > .btn, .btn.blue {
@@ -838,7 +928,7 @@ button.btn[disabled]:hover,
 .btn:active,
 .btn.pressed,
 .btn.pressed:hover {
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3) inset, 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3) inset, 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   background-image: none;
   outline: 0; }
 
@@ -857,20 +947,6 @@ button.btn[disabled]:hover,
   .btn-group > .btn:last-child {
     border-radius: 0 0.4rem 0.4rem 0; }
 
-@media only screen and (max-width: 767px) {
-  .btn-group.fluid {
-    width: 100%; }
-    .btn-group.fluid > .btn {
-      border-top-width: 0;
-      border-radius: 0;
-      float: none;
-      display: block;
-      width: 100%; }
-      .btn-group.fluid > .btn:first-child {
-        border-top-width: .1rem;
-        border-radius: 0.4rem 0.4rem 0 0; }
-      .btn-group.fluid > .btn:last-child {
-        border-radius: 0 0 0.4rem 0.4rem; } }
 .notify {
   padding: 0.8rem; }
   .notify.blue {
@@ -905,7 +981,7 @@ button.btn[disabled]:hover,
     border: 0;
     float: right;
     font-weight: bold;
-    font-size: .2rem;
+    font-size: 2rem;
     opacity: .5; }
     .notify > .close:hover {
       opacity: .8; }
@@ -1056,17 +1132,21 @@ button.btn[disabled]:hover,
     line-height: 2rem;
     font-size: -6.7rem; }
   .progress.small {
-    height: 2.8rem;
-    line-height: 2.8rem;
-    font-size: -6.433rem; }
+    height: 3rem;
+    line-height: 3rem;
+    font-size: -6.367rem; }
   .progress.medium {
     height: 4rem;
     line-height: 4rem;
     font-size: -6.033rem; }
   .progress.large {
-    height: 5.2rem;
-    line-height: 5.2rem;
-    font-size: -5.633rem; }
+    height: 5rem;
+    line-height: 5rem;
+    font-size: -5.7rem; }
+  .progress.x-large {
+    height: 6rem;
+    line-height: 6rem;
+    font-size: -5.367rem; }
 
 @keyframes progress-bar-striped-animate {
   from {
@@ -1106,7 +1186,8 @@ button.btn[disabled]:hover,
 .loading {
   width: 2.8rem;
   height: 2.8rem;
-  position: relative; }
+  position: relative;
+  display: inline-block; }
   .loading > * {
     width: 12%;
     height: 26%;
@@ -1257,14 +1338,17 @@ button.btn[disabled]:hover,
     width: 2rem;
     height: 2rem; }
   .loading.small {
-    width: 2.8rem;
-    height: 2.8rem; }
+    width: 3rem;
+    height: 3rem; }
   .loading.medium {
     width: 4rem;
     height: 4rem; }
   .loading.large {
-    width: 5.2rem;
-    height: 5.2rem; }
+    width: 5rem;
+    height: 5rem; }
+  .loading.x-large {
+    width: 6rem;
+    height: 6rem; }
   .loading.blue > * {
     background-color: #149bdf; }
   .loading.green > * {
@@ -1320,14 +1404,13 @@ button.btn[disabled]:hover,
     padding: 0 0.4rem; }
 .form .field {
   margin: 1.8rem 0; }
-  .form .field label {
+  .form .field > label {
     display: inline-block;
     text-align: right;
+    padding-right: 1rem;
     line-height: 1.8rem; }
-    .form .field label.box-label {
+    .form .field > label.box-label {
       width: auto !important; }
-  .form .field input, .form .field select, .form .field textarea {
-    margin-left: 1rem; }
   .form .field input:not([type="file"]), .form .field select, .form .field textarea {
     transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
     -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
@@ -1344,8 +1427,6 @@ button.btn[disabled]:hover,
     height: 2.8rem;
     padding: 0 0.4rem;
     line-height: 1.8rem; }
-  .form .field input:not([type="radio"]), .form .field input:not([type="checkbox"]), .form .field select, .form .field textarea {
-    margin: 0 1rem; }
   .form .field input[type="file"] {
     line-height: 3rem;
     border: none; }
@@ -1353,18 +1434,10 @@ button.btn[disabled]:hover,
     width: auto !important;
     height: auto !important; }
   .form .field textarea {
-    width: 30rem;
-    margin: 0 1rem;
     height: 8rem;
     padding: 0.4rem; }
   .form .field .info {
-    margin-top: .4rem;
-    margin-left: 1rem;
-    padding-left: 0.4rem; }
-    .form .field .info:before {
-      content: "";
-      display: inline-block;
-      margin-right: 1rem; }
+    margin-top: .4rem; }
 .form:not(.label-top) > .buttons:before, .form:not(.label-top) > fieldset > .buttons:before {
   content: "";
   display: inline-block;
@@ -1375,55 +1448,59 @@ button.btn[disabled]:hover,
   display: block;
   text-align: left; }
 
-.rule {
+.rule, .separator {
   border: 0;
   border-style: solid;
   border-top-width: .1rem;
   border-color: #eeeeee;
   border-radius: 0;
   background: none; }
-  .rule.dotted {
+  .rule.dotted, .dotted.separator {
     border-style: dotted; }
-  .rule.dashed {
+  .rule.dashed, .dashed.separator {
     border-style: dashed; }
-  .rule.double {
+  .rule.double, .double.separator {
     border-style: double; }
-  .rule.groove {
+  .rule.groove, .groove.separator {
     border-style: groove; }
-  .rule.ridge {
+  .rule.ridge, .ridge.separator {
     border-style: ridge; }
-  .rule.blue {
+  .rule.blue, .blue.separator {
     border-color: #149bdf; }
-  .rule.green {
+  .rule.green, .green.separator {
     border-color: #51a351; }
-  .rule.orange {
+  .rule.orange, .orange.separator {
     border-color: #f89406; }
-  .rule.red {
+  .rule.red, .red.separator {
     border-color: #bd362f; }
-  .rule.grey {
+  .rule.grey, .grey.separator {
     border-color: gray; }
-  .rule.black {
+  .rule.black, .black.separator {
     border-color: #333333; }
-  .rule.size-1 {
+  .rule.size-1, .size-1.separator {
     border-top-width: 0.1rem; }
-  .rule.size-2 {
+  .rule.size-2, .size-2.separator {
     border-top-width: 0.2rem; }
-  .rule.size-3 {
+  .rule.size-3, .size-3.separator {
     border-top-width: 0.3rem; }
-  .rule.size-4 {
+  .rule.size-4, .size-4.separator {
     border-top-width: 0.4rem; }
-  .rule.size-5 {
+  .rule.size-5, .size-5.separator {
     border-top-width: 0.5rem; }
-  .rule.size-6 {
+  .rule.size-6, .size-6.separator {
     border-top-width: 0.6rem; }
-  .rule.size-7 {
+  .rule.size-7, .size-7.separator {
     border-top-width: 0.7rem; }
-  .rule.size-8 {
+  .rule.size-8, .size-8.separator {
     border-top-width: 0.8rem; }
-  .rule.size-9 {
+  .rule.size-9, .size-9.separator {
     border-top-width: 0.9rem; }
-  .rule.size-10 {
+  .rule.size-10, .size-10.separator {
     border-top-width: 1rem; }
+
+.separator {
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
 
 .slider {
   position: relative;
@@ -1489,13 +1566,13 @@ button.btn[disabled]:hover,
       width: 2rem;
       height: 2rem; }
   .slider.small {
-    height: 1.4rem;
-    margin: 0.7rem 1rem; }
+    height: 1.5rem;
+    margin: 0.75rem 1rem; }
     .slider.small > .bar > .thumb {
-      top: -0.7rem;
-      right: -1.4rem;
-      width: 2.8rem;
-      height: 2.8rem; }
+      top: -0.75rem;
+      right: -1.5rem;
+      width: 3rem;
+      height: 3rem; }
   .slider.medium {
     height: 2rem;
     margin: 1rem 1rem; }
@@ -1505,13 +1582,21 @@ button.btn[disabled]:hover,
       width: 4rem;
       height: 4rem; }
   .slider.large {
-    height: 2.6rem;
-    margin: 1.3rem 1rem; }
+    height: 2.5rem;
+    margin: 1.25rem 1rem; }
     .slider.large > .bar > .thumb {
-      top: -1.3rem;
-      right: -2.6rem;
-      width: 5.2rem;
-      height: 5.2rem; }
+      top: -1.25rem;
+      right: -2.5rem;
+      width: 5rem;
+      height: 5rem; }
+  .slider.x-large {
+    height: 3rem;
+    margin: 1.5rem 1rem; }
+    .slider.x-large > .bar > .thumb {
+      top: -1.5rem;
+      right: -3rem;
+      width: 6rem;
+      height: 6rem; }
 
 @keyframes slider-bar-striped-animate {
   from {
@@ -1576,11 +1661,11 @@ button.btn[disabled]:hover,
         color: white; }
     .menu li > ul, .nav li > ul {
       position: absolute;
-      right: calc(-100% - 8rem);
-      right: -webkit-calc(-100% - 8rem);
-      right: -moz-calc(-100% - 8rem);
-      right: -o-calc(-100% - 8rem);
-      right: -ms-calc(-100% - 8rem);
+      right: calc(-100% - .8rem);
+      right: -webkit-calc(-100% - .8rem);
+      right: -moz-calc(-100% - .8rem);
+      right: -o-calc(-100% - .8rem);
+      right: -ms-calc(-100% - .8rem);
       top: -0.5rem;
       display: none; }
       .menu li > ul:before, .nav li > ul:before {

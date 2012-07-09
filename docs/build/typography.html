@@ -79,158 +79,122 @@
 <div class="container center">
   
 <h1>Typography</h1>
-<hr class="rule">
+<hr class="separator">
 
-<br>
-
-<h2>Paragraphs</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis suscipit turpis, eget viverra tellus
-    varius porta. Nulla ullamcorper turpis non mi rhoncus ut lobortis libero posuere. Duis commodo neque tristique
-    enim mattis non dictum enim consectetur. </p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis suscipit turpis, eget viverra tellus
-    varius porta. Nulla ullamcorper turpis non mi rhoncus ut lobortis libero posuere. Duis commodo neque tristique
-    enim mattis non dictum enim consectetur. </p>
-
-<hr class="rule">
-
-<div class="grid">
-  <div class="row">
-    <div class="span-4">
-        <h1>Heading &lt;h1&gt;</h1>
-        <h2>Heading &lt;h2&gt;</h2>
-        <h3>Heading &lt;h3&gt;</h3>
-        <h4>Heading &lt;h4&gt;</h4>
-        <h5>Heading &lt;h5&gt;</h5>
-        <h6>Heading &lt;h6&gt;</h6>
+<div class="row">
+<div class="span-4">
+    <h1>Heading &lt;h1&gt;</h1>
+    <h2>Heading &lt;h2&gt;</h2>
+    <h3>Heading &lt;h3&gt;</h3>
+    <h4>Heading &lt;h4&gt;</h4>
+    <h5>Heading &lt;h5&gt;</h5>
+    <h6>Heading &lt;h6&gt;</h6>
+</div>
+<div class="span-4">
+    <h2>List Circle Bullets</h2>
+    <div id="list1">
+        <ul class="circle">
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+        </ul>
     </div>
-    <div class="span-4">
-        <h2>List Circle Bullets</h2>
-        <div id="list1">
-            <ul class="circle">
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-            </ul>
-        </div>
-        <pre class="brush: html" data-from="#list1"></pre>
-    </div>
-    <div class="span-4">
-      <h2>List Square Bullets</h2>
-      <div id="list2">
-          <ul class="square">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-          </ul>
-      </div>
-      <pre class="brush: html" data-from="#list2"></pre>
-    </div>
+    <pre class="brush: html; gutter: false;" data-from="#list1"></pre>
+</div>
+<div class="span-4">
+  <h2>List Square Bullets</h2>
+  <div id="list2">
+      <ul class="square">
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+      </ul>
   </div>
+  <pre class="brush: html gutter: false;" data-from="#list2"></pre>
+</div>
 </div>
 
-<hr class="rule">
+<hr class="separator">
 
-<section>
-  <h2>Colors and Fonts</h2>
-  <section>
-    <h3>Fonts</h3>
-
-    <p>Define in variable.scss</p>
-    <code>$base-font-family: Helvetica, Arial, Verdana, sans-serif;</code>
-    <br>
-    <br>
-    <code>$base-font-size: 13px;</code>
-  </section>
-  <section>
-    <h3>Colors</h3>
-
-    <div class="grid">
-      <div class="row">
-        <div class="span-6">
-          <h4>Text colors</h4>
-          <table class="table" >
-            <thead>
-            <tr>
-              <th>Text</th>
-              <th><code>class="color-*"</code></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td><span class="color-blue">Lorem ipsum dolor sit amet</span></td>
-              <td><code>blue</code></td>
-            </tr>
-            <tr>
-              <td><span class="color-green">Lorem ipsum dolor sit amet</span></td>
-              <td><code>green</code></td>
-            </tr>
-            <tr>
-              <td><span class="color-orange">Lorem ipsum dolor sit amet</span></td>
-              <td><code>orange</code></td>
-            </tr>
-            <tr>
-              <td><span class="color-red">Lorem ipsum dolor sit amet</span></td>
-              <td><code>red</code></td>
-            </tr>
-            <tr>
-              <td><span class="color-grey">Lorem ipsum dolor sit amet</span></td>
-              <td><code>grey</code></td>
-            </tr>
-            <tr>
-              <td><span class="color-black">Lorem ipsum dolor sit amet</span></td>
-              <td><code>black</code></td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="span-6">
-          <h4>Background Colors</h4>
-          <table class="table" >
-            <thead>
-            <tr>
-              <th>Background</th>
-              <th><code>class="bg-*"</code></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td><span class="bg-blue">Lorem ipsum dolor sit amet</span></td>
-              <td><code>blue</code></td>
-            </tr>
-            <tr>
-              <td><span class="bg-green">Lorem ipsum dolor sit amet</span></td>
-              <td><code>green</code></td>
-            </tr>
-            <tr>
-              <td><span class="bg-orange">Lorem ipsum dolor sit amet</span></td>
-              <td><code>orange</code></td>
-            </tr>
-            <tr>
-              <td><span class="bg-red">Lorem ipsum dolor sit amet</span></td>
-              <td><code>bg-red</code></td>
-            </tr>
-            <tr>
-              <td><span class="bg-grey">Lorem ipsum dolor sit amet</span></td>
-              <td><code>bg-grey</code></td>
-            </tr>
-            <tr>
-              <td><span class="bg-black">Lorem ipsum dolor sit amet</span></td>
-              <td><code>bg-black</code></td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-</section>
+<div class="row">
+<div class="span-6">
+  <table class="table">
+    <thead>
+        <tr>
+            <th><h2>Text colors</h2></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><span class="color-blue">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="blue"</code></td>
+    </tr>
+    <tr>
+      <td><span class="color-green">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="green"</code></td>
+    </tr>
+    <tr>
+      <td><span class="color-orange">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="orange"</code></td>
+    </tr>
+    <tr>
+      <td><span class="color-red">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="red"</code></td>
+    </tr>
+    <tr>
+      <td><span class="color-grey">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="grey"</code></td>
+    </tr>
+    <tr>
+      <td><span class="color-black">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="black"</code></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div class="span-6">
+  <table class="table">
+    <thead>
+      <tr>
+        <th><h2>Backgrounds</h2></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><span class="bg-blue">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="blue"</code></td>
+    </tr>
+    <tr>
+      <td><span class="bg-green">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="bg-blue"</code></td>
+    </tr>
+    <tr>
+      <td><span class="bg-orange">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="bg-blue"</code></td>
+    </tr>
+    <tr>
+      <td><span class="bg-red">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="bg-blue"</code></td>
+    </tr>
+    <tr>
+      <td><span class="bg-grey">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="bg-blue"</code></td>
+    </tr>
+    <tr>
+      <td><span class="bg-black">Lorem ipsum dolor sit amet</span></td>
+      <td><code>class="bg-blue"</code></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
 
 </div>
-<br>
-<br>
-<hr class="rule">
-<div class="container-960 center">
+
+<hr class="separator">
+<div class="container center">
   <br>
   <div class="to-left color-grey">
     <p>
