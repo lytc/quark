@@ -1,60 +1,51 @@
-.menu {
+.menu, .menu ul {
+  @extend .border-with-radius;
+  @extend .box-shadow;
+
   list-style: none;
   margin: 0;
   padding: .4rem;
-  @extend .border;
-  @extend .border-radius;
   display: inline-block;
-  @extend .box-shadow;
+
+  &:not([class*=" bg"]) {
+    background: white;
+  }
 
   &[class*=" bg"] {
     > li {
       > a {
         color: white;
       }
-
-      > ul {
-        + a {
-          &:after {
-            border-top-color: white;
-          }
-        }
+      >ul+a:after {
+        border-top-color: white;
       }
     }
   }
-  &:not([class*=" bg"]) {
-    background: white;
+}
+
+.menu {
+  ul {
+    position: absolute;
+    z-index: 1;
   }
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: .4rem;
-    @extend .border;
-    @extend .border-radius;
-    display: inline-block;
-    background: white;
-    @extend .box-shadow;
-    z-index: 9999;
-  }
   li {
     position: relative;
     cursor: pointer;
-    a {
+    > a {
+      @extend .border-radius;
       text-decoration: none;
       line-height: 1.8rem;
       display: block;
       padding: .4rem 2.8rem;
       white-space: nowrap;
       color: $base-color-black;
-      @extend .border-radius;
       &:hover {
         background-color: $base-color-blue;
         color: white;
       }
     }
     > ul {
-      position: absolute;
       @include calc(right, "-100% - .8rem");
       top: -.5rem;
       display: none;
@@ -84,10 +75,8 @@
     &:hover {
       > ul {
         display: block;
-        + a {
-          &:after {
-            display: none;
-          }
+        +a:after {
+          display: none;
         }
       }
     }

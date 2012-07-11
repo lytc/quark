@@ -19,6 +19,7 @@ $base-padding: .8rem;
 $base-margin: 1rem;
 
 // color
+$base-color-silver: #f2f2f2;
 $base-color-blue: #149bdf;
 $base-color-green: #51a351;
 $base-color-orange: #f89406;
@@ -26,6 +27,7 @@ $base-color-red: #bd362f;
 $base-color-grey: gray;
 $base-color-black: #333333;
 
+$-color-silver-hash: silver, $base-color-silver;
 $-color-blue-hash: blue, $base-color-blue;
 $-color-green-hash: green, $base-color-green;
 $-color-orange-hash: orange, $base-color-orange;
@@ -33,7 +35,7 @@ $-color-red-hash: red, $base-color-red;
 $-color-grey-hash: grey, $base-color-grey;
 $-color-black-hash: black, $base-color-black;
 
-$base-colors-list: $-color-blue-hash, $-color-green-hash, $-color-orange-hash, $-color-red-hash, $-color-grey-hash, $-color-black-hash;
+$base-colors-list: $-color-silver-hash, $-color-blue-hash, $-color-green-hash, $-color-orange-hash, $-color-red-hash, $-color-grey-hash, $-color-black-hash;
 
 // size
 $base-size-mini: 2rem;

@@ -5,3 +5,13 @@
 .to-right {
   float: right;
 }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+}

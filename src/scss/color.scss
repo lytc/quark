@@ -1,12 +1,19 @@
 @each $color-hash in $base-colors-list {
   $name: nth($color-hash, 1);
   $color: nth($color-hash, 2);
+
   .color-#{$name} {
     color: $color;
   }
+
   .bg-#{$name} {
     background-color: $color;
   }
+
+  .bg-gradient-#{$name} {
+    @include base-bg-gradient($color);
+  }
+
   .border-color-#{$name} {
     border-color: $color;
   }
