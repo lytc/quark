@@ -371,15 +371,15 @@ code {
   .caret.x-large, .menu li > ul + a.x-large:after, .nav li > ul + a.x-large:after, .btn-menu > ul li > ul + a.x-large:after, .btn-split > ul li > ul + a.x-large:after, .btn-menu > .x-large:first-child:after, .btn-menu.x-large > *:first-child:after, .btn-split > button.x-large:last-of-type:before, .btn-split > a.x-large:last-of-type:before, .btn-split > input.x-large:last-of-type:before {
     border-width: 0.857rem; }
   .caret.silver, .menu li > ul + a.silver:after, .nav li > ul + a.silver:after, .btn-menu > ul li > ul + a.silver:after, .btn-split > ul li > ul + a.silver:after, .btn-menu > .silver:first-child:after, .btn-split > button.silver:last-of-type:before, .btn-split > a.silver:last-of-type:before, .btn-split > input.silver:last-of-type:before {
-    border-top-color: #e6e6e6; }
+    border-top-color: #f2f2f2; }
   .caret.up.silver, .menu li > ul + a.up.silver:after, .nav li > ul + a.up.silver:after, .btn-menu > ul li > ul + a.up.silver:after, .btn-split > ul li > ul + a.up.silver:after, .btn-menu > .up.silver:first-child:after, .btn-split > button.up.silver:last-of-type:before, .btn-split > a.up.silver:last-of-type:before, .btn-split > input.up.silver:last-of-type:before {
-    border-bottom-color: #e6e6e6; }
+    border-bottom-color: #f2f2f2; }
   .caret.down.silver, .menu li > ul + a.down.silver:after, .nav li > ul + a.down.silver:after, .btn-menu > ul li > ul + a.down.silver:after, .btn-split > ul li > ul + a.down.silver:after, .nav > li > ul + a.silver:after, .btn-menu > .down.silver:first-child:after, .btn-split > button.down.silver:last-of-type:before, .btn-split > a.down.silver:last-of-type:before, .btn-split > input.down.silver:last-of-type:before {
-    border-top-color: #e6e6e6; }
+    border-top-color: #f2f2f2; }
   .caret.left.silver, .menu li > ul + a.silver:after, .nav li > ul + a.silver:after, .btn-menu > ul li > ul + a.silver:after, .btn-split > ul li > ul + a.silver:after, .btn-menu > .left.silver:first-child:after, .btn-split > button.left.silver:last-of-type:before, .btn-split > a.left.silver:last-of-type:before, .btn-split > input.left.silver:last-of-type:before {
-    border-left-color: #e6e6e6; }
+    border-left-color: #f2f2f2; }
   .caret.right.silver, .menu li > ul + a.right.silver:after, .nav li > ul + a.right.silver:after, .btn-menu > ul li > ul + a.right.silver:after, .btn-split > ul li > ul + a.right.silver:after, .btn-menu > .right.silver:first-child:after, .btn-split > button.right.silver:last-of-type:before, .btn-split > a.right.silver:last-of-type:before, .btn-split > input.right.silver:last-of-type:before {
-    border-right-color: #e6e6e6; }
+    border-right-color: #f2f2f2; }
   .caret.blue, .menu li > ul + a.blue:after, .nav li > ul + a.blue:after, .btn-menu > ul li > ul + a.blue:after, .btn-split > ul li > ul + a.blue:after, .btn-menu > .blue:first-child:after, .btn-split > button.blue:last-of-type:before, .btn-split > a.blue:last-of-type:before, .btn-split > input.blue:last-of-type:before {
     border-top-color: #149bdf; }
   .caret.up.blue, .menu li > ul + a.up.blue:after, .nav li > ul + a.up.blue:after, .btn-menu > ul li > ul + a.up.blue:after, .btn-split > ul li > ul + a.up.blue:after, .btn-menu > .up.blue:first-child:after, .btn-split > button.up.blue:last-of-type:before, .btn-split > a.up.blue:last-of-type:before, .btn-split > input.up.blue:last-of-type:before {
@@ -774,29 +774,29 @@ ul.square {
   .form .field > label {
     text-align: left !important; } }
 .color-silver {
-  color: #e6e6e6; }
+  color: #f2f2f2; }
 
-.bg-silver, .menu.silver li a:hover, .silver.nav li a:hover, .btn-menu > ul.silver li a:hover, .btn-split > ul.silver li a:hover, .progress.striped.silver > .bar, .striped.silver.slider > .bar, .progress.striped-animate.silver > .bar, .striped-animate.silver.slider > .bar, .loading.silver > *, .label.silver, .silver.badge {
-  background-color: #e6e6e6; }
+.bg-silver, .menu.silver li a:hover, .silver.nav li a:hover, .btn-menu > ul.silver li a:hover, .btn-split > ul.silver li a:hover, .btn, .btn-group > button, .btn-split > button, .btn-group > a, .btn-split > a, .btn-group > input, .btn-split > input, .btn-menu > *:first-child, .btn.silver, .btn-group > button.silver, .btn-split > button.silver, .btn-group > a.silver, .btn-split > a.silver, .btn-group > input.silver, .btn-split > input.silver, .btn-group.silver > button, .silver.btn-split > button, .btn-group.silver > a, .silver.btn-split > a, .btn-group.silver > input, .silver.btn-split > input, .btn-menu > .silver:first-child, .btn-menu.silver > *:first-child, .progress.silver > .bar, .silver.slider > .bar, .progress.striped.silver > .bar, .striped.silver.slider > .bar, .progress.striped-animate.silver > .bar, .striped-animate.silver.slider > .bar, .loading.silver > *, .label.silver, .silver.badge {
+  background-color: #f2f2f2; }
 
-.bg-gradient-silver, .btn, .btn-group > button, .btn-split > button, .btn-group > a, .btn-split > a, .btn-group > input, .btn-split > input, .btn-menu > *:first-child, .btn.silver, .btn-group > button.silver, .btn-split > button.silver, .btn-group > a.silver, .btn-split > a.silver, .btn-group > input.silver, .btn-split > input.silver, .btn-group.silver > button, .silver.btn-split > button, .btn-group.silver > a, .silver.btn-split > a, .btn-group.silver > input, .silver.btn-split > input, .btn-menu > .silver:first-child, .btn-menu.silver > *:first-child, .progress.silver > .bar, .silver.slider > .bar {
-  background-color: #e6e6e6;
-  background-image: linear-gradient(top, white, #e6e6e6);
-  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
-  background-image: -moz-linear-gradient(top, white, #e6e6e6);
-  background-image: -o-linear-gradient(top, white, #e6e6e6);
-  background-image: -ms-linear-gradient(top, white, #e6e6e6); }
+.bg-gradient-silver {
+  background-color: #f2f2f2;
+  background-image: linear-gradient(top, white, #f2f2f2);
+  background-image: -webkit-linear-gradient(top, white, #f2f2f2);
+  background-image: -moz-linear-gradient(top, white, #f2f2f2);
+  background-image: -o-linear-gradient(top, white, #f2f2f2);
+  background-image: -ms-linear-gradient(top, white, #f2f2f2); }
 
 .border-color-silver, .rule.silver, .silver.separator {
-  border-color: #e6e6e6; }
+  border-color: #f2f2f2; }
 
 .color-blue {
   color: #149bdf; }
 
-.bg-blue, .menu.blue li a:hover, .blue.nav li a:hover, .btn-menu > ul.blue li a:hover, .btn-split > ul.blue li a:hover, .progress.striped.blue > .bar, .striped.blue.slider > .bar, .progress.striped-animate.blue > .bar, .striped-animate.blue.slider > .bar, .loading.blue > *, .label.blue, .blue.badge {
+.bg-blue, .menu.blue li a:hover, .blue.nav li a:hover, .btn-menu > ul.blue li a:hover, .btn-split > ul.blue li a:hover, .btn.blue, .btn-group > button.blue, .btn-split > button.blue, .btn-group > a.blue, .btn-split > a.blue, .btn-group > input.blue, .btn-split > input.blue, .btn-group.blue > button, .blue.btn-split > button, .btn-group.blue > a, .blue.btn-split > a, .btn-group.blue > input, .blue.btn-split > input, .btn-menu > .blue:first-child, .btn-menu.blue > *:first-child, .progress.blue > .bar, .blue.slider > .bar, .progress.striped.blue > .bar, .striped.blue.slider > .bar, .progress.striped-animate.blue > .bar, .striped-animate.blue.slider > .bar, .loading.blue > *, .label.blue, .blue.badge {
   background-color: #149bdf; }
 
-.bg-gradient-blue, .btn.blue, .btn-group > button.blue, .btn-split > button.blue, .btn-group > a.blue, .btn-split > a.blue, .btn-group > input.blue, .btn-split > input.blue, .btn-group.blue > button, .blue.btn-split > button, .btn-group.blue > a, .blue.btn-split > a, .btn-group.blue > input, .blue.btn-split > input, .btn-menu > .blue:first-child, .btn-menu.blue > *:first-child, .progress.blue > .bar, .blue.slider > .bar {
+.bg-gradient-blue {
   background-color: #149bdf;
   background-image: linear-gradient(top, #68c3f1, #149bdf);
   background-image: -webkit-linear-gradient(top, #68c3f1, #149bdf);
@@ -810,10 +810,10 @@ ul.square {
 .color-green {
   color: #51a351; }
 
-.bg-green, .menu.green li a:hover, .green.nav li a:hover, .btn-menu > ul.green li a:hover, .btn-split > ul.green li a:hover, .progress.striped.green > .bar, .striped.green.slider > .bar, .progress.striped-animate.green > .bar, .striped-animate.green.slider > .bar, .loading.green > *, .label.green, .green.badge {
+.bg-green, .menu.green li a:hover, .green.nav li a:hover, .btn-menu > ul.green li a:hover, .btn-split > ul.green li a:hover, .btn.green, .btn-group > button.green, .btn-split > button.green, .btn-group > a.green, .btn-split > a.green, .btn-group > input.green, .btn-split > input.green, .btn-group.green > button, .green.btn-split > button, .btn-group.green > a, .green.btn-split > a, .btn-group.green > input, .green.btn-split > input, .btn-menu > .green:first-child, .btn-menu.green > *:first-child, .progress.green > .bar, .green.slider > .bar, .progress.striped.green > .bar, .striped.green.slider > .bar, .progress.striped-animate.green > .bar, .striped-animate.green.slider > .bar, .loading.green > *, .label.green, .green.badge {
   background-color: #51a351; }
 
-.bg-gradient-green, .btn.green, .btn-group > button.green, .btn-split > button.green, .btn-group > a.green, .btn-split > a.green, .btn-group > input.green, .btn-split > input.green, .btn-group.green > button, .green.btn-split > button, .btn-group.green > a, .green.btn-split > a, .btn-group.green > input, .green.btn-split > input, .btn-menu > .green:first-child, .btn-menu.green > *:first-child, .progress.green > .bar, .green.slider > .bar {
+.bg-gradient-green {
   background-color: #51a351;
   background-image: linear-gradient(top, #91c991, #51a351);
   background-image: -webkit-linear-gradient(top, #91c991, #51a351);
@@ -827,10 +827,10 @@ ul.square {
 .color-orange {
   color: #f89406; }
 
-.bg-orange, .menu.orange li a:hover, .orange.nav li a:hover, .btn-menu > ul.orange li a:hover, .btn-split > ul.orange li a:hover, .progress.striped.orange > .bar, .striped.orange.slider > .bar, .progress.striped-animate.orange > .bar, .striped-animate.orange.slider > .bar, .loading.orange > *, .label.orange, .orange.badge {
+.bg-orange, .menu.orange li a:hover, .orange.nav li a:hover, .btn-menu > ul.orange li a:hover, .btn-split > ul.orange li a:hover, .btn.orange, .btn-group > button.orange, .btn-split > button.orange, .btn-group > a.orange, .btn-split > a.orange, .btn-group > input.orange, .btn-split > input.orange, .btn-group.orange > button, .orange.btn-split > button, .btn-group.orange > a, .orange.btn-split > a, .btn-group.orange > input, .orange.btn-split > input, .btn-menu > .orange:first-child, .btn-menu.orange > *:first-child, .progress.orange > .bar, .orange.slider > .bar, .progress.striped.orange > .bar, .striped.orange.slider > .bar, .progress.striped-animate.orange > .bar, .striped-animate.orange.slider > .bar, .loading.orange > *, .label.orange, .orange.badge {
   background-color: #f89406; }
 
-.bg-gradient-orange, .btn.orange, .btn-group > button.orange, .btn-split > button.orange, .btn-group > a.orange, .btn-split > a.orange, .btn-group > input.orange, .btn-split > input.orange, .btn-group.orange > button, .orange.btn-split > button, .btn-group.orange > a, .orange.btn-split > a, .btn-group.orange > input, .orange.btn-split > input, .btn-menu > .orange:first-child, .btn-menu.orange > *:first-child, .progress.orange > .bar, .orange.slider > .bar {
+.bg-gradient-orange {
   background-color: #f89406;
   background-image: linear-gradient(top, #fbbf69, #f89406);
   background-image: -webkit-linear-gradient(top, #fbbf69, #f89406);
@@ -844,10 +844,10 @@ ul.square {
 .color-red {
   color: #bd362f; }
 
-.bg-red, .menu.red li a:hover, .red.nav li a:hover, .btn-menu > ul.red li a:hover, .btn-split > ul.red li a:hover, .progress.striped.red > .bar, .striped.red.slider > .bar, .progress.striped-animate.red > .bar, .striped-animate.red.slider > .bar, .loading.red > *, .label.red, .red.badge {
+.bg-red, .menu.red li a:hover, .red.nav li a:hover, .btn-menu > ul.red li a:hover, .btn-split > ul.red li a:hover, .btn.red, .btn-group > button.red, .btn-split > button.red, .btn-group > a.red, .btn-split > a.red, .btn-group > input.red, .btn-split > input.red, .btn-group.red > button, .red.btn-split > button, .btn-group.red > a, .red.btn-split > a, .btn-group.red > input, .red.btn-split > input, .btn-menu > .red:first-child, .btn-menu.red > *:first-child, .progress.red > .bar, .red.slider > .bar, .progress.striped.red > .bar, .striped.red.slider > .bar, .progress.striped-animate.red > .bar, .striped-animate.red.slider > .bar, .loading.red > *, .label.red, .red.badge {
   background-color: #bd362f; }
 
-.bg-gradient-red, .btn.red, .btn-group > button.red, .btn-split > button.red, .btn-group > a.red, .btn-split > a.red, .btn-group > input.red, .btn-split > input.red, .btn-group.red > button, .red.btn-split > button, .btn-group.red > a, .red.btn-split > a, .btn-group.red > input, .red.btn-split > input, .btn-menu > .red:first-child, .btn-menu.red > *:first-child, .progress.red > .bar, .red.slider > .bar {
+.bg-gradient-red {
   background-color: #bd362f;
   background-image: linear-gradient(top, #dd7a75, #bd362f);
   background-image: -webkit-linear-gradient(top, #dd7a75, #bd362f);
@@ -861,10 +861,10 @@ ul.square {
 .color-grey {
   color: gray; }
 
-.bg-grey, .menu.grey li a:hover, .grey.nav li a:hover, .btn-menu > ul.grey li a:hover, .btn-split > ul.grey li a:hover, .progress.striped.grey > .bar, .striped.grey.slider > .bar, .progress.striped-animate.grey > .bar, .striped-animate.grey.slider > .bar, .loading.grey > *, .label.grey, .grey.badge {
+.bg-grey, .menu.grey li a:hover, .grey.nav li a:hover, .btn-menu > ul.grey li a:hover, .btn-split > ul.grey li a:hover, .btn.grey, .btn-group > button.grey, .btn-split > button.grey, .btn-group > a.grey, .btn-split > a.grey, .btn-group > input.grey, .btn-split > input.grey, .btn-group.grey > button, .grey.btn-split > button, .btn-group.grey > a, .grey.btn-split > a, .btn-group.grey > input, .grey.btn-split > input, .btn-menu > .grey:first-child, .btn-menu.grey > *:first-child, .progress.grey > .bar, .grey.slider > .bar, .progress.striped.grey > .bar, .striped.grey.slider > .bar, .progress.striped-animate.grey > .bar, .striped-animate.grey.slider > .bar, .loading.grey > *, .label.grey, .grey.badge {
   background-color: gray; }
 
-.bg-gradient-grey, .btn.grey, .btn-group > button.grey, .btn-split > button.grey, .btn-group > a.grey, .btn-split > a.grey, .btn-group > input.grey, .btn-split > input.grey, .btn-group.grey > button, .grey.btn-split > button, .btn-group.grey > a, .grey.btn-split > a, .btn-group.grey > input, .grey.btn-split > input, .btn-menu > .grey:first-child, .btn-menu.grey > *:first-child, .progress.grey > .bar, .grey.slider > .bar {
+.bg-gradient-grey {
   background-color: gray;
   background-image: linear-gradient(top, #b3b3b3, gray);
   background-image: -webkit-linear-gradient(top, #b3b3b3, gray);
@@ -878,10 +878,10 @@ ul.square {
 .color-black {
   color: #333333; }
 
-.bg-black, .menu.black li a:hover, .black.nav li a:hover, .btn-menu > ul.black li a:hover, .btn-split > ul.black li a:hover, .progress.striped.black > .bar, .striped.black.slider > .bar, .progress.striped-animate.black > .bar, .striped-animate.black.slider > .bar, .loading.black > *, .label.black, .black.badge {
+.bg-black, .menu.black li a:hover, .black.nav li a:hover, .btn-menu > ul.black li a:hover, .btn-split > ul.black li a:hover, .btn.black, .btn-group > button.black, .btn-split > button.black, .btn-group > a.black, .btn-split > a.black, .btn-group > input.black, .btn-split > input.black, .btn-group.black > button, .black.btn-split > button, .btn-group.black > a, .black.btn-split > a, .btn-group.black > input, .black.btn-split > input, .btn-menu > .black:first-child, .btn-menu.black > *:first-child, .progress.black > .bar, .black.slider > .bar, .progress.striped.black > .bar, .striped.black.slider > .bar, .progress.striped-animate.black > .bar, .striped-animate.black.slider > .bar, .loading.black > *, .label.black, .black.badge {
   background-color: #333333; }
 
-.bg-gradient-black, .btn.black, .btn-group > button.black, .btn-split > button.black, .btn-group > a.black, .btn-split > a.black, .btn-group > input.black, .btn-split > input.black, .btn-group.black > button, .black.btn-split > button, .btn-group.black > a, .black.btn-split > a, .btn-group.black > input, .black.btn-split > input, .btn-menu > .black:first-child, .btn-menu.black > *:first-child, .progress.black > .bar, .black.slider > .bar {
+.bg-gradient-black {
   background-color: #333333;
   background-image: linear-gradient(top, #666666, #333333);
   background-image: -webkit-linear-gradient(top, #666666, #333333);
@@ -1038,8 +1038,6 @@ h1.large {
   line-height: 2.8rem;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  box-shadow: 0 0.1rem 0 rgba(255, 255, 255, 0.2) inset, 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
-  background-repeat: repeat-x;
   overflow: hidden;
   padding: 0 1rem;
   text-align: center;
@@ -1051,7 +1049,8 @@ h1.large {
     background-image: -webkit-linear-gradient(top, #E6E6E6, white);
     background-image: -moz-linear-gradient(top, #E6E6E6, white);
     background-image: -o-linear-gradient(top, #E6E6E6, white);
-    background-image: -ms-linear-gradient(top, #E6E6E6, white); }
+    background-image: -ms-linear-gradient(top, #E6E6E6, white);
+    border-top-color: rgba(0, 0, 0, 0.2); }
   .btn:focus, .btn-group > button:focus, .btn-split > button:focus, .btn-group > a:focus, .btn-split > a:focus, .btn-group > input:focus, .btn-split > input:focus, .btn-menu > :focus:first-child, .btn:active, .btn-group > button:active, .btn-split > button:active, .btn-group > a:active, .btn-split > a:active, .btn-group > input:active, .btn-split > input:active, .btn-menu > :active:first-child {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6); }
   .btn.mini, .btn-group > button.mini, .btn-split > button.mini, .btn-group > a.mini, .btn-split > a.mini, .btn-group > input.mini, .btn-split > input.mini, .btn-group.mini > button, .mini.btn-split > button, .btn-group.mini > a, .mini.btn-split > a, .btn-group.mini > input, .mini.btn-split > input, .btn-menu > .mini:first-child, .btn-menu.mini > *:first-child, .progress.mini, .mini.slider {
@@ -1084,11 +1083,11 @@ h1.large {
     text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.25); }
     .btn.silver:hover, .btn-group > button.silver:hover, .btn-split > button.silver:hover, .btn-group > a.silver:hover, .btn-split > a.silver:hover, .btn-group > input.silver:hover, .btn-split > input.silver:hover, .btn-group.silver > button:hover, .silver.btn-split > button:hover, .btn-group.silver > a:hover, .silver.btn-split > a:hover, .btn-group.silver > input:hover, .silver.btn-split > input:hover, .btn-menu > .silver:hover:first-child, .btn-menu.silver > :hover:first-child {
       color: white;
-      background-image: linear-gradient(top, #e6e6e6, white);
-      background-image: -webkit-linear-gradient(top, #e6e6e6, white);
-      background-image: -moz-linear-gradient(top, #e6e6e6, white);
-      background-image: -o-linear-gradient(top, #e6e6e6, white);
-      background-image: -ms-linear-gradient(top, #e6e6e6, white); }
+      background-image: linear-gradient(top, #f2f2f2, white);
+      background-image: -webkit-linear-gradient(top, #f2f2f2, white);
+      background-image: -moz-linear-gradient(top, #f2f2f2, white);
+      background-image: -o-linear-gradient(top, #f2f2f2, white);
+      background-image: -ms-linear-gradient(top, #f2f2f2, white); }
   .btn.blue, .btn-group > button.blue, .btn-split > button.blue, .btn-group > a.blue, .btn-split > a.blue, .btn-group > input.blue, .btn-split > input.blue, .btn-group.blue > button, .blue.btn-split > button, .btn-group.blue > a, .blue.btn-split > a, .btn-group.blue > input, .blue.btn-split > input, .btn-menu > .blue:first-child, .btn-menu.blue > *:first-child {
     color: white;
     text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.25); }
@@ -1262,9 +1261,9 @@ h1.large {
 .notify {
   padding: 0.8rem; }
   .notify.silver {
-    border-color: rgba(230, 230, 230, 0.2);
-    background-color: rgba(230, 230, 230, 0.15);
-    color: #e6e6e6; }
+    border-color: rgba(242, 242, 242, 0.2);
+    background-color: rgba(242, 242, 242, 0.15);
+    color: #f2f2f2; }
   .notify.blue {
     border-color: rgba(20, 155, 223, 0.2);
     background-color: rgba(20, 155, 223, 0.15);
@@ -1306,12 +1305,7 @@ h1.large {
   height: 2.8rem;
   line-height: 2.8rem;
   background-color: #f7f7f7;
-  background-image: linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
-  box-shadow: inset 0 0 0.2rem rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0.2rem rgba(0, 0, 0, 0.2);
   border-radius: 0.4rem;
   font-size: 1.3rem;
   position: relative; }
