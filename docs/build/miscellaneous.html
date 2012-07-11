@@ -17,7 +17,8 @@
   <script type="text/javascript" src="javascripts/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
 
   <script src="javascripts/quark.js"></script>
-  <%= yield_content :head %>
+  <title>Quark- mixed</title>
+
 
   <script>
     $(function () {
@@ -78,7 +79,101 @@
 <br>
 
 <div class="container center">
-  <%= yield %>
+  
+<h1>Miscellaneous</h1>
+<hr class="separator">
+
+<h2>Horizontal rules</h2>
+
+<div class="row">
+    <div class="span-6">
+        <p></p>
+        <hr class="rule">
+    </div>
+    <div class="span-6">
+        <pre class="brush: html">
+            <hr class="rule">
+        </pre>
+    </div>
+</div>
+
+<hr class="separator">
+
+<div class="row">
+    <div class="span-4">
+        <h2>Rule colors</h2>
+        <p>For customize colors, add class <code>blue</code>, <code>green</code>, <code>orange</code>, <code>red</code>,
+            <code>grey</code> or <code>black</code> beside the <code>rule</code> class.</p>
+        <hr class="rule blue">
+        <hr class="rule green">
+        <hr class="rule orange">
+        <hr class="rule red">
+        <hr class="rule grey">
+        <hr class="rule black">
+    </div>
+    <div class="span-4">
+        <h2>Rule sizes</h2>
+        <p>Add class <code>size-1</code> to <code>size-10</code> to change the rule sizes.</p>
+        <hr class="rule blue size-1">
+        <hr class="rule blue size-2">
+        <hr class="rule blue size-3">
+        <hr class="rule blue size-4">
+        <hr class="rule blue size-5">
+        <hr class="rule blue size-6">
+        <hr class="rule blue size-7">
+        <hr class="rule blue size-8">
+        <hr class="rule blue size-9">
+        <hr class="rule blue size-10">
+    </div>
+    <div class="span-4">
+        <h2>Border styles</h2>
+        <p>Rule provides some border styles. Add a class <code>dotted</code>, <code>dashed</code>,
+            <code>double</code>, <code>groove</code> or <code>ridge</code> to change the border styles.</p>
+        <p>The default style is <code>solid</code>.</p>
+        <hr class="rule blue size-1 dotted">
+        <hr class="rule blue size-1 dashed">
+        <hr class="rule blue size-3 double">
+        <hr class="rule blue size-4 groove">
+        <hr class="rule blue size-4 ridge">
+    </div>
+</div>
+
+<p>Use class <code>separator</code> instead of <code>rule</code> if you want to add more margin top & bottom on the rule.</p>
+
+<hr class="separator">
+
+<div class="row">
+    <div class="span-3">
+        <h2>Carets</h2>
+        <span class="caret"></span>
+        <pre class="brush: html;">
+            <span class="caret"></span>
+        </pre>
+    </div>
+    <div class="span-3">
+        <h2>Caret colors</h2>
+        <span class="caret blue"></span>
+        <span class="caret green"></span>
+        <span class="caret orange"></span>
+        <span class="caret red"></span>
+        <span class="caret grey"></span>
+        <span class="caret black"></span>
+    </div>
+    <div class="span-3">
+        <h2>Caret directions</h2>
+        <span class="caret"></span>
+        <span class="caret up"></span>
+        <span class="caret left"></span>
+        <span class="caret right"></span>
+    </div>
+    <div class="span-3">
+        <h2>Caret sizes</h2>
+        <span class="caret mini"></span>
+        <span class="caret medium"></span>
+        <span class="caret large"></span>
+        <span class="caret x-large"></span>
+    </div>
+</div>
 </div>
 
 <hr class="separator">

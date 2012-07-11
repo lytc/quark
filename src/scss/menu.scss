@@ -16,7 +16,7 @@
       > ul {
         + a {
           &:after {
-          border-top-color: white;
+            border-top-color: white;
           }
         }
       }
@@ -73,13 +73,11 @@
       }
       + a {
         &:after {
-          content: "";
+          @extend .caret;
+          @extend .caret.left;
           position: absolute;
-          top: .9rem;
+          top: 50%;
           right: .8rem;
-          border-left: .4rem solid rgba(black, 0.5);
-          border-top: .4rem solid transparent;
-          border-bottom: .4rem solid transparent;
         }
       }
     }
@@ -97,12 +95,11 @@
   
   @each $color-hash in $base-colors-list {
     $name: nth($color-hash, 1);
-    $color: nth($color-hash, 2);
     &.#{$name} {
       li {
         a {
           &:hover {
-            background-color: $color;
+            @extend .bg-#{$name};
           }
         }
       }

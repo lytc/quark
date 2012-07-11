@@ -36,7 +36,7 @@
 	}
   }
   &.striped-animate > .bar {
-    @include animation(slider-bar-striped-animate 2s linear infinite);
+    @include animation(progress-bar-striped-animate 2s linear infinite);
   }
   @each $color-hash in $base-colors-list {
     $name: nth($color-hash, 1);
@@ -66,14 +66,5 @@
         }
       }
     }
-  }
-}
-
-@include keyframes(slider-bar-striped-animate) {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 6rem 0;
   }
 }

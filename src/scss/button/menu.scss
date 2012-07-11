@@ -1,0 +1,53 @@
+.btn-menu {
+  position: relative;
+  display: inline-block;
+
+  > *:first-child {
+    @extend .btn;
+    position: relative;
+    &:after {
+      @extend .caret;
+      margin-left: .4rem;
+    }
+  }
+
+  &.open {
+    > *:first-child {
+      @extend .btn.pressed;
+    }
+    > ul {
+      display: inline-block;
+    }
+  }
+
+  > ul {
+    @extend .menu;
+    display: none;
+    position: absolute;
+    @include calc(top, "100% + .1rem");
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@each $btn-hash in $base-sizes-list {
+  $name: nth($btn-hash, 1);
+  $size: nth($btn-hash, 2);
+  .btn-menu.#{$name} > *:first-child {
+    @extend .btn.#{$name};
+    &:after {
+      @extend .caret.#{$name};
+      margin-left: $size / 7;
+    }
+  }
+}
+
+@each $color-hash in $base-colors-list {
+  $name: nth($color-hash, 1);
+  .btn-menu.#{$name} > *:first-child {
+    @extend .btn.#{$name};
+    &:after {
+      border-top-color: white;
+    }
+  }
+}

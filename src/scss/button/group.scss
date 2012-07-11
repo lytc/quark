@@ -1,0 +1,51 @@
+.btn-group {
+  @extend .clearfix;
+  display: inline-block;
+
+  > button, > a, > input {
+    @extend .btn;
+    border-left-width: 0;
+    border-radius: 0;
+    float: left;
+
+    &:first-of-type {
+      border-left-width: .1rem;
+      border-radius: $base-border-radius 0 0 $base-border-radius;
+    }
+
+    &:last-of-type {
+      border-radius: 0 $base-border-radius $base-border-radius 0;
+    }
+  }
+
+  &.disabled {
+    > button, > a, > input {
+      @extend .btn.disabled;
+    }
+  }
+
+  &.pressed {
+    > button, > a, > input {
+      @extend .btn.pressed;
+      border-color: rgba(black, 0.2) rgba(black, 0.2) rgba(black, 0.2);
+    }
+  }
+}
+
+@each $btn-hash in $base-sizes-list {
+  $name: nth($btn-hash, 1);
+  .btn-group.#{$name} {
+    > button, > a, > input {
+      @extend .btn.#{$name};
+    }
+  }
+}
+
+@each $color-hash in $base-colors-list {
+  $name: nth($color-hash, 1);
+  .btn-group.#{$name} {
+    > button, > a, > input {
+      @extend .btn.#{$name};
+    }
+  }
+}

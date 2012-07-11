@@ -1,0 +1,42 @@
+.btn-split {
+  @extend .btn-group;
+  position: relative;
+  > button:last-of-type, > a:last-of-type, > input:last-of-type {
+    &:before {
+      @extend .caret;
+    }
+  }
+
+  &.open {
+    > button:last-of-type, > a:last-of-type, > input:last-of-type {
+      @extend .btn.pressed;
+    }
+    > ul {
+      display: inline-block;
+    }
+  }
+
+  > ul {
+    @extend .menu;
+    display: none;
+    position: absolute;
+    @include calc(top, "100% + .1rem");
+    left: 0;
+    z-index: 1;
+
+    &:focus {
+      display: inline-block;
+    }
+  }
+
+  @each $color-hash in $base-colors-list {
+    $name: nth($color-hash, 1);
+    &.#{$name} {
+      > button:last-of-type, > a:last-of-type, > input:last-of-type {
+        &:before {
+          border-top-color: white;
+        }
+      }
+    }
+  }
+}
