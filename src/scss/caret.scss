@@ -1,1 +1,72 @@
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  margin-top: -.4rem;
+  content: "";
+  border-top: .4rem solid black;
+  border-left: .4rem solid transparent;
+  border-right: .4rem solid transparent;
+  border-bottom: none;
 
+  &.left {
+    border-left: .4rem solid black;
+    border-top: .4rem solid transparent;
+    border-bottom: .4rem solid transparent;
+    border-right: none;
+  }
+
+  &.right {
+    border-right: .4rem solid black;
+    border-top: .4rem solid transparent;
+    border-bottom: .4rem solid transparent;
+    border-left: none;
+  }
+
+  &.up {
+    border-bottom: .4rem solid black;
+    border-left: .4rem solid transparent;
+    border-right: .4rem solid transparent;
+    border-top: none;
+  }
+
+  &.down {
+    border-top: .4rem solid black;
+    border-left: .4rem solid transparent;
+    border-right: .4rem solid transparent;
+    border-bottom: none;
+  }
+
+  @each $btn-hash in $base-sizes-list {
+    $name: nth($btn-hash, 1);
+    $size: nth($btn-hash, 2);
+    &.#{$name} {
+      border-width: $size / 7;
+    }
+  }
+
+  @each $color-hash in $base-colors-list {
+    $name: nth($color-hash, 1);
+    $color: nth($color-hash, 2);
+    &.#{$name} {
+      border-top-color: $color;
+    }
+
+    &.up.#{$name} {
+      border-bottom-color: $color;
+    }
+
+    &.down.#{$name} {
+      border-top-color: $color;
+    }
+
+    &.left.#{$name} {
+      border-left-color: $color;
+    }
+
+    &.right.#{$name} {
+      border-right-color: $color;
+    }
+  }
+}

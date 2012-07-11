@@ -6,130 +6,475 @@
 <hr class="separator">
 
 <div class="row">
-    <div class="span-3">
-        <div id="btn1">
-            <button class="btn">
-                Button
-            </button>
-        </div>
-        <pre class="brush: html; gutter: false;" data-from="#btn1"></pre>
+  <div class="span-3">
+    <div id="btn1">
+      <button class="btn">
+        Button
+      </button>
     </div>
-    <div class="span-3">
-        <div id="btn2">
-            <a href="#" class="btn blue">
-                Button
-            </a>
-        </div>
-        <pre class="brush: html; gutter: false;" data-from="#btn2"></pre>
+    <pre class="brush: html; gutter: false;" data-from="#btn1"></pre>
+  </div>
+  <div class="span-3">
+    <div id="btn2">
+      <a href="#" class="btn blue">
+        Button
+      </a>
     </div>
-    <div class="span-6">
-        <div id="btn3">
-            <input
-                type="button"
-                value="Button"
-                class="btn green">
-        </div>
-        <pre class="brush: html; gutter: false;" data-from="#btn3"></pre>
+    <pre class="brush: html; gutter: false;" data-from="#btn2"></pre>
+  </div>
+  <div class="span-6">
+    <div id="btn3">
+      <input
+          type="button"
+          value="Button"
+          class="btn green">
     </div>
+    <pre class="brush: html; gutter: false;" data-from="#btn3"></pre>
+  </div>
 </div>
 
 <hr class="separator">
 
 <div class="row">
-    <div class="span-4">
-        <h2>Button Colors</h2>
-        <p>For customize colors, add class <code>blue</code>, <code>green</code>, <code>orange</code>,
-        <code>grey</code> or <code>black</code> beside the <code>btn</code> class.</p>
-        <button class="btn">Default</button>
-        <button class="btn blue">Blue</button>
-        <button class="btn green">Green</button>
-        <br>
-        <br>
-        <button class="btn orange">Orange</button>
-        <button class="btn red">Red</button>
-        <button class="btn grey">Grey</button>
-        <button class="btn black">Black</button>
-    </div>
-    <div class="span-4">
-        <h2>Button states</h2>
-        <p>For disabled buttons, add the <code>disabled</code> class to the link and the <code>disabled</code>
-            attribute for <code>button</code> and <code>input</code> tags.</p>
-        <button class="btn blue" disabled="disabled">Disabled</button>
+  <div class="span-4">
+    <h2>Button colors</h2>
 
-        <p>For pressed buttons, add the <code>pressed</code> class beside <code>btn</code> class.</p>
-        <button class="btn blue pressed">Pressed</button>
-    </div>
-    <div class="span-4">
-        <h2>Button sizes</h2>
-        <p>For customize sizes, add class <code>mini</code>, <code>medium</code>, <code>large</code> or <code>x-large</code>
-            beside class <code>btn</code>.</p>
+    <p>For customize colors, add class <code>blue</code>, <code>green</code>, <code>orange</code>,
+      <code>grey</code> or <code>black</code> beside the <code>btn</code> class.</p>
+    <button class="btn">Default</button>
+    <button class="btn blue">Blue</button>
+    <button class="btn green">Green</button>
+    <br>
+    <br>
+    <button class="btn orange">Orange</button>
+    <button class="btn red">Red</button>
+    <button class="btn grey">Grey</button>
+    <button class="btn black">Black</button>
+  </div>
+  <div class="span-4">
+    <h2>Button states</h2>
 
-        <p><button class="btn mini">Mini</button></p>
-        <p><button class="btn medium">Medium</button></p>
-        <p><button class="btn large">Large</button></p>
-        <p><button class="btn x-large">X-Large</button></p>
-    </div>
+    <p>For disabled buttons, add the <code>disabled</code> class to the link and the <code>disabled</code>
+      attribute for <code>button</code> and <code>input</code> tags.</p>
+    <button class="btn blue" disabled="disabled">Disabled</button>
+
+    <p>For pressed buttons, add the <code>pressed</code> class beside <code>btn</code> class.</p>
+    <button class="btn blue pressed">Pressed</button>
+  </div>
+  <div class="span-4">
+    <h2>Button sizes</h2>
+
+    <p>For customize sizes, add class <code>mini</code>, <code>medium</code>, <code>large</code> or <code>x-large</code>
+      beside class <code>btn</code>.</p>
+
+    <p>
+      <button class="btn mini">Mini</button>
+    </p>
+    <p>
+      <button class="btn medium">Medium</button>
+    </p>
+    <p>
+      <button class="btn large">Large</button>
+    </p>
+    <p>
+      <button class="btn x-large">X-Large</button>
+    </p>
+  </div>
 </div>
 
 <hr class="separator">
 
 <div class="row">
-    <div class="span-4">
-        <h2>Button Groups</h2>
-        <div id="btngroup1">
-            <div class="btn-group blue">
-              <button class="btn">Left</button>
-              <button class="btn">Middle</button>
-              <button class="btn">Right</button>
+  <div class="span-4">
+    <h2>Button groups</h2>
+        <span id="btngroup1">
+            <div class="btn-group">
+              <button>Button</button>
+              <button>Button</button>
+              <button>Button</button>
             </div>
-        </div>
-        <pre class="brush: html; gutter: false;" data-from="#btngroup1"></pre>
+        </span>
+
+    <p></p>
+
+    <div class="btn-group">
+      <a href="#">Anchor</a>
+      <a href="#">Anchor</a>
+      <a href="#">Anchor</a>
     </div>
-    <div class="span-3">
-        <h2>Button groups states</h2>
-        <p>Similar to button, add <code>disabled</code> or <code>pressed</code> class beside the <code>btn-group</code> class.</p>
-        <p>
-            <div class="btn-group blue disabled">
-                <button class="btn">Left</button>
-                <button class="btn">Middle</button>
-                <button class="btn">Right</button>
-            </div>
-        </p>
-        <p>
-            <div class="btn-group blue pressed">
-                <button class="btn">Left</button>
-                <button class="btn">Middle</button>
-                <button class="btn">Right</button>
-            </div>
-        </p>
+    <p></p>
+
+    <div class="btn-group">
+      <input type="button" value="Input">
+      <input type="button" value="Input">
+      <input type="button" value="Input">
     </div>
-    <div class="span-5">
-        <h2>Button Group Sizes</h2>
-        <p>Similar to buttons, button groups provides <code>mini</code>, <code>medium</code>, <code>large</code> and <code>x-large</code> sizes.</p>
-        <p>
-            <div class="btn-group mini">
-                <button class="btn">Mini</button>
-                <button class="btn">Mini</button>
-                <button class="btn">Mini</button>
-            </div>
-        </p>
-        <p>
-            <div class="btn-group medium">
-                <button class="btn">Medium</button>
-                <button class="btn">Medium</button>
-            </div>
-        </p>
-        <p>
-            <div class="btn-group large">
-                <button class="btn">Large</button>
-                <button class="btn">Large</button>
-            </div>
-        </p>
-        <p>
-            <div class="btn-group x-large">
-                <button class="btn">X-Large</button>
-                <button class="btn">X-Large</button>
-            </div>
-        </p>
+    <pre class="brush: html; gutter: false;" data-from="#btngroup1"></pre>
+  </div>
+  <div class="span-3">
+    <h2>Button group colors</h2>
+
+    <p>Similar to button, add class <code>blue</code>, <code>green</code>, <code>orange</code>, <code>red</code>,
+      <code>grey</code>, <code>black</code> beside the <code>blue</code> class to customize colors.</p>
+
+    <div class="btn-group blue">
+      <button>Left</button>
+      <button>Middle</button>
+      <button>Right</button>
     </div>
+
+    <h2>Button group states</h2>
+
+    <p>Similar to button, add class <code>disabled</code> or <code>pressed</code> beside the <code>btn-group</code>
+      class.</p>
+
+    <div class="btn-group blue disabled">
+      <button>Left</button>
+      <button>Middle</button>
+      <button>Right</button>
+    </div>
+    <p></p>
+
+    <div class="btn-group blue pressed">
+      <button>Left</button>
+      <button>Middle</button>
+      <button>Right</button>
+    </div>
+  </div>
+  <div class="span-5">
+    <h2>Button group sizes</h2>
+
+    <p>Similar to buttons, button groups provides <code>mini</code>, <code>medium</code>, <code>large</code> and <code>x-large</code>
+      sizes.</p>
+
+    <div class="btn-group mini">
+      <button>Mini</button>
+      <button>Mini</button>
+      <button>Mini</button>
+    </div>
+    <p></p>
+
+    <div class="btn-group medium">
+      <a href="#">Medium</a>
+      <a href="#">Medium</a>
+    </div>
+    <p></p>
+
+    <div class="btn-group large">
+      <input type="button" value="Large">
+      <input type="button" value="Large">
+    </div>
+    <p></p>
+
+    <div class="btn-group x-large">
+      <button>X-Large</button>
+      <button>X-Large</button>
+    </div>
+  </div>
+</div>
+
+<hr class="separator">
+
+<div class="row">
+  <div class="span-4">
+    <h2>Button menus</h2>
+
+    <p>Button menu just work with <code>button</code> & <code>a</code> tags.</p>
+        <span id="btn-menu1">
+            <div class="btn-menu">
+              <button>Button</button>
+              <ul>
+                <li><a href="#">Item1</a></li>
+                <li><a href="#">Item2</a></li>
+                <li><a href="#">Item3</a></li>
+              </ul>
+            </div>
+        </span>
+
+    <div class="btn-menu">
+      <a href="#">Anchor</a>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+        <pre class="brush: html; gutter: false;">
+            &lt;div class="btn-menu">
+              &lt;button>Button&lt;/button>
+                &lt;ul>
+                  &lt;li>&lt;a href="#">Item1&lt;/a>&lt;/li>
+                  &lt;li>&lt;a href="#">Item2&lt;/a>&lt;/li>
+                  &lt;li>&lt;a href="#">Item3&lt;/a>&lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        </pre>
+  </div>
+  <div class="span-4">
+    <h2>Button menu colors</h2>
+
+    <p>For customize button menu colors, add class <code>blue</code>, <code>green</code>, <code>orange</code>,
+      <code>red</code>, <code>grey</code> or <code>black</code> beside the <code>btn-menu</code> class.</p>
+
+    <div class="btn-menu blue">
+      <button>Button</button>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+    <div class="btn-menu green">
+      <a href="#">Button</a>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+    <p></p>
+
+    <div class="btn-menu orange">
+      <button>Button</button>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+    <div class="btn-menu red">
+      <button>Button</button>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+    <p></p>
+
+    <div class="btn-menu grey">
+      <button>Button</button>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+    <div class="btn-menu black">
+      <button>Button</button>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+        <pre class="brush: html; gutter: false;">
+            &lt;div class="btn-menu blue"&gt;
+              &lt;button&gt;Button&lt;/button&gt;
+              &lt;ul&gt;
+                ...
+              &lt;/ul&gt;
+            &lt;/div&gt;
+        </pre>
+  </div>
+  <div class="span-4">
+    <h2>Button menu sizes</h2>
+
+    <p>For customize button menu sizes, add class <code>mini</code>, <code>medium</code>, <code>large</code> or
+      <code>x-large</code> beside the <code>btn-menu</code> class.</p>
+    <pre class="brush: html; gutter: false;">
+      &lt;div class="btn-menu medium">
+        &lt;button>Button&lt;/button>
+        &lt;ul>
+          ...
+        &lt;/ul>
+      &lt;/div>
+    </pre>
+    <div class="btn-menu mini">
+      <button>Mini</button>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+    <div class="btn-menu x-large">
+      <button>Medium</button>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+    <p></p>
+
+    <div class="btn-menu medium">
+      <button>Large</button>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+    <div class="btn-menu large">
+      <button>X-Large</button>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="separator">
+
+<div class="row">
+  <div class="span-4">
+    <h2>Split buttons</h2>
+    <p>Split buttons just work with <code>button</code> & <code>a</code> tags.</p>
+    <span id="btn-split1">
+      <div class="btn-split">
+        <button>Button</button>
+        <button></button>
+        <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+      </div>
+    </span>
+    <div class="btn-split">
+      <a href="#">Anchor</a>
+      <a href="#"></a>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <pre class="brush: html; gutter: false;" data-from="#btn-split1">
+    </pre>
+  </div>
+  <div class="span-4">
+    <h2>Split button colors</h2>
+    <p>For customize split button colors, add class <code>blue</code>, <code>green</code>, <code>orange</code>,
+      <code>red</code>, <code>grey</code> or <code>black</code> beside the <code>btn-split</code> class.</p>
+    <div class="btn-split blue">
+      <button>Button</button>
+      <button></button>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <div class="btn-split green">
+      <a href="#">Anchor</a>
+      <a href="#"></a>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <p></p>
+    <div class="btn-split orange">
+      <button>Button</button>
+      <button></button>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <div class="btn-split red">
+      <button>Button</button>
+      <button></button>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <p></p>
+    <div class="btn-split grey">
+      <button>Button</button>
+      <button></button>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <div class="btn-split black">
+      <button>Button</button>
+      <button></button>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <pre class="brush: html; gutter: false;">
+      &lt;div class="btn-split blue">
+        &lt;button>Button&lt;/button>
+        &lt;button>&lt;/button>
+        &lt;ul>
+          ...
+        &lt;/ul>
+      &lt;/div>
+    </pre>
+  </div>
+  <div class="span-4">
+    <h2>Split button sizes</h2>
+    <p>For customize split button sizes, add class <code>mini</code>, <code>medium</code>, <code>large</code> or
+      <code>x-large</code> beside the <code>btn-split</code> class.</p>
+    <pre class="brush: html; gutter: false;">
+      &lt;div class="btn-split medium">
+        &lt;button>Button&lt;/button>
+        &lt;button>&lt;/button>
+        &lt;ul>
+          ...
+        &lt;/ul>
+      &lt;/div>
+    </pre>
+    <div class="btn-split mini">
+      <button>Button</button>
+      <button></button>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <div class="btn-split x-large">
+      <button>Button</button>
+      <button></button>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <p></p>
+    <div class="btn-split medium">
+      <button>Button</button>
+      <button></button>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+    <div class="btn-split large">
+      <button>Button</button>
+      <button></button>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </div>
+  </div>
 </div>

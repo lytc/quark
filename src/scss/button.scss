@@ -18,85 +18,53 @@
   vertical-align: middle;
   &:hover, &:active, &[disabled] {}
   &:hover {
+    text-decoration: none;
+    color: $base-text-color;
     @include linear-gradient("top, #E6E6E6, #{lighten(#e6e6e6, 20%)}");
   }
-}
-
-a.btn {
-  text-decoration: none;
-}
-
-$-btn-mini-hash: mini, 2rem;
-
-// $-btn-small-hash: small, 28rem; is default
-$-btn-medium-hash: medium, 4rem;
-$-btn-large-hash: large, 5.2rem;
-$-btn-sizes-list: $-btn-mini-hash, $-btn-medium-hash, $-btn-large-hash;
-
-@each $btn-hash in $base-sizes-list {
-  $name: nth($btn-hash, 1);
-  $size: nth($btn-hash, 2);
-  .btn-group.#{$name} > .btn,
-  .btn.#{$name} {
-    height: $size;
-    line-height: $size;
-    font-size: $base-font-size + ($size - 2) / 3 - .2;
-    padding: 0 ceil($size / 3);
+  &:focus, &:active {
+    box-shadow: 0 1px 1px rgba(#000, 0.075) inset, 0 0 8px rgba(#52A8EC, 0.6);
   }
-}
 
-@each $color-hash in $base-colors-list {
-  $name: nth($color-hash, 1);
-  $color: nth($color-hash, 2);
-  .btn-group.#{$name} > .btn, .btn.#{$name} {
-  	color: white;
-  	text-shadow: 0 -.1rem 0 rgba(black, 0.25);
-    @include base-bg-gradient($color);
-    &:hover {
-      @include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");
+  @each $btn-hash in $base-sizes-list {
+    $name: nth($btn-hash, 1);
+    $size: nth($btn-hash, 2);
+    &.#{$name} {
+      height: $size;
+      line-height: $size;
+      font-size: $base-font-size + ($size - 2) / 3 - .2;
+      padding: 0 $size / 3;
     }
   }
-}
 
-.btn-group.disabled > .btn,
-.btn-group.disabled > .btn:hover,
-button.btn[disabled],
-button.btn[disabled]:hover,
-.btn.disabled,
-.btn.disabled:hover{
-  background-image: none;
-  opacity: .5;
-  cursor: default;
-}
-
-.btn-group.pressed > .btn,
-.btn-group.pressed > .btn:hover,
-.btn:active,
-.btn.pressed,
-.btn.pressed:hover {
-  box-shadow: 0 .2rem .4rem rgba(black, 0.3) inset, 0 .1rem .2rem rgba(black, 0.1);
-  background-image: none;
-  outline: 0;
-}
-
-.btn-group.pressed > .btn {
-  border-color: rgba(black, 0.2) rgba(black, 0.2) rgba(black, 0.2);
-}
-
-.btn-group {
-  @extend .clearfix;
-  display: inline-block;
-
-  > .btn {
-    border-left-width: 0;
-    border-radius: 0;
-    float: left;
+  @each $color-hash in $base-colors-list {
+    $name: nth($color-hash, 1);
+    $color: nth($color-hash, 2);
+    &.#{$name} {
+      color: white;
+      text-shadow: 0 -.1rem 0 rgba(black, 0.25);
+      @include base-bg-gradient($color);
+      &:hover {
+        color: white;
+        @include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");
+      }
+    }
   }
-  > .btn:first-child {
-    border-left-width: .1rem;
-    border-radius: $base-border-radius 0 0 $base-border-radius;
+
+  &[disabled],
+  &[disabled]:hover,
+  &.disabled,
+  &.disabled:hover{
+    background-image: none;
+    opacity: .5;
+    cursor: default;
   }
-  > .btn:last-child {
-    border-radius: 0 $base-border-radius $base-border-radius 0;
+
+  &:active,
+  &.pressed,
+  &.pressed:hover {
+    box-shadow: 0 .2rem .4rem rgba(black, 0.3) inset, 0 .1rem .2rem rgba(black, 0.1);
+    background-image: none;
+    outline: 0;
   }
 }

@@ -1,0 +1,13 @@
+.badge {
+  @extend .label;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1.4rem;
+  @each $btn-hash in $base-sizes-list {
+    $name: nth($btn-hash, 1);
+    $size: nth($btn-hash, 2);
+    &.#{$name} {
+      border-radius: $size / 2;
+    }
+  }
+}

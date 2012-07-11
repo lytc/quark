@@ -39,15 +39,15 @@
 @media only screen and (min-width: 980px) and (max-width: 1219px) {
   .container, .row {
     width: 940px;
+  }
 
-    @for $i from 1 through 12 {
-      .span-#{$i} {
-        width: $i * 960 / 12 - 20px;
-      }
+  @for $i from 1 through 12 {
+    .span-#{$i} {
+      width: $i * 960 / 12 - 20px;
+    }
 
-      .offset-#{$i} {
-        margin-left: $i * 960px / 12;
-      }
+    .offset-#{$i} {
+      margin-left: $i * 960px / 12;
     }
   }
 }
@@ -55,15 +55,15 @@
 @media only screen and (min-width: 740px) and (max-width: 979px) {
   .container, .row {
     width: 700px;
+  }
 
-    @for $i from 1 through 12 {
-      .span-#{$i} {
-        width: $i * 720 / 12 - 20px;
-      }
+  @for $i from 1 through 12 {
+    .span-#{$i} {
+      width: $i * 720 / 12 - 20px;
+    }
 
-      .offset-#{$i} {
-        margin-left: $i * 720px / 12;
-      }
+    .offset-#{$i} {
+      margin-left: $i * 720px / 12;
     }
   }
 }
@@ -75,13 +75,13 @@
 
   .container, .row {
     width: auto;
+  }
 
-    @for $i from 1 through 12 {
-      .span-#{$i} {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-      }
+  @for $i from 1 through 12 {
+    .span-#{$i} {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 

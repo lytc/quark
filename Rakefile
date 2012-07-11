@@ -15,10 +15,18 @@ task :build do
   css_min_file = File.new('build/css/quark.min.css', 'w')
   css_min_file.write(css_min)
   css_min_file.close()
+
+  # copy js to build
+  system "echo - copy javascript to build"
+  system "cp src/js/quark.js build/js/quark.js"
   
   system "echo - copy css to docs"
   system "cp build/css/quark.css docs/source/stylesheets/quark.css"
   system "cp build/css/quark.min.css docs/source/stylesheets/quark.min.css"
+
+  system "echo - copy js to docs"
+  system "cp build/js/quark.js docs/source/javascripts/quark.js"
+
   system "echo - done!"
 end
 
