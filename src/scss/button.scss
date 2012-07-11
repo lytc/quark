@@ -1,26 +1,22 @@
 .btn {
-  font-size: $base-font-size;
+  @extend .border-with-radius;
+  @extend .text-shadow;
+  @extend .bg-silver;
+  display: inline-block;
   color: $base-text-color;
   height: 2.8rem;
   line-height: 2.8rem;
-  border: .1rem solid;
   border-color: rgba(black, 0.1) rgba(black, 0.1) rgba(black, 0.25);
-  border-radius: $base-border-radius;
   cursor: pointer;
-  text-shadow: 0 .1rem .1rem rgba(white, 0.75);
-  box-shadow: 0 .1rem 0 rgba(white, 0.2) inset, 0 .1rem .2rem rgba(black, 0.05);
-  @include base-bg-gradient(#e6e6e6);
-  background-repeat: repeat-x;
-  display: inline-block;
   overflow: hidden;
   padding: 0 1rem;
   text-align: center;
   vertical-align: middle;
-  &:hover, &:active, &[disabled] {}
   &:hover {
     text-decoration: none;
     color: $base-text-color;
     @include linear-gradient("top, #E6E6E6, #{lighten(#e6e6e6, 20%)}");
+    border-top-color: rgba(black, .2);
   }
   &:focus, &:active {
     box-shadow: 0 1px 1px rgba(#000, 0.075) inset, 0 0 8px rgba(#52A8EC, 0.6);
@@ -41,9 +37,9 @@
     $name: nth($color-hash, 1);
     $color: nth($color-hash, 2);
     &.#{$name} {
+      @extend .bg-#{$name};
       color: white;
       text-shadow: 0 -.1rem 0 rgba(black, 0.25);
-      @include base-bg-gradient($color);
       &:hover {
         color: white;
         @include linear-gradient("top, #{$color}, #{lighten($color, 20%)}");

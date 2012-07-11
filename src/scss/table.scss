@@ -14,8 +14,7 @@
   }
   &.border, &.border-all {
     border-collapse: separate;
-    border: $base-border-width $base-border-style $base-border-color;
-    border-radius: $base-border-radius;
+    @extend .border-with-radius;
   }
   &.border-cols, &.border-all {
     > thead > tr > th, tbody > tr > td {

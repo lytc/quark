@@ -1,8 +1,6 @@
 .rule {
   border: 0;
-  border-style: solid;
-  border-top-width: .1rem;
-  border-color: #eeeeee;
+  border-top: .1rem solid #eeeeee;
   border-radius: 0;
   background: none;
   @each $style in dotted, dashed, double, groove, ridge {
@@ -14,7 +12,7 @@
     $name: nth($color-hash, 1);
     $color: nth($color-hash, 2);
     &.#{$name} {
-      border-color: $color;
+      @extend .border-color-#{$name};
     }
   }
   @for $i from 1 through 10 {
