@@ -20,7 +20,7 @@
   }
 }
 
-@media only screen and (min-width: 1220px) {
+@media (min-width: 1220px) {
   .container, .row {
     width: 1180px;
   }
@@ -36,7 +36,7 @@
   }
 }
 
-@media only screen and (min-width: 980px) and (max-width: 1219px) {
+@media (min-width: 980px) and (max-width: 1219px) {
   .container, .row {
     width: 940px;
   }
@@ -52,7 +52,7 @@
   }
 }
 
-@media only screen and (min-width: 740px) and (max-width: 979px) {
+@media (min-width: 740px) and (max-width: 979px) {
   .container, .row {
     width: 700px;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-@media only screen and (max-width: 739px) {
+@media (max-width: 739px) {
   .container {
     margin: 0 10px;
   }
